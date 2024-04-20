@@ -30,6 +30,7 @@ public class PlayerMovementEditor : Editor
     private SerializedProperty jumpHangAccelerationMult;
     private SerializedProperty jumpHangMaxSpeedMult;
 
+    private SerializedProperty allowWallJump;
     private SerializedProperty wallJumpForce;
     private SerializedProperty wallJumpRunLerp;
     private SerializedProperty wallJumpCooldown;
@@ -79,6 +80,7 @@ public class PlayerMovementEditor : Editor
         jumpHangAccelerationMult = serializedObject.FindProperty("jumpHangAccelerationMult");
         jumpHangMaxSpeedMult = serializedObject.FindProperty("jumpHangMaxSpeedMult");
 
+        allowWallJump = serializedObject.FindProperty("allowWallJump");
         wallJumpForce = serializedObject.FindProperty("wallJumpForce");
         wallJumpRunLerp = serializedObject.FindProperty("wallJumpRunLerp");
         wallJumpCooldown = serializedObject.FindProperty("wallJumpCooldown");
@@ -162,12 +164,16 @@ public class PlayerMovementEditor : Editor
         if (showWallJumpSettings.boolValue)
         {
             EditorStyles.label.fontStyle = FontStyle.Normal;
-            wallJumpForce.vector2Value = EditorGUILayout.Vector2Field(new GUIContent("Wall Jump Force", "The force of our wall jump, both horizontally and vertically"), wallJumpForce.vector2Value);
-            wallJumpRunLerp.floatValue = EditorGUILayout.Slider(new GUIContent("Wall Jump Move Control", "How much control the player has over their movement after a wall jump"), wallJumpRunLerp.floatValue, 0, 1);
-            wallJumpCooldown.floatValue = EditorGUILayout.Slider(new GUIContent("Wall Jump Cooldown", "How long it takes before we can wall jump again"), wallJumpCooldown.floatValue, 0.1f, 1.5f);
-            doFlipOnWallJump.boolValue = EditorGUILayout.Toggle(new GUIContent("Flip Character After Wall Jump?", "Should the character sprite flip after a wall jump?"), doFlipOnWallJump.boolValue);
-            slideSpeed.floatValue = EditorGUILayout.FloatField(new GUIContent("Max Wall Slide Speed", "The max speed we slide down a wall"), slideSpeed.floatValue);
-            slideAccel.floatValue = EditorGUILayout.FloatField(new GUIContent("Wall Slide Acceleration", "How fast we reach the max slide speed"), slideAccel.floatValue);
+            allowWallJump.boolValue = EditorGUILayout.Toggle(new GUIContent("Allow Wall Jump?", "Should the player be allowed to wall jump?"), allowWallJump.boolValue);
+            if (allowWallJump.boolValue)
+            {
+                wallJumpForce.vector2Value = EditorGUILayout.Vector2Field(new GUIContent("Wall Jump Force", "The force of our wall jump, both horizontally and vertically"), wallJumpForce.vector2Value);
+                wallJumpRunLerp.floatValue = EditorGUILayout.Slider(new GUIContent("Wall Jump Move Control", "How much control the player has over their movement after a wall jump"), wallJumpRunLerp.floatValue, 0, 1);
+                wallJumpCooldown.floatValue = EditorGUILayout.Slider(new GUIContent("Wall Jump Cooldown", "How long it takes before we can wall jump again"), wallJumpCooldown.floatValue, 0.1f, 1.5f);
+                doFlipOnWallJump.boolValue = EditorGUILayout.Toggle(new GUIContent("Flip Character After Wall Jump?", "Should the character sprite flip after a wall jump?"), doFlipOnWallJump.boolValue);
+                slideSpeed.floatValue = EditorGUILayout.FloatField(new GUIContent("Max Wall Slide Speed", "The max speed we slide down a wall"), slideSpeed.floatValue);
+                slideAccel.floatValue = EditorGUILayout.FloatField(new GUIContent("Wall Slide Acceleration", "How fast we reach the max slide speed"), slideAccel.floatValue);
+            }
         }
         #endregion
 

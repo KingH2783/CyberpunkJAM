@@ -52,6 +52,8 @@ namespace HL
         [SerializeField] private float jumpHangMaxSpeedMult;
 
         [Header("Wall Jumping")]
+        [Tooltip("Should we allow the player to wall jump?")]
+        [SerializeField] private bool allowWallJump;
         [Tooltip("The force of our wall jump, both horizontally and vertically")]
         [SerializeField] private Vector2 wallJumpForce;
         [Tooltip("How much control the player has over their movement after a wall jump")]
@@ -128,6 +130,8 @@ namespace HL
             SetGravityScale(gravityScale);
             wasWallSliding = false;
             isFacingRight = true;
+            isOnRightWall = false;
+            isOnLeftWall = false;
         }
 
         #region Update Functions
@@ -190,9 +194,12 @@ namespace HL
         {
             player.isRunning = IsRunning();
             player.isGrounded = IsGrounded();
-            player.isOnWall = IsOnWall();
-            isOnLeftWall = IsOnLeftWall();
-            isOnRightWall = IsOnRightWall();
+            if (allowWallJump)
+            {
+                player.isOnWall = IsOnWall();
+                isOnLeftWall = IsOnLeftWall();
+                isOnRightWall = IsOnRightWall();
+            }
 
             // When we reach the apex of our jump
             if (player.isJumping && rb.velocity.y < 0)
@@ -449,6 +456,7 @@ namespace HL
         private bool CanWallJump()
         {
             return
+                allowWallJump &&
                 player.isOnWall &&
                 !player.isJumping &&
                 !player.isGrounded &&
@@ -466,6 +474,7 @@ namespace HL
         private bool CanWallSlide()
         {
             return
+                allowWallJump &&
                 player.isOnWall &&
                 !player.isJumping &&
                 !player.isWallJumping &&
