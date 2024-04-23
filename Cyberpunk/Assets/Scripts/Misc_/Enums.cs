@@ -5,6 +5,7 @@ namespace HL
     public enum ActionMaps
     {
         None,
+        Menu,
         Player
     }
 }

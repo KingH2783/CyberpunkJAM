@@ -66,13 +66,17 @@ namespace HL
 
         private void Initialization()
         {
-            if (currentScene.buildIndex != 0)
+            // Menu Scene
+            if (currentScene.buildIndex == 0)
+            {
+                Instance.enabled = true;
+                SwitchActionMap(ActionMaps.Menu);
+            }
+            else // Game Scene
             {
                 Instance.enabled = true;
                 SwitchActionMap(ActionMaps.Player);
             }
-            else
-                Instance.enabled = false;
         }
 
         private void OnDisable()
@@ -88,7 +92,8 @@ namespace HL
         {
             // If we destroy this object, unsubscribe from this event
             SceneManager.activeSceneChanged -= OnSceneChange;
-            UnsubscribeFromAllActionMaps();
+            if (playerControls != null)
+                UnsubscribeFromAllActionMaps();
         }
 
         private void OnApplicationFocus(bool focus)
@@ -115,6 +120,29 @@ namespace HL
             player.playerMovement.HandleJumpCut();
         }
 
+        private void HandleEscapeInput(InputAction.CallbackContext context)
+        {
+            PauseMenu pauseMenu = PlayerUIManager.Instance.pauseMenu;
+
+            // Menu Scene
+            if (currentScene.buildIndex == 0)
+            {
+
+            }
+            else // Game Scene
+            {
+                if (pauseMenu.IsGamePaused)
+                {
+                    if (pauseMenu.AreSettingsOpen)
+                        pauseMenu.CloseSettings();
+                    else
+                        pauseMenu.ResumeGame();
+                }
+                else
+                    pauseMenu.PauseGame();
+            }
+        }
+
         #region Handle Subscribing To Action Maps
 
         public void SwitchActionMap(ActionMaps actionMap)
@@ -122,7 +150,13 @@ namespace HL
             UnsubscribeFromAllActionMaps();
             playerControls.Disable();
 
-            if (actionMap == ActionMaps.Player)
+            if (actionMap == ActionMaps.Menu)
+            {
+                SubscribeToMenuActionMap();
+                playerControls.Menu.Enable();
+                currentActionMap = ActionMaps.Menu;
+            }
+            else if (actionMap == ActionMaps.Player)
             {
                 SubscribeToPlayerActionMap();
                 playerControls.Player.Enable();
@@ -132,7 +166,18 @@ namespace HL
 
         private void UnsubscribeFromAllActionMaps()
         {
+            UnsubscribeFromMenuActionMap();
             UnsubscribeFromPlayerActionMap();
+        }
+
+        private void SubscribeToMenuActionMap()
+        {
+            playerControls.Menu.Escape.performed += HandleEscapeInput;
+        }
+
+        private void UnsubscribeFromMenuActionMap()
+        {
+            playerControls.Menu.Escape.performed -= HandleEscapeInput;
         }
 
         private void SubscribeToPlayerActionMap()
@@ -140,6 +185,7 @@ namespace HL
             playerControls.Player.Movement.performed += movementInputHandler;
             playerControls.Player.Jump.performed += jumpInputHandlerPerformed;
             playerControls.Player.Jump.canceled += HandleJumpInputCanceled;
+            playerControls.Player.Escape.performed += HandleEscapeInput;
         }
 
         private void UnsubscribeFromPlayerActionMap()
@@ -147,6 +193,7 @@ namespace HL
             playerControls.Player.Movement.performed -= movementInputHandler;
             playerControls.Player.Jump.performed -= jumpInputHandlerPerformed;
             playerControls.Player.Jump.canceled -= HandleJumpInputCanceled;
+            playerControls.Player.Escape.performed -= HandleEscapeInput;
         }
         
         #endregion
