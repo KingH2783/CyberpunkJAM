@@ -4,6 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}" PersistMode="Standalone">
 			<ChildrenList>
 				<Sound Name="ANMLAqua_SEA LION-Female 9Years_B00M_AP_ST-1" ID="{FE466F2A-B6D8-4233-B5E2-7E71D1643F98}" ShortID="621640717">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>

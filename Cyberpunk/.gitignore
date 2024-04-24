@@ -83,4 +83,6 @@ Cyberpunk_WwiseProject/**/*.akd
 Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset
 WwiseUnityIntegration_*_Src.zip
 
+Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset.meta
+
 #IncrementalSoundBankData.xml   - not sure ?
