@@ -70,3 +70,17 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+#Wwise
+
+Cyberpunk_WwiseProject/.backup/
+Cyberpunk_WwiseProject/.cache/
+Cyberpunk_WwiseProject/*.prof
+Cyberpunk_WwiseProject/*_WwiseProject.*.validationcache
+Cyberpunk_WwiseProject/*_WwiseProject.*.wsettings
+Cyberpunk_WwiseProject/**/*.akd
+
+Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset
+WwiseUnityIntegration_*_Src.zip
+
+#IncrementalSoundBankData.xml   - not sure ?
