@@ -25,6 +25,21 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="stop_test" ID="{D85512DA-1638-41CD-B137-E8FD12F08813}">
+					<ChildrenList>
+						<Action Name="" ID="{4C1EED9A-EAD2-4B44-8F4D-1635BECDEDFC}" ShortID="945437805">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ANMLAqua_SEA LION-Female 9Years_B00M_AP_ST-1" ID="{FE466F2A-B6D8-4233-B5E2-7E71D1643F98}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="main" ID="{ACC96720-4A55-4A7C-8D40-BC24FB091D45}">
 					<ObjectInclusionList>
+						<ObjectRef Name="stop_test" ID="{D85512DA-1638-41CD-B137-E8FD12F08813}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="test" ID="{CB123BE5-AD1A-4593-BF09-31668C8FF7D7}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
@@ -13,6 +14,7 @@
 				<SoundBank Name="level_1" ID="{9B3EC862-4685-41A6-B386-4715AFC3F26F}">
 					<ObjectInclusionList>
 						<ObjectRef Name="test_2" ID="{9EF92796-85F4-400A-B11A-25EA271CDF66}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="stop_test" ID="{D85512DA-1638-41CD-B137-E8FD12F08813}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

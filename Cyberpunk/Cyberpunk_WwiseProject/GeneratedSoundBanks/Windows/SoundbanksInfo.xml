@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1290008369" Type="User" Language="SFX" Hash="{96FEF5B9-8ACF-D82A-DF6D-E5983FDA3C60}">
+		<SoundBank Id="1290008369" Type="User" Language="SFX" Hash="{DEB4F7C9-961E-24D8-4166-2A803BEFF84B}">
 			<ShortName>level_1</ShortName>
 			<Path>level_1.bnk</Path>
 			<Media>
@@ -19,6 +19,7 @@
 				</File>
 			</Media>
 			<Events>
+				<Event Id="2051061508" Name="stop_test" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2727318990" Name="test_2" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="108680219"/>
@@ -39,7 +40,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{2C2CAF83-3A94-9F06-0A7F-B3C6D91E78D3}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{E6BD3487-9B72-7E0F-1167-E5DCB4405C91}">
 			<ShortName>main</ShortName>
 			<Path>main.bnk</Path>
 			<Media>
@@ -49,6 +50,7 @@
 				</File>
 			</Media>
 			<Events>
+				<Event Id="2051061508" Name="stop_test" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3157003241" Name="test" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="1009350064"/>
@@ -57,5 +59,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B0563922-DEFE-DEB8-8D02-2A6C71E9EE69}</FileHash>
+	<FileHash>{3807610C-C1FE-B0C3-D694-A25B481570E8}</FileHash>
 </SoundBanksInfo>
