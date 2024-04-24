@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" SchemaVersion="119">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="test" ID="{CB123BE5-AD1A-4593-BF09-31668C8FF7D7}">
+					<ChildrenList>
+						<Action Name="" ID="{D1346368-4542-44B3-AFB3-90AA4ED3554D}" ShortID="416129961">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ANMLAqua_SEA LION-Female 9Years_B00M_AP_ST-1" ID="{FE466F2A-B6D8-4233-B5E2-7E71D1643F98}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

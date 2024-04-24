@@ -22,10 +22,23 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{3B51E889-948F-7EDA-A1E8-111109B087A1}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{2C2CAF83-3A94-9F06-0A7F-B3C6D91E78D3}">
 			<ShortName>main</ShortName>
 			<Path>main.bnk</Path>
+			<Media>
+				<File Id="1009350064" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ANMLAqua_SEA LION-Female 9Years_B00M_AP_ST-1.wav</ShortName>
+					<CachePath>SFX/ANMLAqua_SEA LION-Female 9Years_B00M_AP_ST-1_FBC78EF0.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3157003241" Name="test" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="1009350064"/>
+					</MediaRefs>
+				</Event>
+			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5E99576D-83C0-2007-F2B9-820320E981AC}</FileHash>
+	<FileHash>{3A5D6E01-68F6-0CC3-716F-8903973EA9AD}</FileHash>
 </SoundBanksInfo>
