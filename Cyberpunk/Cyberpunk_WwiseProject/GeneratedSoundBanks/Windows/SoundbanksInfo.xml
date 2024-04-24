@@ -22,13 +22,13 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{CAC353B6-DBC9-29D2-E035-58E0BCE310C9}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{EB96FEC7-C232-D860-AD97-400E6B48E8A9}">
 			<ShortName>main</ShortName>
 			<Path>main.bnk</Path>
 			<Media>
 				<File Id="108680219" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AWCK ADD Mechanics Plastic Medium 06.wav</ShortName>
-					<CachePath>SFX/AWCK ADD Mechanics Plastic Medium 06_818F3B66.wem</CachePath>
+					<CachePath>SFX/AWCK ADD Mechanics Plastic Medium 06_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="1009350064" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ANMLAqua_SEA LION-Female 9Years_B00M_AP_ST-1.wav</ShortName>
@@ -41,7 +41,7 @@
 						<MediaRef Id="1009350064"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2727318990" Name="test_2" DurationType="OneShot" DurationMin="0.608" DurationMax="0.608">
+				<Event Id="2727318990" Name="test_2" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="108680219"/>
 					</MediaRefs>
@@ -49,5 +49,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{844C7F29-74DB-3B2C-156C-4BEF775C3A20}</FileHash>
+	<FileHash>{550E1061-2403-2217-856D-FEF12C66D38A}</FileHash>
 </SoundBanksInfo>

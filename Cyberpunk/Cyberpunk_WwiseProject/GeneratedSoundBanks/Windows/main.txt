@@ -3,6 +3,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	3157003241	test			\Default Work Unit\test	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	108680219	AWCK ADD Mechanics Plastic Medium 06	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\AWCK ADD Mechanics Plastic Medium 06_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\AWCK ADD Mechanics Plastic Medium 06		116832
+	108680219	AWCK ADD Mechanics Plastic Medium 06	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\AWCK ADD Mechanics Plastic Medium 06_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\AWCK ADD Mechanics Plastic Medium 06		116832
 	1009350064	ANMLAqua_SEA LION-Female 9Years_B00M_AP_ST-1	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\ANMLAqua_SEA LION-Female 9Years_B00M_AP_ST-1_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\ANMLAqua_SEA LION-Female 9Years_B00M_AP_ST-1		434624
 
