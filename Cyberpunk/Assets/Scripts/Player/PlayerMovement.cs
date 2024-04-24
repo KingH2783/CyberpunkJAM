@@ -123,6 +123,8 @@ namespace HL
         {
             rb = GetComponent<Rigidbody2D>();
             player = GetComponent<PlayerManager>();
+
+            InitializingVariables();
         }
 
         private void Start()
@@ -485,7 +487,7 @@ namespace HL
 
         #region Editor Functions
 
-        private void OnValidate()
+        private void InitializingVariables()
         {
             // Calculate gravity strength using the formula (gravity = 2 * jumpHeight / timeToJumpApex^2) 
             gravityStrength = -(2 * jumpHeight) / (jumpTimeToApex * jumpTimeToApex);
@@ -502,6 +504,11 @@ namespace HL
             runAcceleration = Mathf.Clamp(runAcceleration, 0.01f, maxRunSpeed);
             runDecceleration = Mathf.Clamp(runDecceleration, 0.01f, maxRunSpeed);
             slideAccel = Mathf.Clamp(slideAccel, 0.01f, slideSpeed);
+        }
+
+        private void OnValidate()
+        {
+            InitializingVariables();
         }
 
         private void OnDrawGizmos()
