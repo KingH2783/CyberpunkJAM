@@ -15,6 +15,7 @@ namespace HL
         // This means you can avoid making them public but still have them accessed by the editor
         [SerializeField] private bool showRunSettings;
         [SerializeField] private bool showJumpSettings;
+        [SerializeField] private bool showDoubleJumpSettings;
         [SerializeField] private bool showWallJumpSettings;
         [SerializeField] private bool showFallSettings;
         [SerializeField] private bool showCheckSettings;
@@ -50,6 +51,9 @@ namespace HL
         [SerializeField] private float jumpHangAccelerationMult;
         [Tooltip("The max speed we can go at the apex")]
         [SerializeField] private float jumpHangMaxSpeedMult;
+
+        [Header("Double Jump")]
+        [SerializeField] private bool allowDoubleJump = true;
 
         [Header("Wall Jumping")]
         [Tooltip("Should we allow the player to wall jump?")]
@@ -109,6 +113,7 @@ namespace HL
         private float horizontalInput;
         private bool jumpInput;
 
+        private bool hasDoneDoubleJump;
         private bool wasWallSliding;
         private float wallJumpStartTime;
         private int lastWallJumpDir;
@@ -150,6 +155,8 @@ namespace HL
 
                 if (CanJump())
                     HandleJump();
+                else if (CanDoubleJump())
+                    HandleDoubleJump();
                 else if (CanWallJump())
                     HandleWallJump();
             }
@@ -223,6 +230,7 @@ namespace HL
             {
                 isJumpCut = false;
                 isJumpFalling = false;
+                hasDoneDoubleJump = false;
             }
         }
 
@@ -281,6 +289,31 @@ namespace HL
 
         private void HandleJump()
         {
+            player.isJumping = true;
+            player.isWallJumping = false;
+            isJumpFalling = false;
+            isJumpCut = false;
+
+            // Ensures we can't call HandleJump multiple times from one press
+            lastPressedJumpTimer = 0;
+            lastOnGroundTimer = 0;
+
+            // We increase the force applied if we are falling
+            // This means we'll always feel like we jump the same amount 
+            float force = jumpForce;
+            if (rb.velocity.y < 0)
+                force -= rb.velocity.y;
+
+            player.playerAnimatorManager.PlayTargetAnimation("Jump");
+
+            // Unlike in the run we want to use the Impulse mode.
+            // The default mode will apply are force instantly ignoring masss
+            rb.AddForce(Vector2.up * force, ForceMode2D.Impulse);
+        }
+
+        private void HandleDoubleJump()
+        {
+            hasDoneDoubleJump = true;
             player.isJumping = true;
             player.isWallJumping = false;
             isJumpFalling = false;
@@ -452,6 +485,17 @@ namespace HL
                 !player.isJumping &&
                 !player.isWallJumping &&
                 player.isGrounded &&
+                lastPressedJumpTimer > 0;
+        }
+
+        private bool CanDoubleJump()
+        {
+            return
+                allowDoubleJump &&
+                !hasDoneDoubleJump &&
+                !player.isJumping &&
+                !player.isWallJumping &&
+                !player.isGrounded &&
                 lastPressedJumpTimer > 0;
         }
 

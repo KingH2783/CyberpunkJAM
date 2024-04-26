@@ -10,6 +10,7 @@ public class PlayerMovementEditor : Editor
     #region Defining Variables
     private SerializedProperty showRunSettings;
     private SerializedProperty showJumpSettings;
+    private SerializedProperty showDoubleJumpSettings;
     private SerializedProperty showWallJumpSettings;
     private SerializedProperty showFallSettings;
     private SerializedProperty showCheckSettings;
@@ -29,6 +30,8 @@ public class PlayerMovementEditor : Editor
     private SerializedProperty jumpHangTimeThreshold;
     private SerializedProperty jumpHangAccelerationMult;
     private SerializedProperty jumpHangMaxSpeedMult;
+
+    private SerializedProperty allowDoubleJump;
 
     private SerializedProperty allowWallJump;
     private SerializedProperty wallJumpForce;
@@ -60,6 +63,7 @@ public class PlayerMovementEditor : Editor
         #region Defining Variables
         showRunSettings = serializedObject.FindProperty("showRunSettings");
         showJumpSettings = serializedObject.FindProperty("showJumpSettings");
+        showDoubleJumpSettings = serializedObject.FindProperty("showDoubleJumpSettings");
         showWallJumpSettings = serializedObject.FindProperty("showWallJumpSettings");
         showFallSettings = serializedObject.FindProperty("showFallSettings");
         showCheckSettings = serializedObject.FindProperty("showCheckSettings");
@@ -79,6 +83,8 @@ public class PlayerMovementEditor : Editor
         jumpHangTimeThreshold = serializedObject.FindProperty("jumpHangTimeThreshold");
         jumpHangAccelerationMult = serializedObject.FindProperty("jumpHangAccelerationMult");
         jumpHangMaxSpeedMult = serializedObject.FindProperty("jumpHangMaxSpeedMult");
+
+        allowDoubleJump = serializedObject.FindProperty("allowDoubleJump");
 
         allowWallJump = serializedObject.FindProperty("allowWallJump");
         wallJumpForce = serializedObject.FindProperty("wallJumpForce");
@@ -153,6 +159,19 @@ public class PlayerMovementEditor : Editor
             jumpHangTimeThreshold.floatValue = EditorGUILayout.FloatField(new GUIContent("Jump Apex Time Threshold", "How long we stay at the apex"), jumpHangTimeThreshold.floatValue);
             jumpHangAccelerationMult.floatValue = EditorGUILayout.FloatField(new GUIContent("Jump Apex Acceleration Multiplier", "The max speed we can go at the apex"), jumpHangAccelerationMult.floatValue);
             jumpHangMaxSpeedMult.floatValue = EditorGUILayout.FloatField(new GUIContent("Jump Apex Max Speed", "The max speed we can go at the apex"), jumpHangMaxSpeedMult.floatValue);
+        }
+        #endregion
+
+        // ======= Double Jump Settings =======
+        #region // ======= Double Jump Settings =======
+        EditorGUILayout.Space();
+        EditorStyles.label.fontStyle = FontStyle.Bold;
+        showDoubleJumpSettings.boolValue = EditorGUILayout.Toggle("SHOW DOUBLE JUMP SETTINGS", showDoubleJumpSettings.boolValue);
+        if (showDoubleJumpSettings.boolValue)
+        {
+            EditorStyles.label.fontStyle = FontStyle.Normal;
+            allowDoubleJump.boolValue = EditorGUILayout.Toggle(new GUIContent("Allow Double Jump?", "Should the player be allowed to double jump?"), allowDoubleJump.boolValue);
+
         }
         #endregion
 
