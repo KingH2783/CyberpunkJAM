@@ -1,3 +1,4 @@
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -15,8 +16,7 @@ namespace HL
         // This means you can avoid making them public but still have them accessed by the editor
         [SerializeField] private bool showRunSettings;
         [SerializeField] private bool showJumpSettings;
-        [SerializeField] private bool showDoubleJumpSettings;
-        [SerializeField] private bool showWallJumpSettings;
+        [SerializeField] private bool showDashSettings;
         [SerializeField] private bool showFallSettings;
         [SerializeField] private bool showCheckSettings;
         [SerializeField] private bool showAssistSettings;
@@ -36,13 +36,20 @@ namespace HL
         [Tooltip("If we exceed our max speed, should we let it happen until we slow down naturally?")]
         [SerializeField] private bool doConserveMomentum;
 
+        [Header("Slopes")]
+        [SerializeField] private float maxSlopeRunSpeed;
+        [SerializeField] private float maxSlopeAngle;
+        [SerializeField] private float slopeStickForce;
+
         [Header("Jumping")]
         [Tooltip("The height of the jump")]
         [SerializeField] private float jumpHeight;
+        [SerializeField] private bool allowDoubleJump = true;
         [Tooltip("The time it takes to reach the highest point of the jump (the apex)")]
         [SerializeField] private float jumpTimeToApex;
         [Tooltip("The gravity multiplier when we let go of the jump button before the apex")]
         [SerializeField] private float jumpCutGravityMult;
+        [SerializeField] private float timeToHoldJumpForFullJump;
         [Tooltip("The gravity multiplier when we are at the apex")]
         [SerializeField][Range(0f, 1)] private float jumpHangGravityMult;
         [Tooltip("How long we stay at the apex")]
@@ -51,9 +58,6 @@ namespace HL
         [SerializeField] private float jumpHangAccelerationMult;
         [Tooltip("The max speed we can go at the apex")]
         [SerializeField] private float jumpHangMaxSpeedMult;
-
-        [Header("Double Jump")]
-        [SerializeField] private bool allowDoubleJump = true;
 
         [Header("Wall Jumping")]
         [Tooltip("Should we allow the player to wall jump?")]
@@ -70,6 +74,13 @@ namespace HL
         [SerializeField] private float slideSpeed;
         [Tooltip("How fast we reach the Slide Speed")]
         [SerializeField] private float slideAccel;
+
+        [Header("Dashing")]
+        [SerializeField] private bool allowDash;
+        [SerializeField] private float dashVelocity;
+        [SerializeField] private float dashTime;
+        [SerializeField] private float dashCooldown;
+        [SerializeField] private bool allowMultipleDashesBeforeTouchingGround;
 
         [Header("Falling")]
         [Tooltip("How fast we fall")]
@@ -90,12 +101,15 @@ namespace HL
         [SerializeField] private Transform backWallCheckPoint;
         [Tooltip("The size of the box we use to check the wall, use Gizmos to see a visual representation")]
         [SerializeField] private Vector2 wallCheckSize = new(0.5f, 1f);
+        [SerializeField] private Vector2 slopeCheckStartOffset = new(0, 0.25f);
+        [SerializeField] private float slopeCheckDistance = 0.5f;
 
         [Header("Assists")]
         [Tooltip("The amount of time given to the player to jump after they have already fallen off a platform")]
         [SerializeField][Range(0.01f, 0.5f)] private float coyoteTime;
         [Tooltip("The amount of time given to jump if the player has pressed the jump button but the conditions haven't been met yet")]
         [SerializeField][Range(0.01f, 0.5f)] private float jumpInputBufferTime;
+        [SerializeField][Range(0.01f, 0.5f)] private float dashInputBufferTime;
 
         // ======= Private Variables =======
         private float lastOnWallTimer;
@@ -103,6 +117,9 @@ namespace HL
         private float lastOnLeftWallTimer;
         private float lastOnRightWallTimer;
         private float lastPressedJumpTimer;
+        private float lastPressedDashTimer;
+        private float lastDashCooldownTimer;
+        private float jumpInputStartTimer;
 
         private float gravityStrength;
         private float gravityScale;
@@ -114,6 +131,7 @@ namespace HL
         private bool jumpInput;
 
         private bool hasDoneDoubleJump;
+        private bool hasDoneDashInAir;
         private bool wasWallSliding;
         private float wallJumpStartTime;
         private int lastWallJumpDir;
@@ -123,6 +141,8 @@ namespace HL
         private bool isOnLeftWall;
         private bool isJumpCut;
         private float jumpForce;
+        private float slopeAngle;
+        private Vector2 slopeNormal;
 
         private void Awake()
         {
@@ -135,6 +155,7 @@ namespace HL
         private void Start()
         {
             SetGravityScale(gravityScale);
+
             wasWallSliding = false;
             isFacingRight = true;
             isOnRightWall = false;
@@ -148,17 +169,28 @@ namespace HL
             Timers(delta);
             UpdatePlayerFlags();
             GetPlayerInputs();
-
+            
             if (jumpInput)
             {
+                jumpInputStartTimer += delta;
                 lastPressedJumpTimer = jumpInputBufferTime;
 
                 if (CanJump())
                     HandleJump();
-                else if (CanDoubleJump())
-                    HandleDoubleJump();
+                
                 else if (CanWallJump())
                     HandleWallJump();
+
+                else if (CanDoubleJump())
+                    HandleDoubleJump();
+            }
+
+            if (PlayerInputsManager.Instance.dashInput)
+            {
+                PlayerInputsManager.Instance.dashInput = false;
+                lastPressedDashTimer = dashInputBufferTime;
+                if (CanDash())
+                    HandleDash();
             }
                 
             if (horizontalInput != 0 && 
@@ -170,6 +202,7 @@ namespace HL
 
         public void PlayerMovementFixedUpdate(float delta)
         {
+            player.isOnSlope = IsOnSlope();
             HandleRunning();
 
             if (doFlipOnWallJump)
@@ -197,6 +230,8 @@ namespace HL
             lastOnLeftWallTimer -= delta;
             lastOnRightWallTimer -= delta;
             lastPressedJumpTimer -= delta;
+            lastPressedDashTimer -= delta;
+            lastDashCooldownTimer -= delta;
         }
 
         private void UpdatePlayerFlags()
@@ -231,6 +266,16 @@ namespace HL
                 isJumpCut = false;
                 isJumpFalling = false;
                 hasDoneDoubleJump = false;
+                hasDoneDashInAir = false;
+                jumpInputStartTimer = 0;
+            }
+
+            if (player.isOnWall && !player.isJumping && !player.isWallJumping)
+            {
+                // TO DO: Solve a bug here where moving off the wall makes it difficult for the player to do a wall jump
+                hasDoneDoubleJump = false;
+                hasDoneDashInAir = false;
+                jumpInputStartTimer = 0;
             }
         }
 
@@ -238,12 +283,17 @@ namespace HL
         {
             horizontalInput = PlayerInputsManager.Instance.movementInput.x;
             jumpInput = PlayerInputsManager.Instance.jumpInput;
+            if (jumpInputStartTimer > timeToHoldJumpForFullJump)
+                PlayerInputsManager.Instance.jumpInput = false;
         }
 
         #endregion
 
         private void HandleRunning()
         {
+            if (player.isDashing)
+                return;
+
             float targetSpeed = horizontalInput * maxRunSpeed;
 
             // We can reduce our control using Lerp() this smooths changes to our direction and speed
@@ -283,8 +333,14 @@ namespace HL
             // Calculate force along x-axis to apply to the player
             float movement = speedDif * accelRate;
 
-            // Convert this to a vector and apply to rigidbody
-            rb.AddForce(movement * Vector2.right, ForceMode2D.Force);
+            if (player.isOnSlope)
+            {
+                // Calculate the movement along the slope direction
+                Vector2 slopeMovement = new Vector2(slopeNormal.y, -slopeNormal.x) * movement;
+                rb.AddForce(slopeMovement, ForceMode2D.Force);
+            }
+            else
+                rb.AddForce(movement * Vector2.right, ForceMode2D.Force);
         }
 
         private void HandleJump()
@@ -300,19 +356,29 @@ namespace HL
 
             // We increase the force applied if we are falling
             // This means we'll always feel like we jump the same amount 
-            float force = jumpForce;
+            /*float force = jumpForce;
             if (rb.velocity.y < 0)
-                force -= rb.velocity.y;
+                force -= rb.velocity.y;*/
 
-            player.playerAnimatorManager.PlayTargetAnimation("Jump");
+            // Reset vertical velocity before applying jump force (FIX FOR SLOPES)
+            Vector2 currentVelocity = rb.velocity;
+            currentVelocity.y = 0;
+            rb.velocity = currentVelocity;
+
+            // We increase the force applied if we are falling
+            // This means we'll always feel like we jump the same amount 
+            float force = jumpForce;
 
             // Unlike in the run we want to use the Impulse mode.
             // The default mode will apply are force instantly ignoring masss
             rb.AddForce(Vector2.up * force, ForceMode2D.Impulse);
+
+            player.playerAnimatorManager.PlayTargetAnimation("Jump");
         }
 
         private void HandleDoubleJump()
         {
+            jumpInputStartTimer = 0;
             hasDoneDoubleJump = true;
             player.isJumping = true;
             player.isWallJumping = false;
@@ -384,6 +450,26 @@ namespace HL
                 isJumpCut = true;
         }
 
+        private void HandleDash()
+        {
+            if (!player.isGrounded)
+                hasDoneDashInAir = true;
+            lastDashCooldownTimer = dashCooldown;
+            player.isDashing = true;
+
+            Vector2 dashDirection = new(player._transform.localScale.x, 0);
+            rb.velocity = dashDirection.normalized * dashVelocity;
+
+            StartCoroutine(StopDashing());
+        }
+
+        private IEnumerator StopDashing()
+        {
+            yield return new WaitForSeconds(dashTime);
+            player.isDashing = false;
+            rb.velocity = Vector2.zero;
+        }
+
         private void HandleFlip()
         {
             Vector3 scale = transform.localScale;
@@ -395,7 +481,7 @@ namespace HL
 
         private void HandleGravity()
         {
-            if (player.isOnWall)
+            if (player.isOnWall || player.isDashing || player.isOnSlope)
             {
                 SetGravityScale(0);
             }
@@ -479,6 +565,18 @@ namespace HL
             return lastOnRightWallTimer > 0;
         }
 
+        private bool IsOnSlope()
+        {
+            Vector2 checkPos = player._transform.position + new Vector3(slopeCheckStartOffset.x, slopeCheckStartOffset.y);
+            RaycastHit2D hit = Physics2D.Raycast(checkPos, Vector2.down, slopeCheckDistance, groundLayer);
+            if (hit)
+            {
+                slopeNormal = hit.normal;
+                slopeAngle = Vector2.Angle(slopeNormal, Vector2.up);
+            }
+            return (slopeAngle <= -0.01f || slopeAngle >= 0.01f) && player.isGrounded;
+        }
+
         private bool CanJump()
         {
             return
@@ -514,7 +612,32 @@ namespace HL
 
         private bool CanJumpCut()
         {
-            return (player.isJumping || player.isWallJumping) && rb.velocity.y > 0;
+            return 
+                (player.isJumping || player.isWallJumping) && 
+                rb.velocity.y > 0 &&
+                jumpInputStartTimer < timeToHoldJumpForFullJump;
+        }
+
+        private bool CanDash()
+        {
+            // Is grounded OR it behaves the same in the air
+            if (player.isGrounded || allowMultipleDashesBeforeTouchingGround)
+            {
+                return
+                    allowDash &&
+                    !player.isDashing && 
+                    lastDashCooldownTimer <= 0 &&
+                    lastPressedDashTimer > 0;
+            }
+            else // Is not grounded
+            {
+                return
+                    allowDash &&
+                    !player.isDashing && 
+                    !hasDoneDashInAir &&
+                    lastDashCooldownTimer <= 0 &&
+                    lastPressedDashTimer > 0;
+            }
         }
 
         private bool CanWallSlide()
@@ -579,6 +702,11 @@ namespace HL
                 Gizmos.color = Color.green;
                 Gizmos.DrawWireCube(backWallCheckPoint.position, wallCheckSize);
             }
+
+            Vector2 checkPos = transform.position + new Vector3(slopeCheckStartOffset.x, slopeCheckStartOffset.y);
+            RaycastHit2D hit = Physics2D.Raycast(checkPos, Vector2.down, slopeCheckDistance, groundLayer);
+            Gizmos.color = Color.blue;
+            Gizmos.DrawRay(hit.point, hit.normal);
         }
 
         #endregion

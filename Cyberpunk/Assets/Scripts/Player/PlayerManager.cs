@@ -14,7 +14,9 @@ namespace HL
         public bool isGrounded;
         public bool isJumping;
         public bool isWallJumping;
+        public bool isDashing;
         public bool isOnWall = false;
+        public bool isOnSlope;
 
         private void Awake()
         {

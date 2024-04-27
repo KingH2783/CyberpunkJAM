@@ -15,10 +15,12 @@ namespace HL
         // ======= Player Movement Inputs =======
         Action<InputAction.CallbackContext> movementInputHandler;
         [HideInInspector] public Vector2 movementInput { get; private set; }
-        [HideInInspector] public bool jumpInput { get; private set; }
+        [HideInInspector] public bool jumpInput;
+        [HideInInspector] public bool dashInput;
 
         // ======= Player Action Inputs =======
-        Action<InputAction.CallbackContext> jumpInputHandlerPerformed;
+        Action<InputAction.CallbackContext> jumpInputPerformed;
+        Action<InputAction.CallbackContext> dashInputPerformed;
 
         // ======= Game Managers =======
         [HideInInspector] public Scene currentScene;
@@ -51,7 +53,8 @@ namespace HL
 
                 // Setup for Lambda events
                 movementInputHandler = context => movementInput = context.ReadValue<Vector2>();
-                jumpInputHandlerPerformed = context => jumpInput = true;
+                jumpInputPerformed = context => jumpInput = true;
+                dashInputPerformed = context => dashInput = true;
             }
 
             playerControls.Disable();
@@ -183,16 +186,18 @@ namespace HL
         private void SubscribeToPlayerActionMap()
         {
             playerControls.Player.Movement.performed += movementInputHandler;
-            playerControls.Player.Jump.performed += jumpInputHandlerPerformed;
+            playerControls.Player.Jump.performed += jumpInputPerformed;
             playerControls.Player.Jump.canceled += HandleJumpInputCanceled;
+            playerControls.Player.Dash.performed += dashInputPerformed;
             playerControls.Player.Escape.performed += HandleEscapeInput;
         }
 
         private void UnsubscribeFromPlayerActionMap()
         {
             playerControls.Player.Movement.performed -= movementInputHandler;
-            playerControls.Player.Jump.performed -= jumpInputHandlerPerformed;
+            playerControls.Player.Jump.performed -= jumpInputPerformed;
             playerControls.Player.Jump.canceled -= HandleJumpInputCanceled;
+            playerControls.Player.Dash.performed -= dashInputPerformed;
             playerControls.Player.Escape.performed -= HandleEscapeInput;
         }
         
