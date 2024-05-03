@@ -2,14 +2,15 @@ using UnityEngine;
 
 namespace HL
 {
-    public class PlayerManager : MonoBehaviour
+    public class PlayerManager : CharacterManager
     {
-        [HideInInspector] public Transform _transform { get; private set; }
         [HideInInspector] public PlayerMovement playerMovement { get; private set; }
+        [HideInInspector] public PlayerStatsManager playerStatsManager { get; private set; }
+        [HideInInspector] public PlayerCombatManager playerCombatManager { get; private set; }
         [HideInInspector] public PlayerAnimatorManager playerAnimatorManager { get; private set; }
 
         // ======= Flags =======
-        [Header("Flags")]
+        [Header("Player Flags")]
         public bool isRunning;
         public bool isGrounded;
         public bool isJumping;
@@ -18,10 +19,12 @@ namespace HL
         public bool isOnWall = false;
         public bool isOnSlope;
 
-        private void Awake()
+        protected override void Awake()
         {
-            _transform = transform;
+            base.Awake();
             playerMovement = GetComponent<PlayerMovement>();
+            playerStatsManager = GetComponent<PlayerStatsManager>();
+            playerCombatManager = GetComponent<PlayerCombatManager>();
             playerAnimatorManager = GetComponent<PlayerAnimatorManager>();
         }
 

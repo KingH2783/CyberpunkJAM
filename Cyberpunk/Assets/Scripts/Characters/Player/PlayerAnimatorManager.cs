@@ -2,14 +2,13 @@ using UnityEngine;
 
 namespace HL
 {
-    public class PlayerAnimatorManager : MonoBehaviour
+    public class PlayerAnimatorManager : CharacterAnimatorManager
     {
-        Animator animator;
         PlayerManager player;
 
-        private void Awake()
+        protected override void Awake()
         {
-            animator = GetComponent<Animator>();
+            base.Awake();
             player = GetComponent<PlayerManager>();
         }
 
@@ -20,9 +19,9 @@ namespace HL
             animator.SetBool("OnWall", player.isOnWall);
         }
 
-        public void PlayTargetAnimation(string animation)
+        public override void PlayTargetAnimation(string animation)
         {
-            animator.CrossFade(animation, 0);
+            base.PlayTargetAnimation(animation);
         }
     }
 }

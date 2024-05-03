@@ -123,6 +123,26 @@ namespace HL
             player.playerMovement.HandleJumpCut();
         }
 
+        private void HandleMeleeAttackInput(InputAction.CallbackContext context)
+        {
+            player.playerCombatManager.HandleMeleeAttack();
+        }
+
+        private void HandleRangedAttackInput(InputAction.CallbackContext context)
+        {
+            player.playerCombatManager.HandleRangedAttack();
+        }
+
+        private void HandleSwitchMeleeInput(InputAction.CallbackContext context)
+        {
+            player.playerCombatManager.SwitchMeleeWeapon();
+        }
+
+        private void HandleSwitchRangedInput(InputAction.CallbackContext context)
+        {
+            player.playerCombatManager.SwitchRangedWeapon();
+        }
+
         private void HandleEscapeInput(InputAction.CallbackContext context)
         {
             PauseMenu pauseMenu = PlayerUIManager.Instance.pauseMenu;
@@ -189,6 +209,10 @@ namespace HL
             playerControls.Player.Jump.performed += jumpInputPerformed;
             playerControls.Player.Jump.canceled += HandleJumpInputCanceled;
             playerControls.Player.Dash.performed += dashInputPerformed;
+            playerControls.Player.MeleeAttack.performed += HandleMeleeAttackInput;
+            playerControls.Player.RangedAttack.performed += HandleRangedAttackInput;
+            playerControls.Player.SwitchMelee.performed += HandleSwitchMeleeInput;
+            playerControls.Player.SwitchRanged.performed += HandleSwitchRangedInput;
             playerControls.Player.Escape.performed += HandleEscapeInput;
         }
 
@@ -198,6 +222,10 @@ namespace HL
             playerControls.Player.Jump.performed -= jumpInputPerformed;
             playerControls.Player.Jump.canceled -= HandleJumpInputCanceled;
             playerControls.Player.Dash.performed -= dashInputPerformed;
+            playerControls.Player.MeleeAttack.performed -= HandleMeleeAttackInput;
+            playerControls.Player.RangedAttack.performed -= HandleRangedAttackInput;
+            playerControls.Player.SwitchMelee.performed -= HandleSwitchMeleeInput;
+            playerControls.Player.SwitchRanged.performed -= HandleSwitchRangedInput;
             playerControls.Player.Escape.performed -= HandleEscapeInput;
         }
         
