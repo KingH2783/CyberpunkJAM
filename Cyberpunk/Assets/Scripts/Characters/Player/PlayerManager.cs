@@ -41,6 +41,7 @@ namespace HL
             float delta = Time.deltaTime;
             playerMovement.PlayerMovementUpdate(delta);
             playerAnimatorManager.SetAnimatorParams();
+            playerCombatManager.Timers(delta);
         }
 
         private void FixedUpdate()

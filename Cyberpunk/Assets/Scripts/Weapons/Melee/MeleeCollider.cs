@@ -35,7 +35,7 @@ namespace HL
                 !characterThatGotHit.isDead)
             {
                 Debug.Log("We hit an enemy!");
-                characterThatGotHit.characterStatsManager.TakeDamage(characterAttacking.characterStatsManager.currentMeleeWeapon.damage);
+                characterThatGotHit.characterStatsManager.TakeDamage(characterAttacking.characterStatsManager.currentMeleeWeapon.weaponDamage);
             }
         }
     }

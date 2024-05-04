@@ -49,6 +49,7 @@ public class PlayerMovementEditor : Editor
 
     private SerializedProperty maxFallSpeed;
     private SerializedProperty fallGravityMult;
+    private SerializedProperty fallGravityMultOnSteepSlope;
 
     private SerializedProperty groundCheckPoint;
     private SerializedProperty groundCheckSize;
@@ -110,6 +111,7 @@ public class PlayerMovementEditor : Editor
 
         maxFallSpeed = serializedObject.FindProperty("maxFallSpeed");
         fallGravityMult = serializedObject.FindProperty("fallGravityMult");
+        fallGravityMultOnSteepSlope = serializedObject.FindProperty("fallGravityMultOnSteepSlope");
 
         groundCheckPoint = serializedObject.FindProperty("groundCheckPoint");
         groundCheckSize = serializedObject.FindProperty("groundCheckSize");
@@ -221,6 +223,7 @@ public class PlayerMovementEditor : Editor
             EditorStyles.label.fontStyle = FontStyle.Normal;
             maxFallSpeed.floatValue = EditorGUILayout.FloatField(new GUIContent("Max Fall Speed", "How fast we fall"), maxFallSpeed.floatValue);
             fallGravityMult.floatValue = EditorGUILayout.Slider(new GUIContent("Fall Gravity Multiplier", "The gravity multiplier when falling"), fallGravityMult.floatValue, 0, 1);
+            fallGravityMultOnSteepSlope.floatValue = EditorGUILayout.FloatField(new GUIContent("Fall Gravity Multiplier On Steep Slope", "The gravity multiplier when on a slope that exceeds the Max Slope Angle"), fallGravityMultOnSteepSlope.floatValue);
         }
         #endregion
 

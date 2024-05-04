@@ -87,6 +87,7 @@ namespace HL
         [SerializeField] private float maxFallSpeed;
         [Tooltip("The gravity multiplier when falling")]
         [SerializeField] private float fallGravityMult;
+        [SerializeField] private float fallGravityMultOnSteepSlope;
 
         [Header("Checks")]
         [Tooltip("The GameObject used to reference where we check for the ground")]
@@ -140,6 +141,7 @@ namespace HL
         private bool isOnRightWall;
         private bool isOnLeftWall;
         private bool isJumpCut;
+        private bool isOnSteepSlope;
         private float jumpForce;
         private float slopeAngle;
         private Vector2 slopeNormal;
@@ -225,13 +227,13 @@ namespace HL
 
         private void Timers(float delta)
         {
-            lastOnWallTimer -= delta;
-            lastOnGroundTimer -= delta;
-            lastOnLeftWallTimer -= delta;
-            lastOnRightWallTimer -= delta;
-            lastPressedJumpTimer -= delta;
-            lastPressedDashTimer -= delta;
-            lastDashCooldownTimer -= delta;
+            lastOnWallTimer = (lastOnWallTimer > 0) ? lastOnWallTimer - delta : 0;
+            lastOnGroundTimer = (lastOnGroundTimer > 0) ? lastOnGroundTimer - delta : 0;
+            lastOnLeftWallTimer = (lastOnLeftWallTimer > 0) ? lastOnLeftWallTimer - delta : 0;
+            lastOnRightWallTimer = (lastOnRightWallTimer > 0) ? lastOnRightWallTimer - delta : 0;
+            lastPressedJumpTimer = (lastPressedJumpTimer > 0) ? lastPressedJumpTimer - delta : 0;
+            lastPressedDashTimer = (lastPressedDashTimer > 0) ? lastPressedDashTimer - delta : 0;
+            lastDashCooldownTimer = (lastDashCooldownTimer > 0) ? lastDashCooldownTimer - delta : 0;
         }
 
         private void UpdatePlayerFlags()
@@ -291,7 +293,7 @@ namespace HL
 
         private void HandleRunning()
         {
-            if (player.isDashing)
+            if (player.isDashing || isOnSteepSlope)
                 return;
 
             float targetSpeed = horizontalInput * maxRunSpeed;
@@ -456,6 +458,7 @@ namespace HL
                 hasDoneDashInAir = true;
             lastDashCooldownTimer = dashCooldown;
             player.isDashing = true;
+            player.isInvulnerable = true;
 
             Vector2 dashDirection = new(player._transform.localScale.x, 0);
             rb.velocity = dashDirection.normalized * dashVelocity;
@@ -467,16 +470,18 @@ namespace HL
         {
             yield return new WaitForSeconds(dashTime);
             player.isDashing = false;
+            player.isInvulnerable = false;
             rb.velocity = Vector2.zero;
         }
 
         private void HandleFlip()
         {
-            Vector3 scale = transform.localScale;
-            scale.x *= -1;
-            transform.localScale = scale;
-
             isFacingRight = !isFacingRight;
+            player._transform.Rotate(0, 180, 0);
+
+            /*Vector3 scale = transform.localScale;
+            scale.x *= -1;
+            transform.localScale = scale;*/
         }
 
         private void HandleGravity()
@@ -484,6 +489,14 @@ namespace HL
             if (player.isOnWall || player.isDashing || player.isOnSlope)
             {
                 SetGravityScale(0);
+            }
+            else if (isOnSteepSlope)
+            {
+                // Higher gravity if on a steep slope
+                SetGravityScale(gravityScale * fallGravityMultOnSteepSlope);
+
+                // Caps maximum fall speed, so when falling over large distances we don't accelerate to insanely high speeds
+                rb.velocity = new Vector2(rb.velocity.x, Mathf.Max(rb.velocity.y, -maxFallSpeed));
             }
             else if (isJumpCut)
             {
@@ -529,7 +542,7 @@ namespace HL
             if (!player.isJumping && Physics2D.OverlapBox(groundCheckPoint.position, groundCheckSize, 0, groundLayer))
                 lastOnGroundTimer = coyoteTime;
 
-            return lastOnGroundTimer > 0;
+            return lastOnGroundTimer > 0 && !isOnSteepSlope;
         }
 
         private bool IsOnWall()
@@ -573,8 +586,14 @@ namespace HL
             {
                 slopeNormal = hit.normal;
                 slopeAngle = Vector2.Angle(slopeNormal, Vector2.up);
+
+                if (Physics2D.OverlapBox(groundCheckPoint.position, new(groundCheckSize.x + 0.5f, groundCheckSize.y), 0, groundLayer))
+                    isOnSteepSlope = slopeAngle > maxSlopeAngle;
             }
-            return (slopeAngle <= -0.01f || slopeAngle >= 0.01f) && player.isGrounded;
+            return
+                slopeAngle <= maxSlopeAngle && 
+                (slopeAngle <= -0.01f || slopeAngle >= 0.01f) && 
+                player.isGrounded;
         }
 
         private bool CanJump()

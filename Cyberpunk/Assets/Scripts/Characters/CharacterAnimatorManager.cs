@@ -5,13 +5,11 @@ namespace HL
     public class CharacterAnimatorManager : MonoBehaviour
     {
         protected Animator animator;
-        CharacterManager character;
         MeleeCollider meleeCollider;
 
         protected virtual void Awake()
         {
             animator = GetComponent<Animator>();
-            character = GetComponent<CharacterManager>();
             meleeCollider = GetComponentInChildren<MeleeCollider>(true);
         }
 
@@ -22,24 +20,21 @@ namespace HL
 
         #region Animation Events
 
-        public void EnableInvulnerability()
-        {
-            character.isInvulnerable = true;
-        }
-
-        public void DisableInvulnerability()
-        {
-            character.isInvulnerable = false;
-        }
-
         public void EnableMeleeDamageCollider()
         {
-            meleeCollider.EnableCollider();
+            if (meleeCollider != null)
+                meleeCollider.EnableCollider();
         }
 
         public void DisableMeleeDamageCollider()
         {
-            meleeCollider.DisableCollider();
+            if (meleeCollider != null)
+                meleeCollider.DisableCollider();
+        }
+
+        public void ResetOnAnimatorIdle()
+        {
+            DisableMeleeDamageCollider();
         }
 
         #endregion

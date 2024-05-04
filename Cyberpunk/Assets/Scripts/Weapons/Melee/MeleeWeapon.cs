@@ -5,6 +5,6 @@ namespace HL
     [CreateAssetMenu(menuName = "Weapon/Melee Weapon")]
     public class MeleeWeapon : Weapon
     {
-        
+        public float cooldown;
     }
 }
