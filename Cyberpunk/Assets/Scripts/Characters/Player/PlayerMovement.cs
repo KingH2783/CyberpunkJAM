@@ -460,7 +460,7 @@ namespace HL
             player.isDashing = true;
             player.isInvulnerable = true;
 
-            Vector2 dashDirection = new(player._transform.localScale.x, 0);
+            Vector2 dashDirection = isFacingRight ? new(1, 0) : new(-1, 0);
             rb.velocity = dashDirection.normalized * dashVelocity;
 
             StartCoroutine(StopDashing());

@@ -29,6 +29,9 @@ namespace HL
 
         public void HandleMeleeAttack()
         {
+            if (!player.isGrounded)
+                return;
+
             // The collider gets enabled during the animation
             player.playerAnimatorManager.PlayTargetAnimation("Attack1");
         }
