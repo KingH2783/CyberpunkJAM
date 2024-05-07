@@ -4,25 +4,20 @@ namespace HL
 {
     public class PlayerManager : CharacterManager
     {
-        [HideInInspector] public PlayerMovement playerMovement { get; private set; }
+        [HideInInspector] public PlayerLocomotion playerLocomotion { get; private set; }
         [HideInInspector] public PlayerStatsManager playerStatsManager { get; private set; }
         [HideInInspector] public PlayerCombatManager playerCombatManager { get; private set; }
         [HideInInspector] public PlayerAnimatorManager playerAnimatorManager { get; private set; }
 
         // ======= Flags =======
         [Header("Player Flags")]
-        public bool isRunning;
-        public bool isGrounded;
-        public bool isJumping;
         public bool isWallJumping;
-        public bool isDashing;
         public bool isOnWall = false;
-        public bool isOnSlope;
 
         protected override void Awake()
         {
             base.Awake();
-            playerMovement = GetComponent<PlayerMovement>();
+            playerLocomotion = GetComponent<PlayerLocomotion>();
             playerStatsManager = GetComponent<PlayerStatsManager>();
             playerCombatManager = GetComponent<PlayerCombatManager>();
             playerAnimatorManager = GetComponent<PlayerAnimatorManager>();
@@ -36,18 +31,11 @@ namespace HL
             PlayerCamera.Instance.player = this;
         }
 
-        private void Update()
+        protected override void Update()
         {
-            float delta = Time.deltaTime;
-            playerMovement.PlayerMovementUpdate(delta);
+            base.Update();
             playerAnimatorManager.SetAnimatorParams();
-            playerCombatManager.Timers(delta);
-        }
-
-        private void FixedUpdate()
-        {
-            float delta = Time.fixedDeltaTime;
-            playerMovement.PlayerMovementFixedUpdate(delta);
+            playerCombatManager.Timers(deltaUpdate);
         }
 
         private void LateUpdate()

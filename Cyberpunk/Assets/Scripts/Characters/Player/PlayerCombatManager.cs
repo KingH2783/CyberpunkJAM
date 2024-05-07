@@ -29,7 +29,7 @@ namespace HL
 
         public void HandleMeleeAttack()
         {
-            if (!player.isGrounded)
+            if (player.isDead && !player.isGrounded)
                 return;
 
             // The collider gets enabled during the animation
@@ -38,6 +38,9 @@ namespace HL
 
         public void HandleRangedAttack()
         {
+            if (player.isDead)
+                return;
+
             if (roundsLeftInClip == 0)
                 Reload();
 

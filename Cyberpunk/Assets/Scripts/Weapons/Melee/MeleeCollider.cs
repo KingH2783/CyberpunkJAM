@@ -34,7 +34,6 @@ namespace HL
                 characterAttacking.characterStatsManager.teamID != characterThatGotHit.characterStatsManager.teamID &&
                 !characterThatGotHit.isDead)
             {
-                Debug.Log("We hit an enemy!");
                 characterThatGotHit.characterStatsManager.TakeDamage(characterAttacking.characterStatsManager.currentMeleeWeapon.weaponDamage);
             }
         }

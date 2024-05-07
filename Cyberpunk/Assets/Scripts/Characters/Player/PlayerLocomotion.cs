@@ -1,13 +1,11 @@
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace HL
 {
-    public class PlayerMovement : MonoBehaviour
+    public class PlayerLocomotion : CharacterLocomotion
     {
         // ======= Script Caches =======
-        private Rigidbody2D rb;
         private PlayerManager player;
 
         // ======= Custom Editor Variables =======
@@ -23,7 +21,7 @@ namespace HL
 
         // ======= Settings =======
         [Header("Running")]
-        [Tooltip("The max running speed")]
+        /*[Tooltip("The max running speed")]
         [SerializeField] private float maxRunSpeed;
         [Tooltip("How fast we can reach our max speed")]
         [SerializeField] private float runAcceleration;
@@ -34,30 +32,29 @@ namespace HL
         [Tooltip("How fast we can stop in the air")]
         [SerializeField][Range(0f, 1)] private float deccelInAir;
         [Tooltip("If we exceed our max speed, should we let it happen until we slow down naturally?")]
-        [SerializeField] private bool doConserveMomentum;
+        [SerializeField] private bool doConserveMomentum;*/
 
-        [Header("Slopes")]
+        /*[Header("Slopes")]
         [SerializeField] private float maxSlopeRunSpeed;
-        [SerializeField] private float maxSlopeAngle;
-        [SerializeField] private float slopeStickForce;
+        [SerializeField] private float maxSlopeAngle;*/
 
-        [Header("Jumping")]
+        /*[Header("Jumping")]
         [Tooltip("The height of the jump")]
         [SerializeField] private float jumpHeight;
         [SerializeField] private bool allowDoubleJump = true;
         [Tooltip("The time it takes to reach the highest point of the jump (the apex)")]
-        [SerializeField] private float jumpTimeToApex;
+        [SerializeField] private float jumpTimeToApex;*/
         [Tooltip("The gravity multiplier when we let go of the jump button before the apex")]
         [SerializeField] private float jumpCutGravityMult;
         [SerializeField] private float timeToHoldJumpForFullJump;
-        [Tooltip("The gravity multiplier when we are at the apex")]
+        /*[Tooltip("The gravity multiplier when we are at the apex")]
         [SerializeField][Range(0f, 1)] private float jumpHangGravityMult;
         [Tooltip("How long we stay at the apex")]
         [SerializeField] private float jumpHangTimeThreshold;
         [Tooltip("How fast we speed up at the apex")]
         [SerializeField] private float jumpHangAccelerationMult;
         [Tooltip("The max speed we can go at the apex")]
-        [SerializeField] private float jumpHangMaxSpeedMult;
+        [SerializeField] private float jumpHangMaxSpeedMult;*/
 
         [Header("Wall Jumping")]
         [Tooltip("Should we allow the player to wall jump?")]
@@ -82,28 +79,28 @@ namespace HL
         [SerializeField] private float dashCooldown;
         [SerializeField] private bool allowMultipleDashesBeforeTouchingGround;
 
-        [Header("Falling")]
+        /*[Header("Falling")]
         [Tooltip("How fast we fall")]
         [SerializeField] private float maxFallSpeed;
         [Tooltip("The gravity multiplier when falling")]
         [SerializeField] private float fallGravityMult;
-        [SerializeField] private float fallGravityMultOnSteepSlope;
+        [SerializeField] private float fallGravityMultOnSteepSlope;*/
 
         [Header("Checks")]
-        [Tooltip("The GameObject used to reference where we check for the ground")]
+        /*[Tooltip("The GameObject used to reference where we check for the ground")]
         [SerializeField] private Transform groundCheckPoint;
         [Tooltip("The size of the box we use to check the ground, use Gizmos to see a visual representation")]
         [SerializeField] private Vector2 groundCheckSize = new(0.49f, 0.03f);
         [Tooltip("The layer(s) we can run, jump and wall jump on")]
-        [SerializeField] private LayerMask groundLayer;
+        [SerializeField] private LayerMask groundLayer;*/
         [Tooltip("The GameObject used to reference where we check the wall in the direction our character is facing")]
         [SerializeField] private Transform frontWallCheckPoint;
         [Tooltip("The GameObject used to reference where we check the wall in the opposite direction our character is facing")]
         [SerializeField] private Transform backWallCheckPoint;
         [Tooltip("The size of the box we use to check the wall, use Gizmos to see a visual representation")]
         [SerializeField] private Vector2 wallCheckSize = new(0.5f, 1f);
-        [SerializeField] private Vector2 slopeCheckStartOffset = new(0, 0.25f);
-        [SerializeField] private float slopeCheckDistance = 0.5f;
+        /*[SerializeField] private Vector2 slopeCheckStartOffset = new(0, 0.25f);
+        [SerializeField] private float slopeCheckDistance = 0.5f;*/
 
         [Header("Assists")]
         [Tooltip("The amount of time given to the player to jump after they have already fallen off a platform")]
@@ -122,11 +119,11 @@ namespace HL
         private float lastDashCooldownTimer;
         private float jumpInputStartTimer;
 
-        private float gravityStrength;
+        /*private float gravityStrength;
         private float gravityScale;
 
         private float runAccelAmount;
-        private float runDeccelAmount;
+        private float runDeccelAmount;*/
 
         private float horizontalInput;
         private bool jumpInput;
@@ -136,38 +133,37 @@ namespace HL
         private bool wasWallSliding;
         private float wallJumpStartTime;
         private int lastWallJumpDir;
-        private bool isFacingRight;
-        private bool isJumpFalling;
+        /*private bool isFacingRight;
+        private bool isJumpFalling;*/
         private bool isOnRightWall;
         private bool isOnLeftWall;
         private bool isJumpCut;
-        private bool isOnSteepSlope;
+        /*private bool isOnSteepSlope;
         private float jumpForce;
         private float slopeAngle;
-        private Vector2 slopeNormal;
+        private Vector2 slopeNormal;*/
 
-        private void Awake()
+        protected override void Awake()
         {
-            rb = GetComponent<Rigidbody2D>();
+            base.Awake();
             player = GetComponent<PlayerManager>();
-
-            InitializingVariables();
         }
 
-        private void Start()
+        protected override void Start()
         {
-            SetGravityScale(gravityScale);
+            base.Start();
 
             wasWallSliding = false;
-            isFacingRight = true;
             isOnRightWall = false;
             isOnLeftWall = false;
         }
 
         #region Update Functions
 
-        public void PlayerMovementUpdate(float delta)
+        public override void LocomotionUpdate(float delta)
         {
+            base.LocomotionUpdate(delta);
+
             Timers(delta);
             UpdatePlayerFlags();
             GetPlayerInputs();
@@ -202,10 +198,11 @@ namespace HL
             HandleGravity();
         }
 
-        public void PlayerMovementFixedUpdate(float delta)
+        public override void LocomotionFixedUpdate(float delta)
         {
-            player.isOnSlope = IsOnSlope();
-            HandleRunning();
+            base.LocomotionFixedUpdate(delta);
+
+            HandleMovement(horizontalInput);
 
             if (doFlipOnWallJump)
             {
@@ -290,60 +287,6 @@ namespace HL
         }
 
         #endregion
-
-        private void HandleRunning()
-        {
-            if (player.isDashing || isOnSteepSlope)
-                return;
-
-            float targetSpeed = horizontalInput * maxRunSpeed;
-
-            // We can reduce our control using Lerp() this smooths changes to our direction and speed
-            float lerpAmount = player.isWallJumping ? wallJumpRunLerp : 1;
-            targetSpeed = Mathf.Lerp(rb.velocity.x, targetSpeed, lerpAmount);
-
-            // If we are moving then set an acceleration rate
-            // If we're also in the air then adjust this to acceleration values in air
-            float accelRate;
-            if (player.isGrounded)
-                accelRate = (Mathf.Abs(targetSpeed) > 0.01f) ? runAccelAmount : runDeccelAmount;
-            else
-                accelRate = (Mathf.Abs(targetSpeed) > 0.01f) ? (runAccelAmount * accelInAir) : (runDeccelAmount * deccelInAir);
-
-            // Increase our acceleration and maxSpeed when at the apex of their jump, makes the jump feel a bit more bouncy, responsive and natural
-            if ((player.isJumping || player.isWallJumping || isJumpFalling) && Mathf.Abs(rb.velocity.y) < jumpHangTimeThreshold)
-            {
-                accelRate *= jumpHangAccelerationMult;
-                targetSpeed *= jumpHangMaxSpeedMult;
-            }
-
-            // We won't slow the player down if they are moving in their desired direction but at a greater speed than their maxSpeed
-            if (doConserveMomentum && 
-                Mathf.Abs(rb.velocity.x) > Mathf.Abs(targetSpeed) && 
-                Mathf.Sign(rb.velocity.x) == Mathf.Sign(targetSpeed) && 
-                Mathf.Abs(targetSpeed) > 0.01f && 
-                !player.isGrounded)
-            {
-                // Prevent any deceleration from happening, or in other words conserve are current momentum
-                // You could experiment with allowing for the player to slightly increae their speed whilst in this "state"
-                accelRate = 0;
-            }
-
-            // Calculate difference between current velocity and desired velocity
-            float speedDif = targetSpeed - rb.velocity.x;
-
-            // Calculate force along x-axis to apply to the player
-            float movement = speedDif * accelRate;
-
-            if (player.isOnSlope)
-            {
-                // Calculate the movement along the slope direction
-                Vector2 slopeMovement = new Vector2(slopeNormal.y, -slopeNormal.x) * movement;
-                rb.AddForce(slopeMovement, ForceMode2D.Force);
-            }
-            else
-                rb.AddForce(movement * Vector2.right, ForceMode2D.Force);
-        }
 
         private void HandleJump()
         {
@@ -474,26 +417,16 @@ namespace HL
             rb.velocity = Vector2.zero;
         }
 
-        private void HandleFlip()
-        {
-            isFacingRight = !isFacingRight;
-            player._transform.Rotate(0, 180, 0);
-
-            /*Vector3 scale = transform.localScale;
-            scale.x *= -1;
-            transform.localScale = scale;*/
-        }
-
         private void HandleGravity()
         {
             if (player.isOnWall || player.isDashing || player.isOnSlope)
             {
-                SetGravityScale(0);
+                rb.gravityScale = 0;
             }
             else if (isOnSteepSlope)
             {
                 // Higher gravity if on a steep slope
-                SetGravityScale(gravityScale * fallGravityMultOnSteepSlope);
+                rb.gravityScale = gravityScale * fallGravityMultOnSteepSlope;
 
                 // Caps maximum fall speed, so when falling over large distances we don't accelerate to insanely high speeds
                 rb.velocity = new Vector2(rb.velocity.x, Mathf.Max(rb.velocity.y, -maxFallSpeed));
@@ -501,19 +434,19 @@ namespace HL
             else if (isJumpCut)
             {
                 // Higher gravity if jump button released
-                SetGravityScale(gravityScale * jumpCutGravityMult);
+                rb.gravityScale = gravityScale * jumpCutGravityMult;
 
                 // Caps maximum fall speed, so when falling over large distances we don't accelerate to insanely high speeds
                 rb.velocity = new Vector2(rb.velocity.x, Mathf.Max(rb.velocity.y, -maxFallSpeed));
             }
             else if ((player.isJumping || player.isWallJumping || isJumpFalling) && Mathf.Abs(rb.velocity.y) < jumpHangTimeThreshold)
             {
-                SetGravityScale(gravityScale * jumpHangGravityMult);
+                rb.gravityScale = gravityScale * jumpHangGravityMult;
             }
             else if (rb.velocity.y < 0)
             {
-                //Higher gravity if falling
-                SetGravityScale(gravityScale * fallGravityMult);
+                // Higher gravity if falling
+                rb.gravityScale = gravityScale * fallGravityMult;
 
                 // Caps maximum fall speed, so when falling over large distances we don't accelerate to insanely high speeds
                 rb.velocity = new Vector2(rb.velocity.x, Mathf.Max(rb.velocity.y, -maxFallSpeed));
@@ -521,13 +454,8 @@ namespace HL
             else
             {
                 // Default gravity if standing on a platform or moving upwards
-                SetGravityScale(gravityScale);
+                rb.gravityScale = gravityScale;
             }
-        }
-
-        private void SetGravityScale(float gravScale)
-        {
-            rb.gravityScale = gravScale;
         }
 
         #region Check Functions
@@ -576,24 +504,6 @@ namespace HL
             }
 
             return lastOnRightWallTimer > 0;
-        }
-
-        private bool IsOnSlope()
-        {
-            Vector2 checkPos = player._transform.position + new Vector3(slopeCheckStartOffset.x, slopeCheckStartOffset.y);
-            RaycastHit2D hit = Physics2D.Raycast(checkPos, Vector2.down, slopeCheckDistance, groundLayer);
-            if (hit)
-            {
-                slopeNormal = hit.normal;
-                slopeAngle = Vector2.Angle(slopeNormal, Vector2.up);
-
-                if (Physics2D.OverlapBox(groundCheckPoint.position, new(groundCheckSize.x + 0.5f, groundCheckSize.y), 0, groundLayer))
-                    isOnSteepSlope = slopeAngle > maxSlopeAngle;
-            }
-            return
-                slopeAngle <= maxSlopeAngle && 
-                (slopeAngle <= -0.01f || slopeAngle >= 0.01f) && 
-                player.isGrounded;
         }
 
         private bool CanJump()
@@ -671,44 +581,12 @@ namespace HL
 
         #endregion
 
-        #region Editor Functions
-
-        private void InitializingVariables()
+        protected override void OnDrawGizmos()
         {
-            // Calculate gravity strength using the formula (gravity = 2 * jumpHeight / timeToJumpApex^2) 
-            gravityStrength = -(2 * jumpHeight) / (jumpTimeToApex * jumpTimeToApex);
-            gravityScale = gravityStrength / Physics2D.gravity.y;
-
-            // Calculate our run acceleration & deceleration forces using the formula:
-            // amount = ((1 / Time.fixedDeltaTime) * acceleration) / runMaxSpeed
-            runAccelAmount = ((1 / Time.fixedDeltaTime) * runAcceleration) / maxRunSpeed;
-            runDeccelAmount = ((1 / Time.fixedDeltaTime) * runDecceleration) / maxRunSpeed;
-
-            // Calculate jumpForce using the formula (initialJumpVelocity = gravity * timeToJumpApex)
-            jumpForce = Mathf.Abs(gravityStrength) * jumpTimeToApex;
-
-            runAcceleration = Mathf.Clamp(runAcceleration, 0.01f, maxRunSpeed);
-            runDecceleration = Mathf.Clamp(runDecceleration, 0.01f, maxRunSpeed);
-            slideAccel = Mathf.Clamp(slideAccel, 0.01f, slideSpeed);
-        }
-
-        private void OnValidate()
-        {
-            InitializingVariables();
-        }
-
-        private void OnDrawGizmos()
-        {
+            base.OnDrawGizmos();
             Gizmos.color = Color.red;
-            Gizmos.DrawWireCube(groundCheckPoint.position, groundCheckSize);
             Gizmos.DrawWireCube(frontWallCheckPoint.position, wallCheckSize);
             Gizmos.DrawWireCube(backWallCheckPoint.position, wallCheckSize);
-
-            if (Physics2D.OverlapBox(groundCheckPoint.position, groundCheckSize, 0, groundLayer))
-            {
-                Gizmos.color = Color.green;
-                Gizmos.DrawWireCube(groundCheckPoint.position, groundCheckSize);
-            }
 
             if (Physics2D.OverlapBox(frontWallCheckPoint.position, wallCheckSize, 0, groundLayer))
             {
@@ -721,13 +599,6 @@ namespace HL
                 Gizmos.color = Color.green;
                 Gizmos.DrawWireCube(backWallCheckPoint.position, wallCheckSize);
             }
-
-            Vector2 checkPos = transform.position + new Vector3(slopeCheckStartOffset.x, slopeCheckStartOffset.y);
-            RaycastHit2D hit = Physics2D.Raycast(checkPos, Vector2.down, slopeCheckDistance, groundLayer);
-            Gizmos.color = Color.blue;
-            Gizmos.DrawRay(hit.point, hit.normal);
         }
-
-        #endregion
     }
 }

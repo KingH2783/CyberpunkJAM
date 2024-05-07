@@ -10,6 +10,7 @@ namespace HL
             if (animator.TryGetComponent(out CharacterAnimatorManager character))
             {
                 character.DisableMeleeDamageCollider();
+                character.GetComponent<CharacterManager>().isPerformingAction = false;
             }
         }
     }

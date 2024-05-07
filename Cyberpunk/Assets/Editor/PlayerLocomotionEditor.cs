@@ -2,8 +2,8 @@ using UnityEngine;
 using UnityEditor;
 using HL;
 
-[CustomEditor(typeof(PlayerMovement))]
-public class PlayerMovementEditor : Editor
+[CustomEditor(typeof(PlayerLocomotion))]
+public class PlayerLocomotionEditor : Editor
 {
     #region Defining Variables
     private SerializedProperty showRunSettings;

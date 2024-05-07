@@ -8,4 +8,14 @@ namespace HL
         Menu,
         Player
     }
+
+    public enum AIType
+    {
+        BasicMelee,
+        BasicRanged,
+        Heavy,
+        FastGrounded,
+        FastFlying,
+        Boss
+    }
 }

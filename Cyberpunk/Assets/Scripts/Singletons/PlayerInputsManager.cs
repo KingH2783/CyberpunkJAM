@@ -120,7 +120,7 @@ namespace HL
         private void HandleJumpInputCanceled(InputAction.CallbackContext context)
         {
             jumpInput = false;
-            player.playerMovement.HandleJumpCut();
+            player.playerLocomotion.HandleJumpCut();
         }
 
         private void HandleMeleeAttackInput(InputAction.CallbackContext context)
