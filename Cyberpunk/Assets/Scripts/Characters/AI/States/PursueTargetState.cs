@@ -51,7 +51,10 @@ namespace HL
 
             // AI has reached the target
             if (ai.distanceFromTarget <= ai.maxCirclingDistance)
+            {
+                ai.currentRecoveryTime = ai.waitTimeBeforeFirstAttack;
                 return combatStanceState;
+            }
             else
                 return this;
         }

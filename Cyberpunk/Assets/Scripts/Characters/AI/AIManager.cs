@@ -29,6 +29,7 @@ namespace HL
         public float maxCirclingDistance = 5f;
         public float maxAggroRange = 16f;
         public float stoppingDistance = 1.8f;
+        public float waitTimeBeforeFirstAttack = 1f;
         [HideInInspector] public float currentRecoveryTime = 0;
         public bool allowAIToPerformCombos;
         [Range(0, 100)] public int comboLikelyHood = 50;
@@ -69,8 +70,7 @@ namespace HL
             if (currentTarget != null)
                 distanceFromTarget = Vector3.Distance(currentTarget._transform.position, _transform.position);
 
-            if (currentRecoveryTime > 0)
-                currentRecoveryTime -= delta;
+            currentRecoveryTime = (currentRecoveryTime > 0) ? currentRecoveryTime - delta : 0;
         }
     }
 }

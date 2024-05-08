@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace HL
 {
-    [CreateAssetMenu(menuName = "Weapon/Melee Weapon")]
+    [CreateAssetMenu(menuName = "Items/Weapons/Melee Weapon")]
     public class MeleeWeapon : Weapon
     {
         public float cooldown;

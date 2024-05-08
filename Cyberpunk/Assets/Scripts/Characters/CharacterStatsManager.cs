@@ -28,6 +28,10 @@ namespace HL
                 return;
 
             currentHealth -= damage;
+
+            // Stops you from doing other things during the hurt animation
+            character.isPerformingAction = true;
+
             if (currentHealth > 0)
                 character.characterAnimatorManager.PlayTargetAnimation("Hurt");
             else
@@ -36,6 +40,7 @@ namespace HL
 
         protected virtual void HandleDeath()
         {
+            currentHealth = 0;
             character.isDead = true;
             character.characterAnimatorManager.PlayTargetAnimation("Death");
         }

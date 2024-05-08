@@ -12,5 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9c878c6ef91f0240afef37a905779a6, type: 3}
   m_Name: Melee Weapon
   m_EditorClassIdentifier: 
+  itemIcon: {fileID: 21300000, guid: f4340ff92074ee449a2c7ec20164a1c1, type: 3}
+  itemName: Default Melee Weapon
+  itemDescription: Default Melee Weapon Description
   weaponDamage: 20
   cooldown: 1

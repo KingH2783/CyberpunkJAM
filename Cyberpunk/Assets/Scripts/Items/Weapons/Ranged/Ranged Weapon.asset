@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e510fbc31d9920646b90386ee48c504a, type: 3}
   m_Name: Ranged Weapon
   m_EditorClassIdentifier: 
+  itemIcon: {fileID: 21300000, guid: 0318b9773360ccf488f9e7f8512941bf, type: 3}
+  itemName: Default Ranged Weapon
+  itemDescription: Default Ranged Weapon Description
   weaponDamage: 4
   fireRate: 0.15
   reloadTime: 1
-  roundCapacity: 6
+  ammoCapacity: 6
   bulletType: {fileID: 2865687314785593906, guid: fe4890a18a989664db512a8484486666, type: 3}
