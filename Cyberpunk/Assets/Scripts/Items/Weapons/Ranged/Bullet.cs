@@ -29,7 +29,7 @@ namespace HL
             if (collision != null)
             {
                 if (collision.TryGetComponent(out CharacterManager characterGettingShot) &&
-                    characterGettingShot != characterWhoFiredMe && 
+                    characterGettingShot.characterStatsManager.teamID != characterWhoFiredMe.characterStatsManager.teamID && 
                     !characterGettingShot.isDead)
                 {
                     characterGettingShot.characterStatsManager.TakeDamage(Mathf.RoundToInt(weapon.weaponDamage + bulletDamage));

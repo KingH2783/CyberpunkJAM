@@ -63,9 +63,9 @@ namespace HL
                 GameObject bulletGameObject = Instantiate(currentRanged.bulletType, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
                 Bullet bullet = bulletGameObject.GetComponent<Bullet>();
                 bullet.characterWhoFiredMe = player;
-                bullet.weapon = player.playerStatsManager.currentRangedWeapon;
+                bullet.weapon = currentRanged;
 
-                //player.playerAnimatorManager.PlayTargetAnimation("Shoot");
+                player.playerAnimatorManager.PlayTargetAnimation("Shoot");
                 PlayerUIManager.Instance.ammoUI.UseOneAmmoUI();
 
                 fireRateTimer = bullet.weapon.fireRate;

@@ -10,18 +10,24 @@ namespace HL
         [HideInInspector] public AIStatsManager aiStatsManager { get; private set; }
         [HideInInspector] public AIAnimatorManager aiAnimatorManager { get; private set; }
 
+        public bool showTransforms;
+        public bool showFlags;
+        public bool showCurrentAIState;
+        public bool showAISettings;
+
         // ======= Current State =======
-        [Header("Current State")]
+        //[Header("Current State")]
         public State currentState;
         public CharacterManager currentTarget;
         public AIAttackAction currentAttack;
+        [HideInInspector] public float currentRecoveryTime = 0;
 
         // ======= A.I Attacks =======
-        [Header("")]
+        //[Header("")]
         public AIAttackAction[] aiAttacks;
 
         // ======= A.I Settings =======
-        [Header("A.I Settings")]
+        //[Header("A.I Settings")]
         public AIType aiType;
         public LayerMask detectionLayer;
         public LayerMask layersThatBlockLineOfSight;
@@ -30,11 +36,11 @@ namespace HL
         public float maxAggroRange = 16f;
         public float stoppingDistance = 1.8f;
         public float waitTimeBeforeFirstAttack = 1f;
-        [HideInInspector] public float currentRecoveryTime = 0;
         public bool allowAIToPerformCombos;
         [Range(0, 100)] public int comboLikelyHood = 50;
-        public bool allowAIToPerformDodge;
-        [Range(0, 100)] public int dodgeLikelyHood = 50;
+        //public bool allowAIToPerformDodge;
+        //[Range(0, 100)] public int dodgeLikelyHood = 50;
+        public Transform bulletSpawnPoint;
 
         // ======= A.I Target Info =======
         [HideInInspector] public float distanceFromCompanion;

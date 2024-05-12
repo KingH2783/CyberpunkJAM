@@ -11,6 +11,7 @@ namespace HL
         public float recoveryTime = 2;
         public float minimumDistanceNeededToAttack = 0;
         public float maximumDistanceNeededToAttack = 2;
+        public bool isRangedAction;
         public bool actionCanCombo;
         public AIAttackAction comboAttack;
     }

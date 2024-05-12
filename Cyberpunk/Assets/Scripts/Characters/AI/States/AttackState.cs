@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 namespace HL
@@ -5,6 +6,8 @@ namespace HL
     public class AttackState : State
     {
         private bool willDoComboOnNextAttack = false;
+        private RangedWeapon rangedWeapon;
+        private int roundsLeftInClip;
 
         public override State Tick(AIManager ai)
         {
@@ -23,7 +26,7 @@ namespace HL
             return ai.aiType switch
             {
                 AIType.BasicMelee => ProcessBasicMeleeAttack(ai),
-                AIType.BasicRanged => this,
+                AIType.BasicRanged => ProcessBasicRangedAttack(ai),
                 AIType.Heavy => this,
                 AIType.FastGrounded => this,
                 AIType.FastFlying => this,
@@ -31,6 +34,8 @@ namespace HL
                 _ => this,
             };
         }
+
+        #region AI Types
 
         private State ProcessBasicMeleeAttack(AIManager ai)
         {
@@ -73,11 +78,74 @@ namespace HL
                 return this;
         }
 
+        private State ProcessBasicRangedAttack(AIManager ai)
+        {
+            rangedWeapon = ai.aiStatsManager.currentRangedWeapon;
+
+            // Target dies
+            if (ai.currentTarget.isDead)
+            {
+                ResetStateFlags(ai);
+                ai.currentTarget = null;
+                return idleState;
+            }
+
+            // Target is too far, get closer
+            if (ai.distanceFromTarget > ai.maxCirclingDistance)
+            {
+                ResetStateFlags(ai);
+                return pursueTargetState;
+            }
+
+            ai.aiLocomotion.StopAIMovement();
+
+            // Attack
+            if (!ai.isPerformingAction && 
+                ai.currentAttack != null &&
+                ai.currentRecoveryTime <= 0)
+            {
+                if (roundsLeftInClip == 0)
+                {
+                    ResetStateFlags(ai);
+                    return combatStanceState;
+                }
+                else
+                    AttackTarget(ai);
+            }
+
+            // We check if we still have an attack -->
+            // If we do that means we can combo so go back to the top of this state
+            if (ai.currentAttack == null)
+                return combatStanceState;
+            else
+                return this;
+        }
+
+        #endregion
+
         private void AttackTarget(AIManager ai)
         {
-            ai.isPerformingAction = true;
-            ai.aiAnimatorManager.PlayTargetAnimation(ai.currentAttack.attackAnimationName);
-            ai.currentRecoveryTime = ai.currentAttack.recoveryTime;
+            if (ai.currentAttack.isRangedAction)
+            {
+                // Shoot
+                ai.isPerformingAction = true;
+
+                GameObject bulletGameObject = Instantiate(rangedWeapon.bulletType, ai.bulletSpawnPoint.position, ai.bulletSpawnPoint.rotation);
+                Bullet bullet = bulletGameObject.GetComponent<Bullet>();
+                bullet.characterWhoFiredMe = ai;
+                bullet.weapon = rangedWeapon;
+
+                ai.aiAnimatorManager.PlayTargetAnimation(ai.currentAttack.attackAnimationName);
+
+                ai.currentRecoveryTime = rangedWeapon.fireRate;
+                roundsLeftInClip -= 1;
+            }
+            else
+            {
+                ai.isPerformingAction = true;
+                ai.aiAnimatorManager.PlayTargetAnimation(ai.currentAttack.attackAnimationName);
+                ai.currentRecoveryTime = ai.currentAttack.recoveryTime;
+            }
         }
 
         private void RollForComboChance(AIManager ai)
@@ -95,11 +163,27 @@ namespace HL
                 willDoComboOnNextAttack = false;
                 ai.currentAttack = null;
             }
-                
+        }
+
+        private IEnumerator Reload(AIManager ai)
+        {
+            if (roundsLeftInClip == rangedWeapon.ammoCapacity)
+                yield return null;
+
+            ai.currentRecoveryTime = rangedWeapon.reloadTime;
+
+            //player.playerAnimatorManager.PlayTargetAnimation("Reload");
+
+            yield return new WaitForSeconds(rangedWeapon.reloadTime);
+
+            roundsLeftInClip = rangedWeapon.ammoCapacity;
         }
 
         private void ResetStateFlags(AIManager ai)
         {
+            if (rangedWeapon != null)
+                StartCoroutine(Reload(ai));
+
             willDoComboOnNextAttack = false;
             ai.currentAttack = null;
         }

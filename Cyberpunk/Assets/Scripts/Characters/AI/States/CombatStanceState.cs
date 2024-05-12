@@ -22,7 +22,7 @@ namespace HL
             return ai.aiType switch
             {
                 AIType.BasicMelee => PrepareBasicMeleeForCombat(ai),
-                AIType.BasicRanged => this,
+                AIType.BasicRanged => PrepareBasicRangedForCombat(ai),
                 AIType.Heavy => this,
                 AIType.FastGrounded => this,
                 AIType.FastFlying => this,
@@ -30,6 +30,8 @@ namespace HL
                 _ => this,
             };
         }
+
+        #region AI Types
 
         private State PrepareBasicMeleeForCombat(AIManager ai)
         {
@@ -61,6 +63,39 @@ namespace HL
 
             return this;
         }
+
+        private State PrepareBasicRangedForCombat(AIManager ai)
+        {
+            // If A.I is falling or performing an action, stop all movement
+            if (!ai.isGrounded || ai.isPerformingAction)
+            {
+                ai.aiLocomotion.StopAIMovement();
+                return this;
+            }
+
+            // If A.I has gotten too far from it's target, return the A.I to it's pursue target state
+            if (ai.distanceFromTarget > ai.maxCirclingDistance)
+            {
+                return pursueTargetState;
+            }
+
+            // Attack target
+            if (ai.currentRecoveryTime <= 0 &&
+                ai.currentAttack != null)
+            {
+                return attackState;
+            }
+            else
+            {   // Roll for new attack
+                GetNewAttack(ai);
+            }
+
+            HandleMovementWhenNearTarget(ai);
+
+            return this;
+        }
+
+        #endregion
 
         private void GetNewAttack(AIManager ai)
         {
@@ -104,7 +139,14 @@ namespace HL
         {
             // Stop moving if we're next to the target
             if (ai.distanceFromTarget <= ai.stoppingDistance)
+            {
+                if (TargetIsToTheRight(ai) && !ai.aiLocomotion.isFacingRight)
+                    ai.aiLocomotion.HandleFlip();
+                else if (!TargetIsToTheRight(ai) && ai.aiLocomotion.isFacingRight)
+                    ai.aiLocomotion.HandleFlip();
+
                 movement = 0;
+            }
             else
             {
                 if (TargetIsToTheRight(ai))

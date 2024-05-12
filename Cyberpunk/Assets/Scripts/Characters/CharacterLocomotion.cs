@@ -52,7 +52,7 @@ namespace HL
 
         protected bool isOnSteepSlope;
         protected bool isJumpFalling;
-        protected bool isFacingRight;
+        public bool isFacingRight;
 
         protected virtual void Awake()
         {
@@ -127,7 +127,7 @@ namespace HL
                 rb.AddForce(movement * Vector2.right, ForceMode2D.Force);
         }
 
-        protected virtual void HandleFlip()
+        public virtual void HandleFlip()
         {
             isFacingRight = !isFacingRight;
             character._transform.Rotate(0, 180, 0);

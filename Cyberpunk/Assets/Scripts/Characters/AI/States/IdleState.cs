@@ -11,8 +11,8 @@ namespace HL
 
             return ai.aiType switch
             {
-                AIType.BasicMelee => BasicMeleeIdle(ai),
-                AIType.BasicRanged => this,
+                AIType.BasicMelee => BasicIdle(ai),
+                AIType.BasicRanged => BasicIdle(ai),
                 AIType.Heavy => this,
                 AIType.FastGrounded => this,
                 AIType.FastFlying => this,
@@ -21,7 +21,9 @@ namespace HL
             };
         }
 
-        private State BasicMeleeIdle(AIManager ai)
+        #region AI Types
+
+        private State BasicIdle(AIManager ai)
         {
             HandleDetection(ai);
 
@@ -32,6 +34,8 @@ namespace HL
             else
                 return this;
         }
+
+        #endregion
 
         private void HandleDetection(AIManager ai)
         {

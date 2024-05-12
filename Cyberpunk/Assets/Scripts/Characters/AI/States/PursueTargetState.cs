@@ -17,8 +17,8 @@ namespace HL
 
             return ai.aiType switch
             {
-                AIType.BasicMelee => BasicMeleePursuit(ai),
-                AIType.BasicRanged => this,
+                AIType.BasicMelee => BasicPursuit(ai),
+                AIType.BasicRanged => BasicPursuit(ai),
                 AIType.Heavy => this,
                 AIType.FastGrounded => this,
                 AIType.FastFlying => this,
@@ -27,11 +27,16 @@ namespace HL
             };
         }
 
-        private State BasicMeleePursuit(AIManager ai)
+        #region AI Types
+
+        private State BasicPursuit(AIManager ai)
         {
             // Target is outside of aggro range
             if (ai.distanceFromTarget > ai.maxAggroRange)
+            {
+                ai.currentTarget = null;
                 return idleState;
+            }
 
             // Stop movement while interacting
             if (ai.isPerformingAction)
@@ -58,6 +63,8 @@ namespace HL
             else
                 return this;
         }
+
+        #endregion
 
         private bool TargetIsToTheRight(AIManager ai)
         {
