@@ -15,8 +15,9 @@ namespace HL
             meleeCollider = GetComponentInChildren<MeleeCollider>(true);
         }
 
-        public virtual void PlayTargetAnimation(string animation)
+        public virtual void PlayTargetAnimation(string animation, bool stopMovement = false)
         {
+            character.isPerformingAction = stopMovement;
             animator.CrossFade(animation, 0);
         }
 
@@ -38,6 +39,7 @@ namespace HL
         {
             DisableMeleeDamageCollider();
             character.isPerformingAction = false;
+            character.isDoingMeleeAttack = false;
         }
 
         #endregion

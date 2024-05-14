@@ -19,9 +19,9 @@ namespace HL
             animator.SetBool("OnWall", player.isOnWall);
         }
 
-        public override void PlayTargetAnimation(string animation)
+        public override void PlayTargetAnimation(string animation, bool stopMovement = false)
         {
-            base.PlayTargetAnimation(animation);
+            base.PlayTargetAnimation(animation, stopMovement);
         }
     }
 }

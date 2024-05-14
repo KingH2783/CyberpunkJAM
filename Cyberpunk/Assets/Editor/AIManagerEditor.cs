@@ -61,7 +61,6 @@ public class AIManagerEditor : Editor
             ai.isDead = EditorGUILayout.Toggle("Is Dead", ai.isDead);
             ai.isInvulnerable = EditorGUILayout.Toggle("Is Invulnerable", ai.isInvulnerable);
             ai.isPerformingAction = EditorGUILayout.Toggle("Is Performing Action", ai.isPerformingAction);
-            ai.canDoCombo = EditorGUILayout.Toggle("Can Do Combo", ai.canDoCombo);
         }
         #endregion
 

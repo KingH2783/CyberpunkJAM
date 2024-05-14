@@ -128,22 +128,19 @@ namespace HL
             if (ai.currentAttack.isRangedAction)
             {
                 // Shoot
-                ai.isPerformingAction = true;
-
                 GameObject bulletGameObject = Instantiate(rangedWeapon.bulletType, ai.bulletSpawnPoint.position, ai.bulletSpawnPoint.rotation);
                 Bullet bullet = bulletGameObject.GetComponent<Bullet>();
                 bullet.characterWhoFiredMe = ai;
                 bullet.weapon = rangedWeapon;
 
-                ai.aiAnimatorManager.PlayTargetAnimation(ai.currentAttack.attackAnimationName);
+                ai.aiAnimatorManager.PlayTargetAnimation(ai.currentAttack.attackAnimationName, rangedWeapon.stopMovement);
 
                 ai.currentRecoveryTime = rangedWeapon.fireRate;
                 roundsLeftInClip -= 1;
             }
             else
             {
-                ai.isPerformingAction = true;
-                ai.aiAnimatorManager.PlayTargetAnimation(ai.currentAttack.attackAnimationName);
+                ai.aiAnimatorManager.PlayTargetAnimation(ai.currentAttack.attackAnimationName, ai.aiStatsManager.currentMeleeWeapon.stopMovement);
                 ai.currentRecoveryTime = ai.currentAttack.recoveryTime;
             }
         }

@@ -18,9 +18,9 @@ namespace HL
             animator.SetBool("Grounded", ai.isGrounded);
         }
 
-        public override void PlayTargetAnimation(string animation)
+        public override void PlayTargetAnimation(string animation, bool stopMovement = false)
         {
-            base.PlayTargetAnimation(animation);
+            base.PlayTargetAnimation(animation, stopMovement);
         }
     }
 }

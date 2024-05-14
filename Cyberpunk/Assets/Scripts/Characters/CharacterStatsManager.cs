@@ -29,11 +29,8 @@ namespace HL
 
             currentHealth -= damage;
 
-            // Stops you from doing other things during the hurt animation
-            character.isPerformingAction = true;
-
-            if (currentHealth > 0)
-                character.characterAnimatorManager.PlayTargetAnimation("Hurt");
+            if (currentHealth > 0) // The "true" at the end stops you from doing other things during the hurt animation
+                character.characterAnimatorManager.PlayTargetAnimation("Hurt", true);
             else
                 HandleDeath();
         }
@@ -42,7 +39,7 @@ namespace HL
         {
             currentHealth = 0;
             character.isDead = true;
-            character.characterAnimatorManager.PlayTargetAnimation("Death");
+            character.characterAnimatorManager.PlayTargetAnimation("Death", true);
         }
     }
 }

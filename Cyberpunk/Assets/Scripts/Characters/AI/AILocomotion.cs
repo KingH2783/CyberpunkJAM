@@ -31,6 +31,12 @@ namespace HL
         {
             base.LocomotionFixedUpdate(delta);
 
+            if (ai.isPerformingAction)
+            {
+                StopAIMovement();
+                return;
+            }
+
             HandleMovement(leftOrRightAIMovementInput);
 
             if (leftOrRightAIMovementInput != 0 &&

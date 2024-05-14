@@ -15,5 +15,6 @@ MonoBehaviour:
   itemIcon: {fileID: 21300000, guid: f4340ff92074ee449a2c7ec20164a1c1, type: 3}
   itemName: Default Melee Weapon
   itemDescription: Default Melee Weapon Description
+  stopMovement: 0
   weaponDamage: 20
   cooldown: 1

@@ -24,7 +24,8 @@ namespace HL
         public bool isDead;
         public bool isInvulnerable;
         public bool isPerformingAction;
-        public bool canDoCombo;
+        public bool isDoingMeleeAttack;
+        public bool isDoingRangedAttack;
 
         protected virtual void Awake()
         {

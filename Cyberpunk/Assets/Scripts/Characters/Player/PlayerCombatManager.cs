@@ -35,23 +35,29 @@ namespace HL
 
         public void Timers(float delta)
         {
-            fireRateTimer = (fireRateTimer > 0) ? fireRateTimer - delta : 0;
+            if (fireRateTimer > 0)
+                fireRateTimer -= delta;
+            else
+            {
+                fireRateTimer = 0;
+                player.isDoingRangedAttack = false;
+            }
             reloadTimer = (reloadTimer > 0) ? reloadTimer - delta : 0;
         }
 
         public void HandleMeleeAttack()
         {
-            if (player.isDead || !player.isGrounded || player.isPerformingAction)
+            if (player.isDead || !player.isGrounded || player.isPerformingAction || player.isDoingMeleeAttack || player.isDoingRangedAttack)
                 return;
 
             // The collider gets enabled during the animation
-            player.playerAnimatorManager.PlayTargetAnimation("Attack1");
-            player.isPerformingAction = true;
+            player.playerAnimatorManager.PlayTargetAnimation("Attack1", currentMelee.stopMovement);
+            player.isDoingMeleeAttack = true;
         }
 
         public void HandleRangedAttack()
         {
-            if (player.isDead || player.isPerformingAction)
+            if (player.isDead || player.isPerformingAction || player.isDoingMeleeAttack || player.isDoingRangedAttack)
                 return;
 
             if (roundsLeftInClip == 0)
@@ -65,7 +71,8 @@ namespace HL
                 bullet.characterWhoFiredMe = player;
                 bullet.weapon = currentRanged;
 
-                player.playerAnimatorManager.PlayTargetAnimation("Shoot");
+                player.isDoingRangedAttack = true;
+                player.playerAnimatorManager.PlayTargetAnimation("Shoot", currentRanged.stopMovement);
                 PlayerUIManager.Instance.ammoUI.UseOneAmmoUI();
 
                 fireRateTimer = bullet.weapon.fireRate;

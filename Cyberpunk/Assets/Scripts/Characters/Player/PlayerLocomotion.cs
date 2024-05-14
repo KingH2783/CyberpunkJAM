@@ -167,33 +167,41 @@ namespace HL
             Timers(delta);
             UpdatePlayerFlags();
             GetPlayerInputs();
-            
-            if (jumpInput)
+
+            if (player.isPerformingAction)
             {
-                jumpInputStartTimer += delta;
-                lastPressedJumpTimer = jumpInputBufferTime;
-
-                if (CanJump())
-                    HandleJump();
-                
-                else if (CanWallJump())
-                    HandleWallJump();
-
-                else if (CanDoubleJump())
-                    HandleDoubleJump();
+                // Stop movement if performing action
+                rb.velocity = new(0, rb.velocity.y);
             }
-
-            if (PlayerInputsManager.Instance.dashInput)
+            else
             {
-                PlayerInputsManager.Instance.dashInput = false;
-                lastPressedDashTimer = dashInputBufferTime;
-                if (CanDash())
-                    HandleDash();
+                if (jumpInput)
+                {
+                    jumpInputStartTimer += delta;
+                    lastPressedJumpTimer = jumpInputBufferTime;
+
+                    if (CanJump())
+                        HandleJump();
+
+                    else if (CanWallJump())
+                        HandleWallJump();
+
+                    else if (CanDoubleJump())
+                        HandleDoubleJump();
+                }
+
+                if (PlayerInputsManager.Instance.dashInput)
+                {
+                    PlayerInputsManager.Instance.dashInput = false;
+                    lastPressedDashTimer = dashInputBufferTime;
+                    if (CanDash())
+                        HandleDash();
+                }
+
+                if (horizontalInput != 0 &&
+                    (horizontalInput > 0) != isFacingRight)
+                    HandleFlip();
             }
-                
-            if (horizontalInput != 0 && 
-                (horizontalInput > 0) != isFacingRight)
-                HandleFlip();
 
             HandleGravity();
         }
@@ -201,6 +209,13 @@ namespace HL
         public override void LocomotionFixedUpdate(float delta)
         {
             base.LocomotionFixedUpdate(delta);
+
+            // Stop movement if performing action
+            if (player.isPerformingAction)
+            {
+                rb.velocity = new(0, rb.velocity.y);
+                return;
+            }
 
             HandleMovement(horizontalInput);
 
