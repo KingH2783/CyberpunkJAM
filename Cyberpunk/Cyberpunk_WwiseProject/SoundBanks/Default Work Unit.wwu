@@ -15,6 +15,8 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="test_2" ID="{9EF92796-85F4-400A-B11A-25EA271CDF66}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="stop_test" ID="{D85512DA-1638-41CD-B137-E8FD12F08813}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="footsteps" ID="{E85A1009-BB1D-4979-B4FC-6200B2F9CB1F}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="plasma_gun_shoot" ID="{CC947B45-E3E2-4CD6-9999-D3E02C8D27CA}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

@@ -40,6 +40,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="footsteps" ID="{E85A1009-BB1D-4979-B4FC-6200B2F9CB1F}">
+					<ChildrenList>
+						<Action Name="" ID="{E8C57E03-0B84-4490-9A2C-019299B6DD71}" ShortID="1066168119">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="footsteps stone" ID="{6E29FBE3-81B0-4DDC-B92B-6EE76DBA03B1}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="plasma_gun_shoot" ID="{CC947B45-E3E2-4CD6-9999-D3E02C8D27CA}">
+					<ChildrenList>
+						<Action Name="" ID="{C2BCF27F-34B4-49BA-8152-235FF07AF983}" ShortID="609216468">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="plasma gun" ID="{DB3129E7-6EF7-445F-B4A1-04DD5C9C25DC}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

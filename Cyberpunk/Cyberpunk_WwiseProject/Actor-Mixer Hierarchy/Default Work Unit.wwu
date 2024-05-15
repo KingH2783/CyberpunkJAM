@@ -58,6 +58,899 @@
 						<ActiveSource Name="AWCK ADD Mechanics Plastic Medium 06" ID="{F3C7B376-D8E3-4E16-9ABB-AABBE39537F5}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<RandomSequenceContainer Name="footsteps stone" ID="{6E29FBE3-81B0-4DDC-B92B-6EE76DBA03B1}" ShortID="495906016">
+					<PropertyList>
+						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="left" ID="{C57F42FE-DE42-4053-BEEB-BCD890C8DA54}" ShortID="1007882701">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="left foot" ID="{5C56B37C-2B9A-4430-A2CC-C745F19F6412}" ShortID="1031811095">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="BO01 CC01D S - 01-59 - Full 01" ID="{91DE4DAF-320E-4F9E-919F-A72C46F8A684}" ShortID="566337387">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BO01 CC01D S - 01-59 - Full 01" ID="{B87EC5C8-5AA1-406D-9726-87114701AF76}">
+													<Language>SFX</Language>
+													<AudioFile>BO01 CC01D S - 01-59 - Full 01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="225358134"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BO01 CC01D S - 01-59 - Full 01" ID="{B87EC5C8-5AA1-406D-9726-87114701AF76}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BO01 CC01D S - 01-59 - Full 02" ID="{30CA2015-8ABE-459F-9B3E-6847449DE201}" ShortID="768996115">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BO01 CC01D S - 01-59 - Full 02" ID="{E1D242A9-F85F-4AEF-9B05-1273F6A19F2E}">
+													<Language>SFX</Language>
+													<AudioFile>BO01 CC01D S - 01-59 - Full 02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="225770525"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BO01 CC01D S - 01-59 - Full 02" ID="{E1D242A9-F85F-4AEF-9B05-1273F6A19F2E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BO01 CC01D S - 01-59 - Full 03" ID="{32BBBC96-977B-4624-A659-A81E82FFAF92}" ShortID="996642210">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BO01 CC01D S - 01-59 - Full 03" ID="{D7DB2A67-8B7B-49D8-9FE5-9C66653806EC}">
+													<Language>SFX</Language>
+													<AudioFile>BO01 CC01D S - 01-59 - Full 03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="166809683"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BO01 CC01D S - 01-59 - Full 03" ID="{D7DB2A67-8B7B-49D8-9FE5-9C66653806EC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BO01 CC01D S - 01-59 - Full 04" ID="{5C3702D7-3D76-4BB5-ADC9-D97DF3870483}" ShortID="216971726">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BO01 CC01D S - 01-59 - Full 04" ID="{D3BEC25F-603D-4CB6-B93B-E0CE253B0EE3}">
+													<Language>SFX</Language>
+													<AudioFile>BO01 CC01D S - 01-59 - Full 04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="764620604"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BO01 CC01D S - 01-59 - Full 04" ID="{D3BEC25F-603D-4CB6-B93B-E0CE253B0EE3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BO01 CC01D S - 01-59 - Full 05" ID="{E09B1BCC-D847-46F3-8F85-339C2F98DA18}" ShortID="550421125">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BO01 CC01D S - 01-59 - Full 05" ID="{BD1197CC-0210-4E22-BE13-8770DEE85BB3}">
+													<Language>SFX</Language>
+													<AudioFile>BO01 CC01D S - 01-59 - Full 05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="932931645"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BO01 CC01D S - 01-59 - Full 05" ID="{BD1197CC-0210-4E22-BE13-8770DEE85BB3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="clothes rustle" ID="{1F42ABCF-ECFB-4E03-8D44-1CC1FB0F5342}" ShortID="700210800">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{38C08027-B45A-4D4F-B5DF-827357ACFE92}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="202"/>
+															<Property Name="Min" Type="Real64" Value="-126"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-20</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-1" ID="{17B8C15A-9CF5-4DB7-888B-D418F17D1E9C}" ShortID="1035846444">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-1" ID="{001BEA54-9531-44F0-AF9D-E18209C3BDAF}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0309031705227078"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.203708654670094"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.037840616966581"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.362639245929734"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="590834058"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-1" ID="{001BEA54-9531-44F0-AF9D-E18209C3BDAF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-2" ID="{6558C63E-D109-4B2F-BCF5-3A96A8BE66C8}" ShortID="631536860">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-2" ID="{0F914FA0-7BAB-4D8D-82D5-C90D5A3E48B8}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0377436268209083"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.486064267352185"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0662814910025707"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="557073457"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-2" ID="{0F914FA0-7BAB-4D8D-82D5-C90D5A3E48B8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE" ID="{912473A0-DAFE-471D-85C8-8F4C178C758D}" ShortID="213823728">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE" ID="{70509ECC-B68A-43E0-93B8-0420C7F5712D}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.277991431019709"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.109573264781491"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.3875646958012"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="66600273"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE" ID="{70509ECC-B68A-43E0-93B8-0420C7F5712D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1" ID="{65EC47D0-DE39-4223-BE9B-9C64D70B3EFB}" ShortID="556747208">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1" ID="{768DC660-991E-4816-8605-D9E60571F80F}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0318080548414739"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.370728363324764"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0888431876606683"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.546221079691517"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="182304910"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1" ID="{768DC660-991E-4816-8605-D9E60571F80F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2" ID="{686A9FC4-954E-4302-A3D5-ABD592DE66A4}" ShortID="88457209">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2" ID="{21AF0A16-E34A-48C7-A7FA-A35512186FE1}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0384987146529563"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.456061696658098"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.028133676092545"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.54638560411311"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="660916231"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2" ID="{21AF0A16-E34A-48C7-A7FA-A35512186FE1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1_01" ID="{7A05B78D-6BB1-4DAA-9E4D-FE0612B789A3}" ShortID="756431208">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1" ID="{5EFB703B-65D8-41B6-892A-916D5FC64E5F}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0416795201371037"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.1546529562982"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.151362467866324"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.518800342759212"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="952537116"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1" ID="{5EFB703B-65D8-41B6-892A-916D5FC64E5F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2_01" ID="{0ABA3166-312D-4202-8403-B41670DA836A}" ShortID="816148976">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2" ID="{BF5F735C-011C-45BB-9BF8-E12567ADF178}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0725552699228792"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.262087403598971"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.595249357326478"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.971352185089973"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="657868621"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2" ID="{BF5F735C-011C-45BB-9BF8-E12567ADF178}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="right" ID="{404A54EB-55E0-4E0A-8327-183BEE5C9792}" ShortID="162556966">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="right foot" ID="{4F31487E-7C9E-4462-9437-5F3BE6E4F4A8}" ShortID="2141277">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>70</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="BO01 CC01D S - 01-59 - Full 08" ID="{0602A9A9-15D7-46D4-A228-FFD6F7A40E7D}" ShortID="846172428">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BO01 CC01D S - 01-59 - Full 08" ID="{89C3199A-CDF6-4615-AB5C-7290CD75022D}">
+													<Language>SFX</Language>
+													<AudioFile>BO01 CC01D S - 01-59 - Full 08.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="194556305"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BO01 CC01D S - 01-59 - Full 08" ID="{89C3199A-CDF6-4615-AB5C-7290CD75022D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BO01 CC01D S - 01-59 - Full 07" ID="{5CC50358-3DA3-4F65-9251-7C988CD25EE3}" ShortID="737732769">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BO01 CC01D S - 01-59 - Full 07" ID="{218A5B92-4F71-4F6A-87BD-66912D1935DE}">
+													<Language>SFX</Language>
+													<AudioFile>BO01 CC01D S - 01-59 - Full 07.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="662460812"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BO01 CC01D S - 01-59 - Full 07" ID="{218A5B92-4F71-4F6A-87BD-66912D1935DE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BO01 CC01D S - 01-59 - Full 10" ID="{8801BE3F-6BB0-4638-94EE-E240D2A0D534}" ShortID="1055173666">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BO01 CC01D S - 01-59 - Full 10" ID="{500B15E5-14D6-4B5E-A624-27EDF15611D3}">
+													<Language>SFX</Language>
+													<AudioFile>BO01 CC01D S - 01-59 - Full 10.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="305598020"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BO01 CC01D S - 01-59 - Full 10" ID="{500B15E5-14D6-4B5E-A624-27EDF15611D3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BO01 CC01D S - 01-59 - Full 06" ID="{7CDE1F87-BD84-42A6-8469-49079B47530F}" ShortID="74601335">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BO01 CC01D S - 01-59 - Full 06" ID="{31A60556-179A-4884-BFCB-229A28C11544}">
+													<Language>SFX</Language>
+													<AudioFile>BO01 CC01D S - 01-59 - Full 06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="506290196"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BO01 CC01D S - 01-59 - Full 06" ID="{31A60556-179A-4884-BFCB-229A28C11544}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="BO01 CC01D S - 01-59 - Full 09" ID="{2EC9035A-673A-4351-8457-538115EFB823}" ShortID="86929043">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BO01 CC01D S - 01-59 - Full 09" ID="{0576CE2B-3F6A-4E6A-8B75-1A0841A159A8}">
+													<Language>SFX</Language>
+													<AudioFile>BO01 CC01D S - 01-59 - Full 09.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="91942190"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BO01 CC01D S - 01-59 - Full 09" ID="{0576CE2B-3F6A-4E6A-8B75-1A0841A159A8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="clothes rustle" ID="{310E1E28-0A33-4120-8EE3-D62CEE7DD8AA}" ShortID="446698845">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{86A46671-E856-4D5D-A6EF-74F517E9F100}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="202"/>
+															<Property Name="Min" Type="Real64" Value="-126"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-20</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-1" ID="{56D113B0-1118-4968-9550-78F124176808}" ShortID="749444474">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-1" ID="{55F992C0-BD57-4A86-95E3-B97F8F03370B}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0309031705227078"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.203708654670094"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.037840616966581"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.362639245929734"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="590834058"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-1" ID="{55F992C0-BD57-4A86-95E3-B97F8F03370B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-2" ID="{6F1FCB91-3238-4B81-851C-D7C6E2CB6169}" ShortID="451026724">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-2" ID="{F92078F3-C5BF-4778-A29A-8CD8CD196500}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0377436268209083"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.486064267352185"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0662814910025707"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="557073457"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-2" ID="{F92078F3-C5BF-4778-A29A-8CD8CD196500}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE" ID="{8BB84AC4-3E88-48F6-BFF3-46D04D28B19D}" ShortID="140020864">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE" ID="{4DFE29F4-1EE5-4110-BBA1-C66B43463F58}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.277991431019709"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.109573264781491"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.3875646958012"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="66600273"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE" ID="{4DFE29F4-1EE5-4110-BBA1-C66B43463F58}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1" ID="{9445EFC3-00E1-4BBE-8289-87D016D08661}" ShortID="127178662">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1" ID="{35E029E5-AAB5-4835-B60B-66676FDEAE10}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0318080548414739"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.370728363324764"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0888431876606683"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.546221079691517"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="182304910"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1" ID="{35E029E5-AAB5-4835-B60B-66676FDEAE10}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2" ID="{6E8E5FD0-60D4-4209-A6F1-99291D4D9F39}" ShortID="647728137">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2" ID="{A0E98C75-A00E-4300-A231-C06B84ED7849}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0384987146529563"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.456061696658098"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.028133676092545"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.54638560411311"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="660916231"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2" ID="{A0E98C75-A00E-4300-A231-C06B84ED7849}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1_01" ID="{90512747-5951-4CBA-A643-8FC665BFDC08}" ShortID="901992940">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1" ID="{F4C99227-1945-4B60-BC4E-1B7FDE7F7F0F}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0416795201371037"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.1546529562982"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.151362467866324"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.518800342759212"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="952537116"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1" ID="{F4C99227-1945-4B60-BC4E-1B7FDE7F7F0F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2_01" ID="{07D6950D-74E2-493D-86B9-4914AACF463B}" ShortID="64444122">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2" ID="{EB8C5B93-8971-4219-9931-7C21D6268345}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0725552699228792"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.262087403598971"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.595249357326478"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.971352185089973"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="657868621"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2" ID="{EB8C5B93-8971-4219-9931-7C21D6268345}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Playlist">
+							<Reference>
+								<ObjectRef Name="left" ID="{C57F42FE-DE42-4053-BEEB-BCD890C8DA54}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+							</Reference>
+							<Reference>
+								<ObjectRef Name="right" ID="{404A54EB-55E0-4E0A-8327-183BEE5C9792}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="plasma gun" ID="{DB3129E7-6EF7-445F-B4A1-04DD5C9C25DC}" ShortID="429766413">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{584686EF-4994-405E-BD49-519BD9B8F7B2}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="17"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{E7487D42-9022-4102-B2BF-2CFFE7494C94}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="353"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE" ID="{389ADCFB-2FB9-4FEC-B0FF-4FF800FC3685}" ShortID="514159015">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE" ID="{6FD11766-398C-43F1-9AFC-D5F1ADFCDEB7}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.065261353898886"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.180867180805484"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.24612853470437"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.23064267352185"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="169254723"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE" ID="{6FD11766-398C-43F1-9AFC-D5F1ADFCDEB7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE-1" ID="{72115F5B-61B5-4CB6-998C-1808F285A35A}" ShortID="378993709">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE-1" ID="{B80C11E3-6517-4D61-B11C-4E7CA20C811F}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0873540595544131"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.22909838260497"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE-1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="952037636"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE-1" ID="{B80C11E3-6517-4D61-B11C-4E7CA20C811F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE-2" ID="{2789BDDB-EA54-4E58-ADF3-C8CB48797925}" ShortID="524673629">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE-2" ID="{B662F084-F719-4677-BF45-DBBBCE6F7FD5}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0929588153384747"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.229551360325621"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE-2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="633259387"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE-2" ID="{B662F084-F719-4677-BF45-DBBBCE6F7FD5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

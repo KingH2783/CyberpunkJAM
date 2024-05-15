@@ -9,16 +9,124 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1290008369" Type="User" Language="SFX" Hash="{DEB4F7C9-961E-24D8-4166-2A803BEFF84B}">
+		<SoundBank Id="1290008369" Type="User" Language="SFX" Hash="{B611072D-75F6-DE77-0B56-AC967C05BB8C}">
 			<ShortName>level_1</ShortName>
 			<Path>level_1.bnk</Path>
 			<Media>
+				<File Id="66600273" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE.wav</ShortName>
+					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE_3F1505D4.wem</CachePath>
+				</File>
+				<File Id="91942190" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BO01 CC01D S - 01-59 - Full 09.wav</ShortName>
+					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 09_818F3B66.wem</CachePath>
+				</File>
 				<File Id="108680219" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AWCK ADD Mechanics Plastic Medium 06.wav</ShortName>
 					<CachePath>SFX/AWCK ADD Mechanics Plastic Medium 06_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="166809683" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BO01 CC01D S - 01-59 - Full 03.wav</ShortName>
+					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="169254723" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE.wav</ShortName>
+					<CachePath>SFX/GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE_109A3534.wem</CachePath>
+				</File>
+				<File Id="182304910" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1.wav</ShortName>
+					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1_D2A30B60.wem</CachePath>
+				</File>
+				<File Id="194556305" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BO01 CC01D S - 01-59 - Full 08.wav</ShortName>
+					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 08_818F3B66.wem</CachePath>
+				</File>
+				<File Id="225358134" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BO01 CC01D S - 01-59 - Full 01.wav</ShortName>
+					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="225770525" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BO01 CC01D S - 01-59 - Full 02.wav</ShortName>
+					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="305598020" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BO01 CC01D S - 01-59 - Full 10.wav</ShortName>
+					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 10_818F3B66.wem</CachePath>
+				</File>
+				<File Id="506290196" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BO01 CC01D S - 01-59 - Full 06.wav</ShortName>
+					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 06_818F3B66.wem</CachePath>
+				</File>
+				<File Id="557073457" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-2.wav</ShortName>
+					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-2_88314243.wem</CachePath>
+				</File>
+				<File Id="590834058" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-1.wav</ShortName>
+					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-1_230FB16F.wem</CachePath>
+				</File>
+				<File Id="633259387" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE-2.wav</ShortName>
+					<CachePath>SFX/GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE-2_0C2C04CC.wem</CachePath>
+				</File>
+				<File Id="657868621" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2.wav</ShortName>
+					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2_4235EC63.wem</CachePath>
+				</File>
+				<File Id="660916231" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2.wav</ShortName>
+					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2_EDB596E2.wem</CachePath>
+				</File>
+				<File Id="662460812" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BO01 CC01D S - 01-59 - Full 07.wav</ShortName>
+					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 07_818F3B66.wem</CachePath>
+				</File>
+				<File Id="764620604" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BO01 CC01D S - 01-59 - Full 04.wav</ShortName>
+					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 04_818F3B66.wem</CachePath>
+				</File>
+				<File Id="932931645" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BO01 CC01D S - 01-59 - Full 05.wav</ShortName>
+					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 05_818F3B66.wem</CachePath>
+				</File>
+				<File Id="952037636" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE-1.wav</ShortName>
+					<CachePath>SFX/GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE-1_4FF0B78F.wem</CachePath>
+				</File>
+				<File Id="952537116" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1.wav</ShortName>
+					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1_00DEC239.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
+				<Event Id="2385628198" Name="footsteps" DurationType="OneShot" DurationMin="0.29441434" DurationMax="0.69899267">
+					<MediaRefs>
+						<MediaRef Id="66600273"/>
+						<MediaRef Id="91942190"/>
+						<MediaRef Id="166809683"/>
+						<MediaRef Id="182304910"/>
+						<MediaRef Id="194556305"/>
+						<MediaRef Id="225358134"/>
+						<MediaRef Id="225770525"/>
+						<MediaRef Id="305598020"/>
+						<MediaRef Id="506290196"/>
+						<MediaRef Id="557073457"/>
+						<MediaRef Id="590834058"/>
+						<MediaRef Id="657868621"/>
+						<MediaRef Id="660916231"/>
+						<MediaRef Id="662460812"/>
+						<MediaRef Id="764620604"/>
+						<MediaRef Id="932931645"/>
+						<MediaRef Id="952537116"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2851466780" Name="plasma_gun_shoot" DurationType="OneShot" DurationMin="0.8029139" DurationMax="1.246407">
+					<MediaRefs>
+						<MediaRef Id="169254723"/>
+						<MediaRef Id="633259387"/>
+						<MediaRef Id="952037636"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2051061508" Name="stop_test" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2727318990" Name="test_2" DurationType="Infinite">
 					<MediaRefs>
@@ -59,5 +167,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{3807610C-C1FE-B0C3-D694-A25B481570E8}</FileHash>
+	<FileHash>{0A345465-0929-D88D-6386-C0E0C6A22546}</FileHash>
 </SoundBanksInfo>
