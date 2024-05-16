@@ -9,13 +9,13 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1290008369" Type="User" Language="SFX" Hash="{B611072D-75F6-DE77-0B56-AC967C05BB8C}">
+		<SoundBank Id="1290008369" Type="User" Language="SFX" Hash="{43F365F7-39A5-3A79-A8EC-6CCDB68A900E}">
 			<ShortName>level_1</ShortName>
 			<Path>level_1.bnk</Path>
 			<Media>
 				<File Id="66600273" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE.wav</ShortName>
-					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE_3F1505D4.wem</CachePath>
+					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE_11240A2F.wem</CachePath>
 				</File>
 				<File Id="91942190" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BO01 CC01D S - 01-59 - Full 09.wav</ShortName>
@@ -31,11 +31,11 @@
 				</File>
 				<File Id="169254723" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE.wav</ShortName>
-					<CachePath>SFX/GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE_109A3534.wem</CachePath>
+					<CachePath>SFX/GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE_6DCEE252.wem</CachePath>
 				</File>
 				<File Id="182304910" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1.wav</ShortName>
-					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1_D2A30B60.wem</CachePath>
+					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1_EB9D48BC.wem</CachePath>
 				</File>
 				<File Id="194556305" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BO01 CC01D S - 01-59 - Full 08.wav</ShortName>
@@ -59,23 +59,23 @@
 				</File>
 				<File Id="557073457" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-2.wav</ShortName>
-					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-2_88314243.wem</CachePath>
+					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-2_48E97336.wem</CachePath>
 				</File>
 				<File Id="590834058" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-1.wav</ShortName>
-					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-1_230FB16F.wem</CachePath>
+					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-1_7233B1E4.wem</CachePath>
 				</File>
 				<File Id="633259387" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE-2.wav</ShortName>
-					<CachePath>SFX/GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE-2_0C2C04CC.wem</CachePath>
+					<CachePath>SFX/GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE-2_F76028FA.wem</CachePath>
 				</File>
 				<File Id="657868621" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2.wav</ShortName>
-					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2_4235EC63.wem</CachePath>
+					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2_EDAE0C73.wem</CachePath>
 				</File>
 				<File Id="660916231" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2.wav</ShortName>
-					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2_EDB596E2.wem</CachePath>
+					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2_08EEC515.wem</CachePath>
 				</File>
 				<File Id="662460812" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BO01 CC01D S - 01-59 - Full 07.wav</ShortName>
@@ -91,11 +91,11 @@
 				</File>
 				<File Id="952037636" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE-1.wav</ShortName>
-					<CachePath>SFX/GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE-1_4FF0B78F.wem</CachePath>
+					<CachePath>SFX/GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE-1_1CC93DB4.wem</CachePath>
 				</File>
 				<File Id="952537116" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1.wav</ShortName>
-					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1_00DEC239.wem</CachePath>
+					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1_125E16BD.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -135,7 +135,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B6CBD692-12EC-CDBA-0932-48F63C40C91F}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{4A6630D8-5252-7CD0-8A3B-2980ADD547A6}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -145,10 +145,17 @@
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="393239870" Name="SFX"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
+				<Bus Id="3991942870" Name="Music"/>
 			</Busses>
+			<GameParameters>
+				<GameParameter Id="1006694123" Name="music_volume"/>
+				<GameParameter Id="1564184899" Name="sfx_volume"/>
+				<GameParameter Id="4179668880" Name="master_volume"/>
+			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{E6BD3487-9B72-7E0F-1167-E5DCB4405C91}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{B680E61F-6924-1936-B559-AED4758380FD}">
 			<ShortName>main</ShortName>
 			<Path>main.bnk</Path>
 			<Media>
@@ -167,5 +174,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{0A345465-0929-D88D-6386-C0E0C6A22546}</FileHash>
+	<FileHash>{0E55E54A-B5DD-AF8D-9A8A-43F04C4B2339}</FileHash>
 </SoundBanksInfo>
