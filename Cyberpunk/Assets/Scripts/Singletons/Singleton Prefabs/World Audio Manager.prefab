@@ -46,3 +46,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mixer: {fileID: 24100000, guid: d576a24be311323408e914174152b117, type: 2}
   startAllSlidersAtThisVolume: 0.5
+  masterVolumeRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 673f67c54f9ac3b4f9a891f037fc654f, type: 2}
+  musicVolumeRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8e8a97099d588254cafb12c810085635, type: 2}
+  soundFXVolumeRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ba9e62c17023c804a81d2301f018fcfb, type: 2}

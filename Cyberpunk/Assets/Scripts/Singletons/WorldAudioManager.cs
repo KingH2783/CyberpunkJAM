@@ -6,12 +6,12 @@ namespace HL
     public class WorldAudioManager : MonoBehaviour
     {
         [HideInInspector] public static WorldAudioManager Instance { get; private set; }
-        [SerializeField] private AudioMixer mixer; 
-        [Range(0.001f, 1)] public float startAllSlidersAtThisVolume;
 
-        private float currentMasterVolume;
-        private float currentMusicVolume;
-        private float currentSoundFXVolume;
+        [Header("Volumes")]
+        [SerializeField] private AK.Wwise.RTPC masterVolumeRTPC;
+        [SerializeField] private AK.Wwise.RTPC musicVolumeRTPC;
+        [SerializeField] private AK.Wwise.RTPC soundFXVolumeRTPC;
+        [Range(0.001f, 1)] public float startAllSlidersAtThisVolume;
 
         private void Awake()
         {
@@ -32,20 +32,17 @@ namespace HL
 
         public void SetMasterVolume(float sliderValue)
         {
-            currentMasterVolume = Mathf.Log10(sliderValue) * 20;
-            mixer.SetFloat("MasterVolume", currentMasterVolume);
+            masterVolumeRTPC.SetGlobalValue(sliderValue * 100);
         }
 
         public void SetMusicVolume(float sliderValue)
         {
-            currentMusicVolume = Mathf.Log10(sliderValue) * 20;
-            mixer.SetFloat("MusicVolume", currentMusicVolume);
+            musicVolumeRTPC.SetGlobalValue(sliderValue * 100);
         }
 
         public void SetSoundFXVolume(float sliderValue)
         {
-            currentSoundFXVolume = Mathf.Log10(sliderValue) * 20;
-            mixer.SetFloat("SoundFXVolume", currentSoundFXVolume);
+            soundFXVolumeRTPC.SetGlobalValue(sliderValue * 100);
         }
     }
 }
