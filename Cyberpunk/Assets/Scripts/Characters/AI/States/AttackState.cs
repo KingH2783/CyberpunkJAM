@@ -8,6 +8,7 @@ namespace HL
         private bool willDoComboOnNextAttack = false;
         private RangedWeapon rangedWeapon;
         private int roundsLeftInClip;
+        private bool animHasStartedPlaying;
 
         public override State Tick(AIManager ai)
         {
@@ -127,21 +128,31 @@ namespace HL
         {
             if (ai.currentAttack.isRangedAction)
             {
+                ai.aiAnimatorManager.PlayTargetAnimation(ai.currentAttack.attackAnimationName, rangedWeapon.stopMovement);
+            }
+            else
+            {
+                ai.aiAnimatorManager.PlayTargetAnimation(ai.currentAttack.attackAnimationName, ai.aiStatsManager.currentMeleeWeapon.stopMovement);
+                ai.currentRecoveryTime = ai.currentAttack.recoveryTime;
+            }
+        }
+
+        public IEnumerator ShootTarget(AIManager ai)
+        {
+            for (int i = rangedWeapon.ammoCapacity; i > 0; i--)
+            {
+                yield return new WaitForSeconds(rangedWeapon.fireRate);
+
                 // Shoot
                 GameObject bulletGameObject = Instantiate(rangedWeapon.bulletType, ai.bulletSpawnPoint.position, ai.bulletSpawnPoint.rotation);
                 Bullet bullet = bulletGameObject.GetComponent<Bullet>();
                 bullet.characterWhoFiredMe = ai;
                 bullet.weapon = rangedWeapon;
 
-                ai.aiAnimatorManager.PlayTargetAnimation(ai.currentAttack.attackAnimationName, rangedWeapon.stopMovement);
-
                 ai.currentRecoveryTime = rangedWeapon.fireRate;
                 roundsLeftInClip -= 1;
-            }
-            else
-            {
-                ai.aiAnimatorManager.PlayTargetAnimation(ai.currentAttack.attackAnimationName, ai.aiStatsManager.currentMeleeWeapon.stopMovement);
-                ai.currentRecoveryTime = ai.currentAttack.recoveryTime;
+
+                animHasStartedPlaying = false;
             }
         }
 

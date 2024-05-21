@@ -15,6 +15,8 @@ namespace HL
         public bool showCurrentAIState;
         public bool showAISettings;
 
+        public bool canShoot;
+
         // ======= Current State =======
         //[Header("Current State")]
         public State currentState;

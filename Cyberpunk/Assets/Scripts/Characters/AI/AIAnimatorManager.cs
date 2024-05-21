@@ -5,11 +5,13 @@ namespace HL
     public class AIAnimatorManager : CharacterAnimatorManager
     {
         AIManager ai;
+        AttackState aiAttackState;
 
         protected override void Awake()
         {
             base.Awake();
             ai = GetComponent<AIManager>();
+            aiAttackState = GetComponentInChildren<AttackState>();
         }
 
         public void SetAnimatorParams()
@@ -21,6 +23,11 @@ namespace HL
         public override void PlayTargetAnimation(string animation, bool stopMovement = false)
         {
             base.PlayTargetAnimation(animation, stopMovement);
+        }
+
+        public void ShootAnimEvent()
+        {
+            StartCoroutine(aiAttackState.ShootTarget(ai));
         }
     }
 }

@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6aa04be85086d540a51c8e5d15aaefc, type: 3}
   m_Name: Melee 2
   m_EditorClassIdentifier: 
-  attackAnimationName: Attack2
+  attackAnimationName: Melee_Attack_2
   attackScore: 0
   recoveryTime: 2
   minimumDistanceNeededToAttack: 0
   maximumDistanceNeededToAttack: 2
+  isRangedAction: 0
   actionCanCombo: 1
   comboAttack: {fileID: 11400000, guid: 3a1959f3da78a5b489f088e49cc765ad, type: 2}

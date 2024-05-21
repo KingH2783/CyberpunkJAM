@@ -15,8 +15,9 @@ MonoBehaviour:
   itemIcon: {fileID: 21300000, guid: 0318b9773360ccf488f9e7f8512941bf, type: 3}
   itemName: Default Ranged Weapon
   itemDescription: Default Ranged Weapon Description
+  stopMovement: 1
   weaponDamage: 4
-  fireRate: 0.3
-  reloadTime: 2
-  ammoCapacity: 10
+  fireRate: 0.15
+  reloadTime: 0.5
+  ammoCapacity: 1
   bulletType: {fileID: 2865687314785593906, guid: fe4890a18a989664db512a8484486666, type: 3}

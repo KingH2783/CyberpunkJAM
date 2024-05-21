@@ -51,7 +51,7 @@ namespace HL
                 return;
 
             // The collider gets enabled during the animation
-            player.playerAnimatorManager.PlayTargetAnimation("Attack1", currentMelee.stopMovement);
+            player.playerAnimatorManager.PlayTargetAnimation("Melee_Attack_1", currentMelee.stopMovement);
             player.isDoingMeleeAttack = true;
         }
 
@@ -72,7 +72,7 @@ namespace HL
                 bullet.weapon = currentRanged;
 
                 player.isDoingRangedAttack = true;
-                player.playerAnimatorManager.PlayTargetAnimation("Shoot", currentRanged.stopMovement);
+                player.playerAnimatorManager.PlayTargetAnimation("Ranged_Attack_1", currentRanged.stopMovement);
                 PlayerUIManager.Instance.ammoUI.UseOneAmmoUI();
 
                 fireRateTimer = bullet.weapon.fireRate;
