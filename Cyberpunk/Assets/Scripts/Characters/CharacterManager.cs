@@ -7,6 +7,7 @@ namespace HL
         [HideInInspector] public Transform _transform { get; private set; }
         [HideInInspector] public CharacterLocomotion characterLocomotion { get; private set; }
         [HideInInspector] public CharacterStatsManager characterStatsManager { get; private set; }
+        [HideInInspector] public CharacterSoundFXManager characterSoundFXManager { get; private set; }
         [HideInInspector] public CharacterAnimatorManager characterAnimatorManager { get; private set; }
 
         protected float deltaUpdate;
@@ -22,6 +23,7 @@ namespace HL
         public bool isDashing;
         public bool isOnSlope;
         public bool isDead;
+        public bool isFacingRight;
         public bool isInvulnerable;
         public bool isPerformingAction;
         public bool isDoingMeleeAttack;
@@ -32,6 +34,7 @@ namespace HL
             _transform = transform;
             characterLocomotion = GetComponent<CharacterLocomotion>();
             characterStatsManager = GetComponent<CharacterStatsManager>();
+            characterSoundFXManager = GetComponent<CharacterSoundFXManager>();
             characterAnimatorManager = GetComponent<CharacterAnimatorManager>();
         }
 

@@ -199,7 +199,7 @@ namespace HL
                 }
 
                 if (horizontalInput != 0 &&
-                    (horizontalInput > 0) != isFacingRight)
+                    (horizontalInput > 0) != player.isFacingRight)
                     HandleFlip();
             }
 
@@ -418,7 +418,9 @@ namespace HL
             player.isDashing = true;
             player.isInvulnerable = true;
 
-            Vector2 dashDirection = isFacingRight ? new(1, 0) : new(-1, 0);
+            player.playerAnimatorManager.PlayTargetAnimation("Dash");
+
+            Vector2 dashDirection = player.isFacingRight ? new(1, 0) : new(-1, 0);
             rb.velocity = dashDirection.normalized * dashVelocity;
 
             StartCoroutine(StopDashing());
@@ -500,8 +502,8 @@ namespace HL
         private bool IsOnLeftWall()
         {
             if (!player.isJumping && !player.isWallJumping &&
-                ((Physics2D.OverlapBox(frontWallCheckPoint.position, wallCheckSize, 0, groundLayer) && !isFacingRight) || 
-                (Physics2D.OverlapBox(backWallCheckPoint.position, wallCheckSize, 0, groundLayer) && isFacingRight)))
+                ((Physics2D.OverlapBox(frontWallCheckPoint.position, wallCheckSize, 0, groundLayer) && !player.isFacingRight) || 
+                (Physics2D.OverlapBox(backWallCheckPoint.position, wallCheckSize, 0, groundLayer) && player.isFacingRight)))
             {
                 lastOnLeftWallTimer = coyoteTime;
             }
@@ -512,8 +514,8 @@ namespace HL
         private bool IsOnRightWall()
         {
             if (!player.isJumping && !player.isWallJumping &&
-                ((Physics2D.OverlapBox(frontWallCheckPoint.position, wallCheckSize, 0, groundLayer) && isFacingRight) ||
-                (Physics2D.OverlapBox(backWallCheckPoint.position, wallCheckSize, 0, groundLayer) && !isFacingRight)))
+                ((Physics2D.OverlapBox(frontWallCheckPoint.position, wallCheckSize, 0, groundLayer) && player.isFacingRight) ||
+                (Physics2D.OverlapBox(backWallCheckPoint.position, wallCheckSize, 0, groundLayer) && !player.isFacingRight)))
             {
                 lastOnRightWallTimer = coyoteTime;
             }

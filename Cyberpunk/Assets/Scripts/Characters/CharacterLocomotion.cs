@@ -52,7 +52,6 @@ namespace HL
 
         protected bool isOnSteepSlope;
         protected bool isJumpFalling;
-        public bool isFacingRight;
 
         protected virtual void Awake()
         {
@@ -64,7 +63,7 @@ namespace HL
         protected virtual void Start()
         {
             rb.gravityScale = gravityScale;
-            isFacingRight = true;
+            character.isFacingRight = true;
         }
 
         public virtual void LocomotionUpdate(float delta)
@@ -129,7 +128,7 @@ namespace HL
 
         public virtual void HandleFlip()
         {
-            isFacingRight = !isFacingRight;
+            character.isFacingRight = !character.isFacingRight;
             character._transform.Rotate(0, 180, 0);
 
             /*Vector3 scale = transform.localScale;

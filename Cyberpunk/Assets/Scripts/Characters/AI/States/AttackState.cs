@@ -8,7 +8,6 @@ namespace HL
         private bool willDoComboOnNextAttack = false;
         private RangedWeapon rangedWeapon;
         private int roundsLeftInClip;
-        private bool animHasStartedPlaying;
 
         public override State Tick(AIManager ai)
         {
@@ -151,8 +150,6 @@ namespace HL
 
                 ai.currentRecoveryTime = rangedWeapon.fireRate;
                 roundsLeftInClip -= 1;
-
-                animHasStartedPlaying = false;
             }
         }
 

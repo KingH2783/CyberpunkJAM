@@ -140,9 +140,9 @@ namespace HL
             // Stop moving if we're next to the target
             if (ai.distanceFromTarget <= ai.stoppingDistance)
             {
-                if (TargetIsToTheRight(ai) && !ai.aiLocomotion.isFacingRight)
+                if (TargetIsToTheRight(ai) && !ai.isFacingRight)
                     ai.aiLocomotion.HandleFlip();
-                else if (!TargetIsToTheRight(ai) && ai.aiLocomotion.isFacingRight)
+                else if (!TargetIsToTheRight(ai) && ai.isFacingRight)
                     ai.aiLocomotion.HandleFlip();
 
                 movement = 0;

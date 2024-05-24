@@ -15,6 +15,7 @@ namespace HL
         public void SetAnimatorParams()
         {
             animator.SetBool("Running", player.isRunning);
+            animator.SetBool("Jumping", player.isJumping);
             animator.SetBool("Grounded", player.isGrounded);
             animator.SetBool("OnWall", player.isOnWall);
         }
