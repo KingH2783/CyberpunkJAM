@@ -72,7 +72,10 @@ namespace HL
                 bullet.weapon = currentRanged;
 
                 player.isDoingRangedAttack = true;
-                player.playerAnimatorManager.PlayTargetAnimation("Ranged_Attack_1_Stationary", currentRanged.stopMovement);
+                if (!player.isRunning)
+                    player.playerAnimatorManager.PlayTargetAnimation("Ranged_Attack_1_Stationary", currentRanged.stopMovement);
+                else
+                    player.playerAnimatorManager.PlayTargetAnimation("Ranged_Attack_1_Running", currentRanged.stopMovement);
                 player.playerSoundFXManager.PlayPlasmaGunShoot();
                 PlayerUIManager.Instance.ammoUI.UseOneAmmoUI();
 
@@ -86,7 +89,7 @@ namespace HL
             if (roundsLeftInClip == currentRanged.ammoCapacity)
                 return;
 
-            player.playerAnimatorManager.PlayTargetAnimation("Reload");
+            player.playerAnimatorManager.PlayTargetAnimation("Reload", true);
 
             reloadTimer = currentRanged.reloadTime;
             roundsLeftInClip = currentRanged.ammoCapacity;

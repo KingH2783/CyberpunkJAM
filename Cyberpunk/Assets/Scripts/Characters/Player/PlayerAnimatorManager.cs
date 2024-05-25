@@ -18,11 +18,22 @@ namespace HL
             animator.SetBool("Jumping", player.isJumping);
             animator.SetBool("Grounded", player.isGrounded);
             animator.SetBool("OnWall", player.isOnWall);
+            animator.SetBool("DoingRangedAttack", player.isDoingRangedAttack);
         }
 
         public override void PlayTargetAnimation(string animation, bool stopMovement = false)
         {
             base.PlayTargetAnimation(animation, stopMovement);
+        }
+
+        private void FirstHalfOfRunningAnimation()
+        {
+
+        }
+
+        private void SecondHalfOfRunningAnimation()
+        {
+
         }
     }
 }
