@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1290008369" Type="User" Language="SFX" Hash="{0B666A8A-E82E-A93C-D1D7-A551A580BE88}">
+		<SoundBank Id="1290008369" Type="User" Language="SFX" Hash="{EF8222C9-3119-2DED-1148-2F572226A476}">
 			<ShortName>level_1</ShortName>
 			<Path>level_1.bnk</Path>
 			<Media>
@@ -285,7 +285,7 @@
 				<GameParameter Id="4179668880" Name="master_volume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{4694C5BF-7A22-0BE9-F84F-FF0C01FD8485}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{9C5B4012-E1D2-BFC4-27AA-851196C4C020}">
 			<ShortName>main</ShortName>
 			<Path>main.bnk</Path>
 			<Media>
@@ -304,5 +304,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4B826F01-720C-46B7-AA7E-ECBDD0774A02}</FileHash>
+	<FileHash>{CC4DF581-EE77-A709-FF4C-B501F06F66E2}</FileHash>
 </SoundBanksInfo>
