@@ -52,7 +52,6 @@ namespace HL
 
         protected bool isOnSteepSlope;
         protected bool isJumpFalling;
-        public bool isFacingRight;
 
         protected virtual void Awake()
         {
@@ -64,7 +63,7 @@ namespace HL
         protected virtual void Start()
         {
             rb.gravityScale = gravityScale;
-            isFacingRight = true;
+            character.isFacingRight = true;
         }
 
         public virtual void LocomotionUpdate(float delta)
@@ -84,52 +83,52 @@ namespace HL
 
             float targetSpeed = targetDirection * maxRunSpeed;
 
-            // If we are moving then set an acceleration rate
-            // If we're also in the air then adjust this to acceleration values in air
+            // Determine acceleration rate based on ground and air status
             float accelRate;
             if (character.isGrounded)
                 accelRate = (Mathf.Abs(targetSpeed) > 0.01f) ? runAccelAmount : runDeccelAmount;
             else
                 accelRate = (Mathf.Abs(targetSpeed) > 0.01f) ? (runAccelAmount * accelInAir) : (runDeccelAmount * deccelInAir);
 
-            // Increase our acceleration and maxSpeed when at the apex of their jump, makes the jump feel a bit more bouncy, responsive and natural
+            // Modify acceleration and maxSpeed during jump hang time
             if ((character.isJumping || isJumpFalling) && Mathf.Abs(rb.velocity.y) < jumpHangTimeThreshold)
             {
                 accelRate *= jumpHangAccelerationMult;
                 targetSpeed *= jumpHangMaxSpeedMult;
             }
 
-            // We won't slow the player down if they are moving in their desired direction but at a greater speed than their maxSpeed
+            // Conserve momentum if conditions are met
             if (doConserveMomentum &&
                 Mathf.Abs(rb.velocity.x) > Mathf.Abs(targetSpeed) &&
                 Mathf.Sign(rb.velocity.x) == Mathf.Sign(targetSpeed) &&
                 Mathf.Abs(targetSpeed) > 0.01f &&
                 !character.isGrounded)
             {
-                // Prevent any deceleration from happening, or in other words conserve are current momentum
-                // You could experiment with allowing for the player to slightly increae their speed whilst in this "state"
                 accelRate = 0;
             }
 
-            // Calculate difference between current velocity and desired velocity
+            // Calculate the speed difference and required movement force
             float speedDif = targetSpeed - rb.velocity.x;
+            float movementForce = speedDif * rb.mass / Time.deltaTime;
 
-            // Calculate force along x-axis to apply to the player
-            float movement = speedDif * accelRate;
-
-            if (character.isOnSlope)
+            // Apply force considering platform movement
+            Vector2 platformVelocity = Vector2.zero;
+            if (character.isOnPlatform)
             {
-                // Calculate the movement along the slope direction
-                Vector2 slopeMovement = new Vector2(slopeNormal.y, -slopeNormal.x) * movement;
-                rb.AddForce(slopeMovement, ForceMode2D.Force);
+                Rigidbody2D platformRB = transform.parent.GetComponent<Rigidbody2D>();
+                platformVelocity = platformRB.velocity;
             }
-            else
-                rb.AddForce(movement * Vector2.right, ForceMode2D.Force);
+
+            // Calculate the total force required, including platform velocity
+            Vector2 totalForce = new Vector2(movementForce, 0) + platformVelocity * rb.mass / Time.deltaTime;
+
+            // Apply the force to the player
+            rb.AddForce(totalForce, ForceMode2D.Force);
         }
 
         public virtual void HandleFlip()
         {
-            isFacingRight = !isFacingRight;
+            character.isFacingRight = !character.isFacingRight;
             character._transform.Rotate(0, 180, 0);
 
             /*Vector3 scale = transform.localScale;

@@ -54,6 +54,7 @@ public class PlayerLocomotionEditor : Editor
     private SerializedProperty groundCheckPoint;
     private SerializedProperty groundCheckSize;
     private SerializedProperty groundLayer;
+    private SerializedProperty wallJumpLayer;
     private SerializedProperty frontWallCheckPoint;
     private SerializedProperty backWallCheckPoint;
     private SerializedProperty wallCheckSize;
@@ -116,6 +117,7 @@ public class PlayerLocomotionEditor : Editor
         groundCheckPoint = serializedObject.FindProperty("groundCheckPoint");
         groundCheckSize = serializedObject.FindProperty("groundCheckSize");
         groundLayer = serializedObject.FindProperty("groundLayer");
+        wallJumpLayer = serializedObject.FindProperty("wallJumpLayer");
         frontWallCheckPoint = serializedObject.FindProperty("frontWallCheckPoint");
         backWallCheckPoint = serializedObject.FindProperty("backWallCheckPoint");
         wallCheckSize = serializedObject.FindProperty("wallCheckSize");
@@ -235,7 +237,8 @@ public class PlayerLocomotionEditor : Editor
         if (showCheckSettings.boolValue)
         {
             EditorStyles.label.fontStyle = FontStyle.Normal;
-            EditorGUILayout.PropertyField(groundLayer, new GUIContent("Environment Layer", "The layer(s) we can run, jump and wall jump on"));
+            EditorGUILayout.PropertyField(groundLayer, new GUIContent("Environment Layer", "The layer(s) we can run and jump on"));
+            EditorGUILayout.PropertyField(wallJumpLayer, new GUIContent("Wall Jump Layer", "The layer(s) we can wall jump on"));
             groundCheckPoint.objectReferenceValue = (Transform)EditorGUILayout.ObjectField(new GUIContent("Ground Check Transform", "The Transform used to reference where we check for the ground"), groundCheckPoint.objectReferenceValue, typeof(Transform), true);
             frontWallCheckPoint.objectReferenceValue = (Transform)EditorGUILayout.ObjectField(new GUIContent("Front Wall Check Transform", "The Transform used to reference where we check the wall in the direction our character is facing"), frontWallCheckPoint.objectReferenceValue, typeof(Transform), true);
             backWallCheckPoint.objectReferenceValue = (Transform)EditorGUILayout.ObjectField(new GUIContent("Back Wall Check Transform", "The Transform used to reference where we check the wall in the opposite direction our character is facing"), backWallCheckPoint.objectReferenceValue, typeof(Transform), true);

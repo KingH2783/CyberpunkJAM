@@ -1,0 +1,962 @@
+fileFormatVersion: 2
+guid: f8aaf7dfcbaa9ae449aabda7642bfecb
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2746.4
+        width: 881.8571
+        height: 686.6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f8ff8c2dab36ca409468fb4601b9070
+      internalID: 900175613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_1
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 2746
+        width: 882
+        height: 687
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7be1d19552b0ae469e90f2e4b31ac93
+      internalID: 740632912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_2
+      rect:
+        serializedVersion: 2
+        x: 1762
+        y: 2746.4
+        width: 881.8571
+        height: 686.6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f42227531c57074fa92480064e2af42
+      internalID: -488021530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_3
+      rect:
+        serializedVersion: 2
+        x: 2643
+        y: 2746.4
+        width: 881.8571
+        height: 686.6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7cc58e64b9b2b04fa282eee6762b7c0
+      internalID: -542956873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_4
+      rect:
+        serializedVersion: 2
+        x: 3524
+        y: 2746.4
+        width: 881.8571
+        height: 686.6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e2d85c85008ba499d5ad7465f4ae31
+      internalID: -1640349299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_5
+      rect:
+        serializedVersion: 2
+        x: 4405
+        y: 2746.4
+        width: 881.8571
+        height: 686.6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24d9d6eb4473f7d48b22a255ef10eef3
+      internalID: -1452071464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_6
+      rect:
+        serializedVersion: 2
+        x: 5286
+        y: 2746.4
+        width: 881.8571
+        height: 686.6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd80d528ed7b98448909fa5fbf607df9
+      internalID: 1150069382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2060.4
+        width: 881.8571
+        height: 686.6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed5ac7095b87ef4a8081eee24317040
+      internalID: 1351410859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_8
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 2060.4
+        width: 881.8571
+        height: 686.6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b083157c08c3af419761292e33cae91
+      internalID: -1461372030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_9
+      rect:
+        serializedVersion: 2
+        x: 1762
+        y: 2060.4
+        width: 881.8571
+        height: 686.6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 063bacf26d9f1e64eae259109b561e83
+      internalID: 2006657641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_10
+      rect:
+        serializedVersion: 2
+        x: 2643
+        y: 2060.4
+        width: 881.8571
+        height: 686.6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06de58bd86145694a9f56fca5ade2803
+      internalID: 2023108719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_11
+      rect:
+        serializedVersion: 2
+        x: 3524
+        y: 2060.4
+        width: 881.8571
+        height: 686.6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 720c260923dab9d499257c8428431544
+      internalID: 1002275390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_12
+      rect:
+        serializedVersion: 2
+        x: 4405
+        y: 2060.4
+        width: 881.8571
+        height: 686.6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4531ef51e3911a498a3dccfff3a9216
+      internalID: 198543497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_13
+      rect:
+        serializedVersion: 2
+        x: 5286
+        y: 2060.4
+        width: 881.8571
+        height: 686.6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2492fdc44e769dd4e8300f7e120ddf74
+      internalID: 22629161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1374.4
+        width: 881.8571
+        height: 686.6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95e2d2d50e47fd048b959d632b6c7d87
+      internalID: 1564497399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_15
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 1374.4
+        width: 881.8571
+        height: 686.6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e404ee85bfd59241bdc0bc0ae2f9ead
+      internalID: 263253372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_16
+      rect:
+        serializedVersion: 2
+        x: 1762
+        y: 1374.4
+        width: 881.8571
+        height: 686.6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43a60219874b5f04d9a34ee28a2d9d74
+      internalID: -559118891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_17
+      rect:
+        serializedVersion: 2
+        x: 2643
+        y: 1374.4
+        width: 881.8571
+        height: 686.6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd5f4ae7aff44a4b8111b0537522d62
+      internalID: 479650375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_18
+      rect:
+        serializedVersion: 2
+        x: 3524
+        y: 1374.4
+        width: 881.8571
+        height: 686.6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e55272466ac6526438cc30e5df66892b
+      internalID: 1127911802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_19
+      rect:
+        serializedVersion: 2
+        x: 4405
+        y: 1374.4
+        width: 881.8571
+        height: 686.6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 718cca69a06cfcf47a7241f675f48c3d
+      internalID: 1550196693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_20
+      rect:
+        serializedVersion: 2
+        x: 5286
+        y: 1374.4
+        width: 881.8571
+        height: 686.6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf40dbb8eb289944be89252948ba5d1
+      internalID: 609957260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 688.4
+        width: 881.8571
+        height: 686.6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4dde2e072bc13049a3060b4f6a90470
+      internalID: 908239490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_22
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 688.4
+        width: 881.8571
+        height: 686.6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecb102c63f4dd074da6427ef27307662
+      internalID: 69191822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_23
+      rect:
+        serializedVersion: 2
+        x: 1762
+        y: 688.4
+        width: 881.8571
+        height: 686.6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a92295bddf458224c80cfeb6463f0db7
+      internalID: -895515833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_24
+      rect:
+        serializedVersion: 2
+        x: 2643
+        y: 688.4
+        width: 881.8571
+        height: 686.6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf18dfa6ad7dd9248a5b54f2fa5828c3
+      internalID: 30700762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_25
+      rect:
+        serializedVersion: 2
+        x: 3524
+        y: 688.4
+        width: 881.8571
+        height: 686.6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed93f648a4ed8f498ddcc635b0e3eb7
+      internalID: 964350816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_26
+      rect:
+        serializedVersion: 2
+        x: 4405
+        y: 688.4
+        width: 881.8571
+        height: 686.6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 723b905000bba7241acb7c988644b8c9
+      internalID: 1505420526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_27
+      rect:
+        serializedVersion: 2
+        x: 5286
+        y: 688.4
+        width: 881.8571
+        height: 686.6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bb695e6909d98d4397ee9e9e9de923c
+      internalID: -869152597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2.4000244
+        width: 881.8571
+        height: 686.6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89eda5218e0bf9e409d7ffed75c8f37d
+      internalID: 2064492247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_29
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 2.4000244
+        width: 881.8571
+        height: 686.6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a1888d9dedef541aa92758bee04986
+      internalID: 1467621721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_30
+      rect:
+        serializedVersion: 2
+        x: 1762
+        y: 2.4000244
+        width: 881.8571
+        height: 686.6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9940a716eebd5e3489eec8c83e22a5a5
+      internalID: 46845480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_31
+      rect:
+        serializedVersion: 2
+        x: 2643
+        y: 2.4000244
+        width: 881.8571
+        height: 686.6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a617a007a481cef418a4bfe47f9b6248
+      internalID: 2133250178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_32
+      rect:
+        serializedVersion: 2
+        x: 3524
+        y: 2.4000244
+        width: 881.8571
+        height: 686.6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63f36512a36ef4842bd7d97489182370
+      internalID: -1356519466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_33
+      rect:
+        serializedVersion: 2
+        x: 4405
+        y: 2.4000244
+        width: 881.8571
+        height: 686.6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ffafa078a9b6784d8331b282a9895d8
+      internalID: -1074076220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandit-pistol-sprite-sheet-final-_34
+      rect:
+        serializedVersion: 2
+        x: 5286
+        y: 2.4000244
+        width: 881.8571
+        height: 686.6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d7e6665c865164895f1f0ed959b49c
+      internalID: 1601953120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Bandit-pistol-sprite-sheet-final-_0: 900175613
+      Bandit-pistol-sprite-sheet-final-_1: 740632912
+      Bandit-pistol-sprite-sheet-final-_10: 2023108719
+      Bandit-pistol-sprite-sheet-final-_11: 1002275390
+      Bandit-pistol-sprite-sheet-final-_12: 198543497
+      Bandit-pistol-sprite-sheet-final-_13: 22629161
+      Bandit-pistol-sprite-sheet-final-_14: 1564497399
+      Bandit-pistol-sprite-sheet-final-_15: 263253372
+      Bandit-pistol-sprite-sheet-final-_16: -559118891
+      Bandit-pistol-sprite-sheet-final-_17: 479650375
+      Bandit-pistol-sprite-sheet-final-_18: 1127911802
+      Bandit-pistol-sprite-sheet-final-_19: 1550196693
+      Bandit-pistol-sprite-sheet-final-_2: -488021530
+      Bandit-pistol-sprite-sheet-final-_20: 609957260
+      Bandit-pistol-sprite-sheet-final-_21: 908239490
+      Bandit-pistol-sprite-sheet-final-_22: 69191822
+      Bandit-pistol-sprite-sheet-final-_23: -895515833
+      Bandit-pistol-sprite-sheet-final-_24: 30700762
+      Bandit-pistol-sprite-sheet-final-_25: 964350816
+      Bandit-pistol-sprite-sheet-final-_26: 1505420526
+      Bandit-pistol-sprite-sheet-final-_27: -869152597
+      Bandit-pistol-sprite-sheet-final-_28: 2064492247
+      Bandit-pistol-sprite-sheet-final-_29: 1467621721
+      Bandit-pistol-sprite-sheet-final-_3: -542956873
+      Bandit-pistol-sprite-sheet-final-_30: 46845480
+      Bandit-pistol-sprite-sheet-final-_31: 2133250178
+      Bandit-pistol-sprite-sheet-final-_32: -1356519466
+      Bandit-pistol-sprite-sheet-final-_33: -1074076220
+      Bandit-pistol-sprite-sheet-final-_34: 1601953120
+      Bandit-pistol-sprite-sheet-final-_4: -1640349299
+      Bandit-pistol-sprite-sheet-final-_5: -1452071464
+      Bandit-pistol-sprite-sheet-final-_6: 1150069382
+      Bandit-pistol-sprite-sheet-final-_7: 1351410859
+      Bandit-pistol-sprite-sheet-final-_8: -1461372030
+      Bandit-pistol-sprite-sheet-final-_9: 2006657641
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

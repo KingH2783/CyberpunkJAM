@@ -44,8 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 514b37d309c485b48847aea359bff59e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mixer: {fileID: 24100000, guid: d576a24be311323408e914174152b117, type: 2}
-  startAllSlidersAtThisVolume: 0.5
   masterVolumeRTPC:
     idInternal: 0
     valueGuidInternal: 
@@ -58,3 +56,4 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: ba9e62c17023c804a81d2301f018fcfb, type: 2}
+  startAllSlidersAtThisVolume: 0.2

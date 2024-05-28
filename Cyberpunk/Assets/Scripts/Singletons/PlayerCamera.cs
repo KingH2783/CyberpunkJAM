@@ -40,15 +40,20 @@ namespace HL
         public void HandleAllCameraMovement()
         {
             FollowTarget();
+            mainCamera.transform.localPosition = new(cameraOffset.x, cameraOffset.y, mainCamera.transform.localPosition.z);
             mainCamera.orthographicSize = cameraSize;
-
-            Vector3 newPos = new(cameraOffset.x, cameraOffset.y, mainCamera.transform.localPosition.z);
-            mainCamera.transform.localPosition = newPos;
         }
 
         private void FollowTarget()
         {
             cameraHolderTransform.position = Vector3.SmoothDamp(cameraHolderTransform.position, player._transform.position, ref cameraFollowVelocity, playerFollowSpeed);
+        }
+
+        private void OnValidate()
+        {
+            mainCamera = GetComponentInChildren<Camera>();
+            mainCamera.transform.localPosition = new(cameraOffset.x, cameraOffset.y, mainCamera.transform.localPosition.z);
+            mainCamera.orthographicSize = cameraSize;
         }
     }
 }

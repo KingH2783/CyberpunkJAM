@@ -21,29 +21,27 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -1497560706, guid: fcdb6da12f7ec424fac8bc4c070ed83e, type: 3}
+      value: {fileID: 1351410859, guid: f8aaf7dfcbaa9ae449aabda7642bfecb, type: 3}
     - time: 0.083333336
-      value: {fileID: 1571221517, guid: fcdb6da12f7ec424fac8bc4c070ed83e, type: 3}
+      value: {fileID: -1461372030, guid: f8aaf7dfcbaa9ae449aabda7642bfecb, type: 3}
     - time: 0.16666667
-      value: {fileID: 586769601, guid: fcdb6da12f7ec424fac8bc4c070ed83e, type: 3}
+      value: {fileID: 2006657641, guid: f8aaf7dfcbaa9ae449aabda7642bfecb, type: 3}
     - time: 0.25
-      value: {fileID: 2077555879, guid: fcdb6da12f7ec424fac8bc4c070ed83e, type: 3}
+      value: {fileID: 2023108719, guid: f8aaf7dfcbaa9ae449aabda7642bfecb, type: 3}
     - time: 0.33333334
-      value: {fileID: 1173816031, guid: fcdb6da12f7ec424fac8bc4c070ed83e, type: 3}
+      value: {fileID: 1002275390, guid: f8aaf7dfcbaa9ae449aabda7642bfecb, type: 3}
     - time: 0.41666666
-      value: {fileID: 1409891790, guid: fcdb6da12f7ec424fac8bc4c070ed83e, type: 3}
+      value: {fileID: 198543497, guid: f8aaf7dfcbaa9ae449aabda7642bfecb, type: 3}
     - time: 0.5
-      value: {fileID: 1417412130, guid: fcdb6da12f7ec424fac8bc4c070ed83e, type: 3}
+      value: {fileID: 22629161, guid: f8aaf7dfcbaa9ae449aabda7642bfecb, type: 3}
     - time: 0.6666667
-      value: {fileID: -1497560706, guid: fcdb6da12f7ec424fac8bc4c070ed83e, type: 3}
-    - time: 0.75
-      value: {fileID: -1497560706, guid: fcdb6da12f7ec424fac8bc4c070ed83e, type: 3}
+      value: {fileID: 22629161, guid: f8aaf7dfcbaa9ae449aabda7642bfecb, type: 3}
     attribute: m_Sprite
-    path: Sprite Model
+    path: 
     classID: 212
     script: {fileID: 0}
     flags: 2
-  m_SampleRate: 12
+  m_SampleRate: 24
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -51,7 +49,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 3927977444
+      path: 0
       attribute: 0
       script: {fileID: 0}
       typeID: 212
@@ -60,21 +58,20 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -1497560706, guid: fcdb6da12f7ec424fac8bc4c070ed83e, type: 3}
-    - {fileID: 1571221517, guid: fcdb6da12f7ec424fac8bc4c070ed83e, type: 3}
-    - {fileID: 586769601, guid: fcdb6da12f7ec424fac8bc4c070ed83e, type: 3}
-    - {fileID: 2077555879, guid: fcdb6da12f7ec424fac8bc4c070ed83e, type: 3}
-    - {fileID: 1173816031, guid: fcdb6da12f7ec424fac8bc4c070ed83e, type: 3}
-    - {fileID: 1409891790, guid: fcdb6da12f7ec424fac8bc4c070ed83e, type: 3}
-    - {fileID: 1417412130, guid: fcdb6da12f7ec424fac8bc4c070ed83e, type: 3}
-    - {fileID: -1497560706, guid: fcdb6da12f7ec424fac8bc4c070ed83e, type: 3}
-    - {fileID: -1497560706, guid: fcdb6da12f7ec424fac8bc4c070ed83e, type: 3}
+    - {fileID: 1351410859, guid: f8aaf7dfcbaa9ae449aabda7642bfecb, type: 3}
+    - {fileID: -1461372030, guid: f8aaf7dfcbaa9ae449aabda7642bfecb, type: 3}
+    - {fileID: 2006657641, guid: f8aaf7dfcbaa9ae449aabda7642bfecb, type: 3}
+    - {fileID: 2023108719, guid: f8aaf7dfcbaa9ae449aabda7642bfecb, type: 3}
+    - {fileID: 1002275390, guid: f8aaf7dfcbaa9ae449aabda7642bfecb, type: 3}
+    - {fileID: 198543497, guid: f8aaf7dfcbaa9ae449aabda7642bfecb, type: 3}
+    - {fileID: 22629161, guid: f8aaf7dfcbaa9ae449aabda7642bfecb, type: 3}
+    - {fileID: 22629161, guid: f8aaf7dfcbaa9ae449aabda7642bfecb, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.8333333
+    m_StopTime: 0.7083334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -96,6 +93,13 @@ AnimationClip:
   m_Events:
   - time: 0.083333336
     functionName: PlayEnemy_range1_shooting
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.16666667
+    functionName: PlayPlasmaGunShoot
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

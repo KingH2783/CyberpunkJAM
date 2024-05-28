@@ -40,7 +40,7 @@ namespace HL
             HandleMovement(leftOrRightAIMovementInput);
 
             if (leftOrRightAIMovementInput != 0 &&
-                (leftOrRightAIMovementInput > 0) != isFacingRight)
+                (leftOrRightAIMovementInput > 0) != ai.isFacingRight)
                 HandleFlip();
         }
 

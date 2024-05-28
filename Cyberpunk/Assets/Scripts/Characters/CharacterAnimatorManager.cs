@@ -18,7 +18,8 @@ namespace HL
         public virtual void PlayTargetAnimation(string animation, bool stopMovement = false)
         {
             character.isPerformingAction = stopMovement;
-            animator.CrossFade(animation, 0);
+            //animator.CrossFade(animation, 0);
+            animator.Play(animation);
         }
 
         #region Animation Events
@@ -33,6 +34,26 @@ namespace HL
         {
             if (meleeCollider != null)
                 meleeCollider.DisableCollider();
+        }
+
+        private void MoveCharacterBackwardsForMelee()
+        {
+            /*float amountToMoveBy;
+            if (character.isFacingRight)
+                amountToMoveBy = -1;
+            else
+                amountToMoveBy = 1;
+            character._transform.position = new(character._transform.position.x + amountToMoveBy, character._transform.position.y);*/
+        }
+
+        private void MoveCharacterForwardsForMelee()
+        {
+            /*float amountToMoveBy;
+            if (character.isFacingRight)
+                amountToMoveBy = 1f;
+            else
+                amountToMoveBy = -1f;
+            character._transform.position = new(character._transform.position.x + amountToMoveBy, character._transform.position.y);*/
         }
 
         public void ResetOnAnimatorIdle()

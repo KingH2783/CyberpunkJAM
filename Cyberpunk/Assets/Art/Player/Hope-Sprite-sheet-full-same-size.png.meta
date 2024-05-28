@@ -1,0 +1,2019 @@
+fileFormatVersion: 2
+guid: ae2dd3cddf912a649be55f44c384482f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hope-Sprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7569.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14cd7e192108bab4da4c614e5a1edff4
+      internalID: 1590603203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_14
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 7569.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b80369e6fe5e8514882bffe5bdcf403c
+      internalID: 1226772883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_28
+      rect:
+        serializedVersion: 2
+        x: 2696
+        y: 7569.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d323387c5c6b7044a8fe9c6ee8640ebc
+      internalID: -14516384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_42
+      rect:
+        serializedVersion: 2
+        x: 4044
+        y: 7569.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7d968af6d8b4a14988f79251d236e5c
+      internalID: -256559747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_54
+      rect:
+        serializedVersion: 2
+        x: 5392
+        y: 7569.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae8da21bdb47c445a19c4aca6eb9cfb
+      internalID: 316301953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_68
+      rect:
+        serializedVersion: 2
+        x: 6740
+        y: 7569.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 341c7293f4c6de940a5405c0377e472d
+      internalID: -622738309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6987.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b68ad6d7aca80cf4b82fc48ec9dff6d5
+      internalID: 1779074430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_15
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 6987.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455b5760700ba16419aebae97c0b41e1
+      internalID: 2074049081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_29
+      rect:
+        serializedVersion: 2
+        x: 2696
+        y: 6987.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91b4032a67c8e834bab4ca2da4791d93
+      internalID: -499839674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_43
+      rect:
+        serializedVersion: 2
+        x: 4044
+        y: 6987.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff289558349d0334bb87a2b323512d1e
+      internalID: -800668163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_55
+      rect:
+        serializedVersion: 2
+        x: 5392
+        y: 6987.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db30e5b479bbb1047aa1eea8a6a05813
+      internalID: 1765323703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_69
+      rect:
+        serializedVersion: 2
+        x: 6740
+        y: 6987.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80caf187358758d448bb4fa1ced52b0f
+      internalID: -1564677933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6405.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107aa3928af0acf47881c15708f3f794
+      internalID: 1716253486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_16
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 6405.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d0f14e1093017f48911d14c4036af73
+      internalID: 33687793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_30
+      rect:
+        serializedVersion: 2
+        x: 2696
+        y: 6405.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1be9a8d90972f040bfd58765e583de1
+      internalID: 1174757491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_44
+      rect:
+        serializedVersion: 2
+        x: 4044
+        y: 6405.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42f513c5c3a56be4da81a3a354d432e2
+      internalID: 2090955492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_56
+      rect:
+        serializedVersion: 2
+        x: 5392
+        y: 6405.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe55cf7edcf6dcd4988cf5d84dcb79ee
+      internalID: 1794980551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_70
+      rect:
+        serializedVersion: 2
+        x: 6740
+        y: 6405.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7368050b61d725429815b6877683b55
+      internalID: 1386495695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5823.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba940c2c1632b094fad3ba3ae37ba958
+      internalID: -683552453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_17
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 5823.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95b4ea3619e9042489f77b2bd43da5b6
+      internalID: -32912095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_31
+      rect:
+        serializedVersion: 2
+        x: 2696
+        y: 5823.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 433aca98d12c48a4195af3dd4c0e0e6b
+      internalID: 372774176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_45
+      rect:
+        serializedVersion: 2
+        x: 4044
+        y: 5823.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581d1428f732f904c809a74b47ffadce
+      internalID: -610352938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_57
+      rect:
+        serializedVersion: 2
+        x: 5392
+        y: 5823.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df785865cb888c349965c35a879a64eb
+      internalID: -25167840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_71
+      rect:
+        serializedVersion: 2
+        x: 6740
+        y: 5823.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f17dda14a3a69ce408495226d5ea4117
+      internalID: -750860596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5241.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93b23f9d955ea504cae309fec94d7f3a
+      internalID: -1680369220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_18
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 5241.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93301459800ecbc41a648f916f19dcf5
+      internalID: -2011420802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_32
+      rect:
+        serializedVersion: 2
+        x: 2696
+        y: 5241.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05c2680174373094a812d9dc7b13bfe4
+      internalID: 1871596506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_46
+      rect:
+        serializedVersion: 2
+        x: 4044
+        y: 5241.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edbb4bc714633e944a920ee3588c73ff
+      internalID: -903658890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_58
+      rect:
+        serializedVersion: 2
+        x: 5392
+        y: 5241.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9ccbfc1863d2e4dbd27eac0c13931b
+      internalID: -872134360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_72
+      rect:
+        serializedVersion: 2
+        x: 6740
+        y: 5241.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c287f7ebf78ba84d86ff442d684fcaa
+      internalID: 621894687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4659.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0ab084b9eeae704f9189ca9775cc426
+      internalID: 382112811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_19
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 4659.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d1e949e42324c845b4d2710529d405d
+      internalID: -799131211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_33
+      rect:
+        serializedVersion: 2
+        x: 2696
+        y: 4659.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64e27c3b75e129444b19dacbb1365621
+      internalID: -1828997146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_47
+      rect:
+        serializedVersion: 2
+        x: 4044
+        y: 4659.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0693e72920e7a149a835c5ba414e622
+      internalID: 1348988497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_59
+      rect:
+        serializedVersion: 2
+        x: 5392
+        y: 4659.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fad053ae0a660c458a01c91de891fdc
+      internalID: -1104366798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_73
+      rect:
+        serializedVersion: 2
+        x: 6740
+        y: 4659.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54f6688d90698914e931a81aedbe3ccb
+      internalID: 1473938336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4077.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4ba82f425326434e8d7542ee7f10104
+      internalID: -947172756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_20
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 4077.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d8c655627f37e141924bf78f8ff7476
+      internalID: -24249519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_34
+      rect:
+        serializedVersion: 2
+        x: 2696
+        y: 4077.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c981c8d86d36a82498f5d3ead9873188
+      internalID: -238335454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_48
+      rect:
+        serializedVersion: 2
+        x: 4044
+        y: 4077.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9b6cf2e13e33c641a74ae2b173f6257
+      internalID: 1117001274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_60
+      rect:
+        serializedVersion: 2
+        x: 5392
+        y: 4077.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0953913ed61eae44b9da46f9f3a0e80
+      internalID: 1328209132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3495.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df006c6cb0e4f5742bc2396b9475fcb3
+      internalID: 658886641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_21
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 3495.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0adfff3eb6269248922407d2917c4bc
+      internalID: -1841671757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_35
+      rect:
+        serializedVersion: 2
+        x: 2696
+        y: 3495.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6a3750ca91fa4f41be1833b8ebc7d96
+      internalID: -853816031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_49
+      rect:
+        serializedVersion: 2
+        x: 4044
+        y: 3495.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e92f8c8f1ac74784195953d088107a50
+      internalID: 958591466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_61
+      rect:
+        serializedVersion: 2
+        x: 5392
+        y: 3495.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2a59457a60d790409c64a6e8396d1df
+      internalID: -1776018610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_74
+      rect:
+        serializedVersion: 2
+        x: 6740
+        y: 3495.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85c6b7db4bdcdcf46881853d4da233b9
+      internalID: -1338536506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2913.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37127cc3ca739cd4a838b5ff3e58136d
+      internalID: -1520301230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_22
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 2913.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e9a33771382b14eb8451e72a372560
+      internalID: 319772234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_36
+      rect:
+        serializedVersion: 2
+        x: 2696
+        y: 2913.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8b34a3b18e899a418399b646e661865
+      internalID: 403849352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_50
+      rect:
+        serializedVersion: 2
+        x: 4044
+        y: 2913.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9140a69daee85764f9e6d393ffc1406b
+      internalID: -1148213581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_62
+      rect:
+        serializedVersion: 2
+        x: 5392
+        y: 2913.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d65a2a7863772554283b4bebe3bdade6
+      internalID: 1274584003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_75
+      rect:
+        serializedVersion: 2
+        x: 6740
+        y: 2913.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5809212fa656ab24cb2a0b4f178720dd
+      internalID: -2050122746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2331.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c4637f45a69c5d4490129b033182540
+      internalID: -2082286791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_23
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 2331.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6c8a753ea455d41a2e260796122441
+      internalID: 728743398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_37
+      rect:
+        serializedVersion: 2
+        x: 2696
+        y: 2331.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21e9483ac837bd24f997418d0746a59b
+      internalID: -988353779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_51
+      rect:
+        serializedVersion: 2
+        x: 4044
+        y: 2331.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04a813e120315b446a9ed5e1aad6d22c
+      internalID: 437863014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_63
+      rect:
+        serializedVersion: 2
+        x: 5392
+        y: 2331.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00e0f097d4f95043a87a73e3ff401b5
+      internalID: 2084597640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_76
+      rect:
+        serializedVersion: 2
+        x: 6740
+        y: 2331.9287
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d988da6614834b47a4a9d091bb2b5b8
+      internalID: -809231913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1749.9286
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4380476398a57d341a9b6256db94284c
+      internalID: 33466101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_24
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 1749.9286
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed52019391b1ec3469874436ad54cf46
+      internalID: -927684773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_38
+      rect:
+        serializedVersion: 2
+        x: 2696
+        y: 1749.9286
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ecb38a7593f9914a93a14f157669243
+      internalID: -1409959408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_52
+      rect:
+        serializedVersion: 2
+        x: 4044
+        y: 1749.9286
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e2a79288daf66e4391aaf0a400ae199
+      internalID: -390872697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_64
+      rect:
+        serializedVersion: 2
+        x: 5392
+        y: 1749.9286
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b5bcc43ca2e17438629092f2c29d25
+      internalID: 1551296183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_77
+      rect:
+        serializedVersion: 2
+        x: 6740
+        y: 1749.9286
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c69373b7d0223f4aa50b7547cc39d1a
+      internalID: -2051949483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1167.9286
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f25210fb549b0ca448190d60f30f6ee6
+      internalID: -1614193955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_25
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 1167.9286
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71855fccc8fa6c24c8debdc15e459cab
+      internalID: -1941635858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_39
+      rect:
+        serializedVersion: 2
+        x: 2696
+        y: 1167.9286
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bf619b8f81bb704096c2802d9c156c0
+      internalID: 543403029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_53
+      rect:
+        serializedVersion: 2
+        x: 4044
+        y: 1167.9286
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c703b6335458ea49bcc497806ef47c3
+      internalID: -1281906372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_65
+      rect:
+        serializedVersion: 2
+        x: 5392
+        y: 1167.9286
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be5dd19fd83714a438d4b08490e37833
+      internalID: -302515924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_78
+      rect:
+        serializedVersion: 2
+        x: 6740
+        y: 1167.9286
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0cb891bbc1386f4aaa5863ed2989f5b
+      internalID: 260350654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 585.9286
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0bc3dcf98271aa4c8b2d0c1b1b14c8f
+      internalID: -1404679359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_26
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 585.9286
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e6519874545b3943908ae9643313fb0
+      internalID: -325342333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_40
+      rect:
+        serializedVersion: 2
+        x: 2696
+        y: 585.9286
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e63b13e8759b11f46ba897bf673441fa
+      internalID: 318306633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite-sheet-full-same-size_75
+      rect:
+        serializedVersion: 2
+        x: 4044
+        y: 585.9286
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0b02028d199d6c40ac06266823faa4a
+      internalID: 1997077994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_66
+      rect:
+        serializedVersion: 2
+        x: 5392
+        y: 585.9286
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c539c8dd3410f4c8a85298ed042c4a
+      internalID: 1917095485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_79
+      rect:
+        serializedVersion: 2
+        x: 6740
+        y: 585.9286
+        width: 1348.6666
+        height: 579.0714
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc79bb2ad51832c4880825905d680d52
+      internalID: 1236228783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1349
+        height: 579
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d00aca92918b784ba1e69f502fcbe56
+      internalID: -1247043102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_27
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 0
+        width: 1349
+        height: 579
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8fd46c8552b21c4781c4c499983f0c1
+      internalID: 183888531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_41
+      rect:
+        serializedVersion: 2
+        x: 2696
+        y: 0
+        width: 1349
+        height: 579
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9d024b9b40596744845b271c34363bd
+      internalID: 1231282357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite-sheet-full-same-size_81
+      rect:
+        serializedVersion: 2
+        x: 4044
+        y: 0
+        width: 1349
+        height: 579
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e3378e0f0444664aae075babf795b66
+      internalID: 263348769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_67
+      rect:
+        serializedVersion: 2
+        x: 5392
+        y: 0
+        width: 1349
+        height: 579
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a921d45a2ddf4d04ea2d7f011e903305
+      internalID: 1165012279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite_80
+      rect:
+        serializedVersion: 2
+        x: 6740
+        y: 0
+        width: 1349
+        height: 579
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14e93976635087b48975cefbf9568c1b
+      internalID: 1485639780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Hope-Sprite-sheet-full-same-size_41: 1478702908
+      Hope-Sprite-sheet-full-same-size_75: 1997077994
+      Hope-Sprite-sheet-full-same-size_81: 263348769
+      Hope-Sprite_0: 1590603203
+      Hope-Sprite_1: 1779074430
+      Hope-Sprite_10: 33466101
+      Hope-Sprite_11: -1614193955
+      Hope-Sprite_12: -1404679359
+      Hope-Sprite_13: -1247043102
+      Hope-Sprite_14: 1226772883
+      Hope-Sprite_15: 2074049081
+      Hope-Sprite_16: 33687793
+      Hope-Sprite_17: -32912095
+      Hope-Sprite_18: -2011420802
+      Hope-Sprite_19: -799131211
+      Hope-Sprite_2: 1716253486
+      Hope-Sprite_20: -24249519
+      Hope-Sprite_21: -1841671757
+      Hope-Sprite_22: 319772234
+      Hope-Sprite_23: 728743398
+      Hope-Sprite_24: -927684773
+      Hope-Sprite_25: -1941635858
+      Hope-Sprite_26: -325342333
+      Hope-Sprite_27: 183888531
+      Hope-Sprite_28: -14516384
+      Hope-Sprite_29: -499839674
+      Hope-Sprite_3: -683552453
+      Hope-Sprite_30: 1174757491
+      Hope-Sprite_31: 372774176
+      Hope-Sprite_32: 1871596506
+      Hope-Sprite_33: -1828997146
+      Hope-Sprite_34: -238335454
+      Hope-Sprite_35: -853816031
+      Hope-Sprite_36: 403849352
+      Hope-Sprite_37: -988353779
+      Hope-Sprite_38: -1409959408
+      Hope-Sprite_39: 543403029
+      Hope-Sprite_4: -1680369220
+      Hope-Sprite_40: 318306633
+      Hope-Sprite_41: 1231282357
+      Hope-Sprite_42: -256559747
+      Hope-Sprite_43: -800668163
+      Hope-Sprite_44: 2090955492
+      Hope-Sprite_45: -610352938
+      Hope-Sprite_46: -903658890
+      Hope-Sprite_47: 1348988497
+      Hope-Sprite_48: 1117001274
+      Hope-Sprite_49: 958591466
+      Hope-Sprite_5: 382112811
+      Hope-Sprite_50: -1148213581
+      Hope-Sprite_51: 437863014
+      Hope-Sprite_52: -390872697
+      Hope-Sprite_53: -1281906372
+      Hope-Sprite_54: 316301953
+      Hope-Sprite_55: 1765323703
+      Hope-Sprite_56: 1794980551
+      Hope-Sprite_57: -25167840
+      Hope-Sprite_58: -872134360
+      Hope-Sprite_59: -1104366798
+      Hope-Sprite_6: -947172756
+      Hope-Sprite_60: 1328209132
+      Hope-Sprite_61: -1776018610
+      Hope-Sprite_62: 1274584003
+      Hope-Sprite_63: 2084597640
+      Hope-Sprite_64: 1551296183
+      Hope-Sprite_65: -302515924
+      Hope-Sprite_66: 1917095485
+      Hope-Sprite_67: 1165012279
+      Hope-Sprite_68: -622738309
+      Hope-Sprite_69: -1564677933
+      Hope-Sprite_7: 658886641
+      Hope-Sprite_70: 1386495695
+      Hope-Sprite_71: -750860596
+      Hope-Sprite_72: 621894687
+      Hope-Sprite_73: 1473938336
+      Hope-Sprite_74: -1338536506
+      Hope-Sprite_75: -2050122746
+      Hope-Sprite_76: -809231913
+      Hope-Sprite_77: -2051949483
+      Hope-Sprite_78: 260350654
+      Hope-Sprite_79: 1236228783
+      Hope-Sprite_8: -1520301230
+      Hope-Sprite_80: 1485639780
+      Hope-Sprite_9: -2082286791
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -21,21 +21,23 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -217966433, guid: fcdb6da12f7ec424fac8bc4c070ed83e, type: 3}
-    - time: 0.16666667
-      value: {fileID: -1153337912, guid: fcdb6da12f7ec424fac8bc4c070ed83e, type: 3}
-    - time: 0.33333334
-      value: {fileID: -220642278, guid: fcdb6da12f7ec424fac8bc4c070ed83e, type: 3}
+      value: {fileID: 900175613, guid: f8aaf7dfcbaa9ae449aabda7642bfecb, type: 3}
+    - time: 0.125
+      value: {fileID: -488021530, guid: f8aaf7dfcbaa9ae449aabda7642bfecb, type: 3}
+    - time: 0.25
+      value: {fileID: -542956873, guid: f8aaf7dfcbaa9ae449aabda7642bfecb, type: 3}
+    - time: 0.375
+      value: {fileID: -1640349299, guid: f8aaf7dfcbaa9ae449aabda7642bfecb, type: 3}
     - time: 0.5
-      value: {fileID: -445319059, guid: fcdb6da12f7ec424fac8bc4c070ed83e, type: 3}
-    - time: 0.6666667
-      value: {fileID: -1203501207, guid: fcdb6da12f7ec424fac8bc4c070ed83e, type: 3}
+      value: {fileID: -1452071464, guid: f8aaf7dfcbaa9ae449aabda7642bfecb, type: 3}
+    - time: 0.5833333
+      value: {fileID: -1452071464, guid: f8aaf7dfcbaa9ae449aabda7642bfecb, type: 3}
     attribute: m_Sprite
-    path: Sprite Model
+    path: 
     classID: 212
     script: {fileID: 0}
     flags: 2
-  m_SampleRate: 12
+  m_SampleRate: 24
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -43,7 +45,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 3927977444
+      path: 0
       attribute: 0
       script: {fileID: 0}
       typeID: 212
@@ -52,17 +54,18 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -217966433, guid: fcdb6da12f7ec424fac8bc4c070ed83e, type: 3}
-    - {fileID: -1153337912, guid: fcdb6da12f7ec424fac8bc4c070ed83e, type: 3}
-    - {fileID: -220642278, guid: fcdb6da12f7ec424fac8bc4c070ed83e, type: 3}
-    - {fileID: -445319059, guid: fcdb6da12f7ec424fac8bc4c070ed83e, type: 3}
-    - {fileID: -1203501207, guid: fcdb6da12f7ec424fac8bc4c070ed83e, type: 3}
+    - {fileID: 900175613, guid: f8aaf7dfcbaa9ae449aabda7642bfecb, type: 3}
+    - {fileID: -488021530, guid: f8aaf7dfcbaa9ae449aabda7642bfecb, type: 3}
+    - {fileID: -542956873, guid: f8aaf7dfcbaa9ae449aabda7642bfecb, type: 3}
+    - {fileID: -1640349299, guid: f8aaf7dfcbaa9ae449aabda7642bfecb, type: 3}
+    - {fileID: -1452071464, guid: f8aaf7dfcbaa9ae449aabda7642bfecb, type: 3}
+    - {fileID: -1452071464, guid: f8aaf7dfcbaa9ae449aabda7642bfecb, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.75
+    m_StopTime: 0.625
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -82,15 +85,15 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.33333334
-    functionName: PlayEnemy_range1_running_concrete
+  - time: 0.125
+    functionName: PlayFootsteps
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.6666667
-    functionName: PlayEnemy_range1_running_concrete
+  - time: 0.5
+    functionName: PlayFootsteps
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

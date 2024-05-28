@@ -7,6 +7,7 @@ namespace HL
         [HideInInspector] public PlayerLocomotion playerLocomotion { get; private set; }
         [HideInInspector] public PlayerStatsManager playerStatsManager { get; private set; }
         [HideInInspector] public PlayerCombatManager playerCombatManager { get; private set; }
+        [HideInInspector] public PlayerSoundFXManager playerSoundFXManager { get; private set; }
         [HideInInspector] public PlayerAnimatorManager playerAnimatorManager { get; private set; }
 
         // ======= Flags =======
@@ -20,12 +21,13 @@ namespace HL
             playerLocomotion = GetComponent<PlayerLocomotion>();
             playerStatsManager = GetComponent<PlayerStatsManager>();
             playerCombatManager = GetComponent<PlayerCombatManager>();
+            playerSoundFXManager = GetComponent<PlayerSoundFXManager>();
             playerAnimatorManager = GetComponent<PlayerAnimatorManager>();
         }
 
         private void Start()
         {
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject);
 
             PlayerInputsManager.Instance.player = this;
             PlayerCamera.Instance.player = this;
