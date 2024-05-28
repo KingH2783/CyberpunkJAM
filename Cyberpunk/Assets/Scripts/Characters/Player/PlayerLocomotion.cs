@@ -20,7 +20,7 @@ namespace HL
         [SerializeField] private bool showAssistSettings;
 
         // ======= Settings =======
-        [Header("Running")]
+        //[Header("Running")]
         /*[Tooltip("The max running speed")]
         [SerializeField] private float maxRunSpeed;
         [Tooltip("How fast we can reach our max speed")]
@@ -56,7 +56,7 @@ namespace HL
         [Tooltip("The max speed we can go at the apex")]
         [SerializeField] private float jumpHangMaxSpeedMult;*/
 
-        [Header("Wall Jumping")]
+        //[Header("Wall Jumping")]
         [Tooltip("Should we allow the player to wall jump?")]
         [SerializeField] private bool allowWallJump;
         [Tooltip("The force of our wall jump, both horizontally and vertically")]
@@ -72,7 +72,7 @@ namespace HL
         [Tooltip("How fast we reach the Slide Speed")]
         [SerializeField] private float slideAccel;
 
-        [Header("Dashing")]
+        //[Header("Dashing")]
         [SerializeField] private bool allowDash;
         [SerializeField] private float dashVelocity;
         [SerializeField] private float dashTime;
@@ -86,13 +86,14 @@ namespace HL
         [SerializeField] private float fallGravityMult;
         [SerializeField] private float fallGravityMultOnSteepSlope;*/
 
-        [Header("Checks")]
+        //[Header("Checks")]
         /*[Tooltip("The GameObject used to reference where we check for the ground")]
         [SerializeField] private Transform groundCheckPoint;
         [Tooltip("The size of the box we use to check the ground, use Gizmos to see a visual representation")]
         [SerializeField] private Vector2 groundCheckSize = new(0.49f, 0.03f);
         [Tooltip("The layer(s) we can run, jump and wall jump on")]
         [SerializeField] private LayerMask groundLayer;*/
+        [SerializeField] private LayerMask wallJumpLayer;
         [Tooltip("The GameObject used to reference where we check the wall in the direction our character is facing")]
         [SerializeField] private Transform frontWallCheckPoint;
         [Tooltip("The GameObject used to reference where we check the wall in the opposite direction our character is facing")]
@@ -102,7 +103,7 @@ namespace HL
         /*[SerializeField] private Vector2 slopeCheckStartOffset = new(0, 0.25f);
         [SerializeField] private float slopeCheckDistance = 0.5f;*/
 
-        [Header("Assists")]
+        //[Header("Assists")]
         [Tooltip("The amount of time given to the player to jump after they have already fallen off a platform")]
         [SerializeField][Range(0.01f, 0.5f)] private float coyoteTime;
         [Tooltip("The amount of time given to jump if the player has pressed the jump button but the conditions haven't been met yet")]
@@ -502,8 +503,8 @@ namespace HL
         private bool IsOnLeftWall()
         {
             if (!player.isJumping && !player.isWallJumping &&
-                ((Physics2D.OverlapBox(frontWallCheckPoint.position, wallCheckSize, 0, groundLayer) && !player.isFacingRight) || 
-                (Physics2D.OverlapBox(backWallCheckPoint.position, wallCheckSize, 0, groundLayer) && player.isFacingRight)))
+                ((Physics2D.OverlapBox(frontWallCheckPoint.position, wallCheckSize, 0, wallJumpLayer) && !player.isFacingRight) || 
+                (Physics2D.OverlapBox(backWallCheckPoint.position, wallCheckSize, 0, wallJumpLayer) && player.isFacingRight)))
             {
                 lastOnLeftWallTimer = coyoteTime;
             }
@@ -514,8 +515,8 @@ namespace HL
         private bool IsOnRightWall()
         {
             if (!player.isJumping && !player.isWallJumping &&
-                ((Physics2D.OverlapBox(frontWallCheckPoint.position, wallCheckSize, 0, groundLayer) && player.isFacingRight) ||
-                (Physics2D.OverlapBox(backWallCheckPoint.position, wallCheckSize, 0, groundLayer) && !player.isFacingRight)))
+                ((Physics2D.OverlapBox(frontWallCheckPoint.position, wallCheckSize, 0, wallJumpLayer) && player.isFacingRight) ||
+                (Physics2D.OverlapBox(backWallCheckPoint.position, wallCheckSize, 0, wallJumpLayer) && !player.isFacingRight)))
             {
                 lastOnRightWallTimer = coyoteTime;
             }

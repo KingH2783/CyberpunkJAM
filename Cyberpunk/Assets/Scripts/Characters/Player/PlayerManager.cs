@@ -27,7 +27,7 @@ namespace HL
 
         private void Start()
         {
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject);
 
             PlayerInputsManager.Instance.player = this;
             PlayerCamera.Instance.player = this;

@@ -38,22 +38,22 @@ namespace HL
 
         private void MoveCharacterBackwardsForMelee()
         {
-            float amountToMoveBy;
+            /*float amountToMoveBy;
             if (character.isFacingRight)
                 amountToMoveBy = -1;
             else
                 amountToMoveBy = 1;
-            character._transform.position = new(character._transform.position.x + amountToMoveBy, character._transform.position.y);
+            character._transform.position = new(character._transform.position.x + amountToMoveBy, character._transform.position.y);*/
         }
 
         private void MoveCharacterForwardsForMelee()
         {
-            float amountToMoveBy;
+            /*float amountToMoveBy;
             if (character.isFacingRight)
                 amountToMoveBy = 1f;
             else
                 amountToMoveBy = -1f;
-            character._transform.position = new(character._transform.position.x + amountToMoveBy, character._transform.position.y);
+            character._transform.position = new(character._transform.position.x + amountToMoveBy, character._transform.position.y);*/
         }
 
         public void ResetOnAnimatorIdle()

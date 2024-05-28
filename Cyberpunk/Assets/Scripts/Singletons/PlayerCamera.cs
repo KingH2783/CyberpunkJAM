@@ -46,13 +46,7 @@ namespace HL
 
         private void FollowTarget()
         {
-            Vector3 newPos;
-            if (player.isDoingMeleeAttack)
-                newPos = new(cameraHolderTransform.position.x, player._transform.position.y, player._transform.position.z);
-            else
-                newPos = player._transform.position;
-
-            cameraHolderTransform.position = Vector3.SmoothDamp(cameraHolderTransform.position, newPos, ref cameraFollowVelocity, playerFollowSpeed);
+            cameraHolderTransform.position = Vector3.SmoothDamp(cameraHolderTransform.position, player._transform.position, ref cameraFollowVelocity, playerFollowSpeed);
         }
 
         private void OnValidate()
