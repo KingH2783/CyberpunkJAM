@@ -15,8 +15,13 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="test_2" ID="{9EF92796-85F4-400A-B11A-25EA271CDF66}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="stop_test" ID="{D85512DA-1638-41CD-B137-E8FD12F08813}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="enemy_range1_running_concrete" ID="{13066CDB-600F-4326-81F7-03736C36428C}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="enemy_range1_shooting" ID="{1986F6B6-E2D5-4593-85A4-0AD89ACEA9C9}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="footsteps" ID="{E85A1009-BB1D-4979-B4FC-6200B2F9CB1F}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="enemy_range1_damaged" ID="{80EC79A2-2558-49DD-ACD7-CF70EE887690}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="enemy_range1_land" ID="{18A3563E-0737-4AAD-9693-86E8CD1BE280}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="plasma_gun_shoot" ID="{CC947B45-E3E2-4CD6-9999-D3E02C8D27CA}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="enemy_range1_death" ID="{9838B16A-660A-4E2F-955A-B38050A06A05}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

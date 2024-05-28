@@ -3,65 +3,128 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="test" ID="{CB123BE5-AD1A-4593-BF09-31668C8FF7D7}">
+				<Folder Name="Enemies" ID="{5DD9CB75-9EAB-4482-B65A-5FD86C01520D}" ShortID="651392882">
 					<ChildrenList>
-						<Action Name="" ID="{D1346368-4542-44B3-AFB3-90AA4ED3554D}" ShortID="416129961">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="ANMLAqua_SEA LION-Female 9Years_B00M_AP_ST-1" ID="{FE466F2A-B6D8-4233-B5E2-7E71D1643F98}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="enemy_range1_running_concrete" ID="{13066CDB-600F-4326-81F7-03736C36428C}">
+							<ChildrenList>
+								<Action Name="" ID="{9B181134-D1A9-4502-B17C-DA5A44E7219D}" ShortID="595342822">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="enemy_range1_running_concrete" ID="{96A35D95-56C0-4D2D-8E32-D0B9955B5794}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="enemy_range1_damaged" ID="{80EC79A2-2558-49DD-ACD7-CF70EE887690}">
+							<ChildrenList>
+								<Action Name="" ID="{05765478-AC4C-4E56-9FE3-CCF41C48E2E7}" ShortID="145687609">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="enemy_range1_damaged" ID="{FCE4CC12-55BD-49F4-934C-9488B859F42E}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="enemy_range1_death" ID="{9838B16A-660A-4E2F-955A-B38050A06A05}">
+							<ChildrenList>
+								<Action Name="" ID="{C2BAA2D3-5BFD-413E-A7E7-CCF2F7489242}" ShortID="942136702">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="enemy_range1_death" ID="{7483482D-39BE-42B9-A4CE-86B38DEDD815}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="enemy_range1_land" ID="{18A3563E-0737-4AAD-9693-86E8CD1BE280}">
+							<ChildrenList>
+								<Action Name="" ID="{7F961604-EF85-495D-B922-E7950FD956C1}" ShortID="1062120465">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="enemy_range1_land" ID="{3A47C2E2-69FB-4671-A016-0C71F759C59F}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="enemy_range1_shooting" ID="{1986F6B6-E2D5-4593-85A4-0AD89ACEA9C9}">
+							<ChildrenList>
+								<Action Name="" ID="{B0095857-0C8D-4B56-92A3-43087C265074}" ShortID="326188086">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="enemy_range1_shooting" ID="{59D7066C-926D-43C1-940C-4A38AED94F48}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="test_2" ID="{9EF92796-85F4-400A-B11A-25EA271CDF66}">
+				</Folder>
+				<Folder Name="Testing" ID="{4C764F18-7284-4E25-8312-A5906A0BC20D}" ShortID="569856781">
 					<ChildrenList>
-						<Action Name="" ID="{ACB1CA78-24BB-4C37-A753-289BDFEDAAF1}" ShortID="565598586">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="AWCK ADD Mechanics Plastic Medium 06" ID="{4D14A496-8382-4BF4-9217-194A0CAAE08D}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="test" ID="{CB123BE5-AD1A-4593-BF09-31668C8FF7D7}">
+							<ChildrenList>
+								<Action Name="" ID="{D1346368-4542-44B3-AFB3-90AA4ED3554D}" ShortID="416129961">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ANMLAqua_SEA LION-Female 9Years_B00M_AP_ST-1" ID="{FE466F2A-B6D8-4233-B5E2-7E71D1643F98}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="footsteps" ID="{E85A1009-BB1D-4979-B4FC-6200B2F9CB1F}">
+							<ChildrenList>
+								<Action Name="" ID="{E8C57E03-0B84-4490-9A2C-019299B6DD71}" ShortID="1066168119">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="footsteps stone" ID="{6E29FBE3-81B0-4DDC-B92B-6EE76DBA03B1}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="plasma_gun_shoot" ID="{CC947B45-E3E2-4CD6-9999-D3E02C8D27CA}">
+							<ChildrenList>
+								<Action Name="" ID="{C2BCF27F-34B4-49BA-8152-235FF07AF983}" ShortID="609216468">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="plasma gun" ID="{DB3129E7-6EF7-445F-B4A1-04DD5C9C25DC}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="stop_test" ID="{D85512DA-1638-41CD-B137-E8FD12F08813}">
+							<ChildrenList>
+								<Action Name="" ID="{4C1EED9A-EAD2-4B44-8F4D-1635BECDEDFC}" ShortID="945437805">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ANMLAqua_SEA LION-Female 9Years_B00M_AP_ST-1" ID="{FE466F2A-B6D8-4233-B5E2-7E71D1643F98}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="test_2" ID="{9EF92796-85F4-400A-B11A-25EA271CDF66}">
+							<ChildrenList>
+								<Action Name="" ID="{ACB1CA78-24BB-4C37-A753-289BDFEDAAF1}" ShortID="565598586">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AWCK ADD Mechanics Plastic Medium 06" ID="{4D14A496-8382-4BF4-9217-194A0CAAE08D}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="stop_test" ID="{D85512DA-1638-41CD-B137-E8FD12F08813}">
-					<ChildrenList>
-						<Action Name="" ID="{4C1EED9A-EAD2-4B44-8F4D-1635BECDEDFC}" ShortID="945437805">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="ANMLAqua_SEA LION-Female 9Years_B00M_AP_ST-1" ID="{FE466F2A-B6D8-4233-B5E2-7E71D1643F98}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="footsteps" ID="{E85A1009-BB1D-4979-B4FC-6200B2F9CB1F}">
-					<ChildrenList>
-						<Action Name="" ID="{E8C57E03-0B84-4490-9A2C-019299B6DD71}" ShortID="1066168119">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="footsteps stone" ID="{6E29FBE3-81B0-4DDC-B92B-6EE76DBA03B1}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="plasma_gun_shoot" ID="{CC947B45-E3E2-4CD6-9999-D3E02C8D27CA}">
-					<ChildrenList>
-						<Action Name="" ID="{C2BCF27F-34B4-49BA-8152-235FF07AF983}" ShortID="609216468">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="plasma gun" ID="{DB3129E7-6EF7-445F-B4A1-04DD5C9C25DC}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

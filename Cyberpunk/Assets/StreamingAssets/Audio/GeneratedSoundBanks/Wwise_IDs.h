@@ -13,6 +13,11 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID ENEMY_RANGE1_DAMAGED = 2037740798U;
+        static const AkUniqueID ENEMY_RANGE1_DEATH = 477019125U;
+        static const AkUniqueID ENEMY_RANGE1_LAND = 201284434U;
+        static const AkUniqueID ENEMY_RANGE1_RUNNING_CONCRETE = 4157003948U;
+        static const AkUniqueID ENEMY_RANGE1_SHOOTING = 2288279038U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
         static const AkUniqueID PLASMA_GUN_SHOOT = 2851466780U;
         static const AkUniqueID STOP_TEST = 2051061508U;
