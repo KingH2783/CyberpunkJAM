@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1290008369" Type="User" Language="SFX" Hash="{EF8222C9-3119-2DED-1148-2F572226A476}">
+		<SoundBank Id="1290008369" Type="User" Language="SFX" Hash="{28685258-AD31-AEB2-DD5D-66AE0C94DE5D}">
 			<ShortName>level_1</ShortName>
 			<Path>level_1.bnk</Path>
 			<Media>
@@ -153,6 +153,10 @@
 					<ShortName>enemy_range1_running_concrete-002.wav</ShortName>
 					<CachePath>SFX/enemy_range1_running_concrete-002_818F3B66.wem</CachePath>
 				</File>
+				<File Id="752233326" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>player_reload.wav</ShortName>
+					<CachePath>SFX/player_reload_818F3B66.wem</CachePath>
+				</File>
 				<File Id="764620604" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BO01 CC01D S - 01-59 - Full 04.wav</ShortName>
 					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 04_818F3B66.wem</CachePath>
@@ -164,6 +168,10 @@
 				<File Id="776597434" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_land-001.wav</ShortName>
 					<CachePath>SFX/enemy_range1_land-001_818F3B66.wem</CachePath>
+				</File>
+				<File Id="815303066" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>player_ranged_attack_attack1_stationary.wav</ShortName>
+					<CachePath>SFX/player_ranged_attack_attack1_stationary_818F3B66.wem</CachePath>
 				</File>
 				<File Id="916299761" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_running_concrete-008.wav</ShortName>
@@ -257,6 +265,16 @@
 						<MediaRef Id="952037636"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="165391104" Name="player_ranged_attack_attack1_stationary" DurationType="OneShot" DurationMin="0.86525" DurationMax="0.86525">
+					<MediaRefs>
+						<MediaRef Id="815303066"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1650679582" Name="player_reload" DurationType="OneShot" DurationMin="0.93364584" DurationMax="0.93364584">
+					<MediaRefs>
+						<MediaRef Id="752233326"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2051061508" Name="stop_test" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2727318990" Name="test_2" DurationType="Infinite">
 					<MediaRefs>
@@ -304,5 +322,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{CC4DF581-EE77-A709-FF4C-B501F06F66E2}</FileHash>
+	<FileHash>{98347514-79EE-4669-B6D0-C361270C4E68}</FileHash>
 </SoundBanksInfo>

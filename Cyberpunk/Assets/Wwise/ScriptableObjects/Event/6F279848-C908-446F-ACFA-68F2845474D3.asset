@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 925cc480e5185c9429c35b4a24ff9967, type: 3}
+  m_Name: 6F279848-C908-446F-ACFA-68F2845474D3
+  m_EditorClassIdentifier: 
+  objectName: player_reload
+  id: 1650679582
+  guid: 6F279848-C908-446F-ACFA-68F2845474D3

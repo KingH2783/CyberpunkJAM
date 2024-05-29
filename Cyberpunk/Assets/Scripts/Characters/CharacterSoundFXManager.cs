@@ -20,6 +20,8 @@ namespace HL
         public AK.Wwise.Event enemy_range1_jump;
         public AK.Wwise.Event enemy_range1_land;
         public AK.Wwise.Event enemy_range1_shooting;
+
+
         
 
 
@@ -88,5 +90,22 @@ namespace HL
         }
 
 
+        [Header("Player")]
+
+        public AK.Wwise.Event player_ranged_attack_attack1_stationary;
+        public AK.Wwise.Event player_reload;
+
+
+        public void Playplayer_reload()
+        {
+            player_reload.Post(gameObject);
+
+        }
+
+        public void Playplayer_ranged_attack_attack1_stationary()
+        {
+            player_ranged_attack_attack1_stationary.Post(gameObject);
+
+        }
     }
 }

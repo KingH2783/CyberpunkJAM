@@ -125,6 +125,32 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Player" ID="{23290D76-EE0E-4E18-B7DA-E8F52AABEDD0}" ShortID="909219240">
+					<ChildrenList>
+						<Event Name="player_ranged_attack_attack1_stationary" ID="{32D0B363-4F1E-4859-99EE-88DF497EDAA9}">
+							<ChildrenList>
+								<Action Name="" ID="{1C6795E6-759B-4D9D-9D3D-6846FACB2496}" ShortID="875045617">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="player_ranged_attack_attack1_stationary" ID="{EACB2A84-51DA-4317-B7DF-6C4679A6C7B8}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="player_reload" ID="{6F279848-C908-446F-ACFA-68F2845474D3}">
+							<ChildrenList>
+								<Action Name="" ID="{E4C9BF1B-1A84-4F45-8B31-9F3F87CDA60F}" ShortID="991036337">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="player_reload" ID="{58A39F2D-7431-48BF-B6D0-3225A64E48A1}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
