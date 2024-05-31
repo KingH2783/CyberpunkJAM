@@ -1,3 +1,4 @@
+using AK.Wwise;
 using UnityEngine;
 
 namespace HL
@@ -94,7 +95,18 @@ namespace HL
 
         public AK.Wwise.Event player_ranged_attack_attack1_stationary;
         public AK.Wwise.Event player_reload;
+        public AK.Wwise.Event player_dash;
+        public AK.Wwise.Event player_death;
+        public AK.Wwise.Event player_fall;
+        public AK.Wwise.Event player_damaged;
+        public AK.Wwise.Event player_idle;
+        public AK.Wwise.Event player_jump;
+        public AK.Wwise.Event player_land;
+        public AK.Wwise.Event player_melee_attack1;
+        public AK.Wwise.Event player_raised_gun_running;
+        public AK.Wwise.Event player_ranged_attack_attack1_running;
 
+        
 
         public void Playplayer_reload()
         {
@@ -105,6 +117,66 @@ namespace HL
         public void Playplayer_ranged_attack_attack1_stationary()
         {
             player_ranged_attack_attack1_stationary.Post(gameObject);
+
+        }
+
+        public void Playplayer_dash()
+        {
+            player_dash.Post(gameObject);
+
+        }
+
+        public void Playplayer_death()
+        {
+            player_death.Post(gameObject);
+
+        }
+
+        public void Playplayer_fall()
+        {
+            player_fall.Post(gameObject);
+
+        }
+
+        public void Playplayer_damaged()
+        {
+            player_damaged.Post(gameObject);
+
+        }
+
+        public void Playplayer_idle()
+        {
+            player_idle.Post(gameObject);
+
+        }
+
+        public void Playplayer_jump()
+        {
+            player_jump.Post(gameObject);
+
+        }
+
+        public void Playplayer_land()
+        {
+            player_land.Post(gameObject);
+
+        }
+
+        public void Playplayer_melee_attack1()
+        {
+            player_melee_attack1.Post(gameObject);
+
+        }
+
+        public void Playplayer_raised_gun_running()
+        {
+            player_raised_gun_running.Post(gameObject);
+
+        }
+
+        public void Playplayer_ranged_attack_attack1_running()
+        {
+            player_ranged_attack_attack1_running.Post(gameObject);
 
         }
     }

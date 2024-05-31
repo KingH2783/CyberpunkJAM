@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1290008369" Type="User" Language="SFX" Hash="{28685258-AD31-AEB2-DD5D-66AE0C94DE5D}">
+		<SoundBank Id="1290008369" Type="User" Language="SFX" Hash="{969CD315-3D69-81EB-AA5B-307DAFDB11DC}">
 			<ShortName>level_1</ShortName>
 			<Path>level_1.bnk</Path>
 			<Media>
@@ -136,6 +136,10 @@
 				<File Id="660916231" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2.wav</ShortName>
 					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2_08EEC515.wem</CachePath>
+				</File>
+				<File Id="662367199" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>player_dash.wav</ShortName>
+					<CachePath>SFX/player_dash_818F3B66.wem</CachePath>
 				</File>
 				<File Id="662460812" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BO01 CC01D S - 01-59 - Full 07.wav</ShortName>
@@ -265,6 +269,11 @@
 						<MediaRef Id="952037636"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2394582229" Name="player_dash" DurationType="OneShot" DurationMin="0.7953542" DurationMax="0.7953542">
+					<MediaRefs>
+						<MediaRef Id="662367199"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="165391104" Name="player_ranged_attack_attack1_stationary" DurationType="OneShot" DurationMin="0.86525" DurationMax="0.86525">
 					<MediaRefs>
 						<MediaRef Id="815303066"/>
@@ -322,5 +331,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{98347514-79EE-4669-B6D0-C361270C4E68}</FileHash>
+	<FileHash>{C98DB511-B46A-CFE3-5773-B7A488C68774}</FileHash>
 </SoundBanksInfo>

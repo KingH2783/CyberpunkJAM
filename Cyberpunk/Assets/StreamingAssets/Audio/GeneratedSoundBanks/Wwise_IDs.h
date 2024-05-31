@@ -20,6 +20,7 @@ namespace AK
         static const AkUniqueID ENEMY_RANGE1_SHOOTING = 2288279038U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
         static const AkUniqueID PLASMA_GUN_SHOOT = 2851466780U;
+        static const AkUniqueID PLAYER_DASH = 2394582229U;
         static const AkUniqueID PLAYER_RANGED_ATTACK_ATTACK1_STATIONARY = 165391104U;
         static const AkUniqueID PLAYER_RELOAD = 1650679582U;
         static const AkUniqueID STOP_TEST = 2051061508U;

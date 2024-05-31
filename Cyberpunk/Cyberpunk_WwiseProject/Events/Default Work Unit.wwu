@@ -149,6 +149,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="player_dash" ID="{0A4A0739-0979-4FC2-9E3E-F7DC272E3F01}">
+							<ChildrenList>
+								<Action Name="" ID="{3412A0CC-EAAF-4A04-AC0B-14D4161541AB}" ShortID="525733122">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="player_dash" ID="{D8897661-EB10-4F55-903C-856F6CE7375A}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

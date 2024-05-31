@@ -7,6 +7,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2051061508	stop_test			\Default Work Unit\Testing\stop_test	
 	2288279038	enemy_range1_shooting			\Default Work Unit\Enemies\enemy_range1_shooting	
 	2385628198	footsteps			\Default Work Unit\Testing\footsteps	
+	2394582229	player_dash			\Default Work Unit\Player\player_dash	
 	2727318990	test_2			\Default Work Unit\Testing\test_2	
 	2851466780	plasma_gun_shoot			\Default Work Unit\Testing\plasma_gun_shoot	
 	4157003948	enemy_range1_running_concrete			\Default Work Unit\Enemies\enemy_range1_running_concrete	
@@ -43,6 +44,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	633259387	GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE-2	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE-2_F76028FA.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\plasma gun\GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE-2		239408
 	657868621	CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2_01	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2_EDAE0C73.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\footsteps stone\right\clothes rustle\CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2_01		72308
 	660916231	CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2_08EEC515.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\footsteps stone\right\clothes rustle\CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2		99604
+	662367199	player_dash	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\player_dash_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\player_dash\player_dash\player_dash		152804
 	662460812	BO01 CC01D S - 01-59 - Full 07	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\BO01 CC01D S - 01-59 - Full 07_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\footsteps stone\right\right foot\BO01 CC01D S - 01-59 - Full 07		32934
 	676103956	enemy_range1_damaged_bottom-002	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\enemy_range1_damaged_bottom-002_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enemies\enemy_range1_damaged\bottom\enemy_range1_damaged_bottom-002		111176
 	677044938	enemy_range1_damaged_top-003	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\enemy_range1_damaged_top-003_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enemies\enemy_range1_damaged\top\enemy_range1_damaged_top-003		97472
