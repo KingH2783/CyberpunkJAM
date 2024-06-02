@@ -17,10 +17,13 @@ namespace HL
         [HideInInspector] public Vector2 movementInput { get; private set; }
         [HideInInspector] public bool jumpInput;
         [HideInInspector] public bool dashInput;
+        [HideInInspector] public bool crouchInput;
 
         // ======= Player Action Inputs =======
         Action<InputAction.CallbackContext> jumpInputPerformed;
         Action<InputAction.CallbackContext> dashInputPerformed;
+        Action<InputAction.CallbackContext> crouchInputPerformed;
+        Action<InputAction.CallbackContext> crouchInputCanceled;
 
         // ======= Game Managers =======
         [HideInInspector] public Scene currentScene;
@@ -55,6 +58,8 @@ namespace HL
                 movementInputHandler = context => movementInput = context.ReadValue<Vector2>();
                 jumpInputPerformed = context => jumpInput = true;
                 dashInputPerformed = context => dashInput = true;
+                crouchInputPerformed = context => crouchInput = true;
+                crouchInputCanceled = context => crouchInput = false;
             }
 
             playerControls.Disable();
@@ -214,6 +219,8 @@ namespace HL
             playerControls.Player.Jump.performed += jumpInputPerformed;
             playerControls.Player.Jump.canceled += HandleJumpInputCanceled;
             playerControls.Player.Dash.performed += dashInputPerformed;
+            playerControls.Player.Crouching.performed += crouchInputPerformed;
+            playerControls.Player.Crouching.canceled += crouchInputCanceled;
             playerControls.Player.MeleeAttack.performed += HandleMeleeAttackInput;
             playerControls.Player.RangedAttack.performed += HandleRangedAttackInput;
             playerControls.Player.Reload.performed += HandleReloadInput;
@@ -228,9 +235,11 @@ namespace HL
             playerControls.Player.Jump.performed -= jumpInputPerformed;
             playerControls.Player.Jump.canceled -= HandleJumpInputCanceled;
             playerControls.Player.Dash.performed -= dashInputPerformed;
+            playerControls.Player.Crouching.performed -= crouchInputPerformed;
+            playerControls.Player.Crouching.performed -= crouchInputCanceled;
             playerControls.Player.MeleeAttack.performed -= HandleMeleeAttackInput;
             playerControls.Player.RangedAttack.performed -= HandleRangedAttackInput;
-            playerControls.Player.Reload.performed += HandleReloadInput;
+            playerControls.Player.Reload.performed -= HandleReloadInput;
             playerControls.Player.SwitchMelee.performed -= HandleSwitchMeleeInput;
             playerControls.Player.SwitchRanged.performed -= HandleSwitchRangedInput;
             playerControls.Player.Escape.performed -= HandleEscapeInput;

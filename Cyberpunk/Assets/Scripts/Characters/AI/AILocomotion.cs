@@ -37,7 +37,7 @@ namespace HL
                 return;
             }
 
-            HandleMovement(leftOrRightAIMovementInput);
+            HandleMovement(leftOrRightAIMovementInput, delta);
 
             if (leftOrRightAIMovementInput != 0 &&
                 (leftOrRightAIMovementInput > 0) != ai.isFacingRight)
