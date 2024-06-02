@@ -21,6 +21,7 @@ namespace HL
         public bool isGrounded;
         public bool isJumping;
         public bool isDashing;
+        public bool isCrouching;
         public bool isOnSlope;
         public bool isDead;
         public bool isFacingRight;

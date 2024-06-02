@@ -7,6 +7,7 @@ namespace HL
     {
         // ======= Script Caches =======
         private PlayerManager player;
+        private BoxCollider2D col;
 
         // ======= Custom Editor Variables =======
         // So usually with custom editor variables, they need to be public in order for the editor to access them 
@@ -15,6 +16,7 @@ namespace HL
         [SerializeField] private bool showRunSettings;
         [SerializeField] private bool showJumpSettings;
         [SerializeField] private bool showDashSettings;
+        [SerializeField] private bool showCrouchSettings;
         [SerializeField] private bool showFallSettings;
         [SerializeField] private bool showCheckSettings;
         [SerializeField] private bool showAssistSettings;
@@ -79,6 +81,10 @@ namespace HL
         [SerializeField] private float dashCooldown;
         [SerializeField] private bool allowMultipleDashesBeforeTouchingGround;
 
+        // Crouching
+        [SerializeField] private Vector2 crouchingColliderOffset;
+        [SerializeField] private Vector2 crouchingColliderSize;
+
         /*[Header("Falling")]
         [Tooltip("How fast we fall")]
         [SerializeField] private float maxFallSpeed;
@@ -128,6 +134,7 @@ namespace HL
 
         private float horizontalInput;
         private bool jumpInput;
+        private bool crouchInput;
 
         private bool hasDoneDoubleJump;
         private bool hasDoneDashInAir;
@@ -144,10 +151,14 @@ namespace HL
         private float slopeAngle;
         private Vector2 slopeNormal;*/
 
+        private Vector2 defaultColOffset;
+        private Vector2 defaultColSize;
+
         protected override void Awake()
         {
             base.Awake();
             player = GetComponent<PlayerManager>();
+            col = GetComponent<BoxCollider2D>();
         }
 
         protected override void Start()
@@ -157,6 +168,9 @@ namespace HL
             wasWallSliding = false;
             isOnRightWall = false;
             isOnLeftWall = false;
+
+            defaultColOffset = col.offset;
+            defaultColSize = col.size;
         }
 
         #region Update Functions
@@ -211,6 +225,8 @@ namespace HL
         {
             base.LocomotionFixedUpdate(delta);
 
+            HandleCrouching();
+
             // Stop movement if performing action
             if (player.isPerformingAction)
             {
@@ -218,7 +234,7 @@ namespace HL
                 return;
             }
 
-            HandleMovement(horizontalInput);
+            HandleMovement(horizontalInput, delta);
 
             if (doFlipOnWallJump)
             {
@@ -300,6 +316,7 @@ namespace HL
             jumpInput = PlayerInputsManager.Instance.jumpInput;
             if (jumpInputStartTimer > timeToHoldJumpForFullJump)
                 PlayerInputsManager.Instance.jumpInput = false;
+            crouchInput = PlayerInputsManager.Instance.crouchInput;
         }
 
         #endregion
@@ -433,6 +450,22 @@ namespace HL
             player.isDashing = false;
             player.isInvulnerable = false;
             rb.velocity = Vector2.zero;
+        }
+
+        private void HandleCrouching()
+        {
+            if (crouchInput && player.isGrounded)
+            {
+                player.isCrouching = true;
+                col.offset = crouchingColliderOffset;
+                col.size = crouchingColliderSize;
+            }
+            else
+            {
+                player.isCrouching = false;
+                col.offset = defaultColOffset; 
+                col.size = defaultColSize;
+            }
         }
 
         private void HandleGravity()

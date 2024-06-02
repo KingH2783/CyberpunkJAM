@@ -53,6 +53,8 @@ namespace HL
         protected bool isOnSteepSlope;
         protected bool isJumpFalling;
 
+         [HideInInspector] public Rigidbody2D platformRB;
+
         protected virtual void Awake()
         {
             rb = GetComponent<Rigidbody2D>();
@@ -76,54 +78,72 @@ namespace HL
             character.isOnSlope = IsOnSlope();
         }
 
-        protected virtual void HandleMovement(float targetDirection)
+        protected virtual void HandleMovement(float targetDirection, float delta)
         {
             if (character.isDashing || isOnSteepSlope)
                 return;
 
             float targetSpeed = targetDirection * maxRunSpeed;
 
-            // Determine acceleration rate based on ground and air status
+            // If we are moving then set an acceleration rate
+            // If we're also in the air then adjust this to acceleration values in air
             float accelRate;
             if (character.isGrounded)
                 accelRate = (Mathf.Abs(targetSpeed) > 0.01f) ? runAccelAmount : runDeccelAmount;
             else
                 accelRate = (Mathf.Abs(targetSpeed) > 0.01f) ? (runAccelAmount * accelInAir) : (runDeccelAmount * deccelInAir);
 
-            // Modify acceleration and maxSpeed during jump hang time
+            // Increase our acceleration and maxSpeed when at the apex of their jump, makes the jump feel a bit more bouncy, responsive and natural
             if ((character.isJumping || isJumpFalling) && Mathf.Abs(rb.velocity.y) < jumpHangTimeThreshold)
             {
                 accelRate *= jumpHangAccelerationMult;
                 targetSpeed *= jumpHangMaxSpeedMult;
             }
 
-            // Conserve momentum if conditions are met
+            // We won't slow the player down if they are moving in their desired direction but at a greater speed than their maxSpeed
             if (doConserveMomentum &&
                 Mathf.Abs(rb.velocity.x) > Mathf.Abs(targetSpeed) &&
                 Mathf.Sign(rb.velocity.x) == Mathf.Sign(targetSpeed) &&
                 Mathf.Abs(targetSpeed) > 0.01f &&
                 !character.isGrounded)
             {
+                // Prevent any deceleration from happening, or in other words conserve are current momentum
+                // You could experiment with allowing for the player to slightly increae their speed whilst in this "state"
                 accelRate = 0;
             }
 
-            // Calculate the speed difference and required movement force
+            // Calculate difference between current velocity and desired velocity
             float speedDif = targetSpeed - rb.velocity.x;
-            float movementForce = speedDif * rb.mass / Time.deltaTime;
+
+            // Calculate force along x-axis to apply to the player
+            float movement = speedDif * accelRate * rb.mass;
 
             // Apply force considering platform movement
             Vector2 platformVelocity = Vector2.zero;
-            if (character.isOnPlatform)
-            {
-                Rigidbody2D platformRB = transform.parent.GetComponent<Rigidbody2D>();
+            if (character.isOnPlatform && platformRB != null)
                 platformVelocity = platformRB.velocity;
+
+            if (character.isCrouching)
+            {
+                rb.velocity = new(0, rb.velocity.y);
+                Vector2 totalForce = new Vector2(0, 0) + platformVelocity * rb.mass / delta;
+                rb.AddForce(totalForce * Vector2.right, ForceMode2D.Force);
             }
-
-            // Calculate the total force required, including platform velocity
-            Vector2 totalForce = new Vector2(movementForce, 0) + platformVelocity * rb.mass / Time.deltaTime;
-
-            // Apply the force to the player
-            rb.AddForce(totalForce, ForceMode2D.Force);
+            else
+            {
+                if (character.isOnSlope)
+                {
+                    // Calculate the movement along the slope direction
+                    Vector2 slopeMovement = new Vector2(slopeNormal.y, -slopeNormal.x) * movement;
+                    Vector2 totalForce = slopeMovement + platformVelocity * rb.mass / delta;
+                    rb.AddForce(totalForce, ForceMode2D.Force);
+                }
+                else
+                {
+                    Vector2 totalForce = new Vector2(movement, 0) + platformVelocity * rb.mass / delta;
+                    rb.AddForce(totalForce * Vector2.right, ForceMode2D.Force);
+                }
+            }
         }
 
         public virtual void HandleFlip()

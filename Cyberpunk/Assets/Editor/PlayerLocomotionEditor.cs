@@ -9,6 +9,7 @@ public class PlayerLocomotionEditor : Editor
     private SerializedProperty showRunSettings;
     private SerializedProperty showJumpSettings;
     private SerializedProperty showDashSettings;
+    private SerializedProperty showCrouchSettings;
     private SerializedProperty showFallSettings;
     private SerializedProperty showCheckSettings;
     private SerializedProperty showAssistSettings;
@@ -44,6 +45,9 @@ public class PlayerLocomotionEditor : Editor
     private SerializedProperty dashCooldown;
     private SerializedProperty allowMultipleDashesBeforeTouchingGround;
 
+    private SerializedProperty crouchingColliderOffset;
+    private SerializedProperty crouchingColliderSize;
+
     private SerializedProperty slideSpeed;
     private SerializedProperty slideAccel;
 
@@ -72,6 +76,7 @@ public class PlayerLocomotionEditor : Editor
         showRunSettings = serializedObject.FindProperty("showRunSettings");
         showJumpSettings = serializedObject.FindProperty("showJumpSettings");
         showDashSettings = serializedObject.FindProperty("showDashSettings");
+        showCrouchSettings = serializedObject.FindProperty("showCrouchSettings");
         showFallSettings = serializedObject.FindProperty("showFallSettings");
         showCheckSettings = serializedObject.FindProperty("showCheckSettings");
         showAssistSettings = serializedObject.FindProperty("showAssistSettings");
@@ -106,6 +111,9 @@ public class PlayerLocomotionEditor : Editor
         dashTime = serializedObject.FindProperty("dashTime");
         dashCooldown = serializedObject.FindProperty("dashCooldown");
         allowMultipleDashesBeforeTouchingGround = serializedObject.FindProperty("allowMultipleDashesBeforeTouchingGround");
+
+        crouchingColliderOffset = serializedObject.FindProperty("crouchingColliderOffset");
+        crouchingColliderSize = serializedObject.FindProperty("crouchingColliderSize");
 
         slideSpeed = serializedObject.FindProperty("slideSpeed");
         slideAccel = serializedObject.FindProperty("slideAccel");
@@ -212,6 +220,19 @@ public class PlayerLocomotionEditor : Editor
             dashTime.floatValue = EditorGUILayout.FloatField(new GUIContent("Dash Time", "How long does our dash last?"), dashTime.floatValue);
             dashCooldown.floatValue = EditorGUILayout.FloatField(new GUIContent("Dash Cooldown", "How long do we have to wait before we can dash again?"), dashCooldown.floatValue);
             allowMultipleDashesBeforeTouchingGround.boolValue = EditorGUILayout.Toggle(new GUIContent("Allow Multiple Dashes Before Touching The Ground?", "Should the player be allowed to dash multiple times after jumping or can they only do it once before having to reset when touching the ground?"), allowMultipleDashesBeforeTouchingGround.boolValue);
+        }
+        #endregion
+
+        // ======= Crouch Settings =======
+        #region // ======= Crouch Settings =======
+        EditorGUILayout.Space();
+        EditorStyles.label.fontStyle = FontStyle.Bold;
+        showCrouchSettings.boolValue = EditorGUILayout.Toggle("SHOW CROUCH SETTINGS", showCrouchSettings.boolValue);
+        if (showCrouchSettings.boolValue)
+        {
+            EditorStyles.label.fontStyle = FontStyle.Normal;
+            crouchingColliderOffset.vector2Value = EditorGUILayout.Vector2Field(new GUIContent("Crouching Collider Offset", "The offset for the crouching box collider"), crouchingColliderOffset.vector2Value);
+            crouchingColliderSize.vector2Value = EditorGUILayout.Vector2Field(new GUIContent("Crouching Collider Size", "The size of the crouching box collider"), crouchingColliderSize.vector2Value);
         }
         #endregion
 

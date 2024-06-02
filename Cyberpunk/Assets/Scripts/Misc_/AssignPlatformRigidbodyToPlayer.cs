@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace HL
 {
-    public class ParentCharacterWhenTouched : MonoBehaviour
+    public class AssignPlatformRigidbodyToPlayer : MonoBehaviour
     {
         private void OnTriggerEnter2D(Collider2D collision)
         {
@@ -10,7 +10,7 @@ namespace HL
             {
                 if (character != null)
                 {
-                    character._transform.SetParent(transform);
+                    character.characterLocomotion.platformRB = GetComponent<Rigidbody2D>();
                     character.isOnPlatform = true;
                 }
             }
@@ -22,7 +22,7 @@ namespace HL
             {
                 if (character != null)
                 {
-                    character._transform.SetParent(null);
+                    character.characterLocomotion.platformRB = null;
                     character.isOnPlatform = false;
                 }
             }
