@@ -17,6 +17,7 @@ namespace HL
             animator.SetBool("Running", player.isRunning);
             animator.SetBool("Jumping", player.isJumping);
             animator.SetBool("Grounded", player.isGrounded);
+            animator.SetBool("Crouching", player.isCrouching);
             animator.SetBool("OnWall", player.isOnWall);
             animator.SetBool("DoingRangedAttack", player.isDoingRangedAttack);
         }

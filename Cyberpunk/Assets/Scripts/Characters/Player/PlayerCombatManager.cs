@@ -6,6 +6,7 @@ namespace HL
     {
         PlayerManager player;
         [SerializeField] private Transform bulletSpawnPoint;
+        [SerializeField] private Transform bulletSpawnPointCrouching;
 
         private float fireRateTimer;
         private float reloadTimer;
@@ -51,7 +52,10 @@ namespace HL
                 return;
 
             // The collider gets enabled during the animation
-            player.playerAnimatorManager.PlayTargetAnimation("Melee_Attack_1", currentMelee.stopMovement);
+            if (!player.isCrouching)
+                player.playerAnimatorManager.PlayTargetAnimation("Melee_Attack_1", currentMelee.stopMovement);
+            else
+                player.playerAnimatorManager.PlayTargetAnimation("Melee_Attack_1_Crouching", true);
             player.isDoingMeleeAttack = true;
         }
 
@@ -66,13 +70,20 @@ namespace HL
             else if (reloadTimer <= 0 && 
                 fireRateTimer <= 0)
             {
-                GameObject bulletGameObject = Instantiate(currentRanged.bulletType, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+                GameObject bulletGameObject;
+                if (!player.isCrouching)
+                    bulletGameObject = Instantiate(currentRanged.bulletType, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+                else
+                    bulletGameObject = Instantiate(currentRanged.bulletType, bulletSpawnPointCrouching.position, bulletSpawnPointCrouching.rotation);
+
                 Bullet bullet = bulletGameObject.GetComponent<Bullet>();
                 bullet.characterWhoFiredMe = player;
                 bullet.weapon = currentRanged;
 
                 player.isDoingRangedAttack = true;
-                if (!player.isRunning)
+                if (player.isCrouching)
+                    player.playerAnimatorManager.PlayTargetAnimation("Ranged_Attack_1_Crouching", true);
+                else if (!player.isRunning)
                     player.playerAnimatorManager.PlayTargetAnimation("Ranged_Attack_1_Stationary", currentRanged.stopMovement);
                 else
                     player.playerAnimatorManager.PlayTargetAnimation("Ranged_Attack_1_Running", currentRanged.stopMovement);
@@ -89,7 +100,10 @@ namespace HL
             if (roundsLeftInClip == currentRanged.ammoCapacity)
                 return;
 
-            player.playerAnimatorManager.PlayTargetAnimation("Reload", true);
+            if (!player.isCrouching)
+                player.playerAnimatorManager.PlayTargetAnimation("Reload", true);
+            else
+                player.playerAnimatorManager.PlayTargetAnimation("Reload_Crouching", true);
 
             reloadTimer = currentRanged.reloadTime;
             roundsLeftInClip = currentRanged.ammoCapacity;
