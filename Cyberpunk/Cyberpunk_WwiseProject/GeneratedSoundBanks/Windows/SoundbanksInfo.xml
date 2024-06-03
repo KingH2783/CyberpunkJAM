@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1290008369" Type="User" Language="SFX" Hash="{969CD315-3D69-81EB-AA5B-307DAFDB11DC}">
+		<SoundBank Id="1290008369" Type="User" Language="SFX" Hash="{50CFB7DF-24D3-EE13-58AB-8956EC2C32D4}">
 			<ShortName>level_1</ShortName>
 			<Path>level_1.bnk</Path>
 			<Media>
@@ -177,6 +177,10 @@
 					<ShortName>player_ranged_attack_attack1_stationary.wav</ShortName>
 					<CachePath>SFX/player_ranged_attack_attack1_stationary_818F3B66.wem</CachePath>
 				</File>
+				<File Id="841143589" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>player_death.wav</ShortName>
+					<CachePath>SFX/player_death_818F3B66.wem</CachePath>
+				</File>
 				<File Id="916299761" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_running_concrete-008.wav</ShortName>
 					<CachePath>SFX/enemy_range1_running_concrete-008_818F3B66.wem</CachePath>
@@ -274,6 +278,30 @@
 						<MediaRef Id="662367199"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3083087645" Name="player_death" DurationType="OneShot" DurationMin="2.4084792" DurationMax="2.4084792">
+					<MediaRefs>
+						<MediaRef Id="841143589"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3629196698" Name="player_land" DurationType="OneShot" DurationMin="0.19517784" DurationMax="0.24134523">
+					<MediaRefs>
+						<MediaRef Id="385996269"/>
+						<MediaRef Id="776597434"/>
+						<MediaRef Id="970049384"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="640208366" Name="player_raised_gun_running" DurationType="OneShot" DurationMin="0.14790235" DurationMax="0.24137196">
+					<MediaRefs>
+						<MediaRef Id="47134815"/>
+						<MediaRef Id="73852016"/>
+						<MediaRef Id="170462191"/>
+						<MediaRef Id="519532207"/>
+						<MediaRef Id="571157116"/>
+						<MediaRef Id="736436096"/>
+						<MediaRef Id="765875123"/>
+						<MediaRef Id="916299761"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="165391104" Name="player_ranged_attack_attack1_stationary" DurationType="OneShot" DurationMin="0.86525" DurationMax="0.86525">
 					<MediaRefs>
 						<MediaRef Id="815303066"/>
@@ -331,5 +359,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C98DB511-B46A-CFE3-5773-B7A488C68774}</FileHash>
+	<FileHash>{C09846C9-CDC8-9465-21DF-D5984A0BA85A}</FileHash>
 </SoundBanksInfo>

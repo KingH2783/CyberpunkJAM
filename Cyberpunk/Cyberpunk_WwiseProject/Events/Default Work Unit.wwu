@@ -160,6 +160,39 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="player_death" ID="{67B873CA-19DC-4FFC-AE24-28E2E4E8037A}">
+							<ChildrenList>
+								<Action Name="" ID="{DC208CCF-DFC6-4F11-B645-2274710018CF}" ShortID="271102634">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="player_death" ID="{49E5B849-80F1-4490-89E1-3AB43858C70C}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="player_land" ID="{E03899B9-48FC-4D58-94B4-1B1EF0F18608}">
+							<ChildrenList>
+								<Action Name="" ID="{E1193BA9-07E5-4A6A-B5E1-DD56648D0D4A}" ShortID="325676310">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="player_land" ID="{A7D38387-5B48-413E-AFE0-FE53F12F397F}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="player_raised_gun_running" ID="{DA45693D-9188-4F12-8478-E7C4E8C38819}">
+							<ChildrenList>
+								<Action Name="" ID="{3E440462-8966-461E-B136-C22E6AE9F57A}" ShortID="588418368">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="player_raised_gun_running" ID="{21512DD8-E8B4-499F-87A9-EC2955B4459D}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
