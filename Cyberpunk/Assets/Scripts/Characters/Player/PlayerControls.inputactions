@@ -72,6 +72,15 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "Crouching",
+                    "type": "Button",
+                    "id": "68e0dcb9-1a76-4701-a6ea-79e5e08cc8d3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "Melee Attack",
                     "type": "Button",
                     "id": "58c587eb-23c2-41a9-844d-ad77d989edb3",
@@ -366,6 +375,28 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Reload",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c5f04a1b-0278-4d7d-8c23-59ba1aa37799",
+                    "path": "<Keyboard>/ctrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Crouching",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cbd1be5e-b413-4bf5-94ee-4d1b35250d27",
+                    "path": "<Gamepad>/leftStickPress",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Crouching",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
