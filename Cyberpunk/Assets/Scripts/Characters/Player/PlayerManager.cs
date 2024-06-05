@@ -15,6 +15,8 @@ namespace HL
         public bool isWallJumping;
         public bool isOnWall = false;
 
+        [HideInInspector] public Interactable currentInteractableObject;
+
         protected override void Awake()
         {
             base.Awake();

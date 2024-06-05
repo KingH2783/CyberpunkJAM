@@ -153,6 +153,14 @@ namespace HL
             player.playerCombatManager.SwitchRangedWeapon();
         }
 
+        private void HandleInteractPerformed(InputAction.CallbackContext context)
+        {
+            if (player.currentInteractableObject != null)
+            {
+                player.currentInteractableObject.Interact(player);
+            }
+        }
+
         private void HandleEscapeInput(InputAction.CallbackContext context)
         {
             PauseMenu pauseMenu = PlayerUIManager.Instance.pauseMenu;
@@ -164,9 +172,9 @@ namespace HL
             }
             else // Game Scene
             {
-                if (pauseMenu.IsGamePaused)
+                if (pauseMenu.isGamePaused)
                 {
-                    if (pauseMenu.AreSettingsOpen)
+                    if (pauseMenu.areSettingsOpen)
                         pauseMenu.CloseSettings();
                     else
                         pauseMenu.ResumeGame();
@@ -226,6 +234,7 @@ namespace HL
             playerControls.Player.Reload.performed += HandleReloadInput;
             playerControls.Player.SwitchMelee.performed += HandleSwitchMeleeInput;
             playerControls.Player.SwitchRanged.performed += HandleSwitchRangedInput;
+            playerControls.Player.Interact.performed += HandleInteractPerformed;
             playerControls.Player.Escape.performed += HandleEscapeInput;
         }
 
@@ -242,6 +251,7 @@ namespace HL
             playerControls.Player.Reload.performed -= HandleReloadInput;
             playerControls.Player.SwitchMelee.performed -= HandleSwitchMeleeInput;
             playerControls.Player.SwitchRanged.performed -= HandleSwitchRangedInput;
+            playerControls.Player.Interact.performed -= HandleInteractPerformed;
             playerControls.Player.Escape.performed -= HandleEscapeInput;
         }
         
