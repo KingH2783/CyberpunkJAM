@@ -1917,6 +1917,195 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite-sheet-full-same-size_0
+      rect:
+        serializedVersion: 2
+        x: 6831
+        y: 4430
+        width: 437
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7695bfc12b6e76840a15d3948eac8927
+      internalID: 24742713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite-sheet-full-same-size_1
+      rect:
+        serializedVersion: 2
+        x: 7371
+        y: 4414
+        width: 691
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7db065befa1f6a64cae1393341383572
+      internalID: 2095396204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite-sheet-full-same-size_4
+      rect:
+        serializedVersion: 2
+        x: 7519
+        y: 4552
+        width: 86
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ea7a13cdb075904a98fb6d071fc3368
+      internalID: -754222728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite-sheet-full-same-size_5
+      rect:
+        serializedVersion: 2
+        x: 6831
+        y: 4302
+        width: 437
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d4f6b536eba79b40840ccfa7a155f5c
+      internalID: 1547068126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite-sheet-full-same-size_6
+      rect:
+        serializedVersion: 2
+        x: 6831
+        y: 4177
+        width: 437
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 203d2c5908b63cf40b6d166db7831305
+      internalID: -1243289471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite-sheet-full-same-size_2
+      rect:
+        serializedVersion: 2
+        x: 7659
+        y: 4552
+        width: 86
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75eb458e13981514ea7a04191ed2623b
+      internalID: -866416019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite-sheet-full-same-size_3
+      rect:
+        serializedVersion: 2
+        x: 7795
+        y: 4552
+        width: 86
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f0e13e1973b0544e90b50f2f0523d94
+      internalID: -2045485992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite-sheet-full-same-size_7
+      rect:
+        serializedVersion: 2
+        x: 7371
+        y: 4310
+        width: 691
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 363cfc12cd131d443b2a60c9fc9c282e
+      internalID: -1718428813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hope-Sprite-sheet-full-same-size_8
+      rect:
+        serializedVersion: 2
+        x: 7350
+        y: 4188
+        width: 691
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e65afa91a5767d4b9b46f4bc70e2d1b
+      internalID: 1099989892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1928,8 +2117,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Hope-Sprite-sheet-full-same-size_0: 24742713
+      Hope-Sprite-sheet-full-same-size_1: 2095396204
+      Hope-Sprite-sheet-full-same-size_2: -866416019
+      Hope-Sprite-sheet-full-same-size_3: -2045485992
+      Hope-Sprite-sheet-full-same-size_4: -754222728
       Hope-Sprite-sheet-full-same-size_41: 1478702908
+      Hope-Sprite-sheet-full-same-size_5: 1547068126
+      Hope-Sprite-sheet-full-same-size_6: -1243289471
+      Hope-Sprite-sheet-full-same-size_7: -1718428813
       Hope-Sprite-sheet-full-same-size_75: 1997077994
+      Hope-Sprite-sheet-full-same-size_8: 1099989892
       Hope-Sprite-sheet-full-same-size_81: 263348769
       Hope-Sprite_0: 1590603203
       Hope-Sprite_1: 1779074430
