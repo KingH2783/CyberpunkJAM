@@ -9,8 +9,8 @@ namespace HL
         [SerializeField] private GameObject pauseMenuParent;
         [SerializeField] private GameObject pauseMenuButtons;
         [SerializeField] private GameObject audioSettings;
-        [HideInInspector] public bool IsGamePaused { get; private set; }
-        [HideInInspector] public bool AreSettingsOpen { get; private set; }
+        [HideInInspector] public bool isGamePaused;
+        [HideInInspector] public bool areSettingsOpen;
 
         [Header("Volume Sliders")]
         public Slider masterVolumeSlider;
@@ -19,8 +19,8 @@ namespace HL
 
         private void Start()
         {
-            IsGamePaused = false;
-            AreSettingsOpen = false;
+            isGamePaused = false;
+            areSettingsOpen = false;
             masterVolumeSlider.value = WorldAudioManager.Instance.startAllSlidersAtThisVolume;
             musicVolumeSlider.value = WorldAudioManager.Instance.startAllSlidersAtThisVolume;
             soundFXVolumeSlider.value = WorldAudioManager.Instance.startAllSlidersAtThisVolume;
@@ -30,7 +30,7 @@ namespace HL
         {
             PlayerInputsManager.Instance.SwitchActionMap(ActionMaps.Menu);
             pauseMenuParent.SetActive(true);
-            IsGamePaused = true;
+            isGamePaused = true;
             Time.timeScale = 0;
         }
 
@@ -38,7 +38,7 @@ namespace HL
         {
             PlayerInputsManager.Instance.SwitchActionMap(ActionMaps.Player);
             pauseMenuParent.SetActive(false);
-            IsGamePaused = false;
+            isGamePaused = false;
             Time.timeScale = 1;
         }
 
@@ -46,14 +46,14 @@ namespace HL
         {
             pauseMenuButtons.SetActive(false);
             audioSettings.SetActive(true);
-            AreSettingsOpen = true;
+            areSettingsOpen = true;
         }
 
         public void CloseSettings()
         {
             pauseMenuButtons.SetActive(true);
             audioSettings.SetActive(false);
-            AreSettingsOpen = false;
+            areSettingsOpen = false;
         }
 
         public void QuitGame()
