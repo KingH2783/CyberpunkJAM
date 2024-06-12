@@ -7,10 +7,12 @@ namespace HL
         [HideInInspector] public static PlayerUIManager Instance { get; private set; }
         [HideInInspector] public EquippedWeaponsUI equippedWeaponsUI;
         [HideInInspector] public PlayerHealthBar healthBar;
+        [HideInInspector] public NPCDialogueUI npcDialogueUI;
         [HideInInspector] public PauseMenu pauseMenu;
         [HideInInspector] public AmmoUI ammoUI;
 
         [SerializeField] private GameObject HUD;
+        [SerializeField] private GameObject NPCDialogue;
 
         private void Awake()
         {
@@ -20,6 +22,7 @@ namespace HL
                 Destroy(gameObject);
 
             equippedWeaponsUI = GetComponentInChildren<EquippedWeaponsUI>(true);
+            npcDialogueUI = GetComponentInChildren<NPCDialogueUI>(true);
             healthBar = GetComponentInChildren<PlayerHealthBar>(true);
             pauseMenu = GetComponentInChildren<PauseMenu>(true);
             ammoUI = GetComponentInChildren<AmmoUI>(true);
