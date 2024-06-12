@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID AMBIENT_PART1 = 1728914370U;
         static const AkUniqueID ENEMY_RANGE1_DAMAGED = 2037740798U;
         static const AkUniqueID ENEMY_RANGE1_DEATH = 477019125U;
         static const AkUniqueID ENEMY_RANGE1_LAND = 201284434U;

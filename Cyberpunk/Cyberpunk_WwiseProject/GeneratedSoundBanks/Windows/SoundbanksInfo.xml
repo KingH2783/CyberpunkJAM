@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1290008369" Type="User" Language="SFX" Hash="{50CFB7DF-24D3-EE13-58AB-8956EC2C32D4}">
+		<SoundBank Id="1290008369" Type="User" Language="SFX" Hash="{B7FA8188-8BA8-9424-217F-21315237B1BF}">
 			<ShortName>level_1</ShortName>
 			<Path>level_1.bnk</Path>
 			<Media>
@@ -201,8 +201,17 @@
 					<ShortName>enemy_range1_land-002.wav</ShortName>
 					<CachePath>SFX/enemy_range1_land-002_818F3B66.wem</CachePath>
 				</File>
+				<File Id="1025695962" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ambient_part1.wav</ShortName>
+					<CachePath>SFX/ambient_part1_FBC78EF0.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
+				<Event Id="1728914370" Name="Ambient_part1" MaxAttenuation="200" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="1025695962"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2037740798" Name="enemy_range1_damaged" DurationType="OneShot" DurationMin="0.47842515" DurationMax="0.6138057">
 					<MediaRefs>
 						<MediaRef Id="271994802"/>
@@ -340,7 +349,7 @@
 				<GameParameter Id="4179668880" Name="master_volume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{9C5B4012-E1D2-BFC4-27AA-851196C4C020}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{B680E61F-6924-1936-B559-AED4758380FD}">
 			<ShortName>main</ShortName>
 			<Path>main.bnk</Path>
 			<Media>
@@ -359,5 +368,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C09846C9-CDC8-9465-21DF-D5984A0BA85A}</FileHash>
+	<FileHash>{DDCC317E-0DAB-37E2-0C0D-13EEC7112452}</FileHash>
 </SoundBanksInfo>

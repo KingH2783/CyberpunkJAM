@@ -195,6 +195,21 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Ambient" ID="{EF6D186F-9090-49F4-A285-BFFA85D4547B}" ShortID="711826568">
+					<ChildrenList>
+						<Event Name="Ambient_part1" ID="{46D3C424-FA27-486B-848F-904B351E5D7D}">
+							<ChildrenList>
+								<Action Name="" ID="{874A7D73-916A-4CE1-B748-EE9BBF2FC0D0}" ShortID="901720388">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambient_part1" ID="{02C7147D-5B0B-4C4F-8FC5-3FD2B108FB68}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

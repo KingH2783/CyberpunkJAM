@@ -4,13 +4,6 @@
 		<WorkUnit Name="Default Work Unit" ID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}" PersistMode="Standalone">
 			<ChildrenList>
 				<ActorMixer Name="SFX" ID="{58A167D7-DCED-43EB-B359-99E3450EB536}" ShortID="306290867">
-					<PropertyList>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>5</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
@@ -1696,13 +1689,6 @@
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="player_ranged_attack_attack1_stationary" ID="{B3D8B38F-0F2F-44AD-9C6E-D1E236E52D75}" ShortID="313705053">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>12</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
@@ -1749,13 +1735,6 @@
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="player_reload" ID="{C7645B82-BD88-4469-9817-1120955BACC5}" ShortID="905394584">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>12</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
@@ -1782,13 +1761,6 @@
 									</ChildrenList>
 								</BlendContainer>
 								<BlendContainer Name="player_dash" ID="{D8897661-EB10-4F55-903C-856F6CE7375A}" ShortID="624083121">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>9</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
@@ -1799,6 +1771,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<RandomSequenceContainer Name="player_dash" ID="{4DA3BD97-8AF9-4E9D-A847-074ACC1678F3}" ShortID="684990753">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
@@ -1855,11 +1834,6 @@
 													</Modifier>
 												</ModifierInfo>
 											</ModifierList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>9</Value>
-											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -1965,7 +1939,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>12</Value>
+												<Value>-8</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2216,6 +2190,64 @@
 											</ChildrenList>
 										</RandomSequenceContainer>
 									</ChildrenList>
+								</BlendContainer>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Ambient" ID="{856294A6-DE63-47E5-99DA-3403AA44FE9C}" ShortID="900657286">
+							<ChildrenList>
+								<BlendContainer Name="Ambient_part1" ID="{02C7147D-5B0B-4C4F-8FC5-3FD2B108FB68}" ShortID="780590827">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="10"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Ambient long range" ID="{872FA0BC-2361-4357-80F7-7DBD52341567}" WorkUnitID="{373C3925-F286-4E49-9A63-738DC80D5E3D}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="ambient_part1" ID="{BAB302E9-5AD1-437A-B096-0083589861A6}" ShortID="1043802816">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ambient_part1" ID="{8CBE55C6-4770-4202-AFAC-FA6FEFEDB025}">
+													<Language>SFX</Language>
+													<AudioFile>ambient_part1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1025695962"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ambient_part1" ID="{8CBE55C6-4770-4202-AFAC-FA6FEFEDB025}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{12CB5E0D-33C2-47DE-AAF0-BF1DAC0EE4B6}"/>
+										<Position Name="" ID="{CFDF56DB-695C-4C4E-9AA8-E26552017621}"/>
+									</PositioningInfo>
 								</BlendContainer>
 							</ChildrenList>
 						</Folder>

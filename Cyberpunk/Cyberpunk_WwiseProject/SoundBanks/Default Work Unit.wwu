@@ -19,6 +19,7 @@
 						<ObjectRef Name="player_reload" ID="{6F279848-C908-446F-ACFA-68F2845474D3}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="enemy_range1_shooting" ID="{1986F6B6-E2D5-4593-85A4-0AD89ACEA9C9}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="player_ranged_attack_attack1_stationary" ID="{32D0B363-4F1E-4859-99EE-88DF497EDAA9}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Ambient_part1" ID="{46D3C424-FA27-486B-848F-904B351E5D7D}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="footsteps" ID="{E85A1009-BB1D-4979-B4FC-6200B2F9CB1F}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="enemy_range1_damaged" ID="{80EC79A2-2558-49DD-ACD7-CF70EE887690}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="enemy_range1_land" ID="{18A3563E-0737-4AAD-9693-86E8CD1BE280}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
