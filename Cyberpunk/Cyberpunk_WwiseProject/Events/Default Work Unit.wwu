@@ -208,8 +208,52 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="moving_platform" ID="{90936E8B-BD8B-41CA-B2FC-F42B1CE1D229}">
+							<ChildrenList>
+								<Action Name="" ID="{974BA2AF-1690-4D50-A400-1BAEB09964D4}" ShortID="341615862">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="moving_platform" ID="{B20AEAC1-D0E1-4DCE-BE11-D28E4DEF09C3}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Ambient_part2" ID="{78FF1001-631D-4C35-931D-E0ACB8EE7E90}">
+							<ChildrenList>
+								<Action Name="" ID="{2DAABBDF-427F-41FA-B43D-B7BA6F473D1A}" ShortID="1062567813">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambient_part2" ID="{661C720E-FFE2-4370-9E9D-C7AD3EB1A276}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Ambient_part3" ID="{4A56442E-0614-4F72-A072-C5E33EA95A6C}">
+							<ChildrenList>
+								<Action Name="" ID="{C836D59F-9682-4B11-8874-CF84A96302CB}" ShortID="525662484">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambient_part3" ID="{D9307334-3ED3-4CD6-8EFA-E04D25BF298D}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Music_Explore" ID="{CE311DB7-66E5-41D8-AC3D-73D920908CD7}">
+					<ChildrenList>
+						<Action Name="" ID="{0DA71D82-D71A-486A-869B-7EA4F235E035}" ShortID="424734522">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="New Music Playlist Container" ID="{F2A7795E-A43B-4641-AF0A-4AA6AE009751}" WorkUnitID="{3809C549-DCCE-4DA9-B37F-88B1F003DF9F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

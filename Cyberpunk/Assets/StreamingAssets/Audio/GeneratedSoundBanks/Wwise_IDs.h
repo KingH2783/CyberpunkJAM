@@ -14,12 +14,16 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID AMBIENT_PART1 = 1728914370U;
+        static const AkUniqueID AMBIENT_PART2 = 1728914369U;
+        static const AkUniqueID AMBIENT_PART3 = 1728914368U;
         static const AkUniqueID ENEMY_RANGE1_DAMAGED = 2037740798U;
         static const AkUniqueID ENEMY_RANGE1_DEATH = 477019125U;
         static const AkUniqueID ENEMY_RANGE1_LAND = 201284434U;
         static const AkUniqueID ENEMY_RANGE1_RUNNING_CONCRETE = 4157003948U;
         static const AkUniqueID ENEMY_RANGE1_SHOOTING = 2288279038U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
+        static const AkUniqueID MOVING_PLATFORM = 703211547U;
+        static const AkUniqueID MUSIC_EXPLORE = 15273518U;
         static const AkUniqueID PLASMA_GUN_SHOOT = 2851466780U;
         static const AkUniqueID PLAYER_DASH = 2394582229U;
         static const AkUniqueID PLAYER_DEATH = 3083087645U;

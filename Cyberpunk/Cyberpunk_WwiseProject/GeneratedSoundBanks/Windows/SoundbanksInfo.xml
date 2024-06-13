@@ -9,13 +9,17 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1290008369" Type="User" Language="SFX" Hash="{B7FA8188-8BA8-9424-217F-21315237B1BF}">
+		<SoundBank Id="1290008369" Type="User" Language="SFX" Hash="{151B0BDE-CF2F-95DC-A083-6E385329654B}">
 			<ShortName>level_1</ShortName>
 			<Path>level_1.bnk</Path>
 			<Media>
 				<File Id="47134815" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_running_concrete-005.wav</ShortName>
 					<CachePath>SFX/enemy_range1_running_concrete-005_818F3B66.wem</CachePath>
+				</File>
+				<File Id="55355417" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ambient_part2.wav</ShortName>
+					<CachePath>SFX/ambient_part2_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="66600273" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE.wav</ShortName>
@@ -121,6 +125,10 @@
 					<ShortName>enemy_range1_damaged_bottom-001.wav</ShortName>
 					<CachePath>SFX/enemy_range1_damaged_bottom-001_818F3B66.wem</CachePath>
 				</File>
+				<File Id="587161896" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ambient_part3.wav</ShortName>
+					<CachePath>SFX/ambient_part3_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="590834058" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-1.wav</ShortName>
 					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-1_7233B1E4.wem</CachePath>
@@ -181,6 +189,10 @@
 					<ShortName>player_death.wav</ShortName>
 					<CachePath>SFX/player_death_818F3B66.wem</CachePath>
 				</File>
+				<File Id="910340784" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>moving_platform.wav</ShortName>
+					<CachePath>SFX/moving_platform_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="916299761" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_running_concrete-008.wav</ShortName>
 					<CachePath>SFX/enemy_range1_running_concrete-008_818F3B66.wem</CachePath>
@@ -188,6 +200,10 @@
 				<File Id="932931645" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BO01 CC01D S - 01-59 - Full 05.wav</ShortName>
 					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 05_818F3B66.wem</CachePath>
+				</File>
+				<File Id="945438747" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>explore.wav</ShortName>
+					<CachePath>SFX/explore_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="952037636" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE-1.wav</ShortName>
@@ -210,6 +226,16 @@
 				<Event Id="1728914370" Name="Ambient_part1" MaxAttenuation="200" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="1025695962"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1728914369" Name="Ambient_part2" MaxAttenuation="80" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="55355417"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1728914368" Name="Ambient_part3" MaxAttenuation="80" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="587161896"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2037740798" Name="enemy_range1_damaged" DurationType="OneShot" DurationMin="0.47842515" DurationMax="0.6138057">
@@ -273,6 +299,16 @@
 						<MediaRef Id="764620604"/>
 						<MediaRef Id="932931645"/>
 						<MediaRef Id="952537116"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="703211547" Name="moving_platform" MaxAttenuation="30" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="910340784"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="15273518" Name="Music_Explore" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="945438747"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2851466780" Name="plasma_gun_shoot" DurationType="OneShot" DurationMin="0.8029139" DurationMax="1.246407">
@@ -368,5 +404,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{DDCC317E-0DAB-37E2-0C0D-13EEC7112452}</FileHash>
+	<FileHash>{BD14D9DE-F523-D481-719B-C8D2A0E8B2FE}</FileHash>
 </SoundBanksInfo>
