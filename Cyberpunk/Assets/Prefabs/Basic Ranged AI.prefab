@@ -337,6 +337,7 @@ MonoBehaviour:
   isGrounded: 0
   isJumping: 0
   isDashing: 0
+  isCrouching: 0
   isOnSlope: 0
   isDead: 0
   isFacingRight: 0
@@ -410,6 +411,8 @@ MonoBehaviour:
   groundCheckSize: {x: 0.75, y: 0.05}
   slopeCheckStartOffset: {x: 0, y: 0.25}
   slopeCheckDistance: 2
+  knockbackForce: {x: 20, y: 1}
+  platformRB: {fileID: 0}
   leftOrRightAIMovementInput: 0
 --- !u!114 &7690247659536071876
 MonoBehaviour:
@@ -460,6 +463,86 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: da00ba2ef5ee14646a4f215b09643d7c, type: 2}
+  enemy_range1_running_concrete:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  enemy_range1_damaged:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  enemy_range1_death:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  enemy_range1_fall:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  enemy_range1_idle:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  enemy_range1_jump:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  enemy_range1_land:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  enemy_range1_shooting:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  player_ranged_attack_attack1_stationary:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  player_reload:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  player_dash:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  player_death:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  player_fall:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  player_damaged:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  player_idle:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  player_jump:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  player_land:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  player_melee_attack1:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  player_raised_gun_running:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  player_ranged_attack_attack1_running:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &5895080309900036047
 GameObject:
   m_ObjectHideFlags: 0

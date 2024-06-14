@@ -12,9 +12,9 @@ namespace HL
             ai = GetComponent<AIManager>();
         }
 
-        public override void TakeDamage(int damage)
+        public override void TakeDamage(int damage, CharacterManager characterDealingDamage = null)
         {
-            base.TakeDamage(damage);
+            base.TakeDamage(damage, characterDealingDamage);
         }
 
         protected override void HandleDeath()

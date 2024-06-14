@@ -17,9 +17,9 @@ namespace HL
             PlayerUIManager.Instance.healthBar.SetMaxStat(maxHealth);
         }
 
-        public override void TakeDamage(int damage)
+        public override void TakeDamage(int damage, CharacterManager characterDealingDamage = null)
         {
-            base.TakeDamage(damage);
+            base.TakeDamage(damage, characterDealingDamage);
             PlayerUIManager.Instance.healthBar.SetCurrentStat(currentHealth);
         }
 

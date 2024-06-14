@@ -34,7 +34,7 @@ namespace HL
                 characterAttacking.characterStatsManager.teamID != characterThatGotHit.characterStatsManager.teamID &&
                 !characterThatGotHit.isDead)
             {
-                characterThatGotHit.characterStatsManager.TakeDamage(characterAttacking.characterStatsManager.currentMeleeWeapon.weaponDamage);
+                characterThatGotHit.characterStatsManager.TakeDamage(characterAttacking.characterStatsManager.currentMeleeWeapon.weaponDamage, characterAttacking);
             }
         }
     }

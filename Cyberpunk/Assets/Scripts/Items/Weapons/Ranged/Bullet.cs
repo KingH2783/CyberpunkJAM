@@ -32,7 +32,7 @@ namespace HL
                     characterGettingShot.characterStatsManager.teamID != characterWhoFiredMe.characterStatsManager.teamID && 
                     !characterGettingShot.isDead)
                 {
-                    characterGettingShot.characterStatsManager.TakeDamage(Mathf.RoundToInt(weapon.weaponDamage + bulletDamage));
+                    characterGettingShot.characterStatsManager.TakeDamage(Mathf.RoundToInt(weapon.weaponDamage + bulletDamage), characterWhoFiredMe);
 
                     Destroy(gameObject);
                 }

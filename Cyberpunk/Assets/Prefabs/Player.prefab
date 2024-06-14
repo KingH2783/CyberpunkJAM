@@ -297,7 +297,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: -1614193955, guid: ae2dd3cddf912a649be55f44c384482f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -444,6 +444,7 @@ MonoBehaviour:
   isOnPlatform: 0
   isWallJumping: 0
   isOnWall: 0
+  currentInteractableObject: {fileID: 0}
 --- !u!114 &549562554312031288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -456,23 +457,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f91ebd853e213f4f91e875e751b2403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxRunSpeed: 16
-  runAcceleration: 16
-  runDecceleration: 16
+  maxRunSpeed: 18
+  runAcceleration: 18
+  runDecceleration: 18
   accelInAir: 0.2
   deccelInAir: 0.2
   doConserveMomentum: 1
   maxSlopeRunSpeed: 16
-  maxSlopeAngle: 45
-  jumpHeight: 4
+  maxSlopeAngle: 46
+  jumpHeight: 5
   allowDoubleJump: 1
-  jumpTimeToApex: 0.62
+  jumpTimeToApex: 0.5
   jumpHangGravityMult: 0.1
   jumpHangTimeThreshold: 0.1
   jumpHangAccelerationMult: 1
   jumpHangMaxSpeedMult: 1
   maxFallSpeed: 20
-  fallGravityMult: 1
+  fallGravityMult: 1.5
   fallGravityMultOnSteepSlope: 3
   groundLayer:
     serializedVersion: 2
@@ -481,30 +482,32 @@ MonoBehaviour:
   groundCheckSize: {x: 1.75, y: 0.05}
   slopeCheckStartOffset: {x: 0, y: 0.25}
   slopeCheckDistance: 2
+  knockbackForce: {x: 20, y: 1}
   platformRB: {fileID: 0}
   showRunSettings: 1
   showJumpSettings: 1
   showDashSettings: 1
   showCrouchSettings: 1
-  showFallSettings: 0
+  showFallSettings: 1
   showCheckSettings: 1
   showAssistSettings: 0
-  jumpCutGravityMult: 2.55
+  showKnockbackSettings: 1
+  jumpCutGravityMult: 2.5
   timeToHoldJumpForFullJump: 0.5
   allowWallJump: 1
-  wallJumpForce: {x: 10, y: 10}
-  wallJumpRunLerp: 0.5
+  wallJumpForce: {x: 50, y: 20}
+  wallJumpRunLerp: 0
   wallJumpCooldown: 0.5
   doFlipOnWallJump: 1
   slideSpeed: 5
   slideAccel: 5
   allowDash: 1
-  dashVelocity: 80
+  dashVelocity: 100
   dashTime: 0.1
   dashCooldown: 0.8
   allowMultipleDashesBeforeTouchingGround: 0
-  crouchingColliderOffset: {x: 0, y: 1.75}
-  crouchingColliderSize: {x: 2, y: 3.5}
+  crouchingColliderOffset: {x: 0, y: 1.4}
+  crouchingColliderSize: {x: 2, y: 2.8}
   wallJumpLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -572,11 +575,11 @@ MonoBehaviour:
   Footsteps:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: df82f38f56e31c34aa7ed097332f8fc3, type: 2}
+    WwiseObjectReference: {fileID: 0}
   PlasmaGunShoot:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: da00ba2ef5ee14646a4f215b09643d7c, type: 2}
+    WwiseObjectReference: {fileID: 0}
   enemy_range1_running_concrete:
     idInternal: 0
     valueGuidInternal: 
@@ -606,6 +609,54 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
   enemy_range1_shooting:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  player_ranged_attack_attack1_stationary:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 277147c2f3a2f8b4aba75a291cbab192, type: 2}
+  player_reload:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e0d2e67f07414c64da2ce91910e364ad, type: 2}
+  player_dash:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9852734a8816b5740836ba1884348b6f, type: 2}
+  player_death:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 1e2c57ee9638d4240a0b5f155cbd45bf, type: 2}
+  player_fall:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  player_damaged:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  player_idle:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  player_jump:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  player_land:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 33b3542b103b30c438d785a50faab357, type: 2}
+  player_melee_attack1:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  player_raised_gun_running:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7dea301074d93fe4ab8650384032ad62, type: 2}
+  player_ranged_attack_attack1_running:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
