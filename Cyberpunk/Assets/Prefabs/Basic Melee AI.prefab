@@ -373,7 +373,7 @@ MonoBehaviour:
   fallGravityMultOnSteepSlope: 3
   groundLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 320
   groundCheckPoint: {fileID: 3137965154282582646}
   groundCheckSize: {x: 0.75, y: 0.05}
   slopeCheckStartOffset: {x: 0, y: 0.25}
