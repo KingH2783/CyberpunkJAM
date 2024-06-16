@@ -128,6 +128,7 @@ namespace HL
             if (ai.currentAttack.isRangedAction)
             {
                 ai.aiAnimatorManager.PlayTargetAnimation(ai.currentAttack.attackAnimationName, rangedWeapon.stopMovement);
+                ai.currentRecoveryTime = ai.currentAttack.recoveryTime;
             }
             else
             {

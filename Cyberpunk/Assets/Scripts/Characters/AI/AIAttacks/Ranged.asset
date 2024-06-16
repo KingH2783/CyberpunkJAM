@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackAnimationName: Ranged_Attack_1_Stationary
   attackScore: 3
-  recoveryTime: 0
+  recoveryTime: 2
   minimumDistanceNeededToAttack: 0
   maximumDistanceNeededToAttack: 20
   isRangedAction: 1

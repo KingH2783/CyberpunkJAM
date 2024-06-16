@@ -43,6 +43,7 @@ public class AIAttackActionEditor : Editor
             EditorStyles.label.fontStyle = FontStyle.Normal;
             attack.attackAnimationName = EditorGUILayout.TextField("Attack Animation Name", attack.attackAnimationName);
             attack.attackScore = EditorGUILayout.IntField("Attack Score", attack.attackScore);
+            attack.recoveryTime = EditorGUILayout.FloatField("Recovery Time", attack.recoveryTime);
             attack.minimumDistanceNeededToAttack = EditorGUILayout.FloatField("Minimum Distance Needed To Attack", attack.minimumDistanceNeededToAttack);
             attack.maximumDistanceNeededToAttack = EditorGUILayout.FloatField("Maximum Distance Needed To Attack", attack.maximumDistanceNeededToAttack);
             attack.actionCanCombo = false;
