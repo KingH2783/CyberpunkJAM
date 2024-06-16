@@ -153,6 +153,7 @@ GameObject:
   - component: {fileID: 3262706786913099310}
   - component: {fileID: 421241822087934116}
   - component: {fileID: 320652027510425247}
+  - component: {fileID: 9172579754838692236}
   - component: {fileID: 3869722440410223052}
   - component: {fileID: 979230806074909289}
   - component: {fileID: 5239684957902323038}
@@ -246,7 +247,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 1351410859, guid: f8aaf7dfcbaa9ae449aabda7642bfecb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -258,6 +259,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &9172579754838692236
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3724143383291972767}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.25, y: 2.25}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 8.818571, y: 6.8659997}
+    newSize: {x: 8.818571, y: 6.8659997}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 4.5}
+  m_EdgeRadius: 0
 --- !u!70 &3869722440410223052
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -265,7 +311,7 @@ CapsuleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3724143383291972767}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -334,7 +380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lineOfSightTransform: {fileID: 6131074265519841437}
   isRunning: 0
-  isGrounded: 0
+  isGrounded: 1
   isJumping: 0
   isDashing: 0
   isCrouching: 0
@@ -345,10 +391,11 @@ MonoBehaviour:
   isPerformingAction: 0
   isDoingMeleeAttack: 0
   isDoingRangedAttack: 0
+  isBeingDamaged: 0
   isOnPlatform: 0
   showTransforms: 0
   showFlags: 0
-  showCurrentAIState: 0
+  showCurrentAIState: 1
   showAISettings: 1
   canShoot: 0
   currentState: {fileID: 7254300982992019060}
@@ -364,16 +411,16 @@ MonoBehaviour:
   layersThatBlockLineOfSight:
     serializedVersion: 2
     m_Bits: 64
-  detectionRadius: 10
-  maxCirclingDistance: 12
-  maxAggroRange: 18
-  stoppingDistance: 12
+  detectionRadius: 20
+  maxCirclingDistance: 16
+  maxAggroRange: 50
+  stoppingDistance: 16
   waitTimeBeforeFirstAttack: 0
   allowAIToPerformCombos: 0
   comboLikelyHood: 0
   bulletSpawnPoint: {fileID: 5716889128621520032}
   distanceFromCompanion: 0
-  distanceFromTarget: 0
+  distanceFromTarget: 15.769021
 --- !u!114 &8141512031476115410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -386,9 +433,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc89c06d401420741bb133425cd8015b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxRunSpeed: 6
-  runAcceleration: 6
-  runDecceleration: 6
+  maxRunSpeed: 10
+  runAcceleration: 10
+  runDecceleration: 10
   accelInAir: 0.2
   deccelInAir: 0.2
   doConserveMomentum: 1
@@ -411,7 +458,8 @@ MonoBehaviour:
   groundCheckSize: {x: 0.75, y: 0.05}
   slopeCheckStartOffset: {x: 0, y: 0.25}
   slopeCheckDistance: 2
-  knockbackForce: {x: 20, y: 1}
+  knockbackForce: {x: 60, y: 20}
+  knockbackDuration: 0.05
   platformRB: {fileID: 0}
   leftOrRightAIMovementInput: 0
 --- !u!114 &7690247659536071876

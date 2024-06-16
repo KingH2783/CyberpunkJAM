@@ -71,6 +71,7 @@ public class PlayerLocomotionEditor : Editor
     private SerializedProperty dashInputBufferTime;
 
     private SerializedProperty knockbackForce;
+    private SerializedProperty knockbackDuration;
     #endregion
 
     private void OnEnable()
@@ -141,6 +142,7 @@ public class PlayerLocomotionEditor : Editor
         dashInputBufferTime = serializedObject.FindProperty("dashInputBufferTime");
 
         knockbackForce = serializedObject.FindProperty("knockbackForce");
+        knockbackDuration = serializedObject.FindProperty("knockbackDuration");
         #endregion
     }
 
@@ -299,6 +301,7 @@ public class PlayerLocomotionEditor : Editor
         {
             EditorStyles.label.fontStyle = FontStyle.Normal;
             knockbackForce.vector2Value = EditorGUILayout.Vector2Field(new GUIContent("Knockback Force", "When we get hit, our character will be knocked back by this amount"), knockbackForce.vector2Value);
+            knockbackDuration.floatValue = EditorGUILayout.FloatField(new GUIContent("Knockback Duration", "Duration of the knockback"), knockbackDuration.floatValue);
         }
         #endregion
 

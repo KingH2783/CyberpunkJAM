@@ -20,6 +20,7 @@ namespace HL
             animator.SetBool("Crouching", player.isCrouching);
             animator.SetBool("OnWall", player.isOnWall);
             animator.SetBool("DoingRangedAttack", player.isDoingRangedAttack);
+            animator.SetBool("BeingDamaged", player.isBeingDamaged);
         }
 
         public override void PlayTargetAnimation(string animation, bool stopMovement = false)

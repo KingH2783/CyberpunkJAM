@@ -16,12 +16,10 @@ namespace HL
         Action<InputAction.CallbackContext> movementInputHandler;
         [HideInInspector] public Vector2 movementInput { get; private set; }
         [HideInInspector] public bool jumpInput;
-        [HideInInspector] public bool dashInput;
         [HideInInspector] public bool crouchInput;
 
         // ======= Player Action Inputs =======
         Action<InputAction.CallbackContext> jumpInputPerformed;
-        Action<InputAction.CallbackContext> dashInputPerformed;
         Action<InputAction.CallbackContext> crouchInputPerformed;
         Action<InputAction.CallbackContext> crouchInputCanceled;
 
@@ -57,7 +55,6 @@ namespace HL
                 // Setup for Lambda events
                 movementInputHandler = context => movementInput = context.ReadValue<Vector2>();
                 jumpInputPerformed = context => jumpInput = true;
-                dashInputPerformed = context => dashInput = true;
                 crouchInputPerformed = context => crouchInput = true;
                 crouchInputCanceled = context => crouchInput = false;
             }
@@ -126,6 +123,13 @@ namespace HL
         {
             jumpInput = false;
             player.playerLocomotion.HandleJumpCut();
+        }
+
+        private void HandleDashInputPerformed(InputAction.CallbackContext context)
+        {
+            player.playerLocomotion.lastPressedDashTimer = player.playerLocomotion.dashInputBufferTime;
+            if (player.playerLocomotion.CanDash())
+                player.playerLocomotion.HandleDash();
         }
 
         private void HandleMeleeAttackInput(InputAction.CallbackContext context)
@@ -226,7 +230,7 @@ namespace HL
             playerControls.Player.Movement.performed += movementInputHandler;
             playerControls.Player.Jump.performed += jumpInputPerformed;
             playerControls.Player.Jump.canceled += HandleJumpInputCanceled;
-            playerControls.Player.Dash.performed += dashInputPerformed;
+            playerControls.Player.Dash.performed += HandleDashInputPerformed;
             playerControls.Player.Crouching.performed += crouchInputPerformed;
             playerControls.Player.Crouching.canceled += crouchInputCanceled;
             playerControls.Player.MeleeAttack.performed += HandleMeleeAttackInput;
@@ -243,7 +247,7 @@ namespace HL
             playerControls.Player.Movement.performed -= movementInputHandler;
             playerControls.Player.Jump.performed -= jumpInputPerformed;
             playerControls.Player.Jump.canceled -= HandleJumpInputCanceled;
-            playerControls.Player.Dash.performed -= dashInputPerformed;
+            playerControls.Player.Dash.performed -= HandleDashInputPerformed;
             playerControls.Player.Crouching.performed -= crouchInputPerformed;
             playerControls.Player.Crouching.performed -= crouchInputCanceled;
             playerControls.Player.MeleeAttack.performed -= HandleMeleeAttackInput;

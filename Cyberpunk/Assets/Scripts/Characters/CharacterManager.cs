@@ -29,6 +29,7 @@ namespace HL
         public bool isPerformingAction;
         public bool isDoingMeleeAttack;
         public bool isDoingRangedAttack;
+        public bool isBeingDamaged;
         public bool isOnPlatform;
 
         protected virtual void Awake()

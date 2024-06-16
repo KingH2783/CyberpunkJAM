@@ -115,7 +115,7 @@ namespace HL
         [SerializeField][Range(0.01f, 0.5f)] private float coyoteTime;
         [Tooltip("The amount of time given to jump if the player has pressed the jump button but the conditions haven't been met yet")]
         [SerializeField][Range(0.01f, 0.5f)] private float jumpInputBufferTime;
-        [SerializeField][Range(0.01f, 0.5f)] private float dashInputBufferTime;
+        [SerializeField][Range(0.01f, 0.5f)] public float dashInputBufferTime;
 
         // ======= Private Variables =======
         private float lastOnWallTimer;
@@ -123,7 +123,7 @@ namespace HL
         private float lastOnLeftWallTimer;
         private float lastOnRightWallTimer;
         private float lastPressedJumpTimer;
-        private float lastPressedDashTimer;
+        public float lastPressedDashTimer;
         private float lastDashCooldownTimer;
         private float jumpInputStartTimer;
 
@@ -184,6 +184,9 @@ namespace HL
             UpdatePlayerFlags();
             GetPlayerInputs();
 
+            if (player.isBeingDamaged)
+                return;
+
             if (player.isPerformingAction)
             {
                 // Stop movement if performing action
@@ -206,14 +209,6 @@ namespace HL
                         HandleDoubleJump();
                 }
 
-                if (PlayerInputsManager.Instance.dashInput)
-                {
-                    PlayerInputsManager.Instance.dashInput = false;
-                    lastPressedDashTimer = dashInputBufferTime;
-                    if (CanDash())
-                        HandleDash();
-                }
-
                 if (horizontalInput != 0 &&
                     (horizontalInput > 0) != player.isFacingRight)
                     HandleFlip();
@@ -226,7 +221,8 @@ namespace HL
         {
             base.LocomotionFixedUpdate(delta);
 
-            HandleCrouching();
+            if (player.isBeingDamaged)
+                return;
 
             // Stop movement if performing action
             if (player.isPerformingAction)
@@ -235,6 +231,7 @@ namespace HL
                 return;
             }
 
+            HandleCrouching();
             HandleMovement(horizontalInput, delta);
 
             if (doFlipOnWallJump)
@@ -429,7 +426,7 @@ namespace HL
                 isJumpCut = true;
         }
 
-        private void HandleDash()
+        public void HandleDash()
         {
             if (!player.isGrounded)
                 hasDoneDashInAir = true;
@@ -508,6 +505,12 @@ namespace HL
                 // Default gravity if standing on a platform or moving upwards
                 rb.gravityScale = gravityScale;
             }
+        }
+
+        public override void HandleKnockbackOnHit(bool hitFromRightSide)
+        {
+            rb.velocity = new(0, rb.velocity.y);
+            base.HandleKnockbackOnHit(hitFromRightSide);
         }
 
         #region Check Functions
@@ -602,8 +605,11 @@ namespace HL
                 jumpInputStartTimer < timeToHoldJumpForFullJump;
         }
 
-        private bool CanDash()
+        public bool CanDash()
         {
+            if (player.isBeingDamaged) return false;
+            if (player.isPerformingAction) rb.velocity = new(0, rb.velocity.y);
+
             // Is grounded OR it behaves the same in the air
             if (player.isGrounded || allowMultipleDashesBeforeTouchingGround)
             {

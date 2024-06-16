@@ -61,6 +61,7 @@ namespace HL
             DisableMeleeDamageCollider();
             character.isPerformingAction = false;
             character.isDoingMeleeAttack = false;
+            character.isBeingDamaged = false;
         }
 
         #endregion
