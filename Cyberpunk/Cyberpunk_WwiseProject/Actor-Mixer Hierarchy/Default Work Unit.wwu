@@ -2353,6 +2353,13 @@
 									</ChildrenList>
 								</BlendContainer>
 								<BlendContainer Name="Ambient_part3" ID="{D9307334-3ED3-4CD6-8EFA-E04D25BF298D}" ShortID="259586613">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{11302577-8E44-42BF-A54B-C6B3831BEAB0}"/>
