@@ -22,7 +22,7 @@ namespace HL
             character = GetComponent<CharacterManager>();
         }
 
-        public virtual void TakeDamage(int damage)
+        public virtual void TakeDamage(int damage, CharacterManager characterDealingDamage = null)
         {
             if (character.isDead || character.isInvulnerable)
                 return;
@@ -33,6 +33,14 @@ namespace HL
                 character.characterAnimatorManager.PlayTargetAnimation("Hurt", true);
             else
                 HandleDeath();
+
+            if (characterDealingDamage != null)
+            {
+                if (characterDealingDamage._transform.position.x < character._transform.position.x)
+                    character.characterLocomotion.HandleKnockbackOnHit(false);
+                else
+                    character.characterLocomotion.HandleKnockbackOnHit(true);
+            }
         }
 
         protected virtual void HandleDeath()

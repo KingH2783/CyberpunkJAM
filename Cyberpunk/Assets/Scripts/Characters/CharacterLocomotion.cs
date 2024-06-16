@@ -42,6 +42,9 @@ namespace HL
         [SerializeField] protected Vector2 slopeCheckStartOffset = new(0, 0.25f);
         [SerializeField] protected float slopeCheckDistance = 2f;
 
+        [Header("Knockback")]
+        [SerializeField] protected Vector2 knockbackForce;
+
         protected float runAccelAmount;
         protected float runDeccelAmount;
         protected float gravityStrength;
@@ -154,6 +157,20 @@ namespace HL
             /*Vector3 scale = transform.localScale;
             scale.x *= -1;
             transform.localScale = scale;*/
+        }
+
+        public virtual void HandleKnockbackOnHit(bool hitFromRightSide)
+        {
+            Vector2 forceToPush;
+
+            if (hitFromRightSide)
+            {
+                forceToPush = knockbackForce;
+                forceToPush.x *= -1;
+            }
+            else
+                forceToPush = knockbackForce;
+            rb.AddForce(forceToPush, ForceMode2D.Impulse);
         }
 
         protected virtual bool IsOnSlope()

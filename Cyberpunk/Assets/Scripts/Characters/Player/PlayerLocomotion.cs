@@ -20,6 +20,7 @@ namespace HL
         [SerializeField] private bool showFallSettings;
         [SerializeField] private bool showCheckSettings;
         [SerializeField] private bool showAssistSettings;
+        [SerializeField] private bool showKnockbackSettings;
 
         // ======= Settings =======
         //[Header("Running")]
@@ -573,7 +574,10 @@ namespace HL
                 !hasDoneDoubleJump &&
                 !player.isJumping &&
                 !player.isWallJumping &&
-                !player.isGrounded &&
+                !player.isGrounded && 
+                !player.isOnWall &&
+                !Physics2D.OverlapBox(frontWallCheckPoint.position, wallCheckSize, 0, wallJumpLayer) && 
+                !Physics2D.OverlapBox(backWallCheckPoint.position, wallCheckSize, 0, wallJumpLayer) &&
                 lastPressedJumpTimer > 0;
         }
 

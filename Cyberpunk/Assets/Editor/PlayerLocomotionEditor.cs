@@ -13,6 +13,7 @@ public class PlayerLocomotionEditor : Editor
     private SerializedProperty showFallSettings;
     private SerializedProperty showCheckSettings;
     private SerializedProperty showAssistSettings;
+    private SerializedProperty showKnockbackSettings;
 
     private SerializedProperty maxRunSpeed;
     private SerializedProperty maxSlopeRunSpeed;
@@ -68,6 +69,8 @@ public class PlayerLocomotionEditor : Editor
     private SerializedProperty coyoteTime;
     private SerializedProperty jumpInputBufferTime;
     private SerializedProperty dashInputBufferTime;
+
+    private SerializedProperty knockbackForce;
     #endregion
 
     private void OnEnable()
@@ -80,6 +83,7 @@ public class PlayerLocomotionEditor : Editor
         showFallSettings = serializedObject.FindProperty("showFallSettings");
         showCheckSettings = serializedObject.FindProperty("showCheckSettings");
         showAssistSettings = serializedObject.FindProperty("showAssistSettings");
+        showKnockbackSettings = serializedObject.FindProperty("showKnockbackSettings");
 
         maxRunSpeed = serializedObject.FindProperty("maxRunSpeed");
         maxSlopeRunSpeed = serializedObject.FindProperty("maxSlopeRunSpeed");
@@ -135,6 +139,8 @@ public class PlayerLocomotionEditor : Editor
         coyoteTime = serializedObject.FindProperty("coyoteTime");
         jumpInputBufferTime = serializedObject.FindProperty("jumpInputBufferTime");
         dashInputBufferTime = serializedObject.FindProperty("dashInputBufferTime");
+
+        knockbackForce = serializedObject.FindProperty("knockbackForce");
         #endregion
     }
 
@@ -245,7 +251,7 @@ public class PlayerLocomotionEditor : Editor
         {
             EditorStyles.label.fontStyle = FontStyle.Normal;
             maxFallSpeed.floatValue = EditorGUILayout.FloatField(new GUIContent("Max Fall Speed", "How fast we fall"), maxFallSpeed.floatValue);
-            fallGravityMult.floatValue = EditorGUILayout.Slider(new GUIContent("Fall Gravity Multiplier", "The gravity multiplier when falling"), fallGravityMult.floatValue, 0, 1);
+            fallGravityMult.floatValue = EditorGUILayout.FloatField(new GUIContent("Fall Gravity Multiplier", "The gravity multiplier when falling"), fallGravityMult.floatValue);
             fallGravityMultOnSteepSlope.floatValue = EditorGUILayout.FloatField(new GUIContent("Fall Gravity Multiplier On Steep Slope", "The gravity multiplier when on a slope that exceeds the Max Slope Angle"), fallGravityMultOnSteepSlope.floatValue);
         }
         #endregion
@@ -281,6 +287,18 @@ public class PlayerLocomotionEditor : Editor
             coyoteTime.floatValue = EditorGUILayout.Slider(new GUIContent("Coyote Time", "The amount of time given to the player to jump after they have already fallen off a platform"), coyoteTime.floatValue, 0.01f, 0.5f);
             jumpInputBufferTime.floatValue = EditorGUILayout.Slider(new GUIContent("Jump Input Buffer Time", "The amount of time given to jump if the player has pressed the jump button but the conditions haven't been met yet"), jumpInputBufferTime.floatValue, 0.01f, 0.5f);
             dashInputBufferTime.floatValue = EditorGUILayout.Slider(new GUIContent("Dash Input Buffer Time", "The amount of time given to dash if the player has pressed the dash button but the conditions haven't been met yet"), dashInputBufferTime.floatValue, 0.01f, 0.5f);
+        }
+        #endregion
+
+        // ======= Knockback Settings =======
+        #region // ======= Knockback Settings =======
+        EditorGUILayout.Space();
+        EditorStyles.label.fontStyle = FontStyle.Bold;
+        showKnockbackSettings.boolValue = EditorGUILayout.Toggle("SHOW KNOCKBACK SETTINGS", showKnockbackSettings.boolValue);
+        if (showKnockbackSettings.boolValue)
+        {
+            EditorStyles.label.fontStyle = FontStyle.Normal;
+            knockbackForce.vector2Value = EditorGUILayout.Vector2Field(new GUIContent("Knockback Force", "When we get hit, our character will be knocked back by this amount"), knockbackForce.vector2Value);
         }
         #endregion
 
