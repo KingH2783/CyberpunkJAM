@@ -37,5 +37,10 @@ namespace HL
         {
 
         }
+
+        private void ApplyHealEvent()
+        {
+            player.playerStatsManager.ApplyHeal();
+        }
     }
 }

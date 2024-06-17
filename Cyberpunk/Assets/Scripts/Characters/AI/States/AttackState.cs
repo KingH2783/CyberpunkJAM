@@ -30,7 +30,7 @@ namespace HL
                 AIType.Heavy => this,
                 AIType.FastGrounded => this,
                 AIType.FastFlying => this,
-                AIType.Boss => this,
+                AIType.Boss => ProcessBossAttack(ai),
                 _ => this,
             };
         }
@@ -111,6 +111,42 @@ namespace HL
                 }
                 else
                     AttackTarget(ai);
+            }
+
+            // We check if we still have an attack -->
+            // If we do that means we can combo so go back to the top of this state
+            if (ai.currentAttack == null)
+                return combatStanceState;
+            else
+                return this;
+        }
+
+        private State ProcessBossAttack(AIManager ai)
+        {
+            rangedWeapon = ai.aiStatsManager.currentRangedWeapon;
+
+            // Target dies
+            if (ai.currentTarget.isDead)
+            {
+                ResetStateFlags(ai);
+                ai.currentTarget = null;
+                return idleState;
+            }
+
+            // Target is too far, get closer
+            if (ai.distanceFromTarget > ai.maxCirclingDistance)
+            {
+                ResetStateFlags(ai);
+                return pursueTargetState;
+            }
+
+            ai.aiLocomotion.StopAIMovement();
+
+            // Attack and figure out if we can combo
+            if (!ai.isPerformingAction && ai.currentAttack != null)
+            {
+                AttackTarget(ai);
+                ai.currentAttack = null;
             }
 
             // We check if we still have an attack -->

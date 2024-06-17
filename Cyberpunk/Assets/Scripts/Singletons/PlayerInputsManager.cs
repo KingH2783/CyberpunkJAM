@@ -149,7 +149,7 @@ namespace HL
 
         private void HandleHealInput(InputAction.CallbackContext context)
         {
-            
+            player.playerStatsManager.HandleHeal();
         }
 
         private void HandleInteractPerformed(InputAction.CallbackContext context)

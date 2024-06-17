@@ -123,6 +123,18 @@ public class AIManagerEditor : Editor
                 ai.maxCirclingDistance = EditorGUILayout.FloatField("Max Circling Distance", ai.maxCirclingDistance);
                 ai.stoppingDistance = EditorGUILayout.FloatField("Stopping Distance", ai.stoppingDistance);
             }
+            else if (ai.aiType == AIType.Boss)
+            {
+                // ======= Layers and Floats =======
+                EditorGUILayout.Space();
+                EditorStyles.label.fontStyle = FontStyle.Normal;
+                EditorGUILayout.PropertyField(detectionLayer);
+                EditorGUILayout.PropertyField(layersThatBlockLineOfSight);
+                ai.detectionRadius = EditorGUILayout.FloatField("Detection Radius", ai.detectionRadius);
+                ai.maxAggroRange = EditorGUILayout.FloatField("Max Aggro Range", ai.maxAggroRange);
+                ai.maxCirclingDistance = EditorGUILayout.FloatField("Max Circling Distance", ai.maxCirclingDistance);
+                ai.stoppingDistance = EditorGUILayout.FloatField("Stopping Distance", ai.stoppingDistance);
+            }
         }
         #endregion
 

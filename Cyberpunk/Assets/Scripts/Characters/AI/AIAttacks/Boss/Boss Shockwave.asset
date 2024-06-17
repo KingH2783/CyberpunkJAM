@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6aa04be85086d540a51c8e5d15aaefc, type: 3}
+  m_Name: Boss Shockwave
+  m_EditorClassIdentifier: 
+  attackAnimationName: Shockwave
+  attackScore: 4
+  recoveryTime: 2
+  minimumDistanceNeededToAttack: 0
+  maximumDistanceNeededToAttack: 5
+  isRangedAction: 0
+  actionCanCombo: 0
+  comboAttack: {fileID: 0}
