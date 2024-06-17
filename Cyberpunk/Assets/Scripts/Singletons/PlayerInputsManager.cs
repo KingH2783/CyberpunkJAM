@@ -147,14 +147,9 @@ namespace HL
             player.playerCombatManager.Reload();
         }
 
-        private void HandleSwitchMeleeInput(InputAction.CallbackContext context)
+        private void HandleHealInput(InputAction.CallbackContext context)
         {
-            player.playerCombatManager.SwitchMeleeWeapon();
-        }
-
-        private void HandleSwitchRangedInput(InputAction.CallbackContext context)
-        {
-            player.playerCombatManager.SwitchRangedWeapon();
+            
         }
 
         private void HandleInteractPerformed(InputAction.CallbackContext context)
@@ -236,8 +231,7 @@ namespace HL
             playerControls.Player.MeleeAttack.performed += HandleMeleeAttackInput;
             playerControls.Player.RangedAttack.performed += HandleRangedAttackInput;
             playerControls.Player.Reload.performed += HandleReloadInput;
-            playerControls.Player.SwitchMelee.performed += HandleSwitchMeleeInput;
-            playerControls.Player.SwitchRanged.performed += HandleSwitchRangedInput;
+            playerControls.Player.Heal.performed += HandleHealInput;
             playerControls.Player.Interact.performed += HandleInteractPerformed;
             playerControls.Player.Escape.performed += HandleEscapeInput;
         }
@@ -253,8 +247,7 @@ namespace HL
             playerControls.Player.MeleeAttack.performed -= HandleMeleeAttackInput;
             playerControls.Player.RangedAttack.performed -= HandleRangedAttackInput;
             playerControls.Player.Reload.performed -= HandleReloadInput;
-            playerControls.Player.SwitchMelee.performed -= HandleSwitchMeleeInput;
-            playerControls.Player.SwitchRanged.performed -= HandleSwitchRangedInput;
+            playerControls.Player.Heal.performed -= HandleHealInput;
             playerControls.Player.Interact.performed -= HandleInteractPerformed;
             playerControls.Player.Escape.performed -= HandleEscapeInput;
         }

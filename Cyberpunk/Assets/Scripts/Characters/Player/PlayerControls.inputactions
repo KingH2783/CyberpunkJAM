@@ -108,18 +108,9 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Switch Melee",
+                    "name": "Heal",
                     "type": "Button",
                     "id": "f85daa59-bb58-43ea-9510-79be5601cf71",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Switch Ranged",
-                    "type": "Button",
-                    "id": "4f4710d3-4b57-4a1e-bbfc-530c25a113ca",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -328,7 +319,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
-                    "action": "Switch Melee",
+                    "action": "Heal",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -339,29 +330,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "Switch Melee",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "74b7c6ca-947a-49b4-a277-799a8d0a1e41",
-                    "path": "<Keyboard>/e",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard",
-                    "action": "Switch Ranged",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "501cb684-2918-49bd-acf2-a8b74db42408",
-                    "path": "<Gamepad>/rightShoulder",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
-                    "action": "Switch Ranged",
+                    "action": "Heal",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
