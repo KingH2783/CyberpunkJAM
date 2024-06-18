@@ -12,11 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6aa04be85086d540a51c8e5d15aaefc, type: 3}
   m_Name: Boss Charge
   m_EditorClassIdentifier: 
+  isBoss: 1
   attackAnimationName: Charge
   attackScore: 2
-  recoveryTime: 5
+  recoveryTime: 3
   minimumDistanceNeededToAttack: 5
   maximumDistanceNeededToAttack: 20
   isRangedAction: 0
   actionCanCombo: 0
   comboAttack: {fileID: 0}
+  bossAttackType: 2
+  chargeVelocity: 50
+  chargeTime: 0.3

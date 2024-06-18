@@ -276,11 +276,13 @@ MonoBehaviour:
   detectionRadius: 20
   maxCirclingDistance: 50
   maxAggroRange: 20
-  stoppingDistance: 2
+  stoppingDistance: 10
   waitTimeBeforeFirstAttack: 0
   allowAIToPerformCombos: 0
   comboLikelyHood: 0
   bulletSpawnPoint: {fileID: 7162413821147564189}
+  bulletSpawnPointLow: {fileID: 7162413821147564189}
+  bulletSpawnPointHigh: {fileID: 2827054530390954769}
   distanceFromCompanion: 0
   distanceFromTarget: 15.769021
 --- !u!114 &8089382591571884148
@@ -317,11 +319,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 320
   groundCheckPoint: {fileID: 193423660578391193}
-  groundCheckSize: {x: 0.75, y: 0.05}
+  groundCheckSize: {x: 4, y: 0.05}
   slopeCheckStartOffset: {x: 0, y: 0.25}
   slopeCheckDistance: 2
-  knockbackForce: {x: 60, y: 20}
-  knockbackDuration: 0.05
+  knockbackForce: {x: 0, y: 0}
+  knockbackDuration: 0
   platformRB: {fileID: 0}
   leftOrRightAIMovementInput: 0
 --- !u!114 &4605754610095157622
@@ -337,10 +339,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   teamID: 1
-  maxHealth: 100
-  currentHealth: 100
+  maxHealth: 500
+  currentHealth: 500
   currentMeleeWeapon: {fileID: 11400000, guid: e99daf8a4cadba14e906ea2e7180fdad, type: 2}
-  currentRangedWeapon: {fileID: 11400000, guid: 1cd578c8265ead24683d08d5921ed6b9, type: 2}
+  currentRangedWeapon: {fileID: 11400000, guid: 459ff35e6f9008246a06a3a8ddd4a9ea, type: 2}
 --- !u!114 &822804534828954652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -462,7 +464,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4578630135989336984}
-  - component: {fileID: 3781485374221984348}
+  - component: {fileID: 3173976431708648052}
   - component: {fileID: 5677215557940011266}
   m_Layer: 7
   m_Name: Melee Collider
@@ -486,8 +488,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8306903002817734915}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!70 &3781485374221984348
-CapsuleCollider2D:
+--- !u!58 &3173976431708648052
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -518,9 +520,9 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.16045131, y: 2.9731386}
-  m_Size: {x: 6.811839, y: 3.5520358}
-  m_Direction: 1
+  m_Offset: {x: 0.55385494, y: 2.7330978}
+  serializedVersion: 2
+  m_Radius: 2.6505053
 --- !u!114 &5677215557940011266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -589,7 +591,7 @@ Transform:
   m_GameObject: {fileID: 2471406586378798560}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.25, y: -0.25, z: 0}
+  m_LocalPosition: {x: 0, y: -0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -627,8 +629,40 @@ Transform:
   - {fileID: 193423660578391193}
   - {fileID: 4440628065310807571}
   - {fileID: 7162413821147564189}
+  - {fileID: 2827054530390954769}
   m_Father: {fileID: 8306903002817734915}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3647596722974397884
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2827054530390954769}
+  m_Layer: 3
+  m_Name: Bullet Spawn Point High
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2827054530390954769
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3647596722974397884}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 2.488, y: 4.66, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1609207745643952462}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &5553394087518032001
 GameObject:
   m_ObjectHideFlags: 0
@@ -639,7 +673,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7162413821147564189}
   m_Layer: 3
-  m_Name: Bullet Spawn Point
+  m_Name: Bullet Spawn Point Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -653,13 +687,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5553394087518032001}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.488, y: 3.505, z: 0}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 2.488, y: 1.37, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1609207745643952462}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &7244053888139527854
 GameObject:
   m_ObjectHideFlags: 0

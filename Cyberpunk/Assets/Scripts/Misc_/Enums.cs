@@ -18,4 +18,21 @@ namespace HL
         FastFlying,
         Boss
     }
+
+    public enum BossAttackType
+    {
+        RangedLow,
+        RangedHigh,
+        Charge,
+        Shockwave,
+        MissileRain
+    }
+
+    public enum Direction
+    {
+        Left,
+        Right,
+        Up,
+        Down
+    }
 }

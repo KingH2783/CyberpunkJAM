@@ -150,6 +150,11 @@ public class AIManagerEditor : Editor
 
             if (ai.aiType == AIType.BasicRanged)
                 ai.bulletSpawnPoint = (Transform)EditorGUILayout.ObjectField("Bullet Spawn Point", ai.bulletSpawnPoint, typeof(Transform), true);
+            else if (ai.aiType == AIType.Boss)
+            {
+                ai.bulletSpawnPointLow = (Transform)EditorGUILayout.ObjectField("Bullet Spawn Point Low", ai.bulletSpawnPointLow, typeof(Transform), true);
+                ai.bulletSpawnPointHigh = (Transform)EditorGUILayout.ObjectField("Bullet Spawn Point High", ai.bulletSpawnPointHigh, typeof(Transform), true);
+            }
         }
         #endregion
 

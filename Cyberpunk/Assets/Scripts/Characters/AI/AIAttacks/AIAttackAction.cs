@@ -6,6 +6,7 @@ namespace HL
     public class AIAttackAction : ScriptableObject
     {
         [Header("Action Settings")]
+        public bool isBoss;
         public string attackAnimationName;
         public int attackScore = 3;
         public float recoveryTime = 2;
@@ -14,5 +15,9 @@ namespace HL
         public bool isRangedAction;
         public bool actionCanCombo;
         public AIAttackAction comboAttack;
+        public BossAttackType bossAttackType;
+        public float chargeVelocity;
+        public float chargeTime;
+        
     }
 }

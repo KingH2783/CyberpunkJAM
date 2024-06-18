@@ -140,7 +140,8 @@ namespace HL
                 return pursueTargetState;
             }
 
-            ai.aiLocomotion.StopAIMovement();
+            if (!ai.isDashing)
+                ai.aiLocomotion.StopAIMovement();
 
             // Attack and figure out if we can combo
             if (!ai.isPerformingAction && ai.currentAttack != null)
@@ -161,15 +162,38 @@ namespace HL
 
         private void AttackTarget(AIManager ai)
         {
-            if (ai.currentAttack.isRangedAction)
+            ai.currentRecoveryTime = ai.currentAttack.recoveryTime;
+
+            if (ai.aiType != AIType.Boss)
             {
-                ai.aiAnimatorManager.PlayTargetAnimation(ai.currentAttack.attackAnimationName, rangedWeapon.stopMovement);
-                ai.currentRecoveryTime = ai.currentAttack.recoveryTime;
+                if (ai.currentAttack.isRangedAction)
+                    ai.aiAnimatorManager.PlayTargetAnimation(ai.currentAttack.attackAnimationName, rangedWeapon.stopMovement);
+                else
+                    ai.aiAnimatorManager.PlayTargetAnimation(ai.currentAttack.attackAnimationName, ai.aiStatsManager.currentMeleeWeapon.stopMovement);
             }
             else
             {
-                ai.aiAnimatorManager.PlayTargetAnimation(ai.currentAttack.attackAnimationName, ai.aiStatsManager.currentMeleeWeapon.stopMovement);
-                ai.currentRecoveryTime = ai.currentAttack.recoveryTime;
+                ai.aiAnimatorManager.PlayTargetAnimation(ai.currentAttack.attackAnimationName, true);
+                switch (ai.currentAttack.bossAttackType)
+                {
+                    case BossAttackType.RangedLow:
+                        RangedLowAttack(ai);
+                        break;
+                    case BossAttackType.RangedHigh:
+                        RangedHighAttack(ai);
+                        break;
+                    case BossAttackType.Charge:
+                        ChargeAttack(ai);
+                        break;
+                    case BossAttackType.Shockwave:
+                        ShockwaveAttack(ai);
+                        break;
+                    case BossAttackType.MissileRain:
+                        MissileRainAttack(ai);
+                        break;
+                    default:
+                        break;
+                }
             }
         }
 
@@ -229,5 +253,57 @@ namespace HL
             willDoComboOnNextAttack = false;
             ai.currentAttack = null;
         }
+
+        #region Boss Attacks
+
+        private void RangedLowAttack(AIManager ai)
+        {
+            // Shoot
+            GameObject bulletGameObject = Instantiate(rangedWeapon.bulletType, ai.bulletSpawnPointLow.position, ai.bulletSpawnPointLow.rotation);
+            Bullet bullet = bulletGameObject.GetComponent<Bullet>();
+            bullet.characterWhoFiredMe = ai;
+            bullet.weapon = rangedWeapon;
+        }
+
+        private void RangedHighAttack(AIManager ai)
+        {
+            // Shoot
+            GameObject bulletGameObject = Instantiate(rangedWeapon.bulletType, ai.bulletSpawnPointHigh.position, ai.bulletSpawnPointHigh.rotation);
+            Bullet bullet = bulletGameObject.GetComponent<Bullet>();
+            bullet.characterWhoFiredMe = ai;
+            bullet.weapon = rangedWeapon;
+        }
+
+        private void ChargeAttack(AIManager ai)
+        {
+            ai.isInvulnerable = true;
+            ai.isDashing = true;
+            
+            Vector2 chargeDirection = ai.isFacingRight ? new(1, 0) : new(-1, 0);
+            ai.rb.velocity = chargeDirection.normalized * ai.currentAttack.chargeVelocity;
+
+            StartCoroutine(StopChargeAttack(ai));
+        }
+
+        private IEnumerator StopChargeAttack(AIManager ai)
+        {
+            yield return new WaitForSeconds(ai.currentAttack.chargeTime);
+            ai.isInvulnerable = false;
+            ai.isDashing = false;
+            ai.rb.velocity = Vector2.zero;
+        }
+
+        private void ShockwaveAttack(AIManager ai)
+        {
+            
+        }
+
+        private void MissileRainAttack(AIManager ai)
+        {
+            MissileSpawner missileSpawner = FindObjectOfType<MissileSpawner>();
+            StartCoroutine(missileSpawner.SpawnMissiles(ai));
+        }
+
+        #endregion
     }
 }

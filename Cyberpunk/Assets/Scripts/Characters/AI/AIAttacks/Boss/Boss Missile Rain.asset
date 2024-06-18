@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6aa04be85086d540a51c8e5d15aaefc, type: 3}
   m_Name: Boss Missile Rain
   m_EditorClassIdentifier: 
+  isBoss: 1
   attackAnimationName: Missile Rain
   attackScore: 1
   recoveryTime: 5
@@ -20,3 +21,6 @@ MonoBehaviour:
   isRangedAction: 1
   actionCanCombo: 0
   comboAttack: {fileID: 0}
+  bossAttackType: 4
+  chargeVelocity: 0
+  chargeTime: 0

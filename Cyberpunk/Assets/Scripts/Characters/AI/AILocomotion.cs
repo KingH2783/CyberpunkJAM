@@ -31,7 +31,7 @@ namespace HL
         {
             base.LocomotionFixedUpdate(delta);
 
-            if (ai.isBeingDamaged)
+            if (ai.isBeingDamaged || ai.isDashing)
                 return;
 
             if (ai.isPerformingAction)
@@ -103,7 +103,7 @@ namespace HL
 
         public void StopAIMovement()
         {
-            if (character.isBeingDamaged)
+            if (character.isBeingDamaged || character.isDashing)
                 return;
             leftOrRightAIMovementInput = 0;
             rb.velocity = new(0, rb.velocity.y);
