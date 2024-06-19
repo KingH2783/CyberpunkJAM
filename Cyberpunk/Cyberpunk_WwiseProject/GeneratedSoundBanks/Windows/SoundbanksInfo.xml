@@ -9,13 +9,17 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1290008369" Type="User" Language="SFX" Hash="{FFABE548-AB8A-71D8-FA07-E84B19ED4B62}">
+		<SoundBank Id="1290008369" Type="User" Language="SFX" Hash="{A58581F3-908A-D71F-6192-492CD5FEA8D8}">
 			<ShortName>level_1</ShortName>
 			<Path>level_1.bnk</Path>
 			<Media>
 				<File Id="47134815" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_running_concrete-005.wav</ShortName>
 					<CachePath>SFX/enemy_range1_running_concrete-005_818F3B66.wem</CachePath>
+				</File>
+				<File Id="53950120" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>player_jump.wav</ShortName>
+					<CachePath>SFX/player_jump_487F70FD.wem</CachePath>
 				</File>
 				<File Id="55355417" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ambient_part2.wav</ShortName>
@@ -109,9 +113,17 @@
 					<ShortName>BO01 CC01D S - 01-59 - Full 06.wav</ShortName>
 					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 06_818F3B66.wem</CachePath>
 				</File>
+				<File Id="516272040" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>player_damaged-002.wav</ShortName>
+					<CachePath>SFX/player_damaged-002_818F3B66.wem</CachePath>
+				</File>
 				<File Id="519532207" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_running_concrete-003.wav</ShortName>
 					<CachePath>SFX/enemy_range1_running_concrete-003_818F3B66.wem</CachePath>
+				</File>
+				<File Id="526293625" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>player_melee_attack-001.wav</ShortName>
+					<CachePath>SFX/player_melee_attack-001_717EB8F4.wem</CachePath>
 				</File>
 				<File Id="557073457" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-2.wav</ShortName>
@@ -161,6 +173,14 @@
 					<ShortName>enemy_range1_damaged_top-003.wav</ShortName>
 					<CachePath>SFX/enemy_range1_damaged_top-003_818F3B66.wem</CachePath>
 				</File>
+				<File Id="690797175" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>player_melee_attack-003.wav</ShortName>
+					<CachePath>SFX/player_melee_attack-003_740A5089.wem</CachePath>
+				</File>
+				<File Id="728598351" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>player_melee_attack-002.wav</ShortName>
+					<CachePath>SFX/player_melee_attack-002_B92166CF.wem</CachePath>
+				</File>
 				<File Id="736436096" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_running_concrete-002.wav</ShortName>
 					<CachePath>SFX/enemy_range1_running_concrete-002_818F3B66.wem</CachePath>
@@ -181,9 +201,13 @@
 					<ShortName>enemy_range1_land-001.wav</ShortName>
 					<CachePath>SFX/enemy_range1_land-001_818F3B66.wem</CachePath>
 				</File>
+				<File Id="813316356" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>player_damaged-001.wav</ShortName>
+					<CachePath>SFX/player_damaged-001_818F3B66.wem</CachePath>
+				</File>
 				<File Id="815303066" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>player_ranged_attack_attack1_stationary.wav</ShortName>
-					<CachePath>SFX/player_ranged_attack_attack1_stationary_818F3B66.wem</CachePath>
+					<CachePath>SFX/player_ranged_attack_attack1_stationary_686AADB2.wem</CachePath>
 				</File>
 				<File Id="841143589" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>player_death.wav</ShortName>
@@ -200,6 +224,10 @@
 				<File Id="932931645" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BO01 CC01D S - 01-59 - Full 05.wav</ShortName>
 					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 05_818F3B66.wem</CachePath>
+				</File>
+				<File Id="940601158" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>player_melee_attack-004.wav</ShortName>
+					<CachePath>SFX/player_melee_attack-004_23FB896F.wem</CachePath>
 				</File>
 				<File Id="945438747" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>explore.wav</ShortName>
@@ -318,6 +346,12 @@
 						<MediaRef Id="952037636"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1386564838" Name="player_damaged" DurationType="OneShot" DurationMin="0.81694204" DurationMax="0.9454258">
+					<MediaRefs>
+						<MediaRef Id="516272040"/>
+						<MediaRef Id="813316356"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2394582229" Name="player_dash" DurationType="OneShot" DurationMin="0.7953542" DurationMax="0.7953542">
 					<MediaRefs>
 						<MediaRef Id="662367199"/>
@@ -328,11 +362,24 @@
 						<MediaRef Id="841143589"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1305133589" Name="player_jump" DurationType="OneShot" DurationMin="0.32780278" DurationMax="0.34749562">
+					<MediaRefs>
+						<MediaRef Id="53950120"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3629196698" Name="player_land" DurationType="OneShot" DurationMin="0.19517784" DurationMax="0.24134523">
 					<MediaRefs>
 						<MediaRef Id="385996269"/>
 						<MediaRef Id="776597434"/>
 						<MediaRef Id="970049384"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2506934606" Name="player_melee_attack" DurationType="OneShot" DurationMin="0.87244034" DurationMax="1.0318481">
+					<MediaRefs>
+						<MediaRef Id="526293625"/>
+						<MediaRef Id="690797175"/>
+						<MediaRef Id="728598351"/>
+						<MediaRef Id="940601158"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="640208366" Name="player_raised_gun_running" DurationType="OneShot" DurationMin="0.14790235" DurationMax="0.24137196">
@@ -347,7 +394,7 @@
 						<MediaRef Id="916299761"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="165391104" Name="player_ranged_attack_attack1_stationary" DurationType="OneShot" DurationMin="0.86525" DurationMax="0.86525">
+				<Event Id="165391104" Name="player_ranged_attack_attack1_stationary" DurationType="OneShot" DurationMin="0.7524884" DurationMax="0.7524884">
 					<MediaRefs>
 						<MediaRef Id="815303066"/>
 					</MediaRefs>
@@ -404,5 +451,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5B2A4712-5CB6-25FA-931A-51A8DF7B1BF9}</FileHash>
+	<FileHash>{5DF139A5-A799-41A7-DE4B-B4D437D07148}</FileHash>
 </SoundBanksInfo>

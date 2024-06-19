@@ -25,9 +25,12 @@ namespace AK
         static const AkUniqueID MOVING_PLATFORM = 703211547U;
         static const AkUniqueID MUSIC_EXPLORE = 15273518U;
         static const AkUniqueID PLASMA_GUN_SHOOT = 2851466780U;
+        static const AkUniqueID PLAYER_DAMAGED = 1386564838U;
         static const AkUniqueID PLAYER_DASH = 2394582229U;
         static const AkUniqueID PLAYER_DEATH = 3083087645U;
+        static const AkUniqueID PLAYER_JUMP = 1305133589U;
         static const AkUniqueID PLAYER_LAND = 3629196698U;
+        static const AkUniqueID PLAYER_MELEE_ATTACK = 2506934606U;
         static const AkUniqueID PLAYER_RAISED_GUN_RUNNING = 640208366U;
         static const AkUniqueID PLAYER_RANGED_ATTACK_ATTACK1_STATIONARY = 165391104U;
         static const AkUniqueID PLAYER_RELOAD = 1650679582U;

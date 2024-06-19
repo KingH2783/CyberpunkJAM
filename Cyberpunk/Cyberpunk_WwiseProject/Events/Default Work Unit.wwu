@@ -193,6 +193,39 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="player_jump" ID="{DA1E0258-F5C4-4F76-AF04-BBB543079684}">
+							<ChildrenList>
+								<Action Name="" ID="{452827BA-C83D-4AA7-B378-06BD61DCA14E}" ShortID="726669770">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="player_jump" ID="{523A0892-144E-49F0-AA26-831A27C6D087}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="player_melee_attack" ID="{0F1582F5-704F-490F-9D7E-58D3B82F746F}">
+							<ChildrenList>
+								<Action Name="" ID="{9C996BC7-8000-4602-AD3E-3BAF2039DCC7}" ShortID="518750387">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="player_melee_attack" ID="{C07C4FED-B848-49E3-8B07-C493880AE0C9}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="player_damaged" ID="{A3DD62E7-37CB-483A-9A76-8B89157E00D3}">
+							<ChildrenList>
+								<Action Name="" ID="{97579183-9253-471D-988F-243646B9D6FA}" ShortID="829069072">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="player_damaged" ID="{E9A20EBD-0BD4-4F83-A43D-118DBA11F670}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Ambient" ID="{EF6D186F-9090-49F4-A285-BFFA85D4547B}" ShortID="711826568">
