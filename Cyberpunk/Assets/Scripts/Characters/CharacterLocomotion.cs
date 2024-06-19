@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using UnityEngine;
 
 namespace HL
@@ -44,6 +46,7 @@ namespace HL
 
         [Header("Knockback")]
         [SerializeField] protected Vector2 knockbackForce;
+        [SerializeField] protected float knockbackDuration;
 
         protected float runAccelAmount;
         protected float runDeccelAmount;
@@ -161,8 +164,8 @@ namespace HL
 
         public virtual void HandleKnockbackOnHit(bool hitFromRightSide)
         {
+            character.isInvulnerable = true;
             Vector2 forceToPush;
-
             if (hitFromRightSide)
             {
                 forceToPush = knockbackForce;
@@ -170,7 +173,16 @@ namespace HL
             }
             else
                 forceToPush = knockbackForce;
-            rb.AddForce(forceToPush, ForceMode2D.Impulse);
+            rb.velocity = forceToPush;
+            
+            StartCoroutine(StopKnockback());
+        }
+
+        private IEnumerator StopKnockback()
+        {
+            yield return new WaitForSeconds(knockbackDuration);
+            character.isInvulnerable = false;
+            rb.velocity = Vector2.zero;
         }
 
         protected virtual bool IsOnSlope()

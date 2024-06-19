@@ -123,6 +123,18 @@ public class AIManagerEditor : Editor
                 ai.maxCirclingDistance = EditorGUILayout.FloatField("Max Circling Distance", ai.maxCirclingDistance);
                 ai.stoppingDistance = EditorGUILayout.FloatField("Stopping Distance", ai.stoppingDistance);
             }
+            else if (ai.aiType == AIType.Boss)
+            {
+                // ======= Layers and Floats =======
+                EditorGUILayout.Space();
+                EditorStyles.label.fontStyle = FontStyle.Normal;
+                EditorGUILayout.PropertyField(detectionLayer);
+                EditorGUILayout.PropertyField(layersThatBlockLineOfSight);
+                ai.detectionRadius = EditorGUILayout.FloatField("Detection Radius", ai.detectionRadius);
+                ai.maxAggroRange = EditorGUILayout.FloatField("Max Aggro Range", ai.maxAggroRange);
+                ai.maxCirclingDistance = EditorGUILayout.FloatField("Max Circling Distance", ai.maxCirclingDistance);
+                ai.stoppingDistance = EditorGUILayout.FloatField("Stopping Distance", ai.stoppingDistance);
+            }
         }
         #endregion
 
@@ -138,6 +150,11 @@ public class AIManagerEditor : Editor
 
             if (ai.aiType == AIType.BasicRanged)
                 ai.bulletSpawnPoint = (Transform)EditorGUILayout.ObjectField("Bullet Spawn Point", ai.bulletSpawnPoint, typeof(Transform), true);
+            else if (ai.aiType == AIType.Boss)
+            {
+                ai.bulletSpawnPointLow = (Transform)EditorGUILayout.ObjectField("Bullet Spawn Point Low", ai.bulletSpawnPointLow, typeof(Transform), true);
+                ai.bulletSpawnPointHigh = (Transform)EditorGUILayout.ObjectField("Bullet Spawn Point High", ai.bulletSpawnPointHigh, typeof(Transform), true);
+            }
         }
         #endregion
 

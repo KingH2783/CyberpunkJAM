@@ -16,7 +16,7 @@ namespace HL
                 AIType.Heavy => this,
                 AIType.FastGrounded => this,
                 AIType.FastFlying => this,
-                AIType.Boss => this,
+                AIType.Boss => BossIdle(ai),
                 _ => this,
             };
         }
@@ -31,6 +31,21 @@ namespace HL
 
             if (ai.currentTarget != null)
                 return pursueTargetState;
+            else
+                return this;
+        }
+
+        private State BossIdle(AIManager ai)
+        {
+            HandleDetection(ai);
+
+            ai.aiLocomotion.StopAIMovement();
+
+            if (ai.currentTarget != null)
+            {
+                PlayerUIManager.Instance.bossHealthBar.TurnOnBossHealthBar();
+                return pursueTargetState;
+            }
             else
                 return this;
         }

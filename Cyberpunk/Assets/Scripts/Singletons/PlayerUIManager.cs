@@ -7,6 +7,7 @@ namespace HL
         [HideInInspector] public static PlayerUIManager Instance { get; private set; }
         [HideInInspector] public EquippedWeaponsUI equippedWeaponsUI;
         [HideInInspector] public PlayerHealthBar healthBar;
+        [HideInInspector] public BossHealthBar bossHealthBar;
         [HideInInspector] public NPCDialogueUI npcDialogueUI;
         [HideInInspector] public PauseMenu pauseMenu;
         [HideInInspector] public AmmoUI ammoUI;
@@ -24,6 +25,7 @@ namespace HL
             equippedWeaponsUI = GetComponentInChildren<EquippedWeaponsUI>(true);
             npcDialogueUI = GetComponentInChildren<NPCDialogueUI>(true);
             healthBar = GetComponentInChildren<PlayerHealthBar>(true);
+            bossHealthBar = GetComponentInChildren<BossHealthBar>(true);
             pauseMenu = GetComponentInChildren<PauseMenu>(true);
             ammoUI = GetComponentInChildren<AmmoUI>(true);
         }

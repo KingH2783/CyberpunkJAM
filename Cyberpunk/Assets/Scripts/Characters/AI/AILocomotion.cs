@@ -31,6 +31,9 @@ namespace HL
         {
             base.LocomotionFixedUpdate(delta);
 
+            if (ai.isBeingDamaged || ai.isDashing)
+                return;
+
             if (ai.isPerformingAction)
             {
                 StopAIMovement();
@@ -100,8 +103,17 @@ namespace HL
 
         public void StopAIMovement()
         {
+            if (character.isBeingDamaged || character.isDashing)
+                return;
             leftOrRightAIMovementInput = 0;
             rb.velocity = new(0, rb.velocity.y);
+        }
+
+        public override void HandleKnockbackOnHit(bool hitFromRightSide)
+        {
+            leftOrRightAIMovementInput = 0;
+            rb.velocity = new(0, rb.velocity.y);
+            base.HandleKnockbackOnHit(hitFromRightSide);
         }
 
         #endregion

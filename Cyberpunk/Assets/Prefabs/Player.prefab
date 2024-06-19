@@ -297,7 +297,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: -1614193955, guid: ae2dd3cddf912a649be55f44c384482f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -441,6 +441,7 @@ MonoBehaviour:
   isPerformingAction: 0
   isDoingMeleeAttack: 0
   isDoingRangedAttack: 0
+  isBeingDamaged: 0
   isOnPlatform: 0
   isWallJumping: 0
   isOnWall: 0
@@ -482,7 +483,8 @@ MonoBehaviour:
   groundCheckSize: {x: 1.75, y: 0.05}
   slopeCheckStartOffset: {x: 0, y: 0.25}
   slopeCheckDistance: 2
-  knockbackForce: {x: 20, y: 1}
+  knockbackForce: {x: 60, y: 20}
+  knockbackDuration: 0.05
   platformRB: {fileID: 0}
   showRunSettings: 1
   showJumpSettings: 1
@@ -490,7 +492,7 @@ MonoBehaviour:
   showCrouchSettings: 1
   showFallSettings: 1
   showCheckSettings: 1
-  showAssistSettings: 0
+  showAssistSettings: 1
   showKnockbackSettings: 1
   jumpCutGravityMult: 2.5
   timeToHoldJumpForFullJump: 0.5
@@ -517,6 +519,7 @@ MonoBehaviour:
   coyoteTime: 0.1
   jumpInputBufferTime: 0.1
   dashInputBufferTime: 0.1
+  lastPressedDashTimer: 0
 --- !u!114 &8618204159841852134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -534,6 +537,8 @@ MonoBehaviour:
   currentHealth: 100
   currentMeleeWeapon: {fileID: 11400000, guid: e99daf8a4cadba14e906ea2e7180fdad, type: 2}
   currentRangedWeapon: {fileID: 11400000, guid: 0293ccb871ec81a49958ea8e51c4699e, type: 2}
+  healAmount: 40
+  respawnTime: 3
 --- !u!114 &2958661341146059253
 MonoBehaviour:
   m_ObjectHideFlags: 0

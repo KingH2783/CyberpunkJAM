@@ -8,6 +8,7 @@ namespace HL
         [SerializeField][Tooltip("This is additive to Weapon Damage")] private float bulletDamage;
         [SerializeField] private float bulletSpeed;
         [SerializeField] private float bulletLifeTime;
+        [SerializeField] private Direction bulletDirection;
         [SerializeField] private LayerMask environmentLayer;
 
         [HideInInspector] public CharacterManager characterWhoFiredMe;
@@ -20,7 +21,15 @@ namespace HL
 
         private void Start()
         {
-            rb.velocity = transform.right * bulletSpeed;
+            var direction = bulletDirection switch
+            {
+                Direction.Left => -transform.right,
+                Direction.Right => transform.right,
+                Direction.Up => transform.up,
+                Direction.Down => -transform.up,
+                _ => Vector3.zero,
+            };
+            rb.velocity = direction * bulletSpeed;
             Destroy(gameObject, bulletLifeTime);
         }
 
@@ -30,7 +39,8 @@ namespace HL
             {
                 if (collision.TryGetComponent(out CharacterManager characterGettingShot) &&
                     characterGettingShot.characterStatsManager.teamID != characterWhoFiredMe.characterStatsManager.teamID && 
-                    !characterGettingShot.isDead)
+                    !characterGettingShot.isDead && 
+                    !characterGettingShot.isDashing)
                 {
                     characterGettingShot.characterStatsManager.TakeDamage(Mathf.RoundToInt(weapon.weaponDamage + bulletDamage), characterWhoFiredMe);
 

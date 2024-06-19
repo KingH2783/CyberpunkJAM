@@ -26,7 +26,7 @@ namespace HL
                 AIType.Heavy => this,
                 AIType.FastGrounded => this,
                 AIType.FastFlying => this,
-                AIType.Boss => this,
+                AIType.Boss => PrepareBasicMeleeForCombat(ai),
                 _ => this,
             };
         }

@@ -18,6 +18,7 @@ namespace HL
         {
             animator.SetBool("Running", ai.isRunning);
             animator.SetBool("Grounded", ai.isGrounded);
+            animator.SetBool("BeingDamaged", ai.isBeingDamaged);
         }
 
         public override void PlayTargetAnimation(string animation, bool stopMovement = false)

@@ -43,6 +43,8 @@ namespace HL
         //public bool allowAIToPerformDodge;
         //[Range(0, 100)] public int dodgeLikelyHood = 50;
         public Transform bulletSpawnPoint;
+        public Transform bulletSpawnPointLow;
+        public Transform bulletSpawnPointHigh;
 
         // ======= A.I Target Info =======
         [HideInInspector] public float distanceFromCompanion;

@@ -130,18 +130,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Switch Melee"",
+                    ""name"": ""Heal"",
                     ""type"": ""Button"",
                     ""id"": ""f85daa59-bb58-43ea-9510-79be5601cf71"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Switch Ranged"",
-                    ""type"": ""Button"",
-                    ""id"": ""4f4710d3-4b57-4a1e-bbfc-530c25a113ca"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -350,7 +341,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Switch Melee"",
+                    ""action"": ""Heal"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -361,29 +352,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Switch Melee"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""74b7c6ca-947a-49b4-a277-799a8d0a1e41"",
-                    ""path"": ""<Keyboard>/e"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard"",
-                    ""action"": ""Switch Ranged"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""501cb684-2918-49bd-acf2-a8b74db42408"",
-                    ""path"": ""<Gamepad>/rightShoulder"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Gamepad"",
-                    ""action"": ""Switch Ranged"",
+                    ""action"": ""Heal"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -481,8 +450,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_Player_MeleeAttack = m_Player.FindAction("Melee Attack", throwIfNotFound: true);
         m_Player_RangedAttack = m_Player.FindAction("Ranged Attack", throwIfNotFound: true);
         m_Player_Reload = m_Player.FindAction("Reload", throwIfNotFound: true);
-        m_Player_SwitchMelee = m_Player.FindAction("Switch Melee", throwIfNotFound: true);
-        m_Player_SwitchRanged = m_Player.FindAction("Switch Ranged", throwIfNotFound: true);
+        m_Player_Heal = m_Player.FindAction("Heal", throwIfNotFound: true);
         m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
         m_Player_Escape = m_Player.FindAction("Escape", throwIfNotFound: true);
     }
@@ -599,8 +567,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_MeleeAttack;
     private readonly InputAction m_Player_RangedAttack;
     private readonly InputAction m_Player_Reload;
-    private readonly InputAction m_Player_SwitchMelee;
-    private readonly InputAction m_Player_SwitchRanged;
+    private readonly InputAction m_Player_Heal;
     private readonly InputAction m_Player_Interact;
     private readonly InputAction m_Player_Escape;
     public struct PlayerActions
@@ -614,8 +581,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         public InputAction @MeleeAttack => m_Wrapper.m_Player_MeleeAttack;
         public InputAction @RangedAttack => m_Wrapper.m_Player_RangedAttack;
         public InputAction @Reload => m_Wrapper.m_Player_Reload;
-        public InputAction @SwitchMelee => m_Wrapper.m_Player_SwitchMelee;
-        public InputAction @SwitchRanged => m_Wrapper.m_Player_SwitchRanged;
+        public InputAction @Heal => m_Wrapper.m_Player_Heal;
         public InputAction @Interact => m_Wrapper.m_Player_Interact;
         public InputAction @Escape => m_Wrapper.m_Player_Escape;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
@@ -648,12 +614,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Reload.started += instance.OnReload;
             @Reload.performed += instance.OnReload;
             @Reload.canceled += instance.OnReload;
-            @SwitchMelee.started += instance.OnSwitchMelee;
-            @SwitchMelee.performed += instance.OnSwitchMelee;
-            @SwitchMelee.canceled += instance.OnSwitchMelee;
-            @SwitchRanged.started += instance.OnSwitchRanged;
-            @SwitchRanged.performed += instance.OnSwitchRanged;
-            @SwitchRanged.canceled += instance.OnSwitchRanged;
+            @Heal.started += instance.OnHeal;
+            @Heal.performed += instance.OnHeal;
+            @Heal.canceled += instance.OnHeal;
             @Interact.started += instance.OnInteract;
             @Interact.performed += instance.OnInteract;
             @Interact.canceled += instance.OnInteract;
@@ -685,12 +648,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Reload.started -= instance.OnReload;
             @Reload.performed -= instance.OnReload;
             @Reload.canceled -= instance.OnReload;
-            @SwitchMelee.started -= instance.OnSwitchMelee;
-            @SwitchMelee.performed -= instance.OnSwitchMelee;
-            @SwitchMelee.canceled -= instance.OnSwitchMelee;
-            @SwitchRanged.started -= instance.OnSwitchRanged;
-            @SwitchRanged.performed -= instance.OnSwitchRanged;
-            @SwitchRanged.canceled -= instance.OnSwitchRanged;
+            @Heal.started -= instance.OnHeal;
+            @Heal.performed -= instance.OnHeal;
+            @Heal.canceled -= instance.OnHeal;
             @Interact.started -= instance.OnInteract;
             @Interact.performed -= instance.OnInteract;
             @Interact.canceled -= instance.OnInteract;
@@ -745,8 +705,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         void OnMeleeAttack(InputAction.CallbackContext context);
         void OnRangedAttack(InputAction.CallbackContext context);
         void OnReload(InputAction.CallbackContext context);
-        void OnSwitchMelee(InputAction.CallbackContext context);
-        void OnSwitchRanged(InputAction.CallbackContext context);
+        void OnHeal(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
         void OnEscape(InputAction.CallbackContext context);
     }

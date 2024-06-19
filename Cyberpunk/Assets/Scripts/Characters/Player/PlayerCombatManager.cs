@@ -110,7 +110,7 @@ namespace HL
             StartCoroutine(PlayerUIManager.Instance.ammoUI.ReloadAllAmmoUI(reloadTimer));
         }
 
-        public void SwitchMeleeWeapon()
+        /*public void SwitchMeleeWeapon()
         {
             PlayerUIManager.Instance.equippedWeaponsUI.UpdateMeleeWeaponIcon(currentMelee.itemIcon);
         }
@@ -119,6 +119,6 @@ namespace HL
         {
             PlayerUIManager.Instance.equippedWeaponsUI.UpdateRangedWeaponIcon(currentRanged.itemIcon); 
             //PlayerUIManager.Instance.ammoUI.UpdateUIAmmoCapacity(currentRanged.ammoCapacity);
-        }
+        }*/
     }
 }
