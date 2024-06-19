@@ -65,15 +65,16 @@
 							<ChildrenList>
 								<MusicTrack Name="explore" ID="{48814C40-8013-43AB-8C3E-D8C57F6B626F}" ShortID="257570256">
 									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-18</Value>
+												<Value>-17</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
+											<ObjectRef Name="Music" ID="{28DEC96E-E6FC-4A94-83E5-E339F4CB522C}" WorkUnitID="{A928678A-07D1-4FAC-A876-52CFB92E0100}"/>
 										</Reference>
 										<Reference Name="TransitionRoot">
 											<Custom>

@@ -419,6 +419,8 @@ MonoBehaviour:
   allowAIToPerformCombos: 0
   comboLikelyHood: 0
   bulletSpawnPoint: {fileID: 5716889128621520032}
+  bulletSpawnPointLow: {fileID: 0}
+  bulletSpawnPointHigh: {fileID: 0}
   distanceFromCompanion: 0
   distanceFromTarget: 15.769021
 --- !u!114 &8141512031476115410
@@ -514,15 +516,15 @@ MonoBehaviour:
   enemy_range1_running_concrete:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 839f3196196da25499d3b6ef30c603c8, type: 2}
   enemy_range1_damaged:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 8ec31cf082a0e994e9b1a0de9210db89, type: 2}
   enemy_range1_death:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 715555f587efe2e44a6e4e632bcc81d9, type: 2}
   enemy_range1_fall:
     idInternal: 0
     valueGuidInternal: 
@@ -540,6 +542,10 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
   enemy_range1_shooting:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 0cf3851ddae567641ba1cda2a06b2212, type: 2}
+  enemy_melee_pipe:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}

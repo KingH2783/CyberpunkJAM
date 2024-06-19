@@ -60,6 +60,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="enemy_melee_pipe" ID="{68084769-A2D6-49FF-B69A-9680FE9BECC0}">
+							<ChildrenList>
+								<Action Name="" ID="{057E941E-32E3-4B70-8D16-B4DA9A02E83A}" ShortID="297907570">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="enemy_melee_pipe" ID="{7D162299-76FD-4950-A986-C65FCB8D65A6}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Testing" ID="{4C764F18-7284-4E25-8312-A5906A0BC20D}" ShortID="569856781">

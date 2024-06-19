@@ -31,6 +31,7 @@
 						<ObjectRef Name="enemy_range1_damaged" ID="{80EC79A2-2558-49DD-ACD7-CF70EE887690}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="player_melee_attack" ID="{C07C4FED-B848-49E3-8B07-C493880AE0C9}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="player_jump" ID="{523A0892-144E-49F0-AA26-831A27C6D087}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="enemy_melee_pipe" ID="{68084769-A2D6-49FF-B69A-9680FE9BECC0}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="enemy_range1_land" ID="{18A3563E-0737-4AAD-9693-86E8CD1BE280}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Ambient_part2" ID="{78FF1001-631D-4C35-931D-E0ACB8EE7E90}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="plasma_gun_shoot" ID="{CC947B45-E3E2-4CD6-9999-D3E02C8D27CA}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>

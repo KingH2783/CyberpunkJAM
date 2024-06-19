@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C0F71E44-DFBF-41DF-80B6-367099942C8F}" SchemaVersion="119">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{C0F71E44-DFBF-41DF-80B6-367099942C8F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C0F71E44-DFBF-41DF-80B6-367099942C8F}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="New_Harmonizer" ID="{073E9A77-8F27-4FD6-B7D9-619B3A09793A}" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+					<PropertyList>
+						<Property Name="Voice1FilterFrequency" Type="Real32" Value="6167"/>
+						<Property Name="Voice1FilterGain" Type="Real32" Value="9.5"/>
+						<Property Name="Voice1FilterType" Type="int32" Value="3"/>
+						<Property Name="Voice1Gain" Type="Real32" Value="5.5"/>
+						<Property Name="Voice1Pitch" Type="Real32" Value="800"/>
+						<Property Name="Voice2Enable" Type="bool" Value="True"/>
+						<Property Name="Voice2Gain" Type="Real32" Value="9.5"/>
+						<Property Name="Voice2Pitch" Type="Real32" Value="1100"/>
+						<Property Name="WindowSize" Type="int32" Value="1536"/>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>

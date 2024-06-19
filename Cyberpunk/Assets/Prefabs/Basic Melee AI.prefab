@@ -96,7 +96,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3859645379477330417}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 318.86, y: -20.34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -339,6 +339,8 @@ MonoBehaviour:
   allowAIToPerformCombos: 0
   comboLikelyHood: 0
   bulletSpawnPoint: {fileID: 5584444014114098864}
+  bulletSpawnPointLow: {fileID: 0}
+  bulletSpawnPointHigh: {fileID: 0}
   distanceFromCompanion: 0
   distanceFromTarget: 15.769021
 --- !u!114 &7031426444939611698
@@ -426,23 +428,23 @@ MonoBehaviour:
   Footsteps:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: df82f38f56e31c34aa7ed097332f8fc3, type: 2}
+    WwiseObjectReference: {fileID: 0}
   PlasmaGunShoot:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: da00ba2ef5ee14646a4f215b09643d7c, type: 2}
+    WwiseObjectReference: {fileID: 0}
   enemy_range1_running_concrete:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 839f3196196da25499d3b6ef30c603c8, type: 2}
   enemy_range1_damaged:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 8ec31cf082a0e994e9b1a0de9210db89, type: 2}
   enemy_range1_death:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 715555f587efe2e44a6e4e632bcc81d9, type: 2}
   enemy_range1_fall:
     idInternal: 0
     valueGuidInternal: 
@@ -454,7 +456,7 @@ MonoBehaviour:
   enemy_range1_jump:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 2483972f6b1d04b4588e9db940922309, type: 2}
   enemy_range1_land:
     idInternal: 0
     valueGuidInternal: 
@@ -463,6 +465,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
+  enemy_melee_pipe:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 56fc4d53f96cc5049b51ea7528bbbda2, type: 2}
   player_ranged_attack_attack1_stationary:
     idInternal: 0
     valueGuidInternal: 

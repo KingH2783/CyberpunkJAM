@@ -640,7 +640,7 @@ MonoBehaviour:
   player_damaged:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: bf418993d56a8bd4389bdc89a0a2ddd1, type: 2}
   player_idle:
     idInternal: 0
     valueGuidInternal: 
@@ -648,7 +648,7 @@ MonoBehaviour:
   player_jump:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 2483972f6b1d04b4588e9db940922309, type: 2}
   player_land:
     idInternal: 0
     valueGuidInternal: 
@@ -656,7 +656,7 @@ MonoBehaviour:
   player_melee_attack1:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: d99d50c1fc774b34494102f27655f960, type: 2}
   player_raised_gun_running:
     idInternal: 0
     valueGuidInternal: 

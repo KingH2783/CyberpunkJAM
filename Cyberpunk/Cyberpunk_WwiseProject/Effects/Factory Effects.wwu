@@ -13,6 +13,7 @@
 						</Effect>
 						<Effect Name="Gentle_Program_Compressor_Minus_14dB_RMS" ID="{1595E6B0-DD58-4363-A3F0-DF0C96EC7C17}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
 							<PropertyList>
+								<Property Name="OutputGain" Type="Real32" Value="4.1"/>
 								<Property Name="Ratio" Type="Real32" Value="3"/>
 								<Property Name="Threshold" Type="Real32" Value="-14"/>
 							</PropertyList>

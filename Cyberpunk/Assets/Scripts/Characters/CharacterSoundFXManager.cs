@@ -22,8 +22,10 @@ namespace HL
         public AK.Wwise.Event enemy_range1_land;
         public AK.Wwise.Event enemy_range1_shooting;
 
+        public AK.Wwise.Event enemy_melee_pipe;
 
-        
+
+
 
 
 
@@ -41,6 +43,12 @@ namespace HL
         }
 
         // -------- ENEMIES ------------
+
+        public void PlayEnemy_melee_pipe()
+        {
+            enemy_melee_pipe.Post(gameObject);
+
+        }
 
         public void PlayEnemy_range1_running_concrete()
         {

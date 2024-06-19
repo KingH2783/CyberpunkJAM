@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1290008369" Type="User" Language="SFX" Hash="{A58581F3-908A-D71F-6192-492CD5FEA8D8}">
+		<SoundBank Id="1290008369" Type="User" Language="SFX" Hash="{14135D0C-2D35-5FFF-C283-CB30A3FBF99F}">
 			<ShortName>level_1</ShortName>
 			<Path>level_1.bnk</Path>
 			<Media>
@@ -19,7 +19,7 @@
 				</File>
 				<File Id="53950120" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>player_jump.wav</ShortName>
-					<CachePath>SFX/player_jump_487F70FD.wem</CachePath>
+					<CachePath>SFX/player_jump_EF63DDB8.wem</CachePath>
 				</File>
 				<File Id="55355417" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ambient_part2.wav</ShortName>
@@ -32,6 +32,10 @@
 				<File Id="73852016" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_running_concrete-007.wav</ShortName>
 					<CachePath>SFX/enemy_range1_running_concrete-007_818F3B66.wem</CachePath>
+				</File>
+				<File Id="75245880" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WHSH_Plastic Pipe Fast Whoosh Low Single 03_B00M_ONE-2.wav</ShortName>
+					<CachePath>SFX/WHSH_Plastic Pipe Fast Whoosh Low Single 03_B00M_ONE-2_818F3B66.wem</CachePath>
 				</File>
 				<File Id="91942190" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BO01 CC01D S - 01-59 - Full 09.wav</ShortName>
@@ -81,6 +85,10 @@
 					<ShortName>enemy_range1_damaged_voice-003.wav</ShortName>
 					<CachePath>SFX/enemy_range1_damaged_voice-003_818F3B66.wem</CachePath>
 				</File>
+				<File Id="300021101" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WHSH_Plastic Pipe Fast Whoosh Low Single 03_B00M_ONE.wav</ShortName>
+					<CachePath>SFX/WHSH_Plastic Pipe Fast Whoosh Low Single 03_B00M_ONE_818F3B66.wem</CachePath>
+				</File>
 				<File Id="305598020" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BO01 CC01D S - 01-59 - Full 10.wav</ShortName>
 					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 10_818F3B66.wem</CachePath>
@@ -123,7 +131,7 @@
 				</File>
 				<File Id="526293625" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>player_melee_attack-001.wav</ShortName>
-					<CachePath>SFX/player_melee_attack-001_717EB8F4.wem</CachePath>
+					<CachePath>SFX/player_melee_attack-001_09ADE66A.wem</CachePath>
 				</File>
 				<File Id="557073457" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-2.wav</ShortName>
@@ -175,11 +183,15 @@
 				</File>
 				<File Id="690797175" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>player_melee_attack-003.wav</ShortName>
-					<CachePath>SFX/player_melee_attack-003_740A5089.wem</CachePath>
+					<CachePath>SFX/player_melee_attack-003_5190A1D3.wem</CachePath>
+				</File>
+				<File Id="720768654" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WHSH_Plastic Pipe Fast Whoosh Low Single 03_B00M_ONE-1.wav</ShortName>
+					<CachePath>SFX/WHSH_Plastic Pipe Fast Whoosh Low Single 03_B00M_ONE-1_818F3B66.wem</CachePath>
 				</File>
 				<File Id="728598351" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>player_melee_attack-002.wav</ShortName>
-					<CachePath>SFX/player_melee_attack-002_B92166CF.wem</CachePath>
+					<CachePath>SFX/player_melee_attack-002_C1316B74.wem</CachePath>
 				</File>
 				<File Id="736436096" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_running_concrete-002.wav</ShortName>
@@ -207,7 +219,7 @@
 				</File>
 				<File Id="815303066" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>player_ranged_attack_attack1_stationary.wav</ShortName>
-					<CachePath>SFX/player_ranged_attack_attack1_stationary_686AADB2.wem</CachePath>
+					<CachePath>SFX/player_ranged_attack_attack1_stationary_751A5789.wem</CachePath>
 				</File>
 				<File Id="841143589" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>player_death.wav</ShortName>
@@ -227,7 +239,7 @@
 				</File>
 				<File Id="940601158" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>player_melee_attack-004.wav</ShortName>
-					<CachePath>SFX/player_melee_attack-004_23FB896F.wem</CachePath>
+					<CachePath>SFX/player_melee_attack-004_E33D68B1.wem</CachePath>
 				</File>
 				<File Id="945438747" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>explore.wav</ShortName>
@@ -250,6 +262,14 @@
 					<CachePath>SFX/ambient_part1_FBC78EF0.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="544150877" Name="Guitar Distortion (Custom)" LibName="Wwise Guitar Distortion" LibId="8257539"/>
+				</Custom>
+				<ShareSets>
+					<Plugin Id="1764884337" Name="New_Harmonizer" LibName="Wwise Harmonizer" LibId="9043971"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
 				<Event Id="1728914370" Name="Ambient_part1" MaxAttenuation="200" DurationType="Infinite">
 					<MediaRefs>
@@ -266,7 +286,25 @@
 						<MediaRef Id="587161896"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2037740798" Name="enemy_range1_damaged" DurationType="OneShot" DurationMin="0.47842515" DurationMax="0.6138057">
+				<Event Id="2120122469" Name="enemy_melee_pipe" MaxAttenuation="50" DurationType="OneShot" DurationMin="0.22911449" DurationMax="0.27134684">
+					<MediaRefs>
+						<MediaRef Id="75245880"/>
+						<MediaRef Id="300021101"/>
+						<MediaRef Id="720768654"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="544150877"/>
+						</Custom>
+						<ShareSets>
+							<PluginRef Id="1764884337"/>
+						</ShareSets>
+					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="2037740798" Name="enemy_range1_damaged" MaxAttenuation="50" DurationType="OneShot" DurationMin="0.47842515" DurationMax="0.6138057">
 					<MediaRefs>
 						<MediaRef Id="271994802"/>
 						<MediaRef Id="293679096"/>
@@ -278,20 +316,29 @@
 						<MediaRef Id="676103956"/>
 						<MediaRef Id="677044938"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+					</AuxBusRefs>
 				</Event>
-				<Event Id="477019125" Name="enemy_range1_death" DurationType="OneShot" DurationMin="0.86129165" DurationMax="0.86129165">
+				<Event Id="477019125" Name="enemy_range1_death" MaxAttenuation="50" DurationType="OneShot" DurationMin="0.86129165" DurationMax="0.86129165">
 					<MediaRefs>
 						<MediaRef Id="252988365"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+					</AuxBusRefs>
 				</Event>
-				<Event Id="201284434" Name="enemy_range1_land" DurationType="OneShot" DurationMin="0.2576875" DurationMax="0.30058333">
+				<Event Id="201284434" Name="enemy_range1_land" MaxAttenuation="50" DurationType="OneShot" DurationMin="0.2576875" DurationMax="0.30058333">
 					<MediaRefs>
 						<MediaRef Id="385996269"/>
 						<MediaRef Id="776597434"/>
 						<MediaRef Id="970049384"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+					</AuxBusRefs>
 				</Event>
-				<Event Id="4157003948" Name="enemy_range1_running_concrete" DurationType="OneShot" DurationMin="0.16166174" DurationMax="0.28390825">
+				<Event Id="4157003948" Name="enemy_range1_running_concrete" MaxAttenuation="50" DurationType="OneShot" DurationMin="0.16166174" DurationMax="0.28390825">
 					<MediaRefs>
 						<MediaRef Id="47134815"/>
 						<MediaRef Id="73852016"/>
@@ -302,11 +349,17 @@
 						<MediaRef Id="765875123"/>
 						<MediaRef Id="916299761"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+					</AuxBusRefs>
 				</Event>
-				<Event Id="2288279038" Name="enemy_range1_shooting" DurationType="OneShot" DurationMin="1.0119584" DurationMax="1.0119584">
+				<Event Id="2288279038" Name="enemy_range1_shooting" MaxAttenuation="50" DurationType="OneShot" DurationMin="0.968495" DurationMax="1.041611">
 					<MediaRefs>
 						<MediaRef Id="407088440"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="2385628198" Name="footsteps" DurationType="OneShot" DurationMin="0.29441434" DurationMax="0.69899267">
 					<MediaRefs>
@@ -351,21 +404,33 @@
 						<MediaRef Id="516272040"/>
 						<MediaRef Id="813316356"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="2394582229" Name="player_dash" DurationType="OneShot" DurationMin="0.7953542" DurationMax="0.7953542">
 					<MediaRefs>
 						<MediaRef Id="662367199"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="3083087645" Name="player_death" DurationType="OneShot" DurationMin="2.4084792" DurationMax="2.4084792">
 					<MediaRefs>
 						<MediaRef Id="841143589"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="1305133589" Name="player_jump" DurationType="OneShot" DurationMin="0.32780278" DurationMax="0.34749562">
 					<MediaRefs>
 						<MediaRef Id="53950120"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="3629196698" Name="player_land" DurationType="OneShot" DurationMin="0.19517784" DurationMax="0.24134523">
 					<MediaRefs>
@@ -373,6 +438,9 @@
 						<MediaRef Id="776597434"/>
 						<MediaRef Id="970049384"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="2506934606" Name="player_melee_attack" DurationType="OneShot" DurationMin="0.87244034" DurationMax="1.0318481">
 					<MediaRefs>
@@ -381,6 +449,9 @@
 						<MediaRef Id="728598351"/>
 						<MediaRef Id="940601158"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="640208366" Name="player_raised_gun_running" DurationType="OneShot" DurationMin="0.14790235" DurationMax="0.24137196">
 					<MediaRefs>
@@ -393,16 +464,25 @@
 						<MediaRef Id="765875123"/>
 						<MediaRef Id="916299761"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+					</AuxBusRefs>
 				</Event>
-				<Event Id="165391104" Name="player_ranged_attack_attack1_stationary" DurationType="OneShot" DurationMin="0.7524884" DurationMax="0.7524884">
+				<Event Id="165391104" Name="player_ranged_attack_attack1_stationary" DurationType="OneShot" DurationMin="0.73064435" DurationMax="0.7862579">
 					<MediaRefs>
 						<MediaRef Id="815303066"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="1650679582" Name="player_reload" DurationType="OneShot" DurationMin="0.93364584" DurationMax="0.93364584">
 					<MediaRefs>
 						<MediaRef Id="752233326"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="2051061508" Name="stop_test" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2727318990" Name="test_2" DurationType="Infinite">
@@ -412,10 +492,15 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{4A6630D8-5252-7CD0-8A3B-2980ADD547A6}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{1B91BC79-3EE1-B813-610F-12FA0EAD9CC6}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<ShareSets>
+					<Plugin Id="48620415" Name="Have_U_Ever_Been_Outside" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="418265525" Name="Gentle_Program_Compressor_Minus_14dB_RMS" LibName="Wwise Compressor" LibId="7077891"/>
+					<Plugin Id="1459522457" Name="Brick_Wall_Minus_1dB_Peak_Fast_Release" LibName="Wwise Peak Limiter" LibId="7208963"/>
+				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
@@ -423,9 +508,25 @@
 			</Plugins>
 			<Busses>
 				<Bus Id="393239870" Name="SFX"/>
-				<Bus Id="3803692087" Name="Master Audio Bus"/>
+				<Bus Id="3803692087" Name="Master Audio Bus">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="418265525"/>
+							<PluginRef Id="1459522457"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
 				<Bus Id="3991942870" Name="Music"/>
 			</Busses>
+			<AuxBusses>
+				<AuxBus Id="348963605" Name="Reverb">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="48620415"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
 			<GameParameters>
 				<GameParameter Id="1006694123" Name="music_volume"/>
 				<GameParameter Id="1564184899" Name="sfx_volume"/>
@@ -451,5 +552,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5DF139A5-A799-41A7-DE4B-B4D437D07148}</FileHash>
+	<FileHash>{AD44E1A5-BCB8-D9F5-0DB0-B0BB3DD4514F}</FileHash>
 </SoundBanksInfo>

@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID AMBIENT_PART1 = 1728914370U;
         static const AkUniqueID AMBIENT_PART2 = 1728914369U;
         static const AkUniqueID AMBIENT_PART3 = 1728914368U;
+        static const AkUniqueID ENEMY_MELEE_PIPE = 2120122469U;
         static const AkUniqueID ENEMY_RANGE1_DAMAGED = 2037740798U;
         static const AkUniqueID ENEMY_RANGE1_DEATH = 477019125U;
         static const AkUniqueID ENEMY_RANGE1_LAND = 201284434U;
@@ -59,6 +60,11 @@ namespace AK
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID SFX = 393239870U;
     } // namespace BUSSES
+
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID REVERB = 348963605U;
+    } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
     {
