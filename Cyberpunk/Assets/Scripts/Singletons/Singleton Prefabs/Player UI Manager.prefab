@@ -1747,6 +1747,7 @@ MonoBehaviour:
   NPCCharacterPortrait: {fileID: 4662382058780724872}
   NPCText: {fileID: 4179801863093042887}
   NPCNameText: {fileID: 6538472447306756987}
+  dialogueSpeed: 0.01
 --- !u!1 &2489236313738045347
 GameObject:
   m_ObjectHideFlags: 0
@@ -2276,7 +2277,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -418.51318, y: 369.803}
+  m_AnchoredPosition: {x: -565, y: 369.803}
   m_SizeDelta: {x: 1082.9736, y: 739.606}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1967054419455181365
