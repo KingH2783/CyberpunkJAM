@@ -19,5 +19,5 @@ MonoBehaviour:
   weaponDamage: 4
   fireRate: 0.2
   reloadTime: 1
-  ammoCapacity: 6
+  ammoCapacity: 7
   bulletType: {fileID: 2865687314785593906, guid: fe4890a18a989664db512a8484486666, type: 3}

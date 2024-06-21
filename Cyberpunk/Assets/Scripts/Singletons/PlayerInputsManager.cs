@@ -26,6 +26,7 @@ namespace HL
         // ======= Game Managers =======
         [HideInInspector] public Scene currentScene;
         [SerializeField] private ActionMaps currentActionMap;
+        [HideInInspector] public ActionMaps lastActionMap;
 
         #region Initialization and Deactivation
 
@@ -156,6 +157,12 @@ namespace HL
         {
             if (player.currentInteractableObject != null)
             {
+                if (currentActionMap == ActionMaps.Player)
+                {
+                    SwitchActionMap(ActionMaps.Dialogue);
+                    player.isPerformingAction = true;
+                    player.isInvulnerable = true;
+                }
                 player.currentInteractableObject.Interact(player);
             }
         }
@@ -187,6 +194,7 @@ namespace HL
 
         public void SwitchActionMap(ActionMaps actionMap)
         {
+            lastActionMap = currentActionMap;
             UnsubscribeFromAllActionMaps();
             playerControls.Disable();
 
@@ -202,12 +210,19 @@ namespace HL
                 playerControls.Player.Enable();
                 currentActionMap = ActionMaps.Player;
             }
+            else if (actionMap == ActionMaps.Dialogue)
+            {
+                SubscribeToDialogueActionMap();
+                playerControls.Dialogue.Enable();
+                currentActionMap = ActionMaps.Dialogue;
+            }
         }
 
         private void UnsubscribeFromAllActionMaps()
         {
             UnsubscribeFromMenuActionMap();
             UnsubscribeFromPlayerActionMap();
+            UnsubscribeFromDialogueActionMap();
         }
 
         private void SubscribeToMenuActionMap()
@@ -251,7 +266,19 @@ namespace HL
             playerControls.Player.Interact.performed -= HandleInteractPerformed;
             playerControls.Player.Escape.performed -= HandleEscapeInput;
         }
-        
+
+        private void SubscribeToDialogueActionMap()
+        {
+            playerControls.Dialogue.Interact.performed += HandleInteractPerformed;
+            playerControls.Dialogue.Escape.performed += HandleEscapeInput;
+        }
+
+        private void UnsubscribeFromDialogueActionMap()
+        {
+            playerControls.Dialogue.Interact.performed -= HandleInteractPerformed;
+            playerControls.Dialogue.Escape.performed -= HandleEscapeInput;
+        }
+
         #endregion
     }
 }

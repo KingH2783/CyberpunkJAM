@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,13 +11,11 @@ namespace HL
         [SerializeField] private Image NPCCharacterPortrait;
         [SerializeField] private TextMeshProUGUI NPCText;
         [SerializeField] private TextMeshProUGUI NPCNameText;
+        [SerializeField] private float dialogueSpeed;
 
         public void EnableNPCDialogue(Sprite portrait, string name)
         {
             PlayerUIManager.Instance.DisableHUD();
-            PlayerUIManager.Instance.pauseMenu.isGamePaused = true;
-            Time.timeScale = 0;
-
             NPCDialogueBackground.SetActive(true);
             NPCCharacterPortrait.sprite = portrait;
             NPCNameText.text = name;
@@ -24,18 +23,26 @@ namespace HL
 
         public void UpdateNPCDialogue(string text)
         {
-            NPCText.text = text;
+            NPCText.text = "";
+            StartCoroutine(WriteSentence(text));
         }
 
         public void DisableNPCDialogue()
         {
             PlayerUIManager.Instance.EnableHUD();
-            PlayerUIManager.Instance.pauseMenu.isGamePaused = false;
-            Time.timeScale = 1;
-            // This will cause a bug if you open and close the pause menu while in a
-            // dialogue box where the the game will unpause but still be in dialogue
-
+            PlayerInputsManager.Instance.SwitchActionMap(ActionMaps.Player);
+            PlayerInputsManager.Instance.player.isPerformingAction = false;
+            PlayerInputsManager.Instance.player.isInvulnerable = false;
             NPCDialogueBackground.SetActive(false);
+        }
+
+        private IEnumerator WriteSentence(string text)
+        {
+            foreach (char character in text.ToCharArray())
+            {
+                NPCText.text += character;
+                yield return new WaitForSeconds(dialogueSpeed);
+            }
         }
     }
 }
