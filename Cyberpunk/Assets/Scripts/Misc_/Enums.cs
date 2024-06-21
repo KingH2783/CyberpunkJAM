@@ -6,7 +6,8 @@ namespace HL
     {
         None,
         Menu,
-        Player
+        Player,
+        Dialogue
     }
 
     public enum AIType

@@ -36,7 +36,7 @@ namespace HL
 
         public void ResumeGame()
         {
-            PlayerInputsManager.Instance.SwitchActionMap(ActionMaps.Player);
+            PlayerInputsManager.Instance.SwitchActionMap(PlayerInputsManager.Instance.lastActionMap);
             pauseMenuParent.SetActive(false);
             isGamePaused = false;
             Time.timeScale = 1;

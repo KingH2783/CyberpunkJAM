@@ -30,6 +30,9 @@ namespace HL
         public void DisableNPCDialogue()
         {
             PlayerUIManager.Instance.EnableHUD();
+            PlayerInputsManager.Instance.SwitchActionMap(ActionMaps.Player);
+            PlayerInputsManager.Instance.player.isPerformingAction = false;
+            PlayerInputsManager.Instance.player.isInvulnerable = false;
             NPCDialogueBackground.SetActive(false);
         }
 
