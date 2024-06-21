@@ -9,269 +9,300 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1290008369" Type="User" Language="SFX" Hash="{14135D0C-2D35-5FFF-C283-CB30A3FBF99F}">
+		<SoundBank Id="1290008369" Type="User" Language="SFX" Hash="{79D9F38C-B90B-60E8-42B5-0E93181CD585}">
 			<ShortName>level_1</ShortName>
 			<Path>level_1.bnk</Path>
 			<Media>
 				<File Id="47134815" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_running_concrete-005.wav</ShortName>
-					<CachePath>SFX/enemy_range1_running_concrete-005_818F3B66.wem</CachePath>
+					<CachePath>SFX/enemy_range1_running_concrete-005_834C5F35.wem</CachePath>
 				</File>
 				<File Id="53950120" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>player_jump.wav</ShortName>
-					<CachePath>SFX/player_jump_EF63DDB8.wem</CachePath>
+					<CachePath>SFX/player_jump_7A85BC8B.wem</CachePath>
 				</File>
 				<File Id="55355417" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ambient_part2.wav</ShortName>
-					<CachePath>SFX/ambient_part2_FBC78EF0.wem</CachePath>
+					<CachePath>SFX/ambient_part2_B1F2C113.wem</CachePath>
+				</File>
+				<File Id="66577529" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>explore_music2.wav</ShortName>
+					<CachePath>SFX/explore_music2_B1F2C113.wem</CachePath>
 				</File>
 				<File Id="66600273" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE.wav</ShortName>
-					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE_11240A2F.wem</CachePath>
+					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE_915DB6AC.wem</CachePath>
 				</File>
 				<File Id="73852016" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_running_concrete-007.wav</ShortName>
-					<CachePath>SFX/enemy_range1_running_concrete-007_818F3B66.wem</CachePath>
+					<CachePath>SFX/enemy_range1_running_concrete-007_834C5F35.wem</CachePath>
 				</File>
 				<File Id="75245880" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WHSH_Plastic Pipe Fast Whoosh Low Single 03_B00M_ONE-2.wav</ShortName>
-					<CachePath>SFX/WHSH_Plastic Pipe Fast Whoosh Low Single 03_B00M_ONE-2_818F3B66.wem</CachePath>
+					<CachePath>SFX/WHSH_Plastic Pipe Fast Whoosh Low Single 03_B00M_ONE-2_834C5F35.wem</CachePath>
 				</File>
 				<File Id="91942190" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BO01 CC01D S - 01-59 - Full 09.wav</ShortName>
-					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 09_818F3B66.wem</CachePath>
+					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 09_834C5F35.wem</CachePath>
 				</File>
 				<File Id="108680219" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AWCK ADD Mechanics Plastic Medium 06.wav</ShortName>
-					<CachePath>SFX/AWCK ADD Mechanics Plastic Medium 06_FBC78EF0.wem</CachePath>
+					<CachePath>SFX/AWCK ADD Mechanics Plastic Medium 06_B1F2C113.wem</CachePath>
 				</File>
 				<File Id="166809683" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BO01 CC01D S - 01-59 - Full 03.wav</ShortName>
-					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 03_818F3B66.wem</CachePath>
+					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 03_834C5F35.wem</CachePath>
 				</File>
 				<File Id="169254723" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE.wav</ShortName>
-					<CachePath>SFX/GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE_6DCEE252.wem</CachePath>
+					<CachePath>SFX/GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE_80406D59.wem</CachePath>
 				</File>
 				<File Id="170462191" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_running_concrete-004.wav</ShortName>
-					<CachePath>SFX/enemy_range1_running_concrete-004_818F3B66.wem</CachePath>
+					<CachePath>SFX/enemy_range1_running_concrete-004_834C5F35.wem</CachePath>
 				</File>
 				<File Id="182304910" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1.wav</ShortName>
-					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1_EB9D48BC.wem</CachePath>
+					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1_86990153.wem</CachePath>
 				</File>
 				<File Id="194556305" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BO01 CC01D S - 01-59 - Full 08.wav</ShortName>
-					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 08_818F3B66.wem</CachePath>
+					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 08_834C5F35.wem</CachePath>
 				</File>
 				<File Id="225358134" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BO01 CC01D S - 01-59 - Full 01.wav</ShortName>
-					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 01_818F3B66.wem</CachePath>
+					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 01_834C5F35.wem</CachePath>
 				</File>
 				<File Id="225770525" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BO01 CC01D S - 01-59 - Full 02.wav</ShortName>
-					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 02_818F3B66.wem</CachePath>
+					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 02_834C5F35.wem</CachePath>
 				</File>
 				<File Id="252988365" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_death.wav</ShortName>
-					<CachePath>SFX/enemy_range1_death_818F3B66.wem</CachePath>
+					<CachePath>SFX/enemy_range1_death_834C5F35.wem</CachePath>
 				</File>
 				<File Id="271994802" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_damaged_top-001.wav</ShortName>
-					<CachePath>SFX/enemy_range1_damaged_top-001_818F3B66.wem</CachePath>
+					<CachePath>SFX/enemy_range1_damaged_top-001_834C5F35.wem</CachePath>
+				</File>
+				<File Id="282121038" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AEROHeli_Uh60 Exterior Flyby Sequence Medium 03_B00M_ONE.wav</ShortName>
+					<CachePath>SFX/AEROHeli_Uh60 Exterior Flyby Sequence Medium 03_B00M_ONE_FFD525FD.wem</CachePath>
 				</File>
 				<File Id="293679096" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_damaged_voice-003.wav</ShortName>
-					<CachePath>SFX/enemy_range1_damaged_voice-003_818F3B66.wem</CachePath>
+					<CachePath>SFX/enemy_range1_damaged_voice-003_834C5F35.wem</CachePath>
 				</File>
 				<File Id="300021101" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WHSH_Plastic Pipe Fast Whoosh Low Single 03_B00M_ONE.wav</ShortName>
-					<CachePath>SFX/WHSH_Plastic Pipe Fast Whoosh Low Single 03_B00M_ONE_818F3B66.wem</CachePath>
+					<CachePath>SFX/WHSH_Plastic Pipe Fast Whoosh Low Single 03_B00M_ONE_834C5F35.wem</CachePath>
 				</File>
 				<File Id="305598020" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BO01 CC01D S - 01-59 - Full 10.wav</ShortName>
-					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 10_818F3B66.wem</CachePath>
+					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 10_834C5F35.wem</CachePath>
 				</File>
 				<File Id="307125817" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_damaged_top-002.wav</ShortName>
-					<CachePath>SFX/enemy_range1_damaged_top-002_818F3B66.wem</CachePath>
+					<CachePath>SFX/enemy_range1_damaged_top-002_834C5F35.wem</CachePath>
+				</File>
+				<File Id="362054651" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>CRWDConv_Talk Upset Loud Long 02_B00M_ONE.wav</ShortName>
+					<CachePath>SFX/CRWDConv_Talk Upset Loud Long 02_B00M_ONE_B1F2C113.wem</CachePath>
 				</File>
 				<File Id="385996269" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_land-003.wav</ShortName>
-					<CachePath>SFX/enemy_range1_land-003_818F3B66.wem</CachePath>
+					<CachePath>SFX/enemy_range1_land-003_834C5F35.wem</CachePath>
 				</File>
 				<File Id="407088440" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_shoot.wav</ShortName>
-					<CachePath>SFX/enemy_range1_shoot_818F3B66.wem</CachePath>
+					<CachePath>SFX/enemy_range1_shoot_834C5F35.wem</CachePath>
 				</File>
 				<File Id="434801347" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_damaged_voice-001.wav</ShortName>
-					<CachePath>SFX/enemy_range1_damaged_voice-001_818F3B66.wem</CachePath>
+					<CachePath>SFX/enemy_range1_damaged_voice-001_834C5F35.wem</CachePath>
 				</File>
 				<File Id="442939329" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_damaged_bottom-003.wav</ShortName>
-					<CachePath>SFX/enemy_range1_damaged_bottom-003_818F3B66.wem</CachePath>
+					<CachePath>SFX/enemy_range1_damaged_bottom-003_834C5F35.wem</CachePath>
 				</File>
 				<File Id="443161691" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_damaged_voice-002.wav</ShortName>
-					<CachePath>SFX/enemy_range1_damaged_voice-002_818F3B66.wem</CachePath>
+					<CachePath>SFX/enemy_range1_damaged_voice-002_834C5F35.wem</CachePath>
 				</File>
 				<File Id="506290196" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BO01 CC01D S - 01-59 - Full 06.wav</ShortName>
-					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 06_818F3B66.wem</CachePath>
+					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 06_834C5F35.wem</CachePath>
 				</File>
 				<File Id="516272040" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>player_damaged-002.wav</ShortName>
-					<CachePath>SFX/player_damaged-002_818F3B66.wem</CachePath>
+					<CachePath>SFX/player_damaged-002_834C5F35.wem</CachePath>
 				</File>
 				<File Id="519532207" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_running_concrete-003.wav</ShortName>
-					<CachePath>SFX/enemy_range1_running_concrete-003_818F3B66.wem</CachePath>
+					<CachePath>SFX/enemy_range1_running_concrete-003_834C5F35.wem</CachePath>
 				</File>
 				<File Id="526293625" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>player_melee_attack-001.wav</ShortName>
-					<CachePath>SFX/player_melee_attack-001_09ADE66A.wem</CachePath>
+					<CachePath>SFX/player_melee_attack-001_E2892081.wem</CachePath>
 				</File>
 				<File Id="557073457" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-2.wav</ShortName>
-					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-2_48E97336.wem</CachePath>
+					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-2_E4E600B9.wem</CachePath>
+				</File>
+				<File Id="570802453" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>explore_music3.wav</ShortName>
+					<CachePath>SFX/explore_music3_B1F2C113.wem</CachePath>
 				</File>
 				<File Id="571157116" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_running_concrete-006.wav</ShortName>
-					<CachePath>SFX/enemy_range1_running_concrete-006_818F3B66.wem</CachePath>
+					<CachePath>SFX/enemy_range1_running_concrete-006_834C5F35.wem</CachePath>
 				</File>
 				<File Id="577182055" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_damaged_bottom-001.wav</ShortName>
-					<CachePath>SFX/enemy_range1_damaged_bottom-001_818F3B66.wem</CachePath>
+					<CachePath>SFX/enemy_range1_damaged_bottom-001_834C5F35.wem</CachePath>
 				</File>
 				<File Id="587161896" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ambient_part3.wav</ShortName>
-					<CachePath>SFX/ambient_part3_FBC78EF0.wem</CachePath>
+					<CachePath>SFX/ambient_part3_B1F2C113.wem</CachePath>
 				</File>
 				<File Id="590834058" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-1.wav</ShortName>
-					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-1_7233B1E4.wem</CachePath>
+					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-1_5959C777.wem</CachePath>
 				</File>
 				<File Id="633259387" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE-2.wav</ShortName>
-					<CachePath>SFX/GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE-2_F76028FA.wem</CachePath>
+					<CachePath>SFX/GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE-2_B5B33A11.wem</CachePath>
 				</File>
 				<File Id="657868621" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2.wav</ShortName>
-					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2_EDAE0C73.wem</CachePath>
+					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2_AE35912C.wem</CachePath>
 				</File>
 				<File Id="660916231" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2.wav</ShortName>
-					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2_08EEC515.wem</CachePath>
+					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-2_E787CF76.wem</CachePath>
 				</File>
 				<File Id="662367199" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>player_dash.wav</ShortName>
-					<CachePath>SFX/player_dash_818F3B66.wem</CachePath>
+					<CachePath>SFX/player_dash_834C5F35.wem</CachePath>
 				</File>
 				<File Id="662460812" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BO01 CC01D S - 01-59 - Full 07.wav</ShortName>
-					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 07_818F3B66.wem</CachePath>
+					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 07_834C5F35.wem</CachePath>
 				</File>
 				<File Id="676103956" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_damaged_bottom-002.wav</ShortName>
-					<CachePath>SFX/enemy_range1_damaged_bottom-002_818F3B66.wem</CachePath>
+					<CachePath>SFX/enemy_range1_damaged_bottom-002_834C5F35.wem</CachePath>
 				</File>
 				<File Id="677044938" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_damaged_top-003.wav</ShortName>
-					<CachePath>SFX/enemy_range1_damaged_top-003_818F3B66.wem</CachePath>
+					<CachePath>SFX/enemy_range1_damaged_top-003_834C5F35.wem</CachePath>
 				</File>
 				<File Id="690797175" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>player_melee_attack-003.wav</ShortName>
-					<CachePath>SFX/player_melee_attack-003_5190A1D3.wem</CachePath>
+					<CachePath>SFX/player_melee_attack-003_4D8701AC.wem</CachePath>
 				</File>
 				<File Id="720768654" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WHSH_Plastic Pipe Fast Whoosh Low Single 03_B00M_ONE-1.wav</ShortName>
-					<CachePath>SFX/WHSH_Plastic Pipe Fast Whoosh Low Single 03_B00M_ONE-1_818F3B66.wem</CachePath>
+					<CachePath>SFX/WHSH_Plastic Pipe Fast Whoosh Low Single 03_B00M_ONE-1_834C5F35.wem</CachePath>
 				</File>
 				<File Id="728598351" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>player_melee_attack-002.wav</ShortName>
-					<CachePath>SFX/player_melee_attack-002_C1316B74.wem</CachePath>
+					<CachePath>SFX/player_melee_attack-002_09F19437.wem</CachePath>
 				</File>
 				<File Id="736436096" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_running_concrete-002.wav</ShortName>
-					<CachePath>SFX/enemy_range1_running_concrete-002_818F3B66.wem</CachePath>
+					<CachePath>SFX/enemy_range1_running_concrete-002_834C5F35.wem</CachePath>
 				</File>
 				<File Id="752233326" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>player_reload.wav</ShortName>
-					<CachePath>SFX/player_reload_818F3B66.wem</CachePath>
+					<CachePath>SFX/player_reload_834C5F35.wem</CachePath>
 				</File>
 				<File Id="764620604" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BO01 CC01D S - 01-59 - Full 04.wav</ShortName>
-					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 04_818F3B66.wem</CachePath>
+					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 04_834C5F35.wem</CachePath>
 				</File>
 				<File Id="765875123" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_running_concrete-001.wav</ShortName>
-					<CachePath>SFX/enemy_range1_running_concrete-001_818F3B66.wem</CachePath>
+					<CachePath>SFX/enemy_range1_running_concrete-001_834C5F35.wem</CachePath>
+				</File>
+				<File Id="768264602" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>42-FIRE TRUCK = EXTERIOR OF STATION_ DISTANT START, TWO TRUCKS PASS BY WITH SIRENS.wav</ShortName>
+					<CachePath>SFX/42-FIRE TRUCK = EXTERIOR OF STATION_ DISTANT START, TWO TRUCKS PASS BY WITH SIRENS_FC50DD0B.wem</CachePath>
+				</File>
+				<File Id="768903784" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ambient_propaganda.wav</ShortName>
+					<CachePath>SFX/ambient_propaganda_834C5F35.wem</CachePath>
 				</File>
 				<File Id="776597434" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_land-001.wav</ShortName>
-					<CachePath>SFX/enemy_range1_land-001_818F3B66.wem</CachePath>
+					<CachePath>SFX/enemy_range1_land-001_834C5F35.wem</CachePath>
+				</File>
+				<File Id="810106399" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>explore_music4.wav</ShortName>
+					<CachePath>SFX/explore_music4_B1F2C113.wem</CachePath>
 				</File>
 				<File Id="813316356" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>player_damaged-001.wav</ShortName>
-					<CachePath>SFX/player_damaged-001_818F3B66.wem</CachePath>
+					<CachePath>SFX/player_damaged-001_834C5F35.wem</CachePath>
 				</File>
 				<File Id="815303066" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>player_ranged_attack_attack1_stationary.wav</ShortName>
-					<CachePath>SFX/player_ranged_attack_attack1_stationary_751A5789.wem</CachePath>
+					<CachePath>SFX/player_ranged_attack_attack1_stationary_A712D18A.wem</CachePath>
 				</File>
 				<File Id="841143589" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>player_death.wav</ShortName>
-					<CachePath>SFX/player_death_818F3B66.wem</CachePath>
+					<CachePath>SFX/player_death_834C5F35.wem</CachePath>
 				</File>
 				<File Id="910340784" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>moving_platform.wav</ShortName>
-					<CachePath>SFX/moving_platform_FBC78EF0.wem</CachePath>
+					<CachePath>SFX/moving_platform_B1F2C113.wem</CachePath>
 				</File>
 				<File Id="916299761" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_running_concrete-008.wav</ShortName>
-					<CachePath>SFX/enemy_range1_running_concrete-008_818F3B66.wem</CachePath>
+					<CachePath>SFX/enemy_range1_running_concrete-008_834C5F35.wem</CachePath>
 				</File>
 				<File Id="932931645" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BO01 CC01D S - 01-59 - Full 05.wav</ShortName>
-					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 05_818F3B66.wem</CachePath>
+					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 05_834C5F35.wem</CachePath>
 				</File>
 				<File Id="940601158" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>player_melee_attack-004.wav</ShortName>
-					<CachePath>SFX/player_melee_attack-004_E33D68B1.wem</CachePath>
+					<CachePath>SFX/player_melee_attack-004_48FBDC92.wem</CachePath>
 				</File>
 				<File Id="945438747" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>explore.wav</ShortName>
-					<CachePath>SFX/explore_FBC78EF0.wem</CachePath>
+					<CachePath>SFX/explore_B1F2C113.wem</CachePath>
 				</File>
 				<File Id="952037636" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE-1.wav</ShortName>
-					<CachePath>SFX/GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE-1_1CC93DB4.wem</CachePath>
+					<CachePath>SFX/GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE-1_DD1E010B.wem</CachePath>
 				</File>
 				<File Id="952537116" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1.wav</ShortName>
-					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1_125E16BD.wem</CachePath>
+					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1_BD69701A.wem</CachePath>
 				</File>
 				<File Id="970049384" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_land-002.wav</ShortName>
-					<CachePath>SFX/enemy_range1_land-002_818F3B66.wem</CachePath>
+					<CachePath>SFX/enemy_range1_land-002_834C5F35.wem</CachePath>
 				</File>
 				<File Id="1025695962" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ambient_part1.wav</ShortName>
-					<CachePath>SFX/ambient_part1_FBC78EF0.wem</CachePath>
+					<CachePath>SFX/ambient_part1_B1F2C113.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
 				<Custom>
 					<Plugin Id="544150877" Name="Guitar Distortion (Custom)" LibName="Wwise Guitar Distortion" LibId="8257539"/>
+					<Plugin Id="646402301" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 				</Custom>
 				<ShareSets>
+					<Plugin Id="1588715066" Name="Echoes_Linear" LibName="Wwise Delay" LibId="6946819"/>
 					<Plugin Id="1764884337" Name="New_Harmonizer" LibName="Wwise Harmonizer" LibId="9043971"/>
+					<Plugin Id="2513915904" Name="Hall_Large" LibName="Wwise RoomVerb" LibId="7733251"/>
 				</ShareSets>
 			</Plugins>
 			<Events>
-				<Event Id="1728914370" Name="Ambient_part1" MaxAttenuation="200" DurationType="Infinite">
+				<Event Id="1728914370" Name="Ambient_part1" MaxAttenuation="300" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="1025695962"/>
 					</MediaRefs>
@@ -284,6 +315,11 @@
 				<Event Id="1728914368" Name="Ambient_part3" MaxAttenuation="80" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="587161896"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3971790352" Name="Ambient_Tavern" MaxAttenuation="80" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="362054651"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2120122469" Name="enemy_melee_pipe" MaxAttenuation="50" DurationType="OneShot" DurationMin="0.22911449" DurationMax="0.27134684">
@@ -389,8 +425,27 @@
 				</Event>
 				<Event Id="15273518" Name="Music_Explore" DurationType="Infinite">
 					<MediaRefs>
+						<MediaRef Id="66577529"/>
+						<MediaRef Id="570802453"/>
+						<MediaRef Id="810106399"/>
 						<MediaRef Id="945438747"/>
 					</MediaRefs>
+				</Event>
+				<Event Id="1182267252" Name="OneShoot_1" MaxAttenuation="100" DurationType="OneShot" DurationMin="185.21439" DurationMax="191.21439">
+					<MediaRefs>
+						<MediaRef Id="282121038"/>
+						<MediaRef Id="768264602"/>
+						<MediaRef Id="768903784"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="646402301"/>
+						</Custom>
+						<ShareSets>
+							<PluginRef Id="1588715066"/>
+							<PluginRef Id="2513915904"/>
+						</ShareSets>
+					</PluginRefs>
 				</Event>
 				<Event Id="2851466780" Name="plasma_gun_shoot" DurationType="OneShot" DurationMin="0.8029139" DurationMax="1.246407">
 					<MediaRefs>
@@ -492,7 +547,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{1B91BC79-3EE1-B813-610F-12FA0EAD9CC6}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{72B856E5-B747-28B7-CAEB-CFB7DF9B66A0}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -533,13 +588,13 @@
 				<GameParameter Id="4179668880" Name="master_volume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{B680E61F-6924-1936-B559-AED4758380FD}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{7EF6B6D9-FFC1-F039-4BDD-2AE221845148}">
 			<ShortName>main</ShortName>
 			<Path>main.bnk</Path>
 			<Media>
 				<File Id="1009350064" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ANMLAqua_SEA LION-Female 9Years_B00M_AP_ST-1.wav</ShortName>
-					<CachePath>SFX/ANMLAqua_SEA LION-Female 9Years_B00M_AP_ST-1_FBC78EF0.wem</CachePath>
+					<CachePath>SFX/ANMLAqua_SEA LION-Female 9Years_B00M_AP_ST-1_B1F2C113.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -552,5 +607,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{AD44E1A5-BCB8-D9F5-0DB0-B0BB3DD4514F}</FileHash>
+	<FileHash>{ECF99229-99A1-DA4E-B78D-DEDF638C24DF}</FileHash>
 </SoundBanksInfo>

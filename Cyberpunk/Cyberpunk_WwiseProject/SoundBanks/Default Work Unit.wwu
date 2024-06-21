@@ -25,6 +25,7 @@
 						<ObjectRef Name="enemy_range1_shooting" ID="{1986F6B6-E2D5-4593-85A4-0AD89ACEA9C9}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="player_ranged_attack_attack1_stationary" ID="{32D0B363-4F1E-4859-99EE-88DF497EDAA9}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Ambient_part1" ID="{46D3C424-FA27-486B-848F-904B351E5D7D}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="OneShoot_1" ID="{CAE08D1C-B71A-487F-AF8B-AC60DC6569AF}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="player_reload" ID="{58A39F2D-7431-48BF-B6D0-3225A64E48A1}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="footsteps" ID="{E85A1009-BB1D-4979-B4FC-6200B2F9CB1F}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="player_raised_gun_running" ID="{21512DD8-E8B4-499F-87A9-EC2955B4459D}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}" Origin="Manual" Filter="7"/>
@@ -37,6 +38,7 @@
 						<ObjectRef Name="plasma_gun_shoot" ID="{CC947B45-E3E2-4CD6-9999-D3E02C8D27CA}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="player_land" ID="{E03899B9-48FC-4D58-94B4-1B1EF0F18608}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="enemy_range1_death" ID="{9838B16A-660A-4E2F-955A-B38050A06A05}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Ambient_Tavern" ID="{6F4B36A5-09BB-4ED8-B62C-7DA9465BD564}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="player_raised_gun_running" ID="{DA45693D-9188-4F12-8478-E7C4E8C38819}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="player_dash" ID="{D8897661-EB10-4F55-903C-856F6CE7375A}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Ambient_part3" ID="{4A56442E-0614-4F72-A072-C5E33EA95A6C}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>

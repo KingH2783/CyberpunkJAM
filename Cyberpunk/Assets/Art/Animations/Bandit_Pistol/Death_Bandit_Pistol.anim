@@ -80,6 +80,13 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0
+    functionName: PlayEnemy_range1_damaged
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.33333334
     functionName: PlayEnemy_range1_death
     data: 
     objectReferenceParameter: {fileID: 0}

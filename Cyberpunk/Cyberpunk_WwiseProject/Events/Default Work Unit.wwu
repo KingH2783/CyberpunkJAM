@@ -285,6 +285,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Ambient_Tavern" ID="{6F4B36A5-09BB-4ED8-B62C-7DA9465BD564}">
+							<ChildrenList>
+								<Action Name="" ID="{76334994-0C57-41BD-9590-EC2A8637F387}" ShortID="1052574773">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Tavern" ID="{DDFCD33F-89BC-4499-ABF9-1A4DE7AB3624}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="OneShoot_1" ID="{CAE08D1C-B71A-487F-AF8B-AC60DC6569AF}">
+							<ChildrenList>
+								<Action Name="" ID="{0085A832-C522-4EA1-AA65-26A5EE852E78}" ShortID="597150197">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="OneShoot" ID="{6E9A0AAA-02B9-4CC3-95A5-CCD3C3A79AE2}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="Music_Explore" ID="{CE311DB7-66E5-41D8-AC3D-73D920908CD7}">

@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID AMBIENT_PART1 = 1728914370U;
         static const AkUniqueID AMBIENT_PART2 = 1728914369U;
         static const AkUniqueID AMBIENT_PART3 = 1728914368U;
+        static const AkUniqueID AMBIENT_TAVERN = 3971790352U;
         static const AkUniqueID ENEMY_MELEE_PIPE = 2120122469U;
         static const AkUniqueID ENEMY_RANGE1_DAMAGED = 2037740798U;
         static const AkUniqueID ENEMY_RANGE1_DEATH = 477019125U;
@@ -25,6 +26,7 @@ namespace AK
         static const AkUniqueID FOOTSTEPS = 2385628198U;
         static const AkUniqueID MOVING_PLATFORM = 703211547U;
         static const AkUniqueID MUSIC_EXPLORE = 15273518U;
+        static const AkUniqueID ONESHOOT_1 = 1182267252U;
         static const AkUniqueID PLASMA_GUN_SHOOT = 2851466780U;
         static const AkUniqueID PLAYER_DAMAGED = 1386564838U;
         static const AkUniqueID PLAYER_DASH = 2394582229U;
