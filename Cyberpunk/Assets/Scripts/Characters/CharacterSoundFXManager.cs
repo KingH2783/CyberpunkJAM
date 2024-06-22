@@ -113,8 +113,9 @@ namespace HL
         public AK.Wwise.Event player_melee_attack1;
         public AK.Wwise.Event player_raised_gun_running;
         public AK.Wwise.Event player_ranged_attack_attack1_running;
+        public AK.Wwise.Event player_health;
 
-        
+
 
         public void Playplayer_reload()
         {
@@ -187,5 +188,12 @@ namespace HL
             player_ranged_attack_attack1_running.Post(gameObject);
 
         }
+
+        public void Playplayer_health()
+        {
+            player_health.Post(gameObject);
+
+        }
+        
     }
 }

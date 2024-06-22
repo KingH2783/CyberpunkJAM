@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID AMBIENT_PART1 = 1728914370U;
         static const AkUniqueID AMBIENT_PART2 = 1728914369U;
         static const AkUniqueID AMBIENT_PART3 = 1728914368U;
+        static const AkUniqueID AMBIENT_SEWERS = 421156887U;
         static const AkUniqueID AMBIENT_TAVERN = 3971790352U;
         static const AkUniqueID ENEMY_MELEE_PIPE = 2120122469U;
         static const AkUniqueID ENEMY_RANGE1_DAMAGED = 2037740798U;
@@ -26,11 +27,15 @@ namespace AK
         static const AkUniqueID FOOTSTEPS = 2385628198U;
         static const AkUniqueID MOVING_PLATFORM = 703211547U;
         static const AkUniqueID MUSIC_EXPLORE = 15273518U;
+        static const AkUniqueID ONESHOOT2 = 2136804010U;
         static const AkUniqueID ONESHOOT_1 = 1182267252U;
+        static const AkUniqueID ONESHOOT_FLIGHT = 1035483025U;
         static const AkUniqueID PLASMA_GUN_SHOOT = 2851466780U;
+        static const AkUniqueID PLAY_LARGE_VENT = 2744296867U;
         static const AkUniqueID PLAYER_DAMAGED = 1386564838U;
         static const AkUniqueID PLAYER_DASH = 2394582229U;
         static const AkUniqueID PLAYER_DEATH = 3083087645U;
+        static const AkUniqueID PLAYER_HEALING = 1126662821U;
         static const AkUniqueID PLAYER_JUMP = 1305133589U;
         static const AkUniqueID PLAYER_LAND = 3629196698U;
         static const AkUniqueID PLAYER_MELEE_ATTACK = 2506934606U;
@@ -46,6 +51,7 @@ namespace AK
     {
         static const AkUniqueID MASTER_VOLUME = 4179668880U;
         static const AkUniqueID MUSIC_VOLUME = 1006694123U;
+        static const AkUniqueID NEW_GAME_PARAMETER = 3671138082U;
         static const AkUniqueID SFX_VOLUME = 1564184899U;
     } // namespace GAME_PARAMETERS
 

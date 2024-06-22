@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1290008369" Type="User" Language="SFX" Hash="{79D9F38C-B90B-60E8-42B5-0E93181CD585}">
+		<SoundBank Id="1290008369" Type="User" Language="SFX" Hash="{8F8D4D0D-9263-B510-7735-5419731177B1}">
 			<ShortName>level_1</ShortName>
 			<Path>level_1.bnk</Path>
 			<Media>
@@ -77,6 +77,10 @@
 					<ShortName>BO01 CC01D S - 01-59 - Full 02.wav</ShortName>
 					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 02_834C5F35.wem</CachePath>
 				</File>
+				<File Id="240152565" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AEROJet_Boeing 777 Flyby Distant Front 01_B00M_ONE-1.wav</ShortName>
+					<CachePath>SFX/AEROJet_Boeing 777 Flyby Distant Front 01_B00M_ONE-1_3AF140E1.wem</CachePath>
+				</File>
 				<File Id="252988365" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_death.wav</ShortName>
 					<CachePath>SFX/enemy_range1_death_834C5F35.wem</CachePath>
@@ -87,7 +91,7 @@
 				</File>
 				<File Id="282121038" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AEROHeli_Uh60 Exterior Flyby Sequence Medium 03_B00M_ONE.wav</ShortName>
-					<CachePath>SFX/AEROHeli_Uh60 Exterior Flyby Sequence Medium 03_B00M_ONE_FFD525FD.wem</CachePath>
+					<CachePath>SFX/AEROHeli_Uh60 Exterior Flyby Sequence Medium 03_B00M_ONE_D5F81543.wem</CachePath>
 				</File>
 				<File Id="293679096" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_damaged_voice-003.wav</ShortName>
@@ -105,6 +109,10 @@
 					<ShortName>enemy_range1_damaged_top-002.wav</ShortName>
 					<CachePath>SFX/enemy_range1_damaged_top-002_834C5F35.wem</CachePath>
 				</File>
+				<File Id="332248138" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AIRBrst_Big Sparkling Water Open Fizz 01_B00M_ONE.M.wav</ShortName>
+					<CachePath>SFX/AIRBrst_Big Sparkling Water Open Fizz 01_B00M_ONE.M_C7ECB796.wem</CachePath>
+				</File>
 				<File Id="362054651" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>CRWDConv_Talk Upset Loud Long 02_B00M_ONE.wav</ShortName>
 					<CachePath>SFX/CRWDConv_Talk Upset Loud Long 02_B00M_ONE_B1F2C113.wem</CachePath>
@@ -116,6 +124,14 @@
 				<File Id="407088440" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_shoot.wav</ShortName>
 					<CachePath>SFX/enemy_range1_shoot_834C5F35.wem</CachePath>
+				</File>
+				<File Id="430841492" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>69-AIRPLANE, JET = PASSENGER JET_ EXT_ LANDING.wav</ShortName>
+					<CachePath>SFX/69-AIRPLANE, JET = PASSENGER JET_ EXT_ LANDING_834C5F35.wem</CachePath>
+				</File>
+				<File Id="430938481" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GUNTech_Sci Fi Load Shoot Small Gun 01_B00M_ONE.M.wav</ShortName>
+					<CachePath>SFX/GUNTech_Sci Fi Load Shoot Small Gun 01_B00M_ONE.M_834C5F35.wem</CachePath>
 				</File>
 				<File Id="434801347" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_damaged_voice-001.wav</ShortName>
@@ -129,9 +145,17 @@
 					<ShortName>enemy_range1_damaged_voice-002.wav</ShortName>
 					<CachePath>SFX/enemy_range1_damaged_voice-002_834C5F35.wem</CachePath>
 				</File>
+				<File Id="476062996" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SF-DS Energy Laser Small 02.wav</ShortName>
+					<CachePath>SFX/SF-DS Energy Laser Small 02_D60E9CCC.wem</CachePath>
+				</File>
 				<File Id="506290196" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BO01 CC01D S - 01-59 - Full 06.wav</ShortName>
 					<CachePath>SFX/BO01 CC01D S - 01-59 - Full 06_834C5F35.wem</CachePath>
+				</File>
+				<File Id="515621616" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MAGSpel_MOVEMENT-Healing Weaving Crystal_B00M_MAWCK.wav</ShortName>
+					<CachePath>SFX/MAGSpel_MOVEMENT-Healing Weaving Crystal_B00M_MAWCK_FA344AF7.wem</CachePath>
 				</File>
 				<File Id="516272040" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>player_damaged-002.wav</ShortName>
@@ -148,6 +172,10 @@
 				<File Id="557073457" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-2.wav</ShortName>
 					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-2_E4E600B9.wem</CachePath>
+				</File>
+				<File Id="565271257" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>3DS01 0081 Urban Trans Subway Rumble 2.0.wav</ShortName>
+					<CachePath>SFX/3DS01 0081 Urban Trans Subway Rumble 2.0_B1F2C113.wem</CachePath>
 				</File>
 				<File Id="570802453" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>explore_music3.wav</ShortName>
@@ -201,6 +229,10 @@
 					<ShortName>player_melee_attack-003.wav</ShortName>
 					<CachePath>SFX/player_melee_attack-003_4D8701AC.wem</CachePath>
 				</File>
+				<File Id="698921509" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>3DS01 0094 Urban Industrial Vents Spacious 2.0.wav</ShortName>
+					<CachePath>SFX/3DS01 0094 Urban Industrial Vents Spacious 2.0_B1F2C113.wem</CachePath>
+				</File>
 				<File Id="720768654" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>WHSH_Plastic Pipe Fast Whoosh Low Single 03_B00M_ONE-1.wav</ShortName>
 					<CachePath>SFX/WHSH_Plastic Pipe Fast Whoosh Low Single 03_B00M_ONE-1_834C5F35.wem</CachePath>
@@ -227,7 +259,7 @@
 				</File>
 				<File Id="768264602" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>42-FIRE TRUCK = EXTERIOR OF STATION_ DISTANT START, TWO TRUCKS PASS BY WITH SIRENS.wav</ShortName>
-					<CachePath>SFX/42-FIRE TRUCK = EXTERIOR OF STATION_ DISTANT START, TWO TRUCKS PASS BY WITH SIRENS_FC50DD0B.wem</CachePath>
+					<CachePath>SFX/42-FIRE TRUCK = EXTERIOR OF STATION_ DISTANT START, TWO TRUCKS PASS BY WITH SIRENS_79CD18E2.wem</CachePath>
 				</File>
 				<File Id="768903784" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ambient_propaganda.wav</ShortName>
@@ -236,6 +268,10 @@
 				<File Id="776597434" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_land-001.wav</ShortName>
 					<CachePath>SFX/enemy_range1_land-001_834C5F35.wem</CachePath>
+				</File>
+				<File Id="790433935" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>3DS02 Cave Stalactite Quiet Dripping 02 2.0-1.wav</ShortName>
+					<CachePath>SFX/3DS02 Cave Stalactite Quiet Dripping 02 2.0-1_B1F2C113.wem</CachePath>
 				</File>
 				<File Id="810106399" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>explore_music4.wav</ShortName>
@@ -252,6 +288,10 @@
 				<File Id="841143589" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>player_death.wav</ShortName>
 					<CachePath>SFX/player_death_834C5F35.wem</CachePath>
+				</File>
+				<File Id="870860077" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>TRNElec_Locomotive Drive By Distant Long 01_B00M_ONE.wav</ShortName>
+					<CachePath>SFX/TRNElec_Locomotive Drive By Distant Long 01_B00M_ONE_19ABD2F0.wem</CachePath>
 				</File>
 				<File Id="910340784" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>moving_platform.wav</ShortName>
@@ -281,6 +321,10 @@
 					<ShortName>CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1.wav</ShortName>
 					<CachePath>SFX/CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1_BD69701A.wem</CachePath>
 				</File>
+				<File Id="959716239" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>WATRDran_Drain Water Through Sewer Pipe Long_B00M_ONE.wav</ShortName>
+					<CachePath>SFX/WATRDran_Drain Water Through Sewer Pipe Long_B00M_ONE_B1F2C113.wem</CachePath>
+				</File>
 				<File Id="970049384" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>enemy_range1_land-002.wav</ShortName>
 					<CachePath>SFX/enemy_range1_land-002_834C5F35.wem</CachePath>
@@ -292,32 +336,53 @@
 			</Media>
 			<Plugins>
 				<Custom>
+					<Plugin Id="270207565" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="389907033" Name="Harmonizer (Custom)" LibName="Wwise Harmonizer" LibId="9043971"/>
 					<Plugin Id="544150877" Name="Guitar Distortion (Custom)" LibName="Wwise Guitar Distortion" LibId="8257539"/>
 					<Plugin Id="646402301" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="861855706" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 				</Custom>
 				<ShareSets>
+					<Plugin Id="1520064353" Name="Hall_Medium_Bright" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="1588715066" Name="Echoes_Linear" LibName="Wwise Delay" LibId="6946819"/>
 					<Plugin Id="1764884337" Name="New_Harmonizer" LibName="Wwise Harmonizer" LibId="9043971"/>
+					<Plugin Id="1866712635" Name="High_Freq_Cut_1" LibName="Wwise Parametric EQ" LibId="6881283"/>
 					<Plugin Id="2513915904" Name="Hall_Large" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="2755291684" Name="Pumping_and_Breathing_1" LibName="Wwise Compressor" LibId="7077891"/>
+					<Plugin Id="3900114836" Name="Metal_Hangar" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="4286906788" Name="Gentle_Program_Compressor_Minus_20dB_RMS" LibName="Wwise Compressor" LibId="7077891"/>
 				</ShareSets>
 			</Plugins>
 			<Events>
-				<Event Id="1728914370" Name="Ambient_part1" MaxAttenuation="300" DurationType="Infinite">
+				<Event Id="1728914370" Name="Ambient_part1" MaxAttenuation="200" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="1025695962"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1728914369" Name="Ambient_part2" MaxAttenuation="80" DurationType="Infinite">
+				<Event Id="1728914369" Name="Ambient_part2" MaxAttenuation="40" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="55355417"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1728914368" Name="Ambient_part3" MaxAttenuation="80" DurationType="Infinite">
+				<Event Id="1728914368" Name="Ambient_part3" MaxAttenuation="40" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="587161896"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3971790352" Name="Ambient_Tavern" MaxAttenuation="80" DurationType="Infinite">
+				<Event Id="421156887" Name="ambient_sewers" MaxAttenuation="100" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="565271257"/>
+						<MediaRef Id="790433935"/>
+						<MediaRef Id="959716239"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1520064353"/>
+							<PluginRef Id="4286906788"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
+				<Event Id="3971790352" Name="Ambient_Tavern" MaxAttenuation="46" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="362054651"/>
 					</MediaRefs>
@@ -340,7 +405,7 @@
 						<AuxBusRef Id="348963605" Name="Reverb"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="2037740798" Name="enemy_range1_damaged" MaxAttenuation="50" DurationType="OneShot" DurationMin="0.47842515" DurationMax="0.6138057">
+				<Event Id="2037740798" Name="enemy_range1_damaged" MaxAttenuation="50" DurationType="OneShot" DurationMin="0.4515732" DurationMax="0.6138057">
 					<MediaRefs>
 						<MediaRef Id="271994802"/>
 						<MediaRef Id="293679096"/>
@@ -418,7 +483,7 @@
 						<MediaRef Id="952537116"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="703211547" Name="moving_platform" MaxAttenuation="30" DurationType="Infinite">
+				<Event Id="703211547" Name="moving_platform" MaxAttenuation="46" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="910340784"/>
 					</MediaRefs>
@@ -430,10 +495,28 @@
 						<MediaRef Id="810106399"/>
 						<MediaRef Id="945438747"/>
 					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1866712635"/>
+						</ShareSets>
+					</PluginRefs>
 				</Event>
-				<Event Id="1182267252" Name="OneShoot_1" MaxAttenuation="100" DurationType="OneShot" DurationMin="185.21439" DurationMax="191.21439">
+				<Event Id="2136804010" Name="OneShoot2" MaxAttenuation="200" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="282121038"/>
+						<MediaRef Id="240152565"/>
+						<MediaRef Id="870860077"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="861855706"/>
+						</Custom>
+						<ShareSets>
+							<PluginRef Id="3900114836"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
+				<Event Id="1182267252" Name="OneShoot_1" MaxAttenuation="200" DurationType="Infinite">
+					<MediaRefs>
 						<MediaRef Id="768264602"/>
 						<MediaRef Id="768903784"/>
 					</MediaRefs>
@@ -441,9 +524,21 @@
 						<Custom>
 							<PluginRef Id="646402301"/>
 						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="1035483025" Name="OneShoot_flight" MaxAttenuation="200" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="282121038"/>
+						<MediaRef Id="430841492"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="270207565"/>
+						</Custom>
 						<ShareSets>
 							<PluginRef Id="1588715066"/>
 							<PluginRef Id="2513915904"/>
+							<PluginRef Id="3900114836"/>
 						</ShareSets>
 					</PluginRefs>
 				</Event>
@@ -452,6 +547,11 @@
 						<MediaRef Id="169254723"/>
 						<MediaRef Id="633259387"/>
 						<MediaRef Id="952037636"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2744296867" Name="Play_Large_Vent" MaxAttenuation="100" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="698921509"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1386564838" Name="player_damaged" DurationType="OneShot" DurationMin="0.81694204" DurationMax="0.9454258">
@@ -475,6 +575,25 @@
 					<MediaRefs>
 						<MediaRef Id="841143589"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="1126662821" Name="player_healing" DurationType="OneShot" DurationMin="0.8880125" DurationMax="0.8880125">
+					<MediaRefs>
+						<MediaRef Id="332248138"/>
+						<MediaRef Id="430938481"/>
+						<MediaRef Id="476062996"/>
+						<MediaRef Id="515621616"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="389907033"/>
+						</Custom>
+						<ShareSets>
+							<PluginRef Id="2755291684"/>
+						</ShareSets>
+					</PluginRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="348963605" Name="Reverb"/>
 					</AuxBusRefs>
@@ -547,7 +666,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{72B856E5-B747-28B7-CAEB-CFB7DF9B66A0}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{3CBAA84C-4BDD-D6EF-98BD-02E9F4528E2F}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -585,6 +704,7 @@
 			<GameParameters>
 				<GameParameter Id="1006694123" Name="music_volume"/>
 				<GameParameter Id="1564184899" Name="sfx_volume"/>
+				<GameParameter Id="3671138082" Name="New_Game_Parameter"/>
 				<GameParameter Id="4179668880" Name="master_volume"/>
 			</GameParameters>
 		</SoundBank>
@@ -607,5 +727,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{ECF99229-99A1-DA4E-B78D-DEDF638C24DF}</FileHash>
+	<FileHash>{240E60DE-9E8F-51A2-6F10-E86043B1616C}</FileHash>
 </SoundBanksInfo>

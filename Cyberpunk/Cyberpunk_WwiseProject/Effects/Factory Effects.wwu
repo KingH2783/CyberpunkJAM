@@ -7,6 +7,7 @@
 					<ChildrenList>
 						<Effect Name="Gentle_Program_Compressor_Minus_20dB_RMS" ID="{D3F1F88E-4123-4C05-946B-1B036BAC2DFD}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
 							<PropertyList>
+								<Property Name="OutputGain" Type="Real32" Value="12"/>
 								<Property Name="Ratio" Type="Real32" Value="3"/>
 								<Property Name="Threshold" Type="Real32" Value="-20"/>
 							</PropertyList>
@@ -62,7 +63,7 @@
 						<Effect Name="Pumping_and_Breathing_1" ID="{87BE3270-3D27-45BB-9E46-7F2D9380F523}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
 							<PropertyList>
 								<Property Name="AttackTime" Type="Real32" Value="0.111"/>
-								<Property Name="OutputGain" Type="Real32" Value="3"/>
+								<Property Name="OutputGain" Type="Real32" Value="9.7"/>
 								<Property Name="Ratio" Type="Real32" Value="20"/>
 								<Property Name="ReleaseTime" Type="Real32" Value="0.021"/>
 								<Property Name="Threshold" Type="Real32" Value="-37"/>
@@ -241,13 +242,14 @@
 										<Effect Name="High_Freq_Cut_1" ID="{BA5BC68D-BCA7-4CE0-9878-1560F2D8B257}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 											<PropertyList>
 												<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
-												<Property Name="FilterTypeBand2" Type="int32" Value="4"/>
-												<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
-												<Property Name="FrequencyBand2" Type="Real32" Value="15000"/>
-												<Property Name="FrequencyBand3" Type="Real32" Value="18000"/>
-												<Property Name="GainBand2" Type="Real32" Value="-2"/>
-												<Property Name="GainBand3" Type="Real32" Value="-3"/>
+												<Property Name="FilterTypeBand3" Type="int32" Value="6"/>
+												<Property Name="FrequencyBand2" Type="Real32" Value="571"/>
+												<Property Name="FrequencyBand3" Type="Real32" Value="1999"/>
+												<Property Name="GainBand2" Type="Real32" Value="-6.5"/>
+												<Property Name="GainBand3" Type="Real32" Value="-7.5"/>
 												<Property Name="OnOffBand1" Type="bool" Value="False"/>
+												<Property Name="QFactorBand2" Type="Real32" Value="1.5"/>
+												<Property Name="QFactorBand3" Type="Real32" Value="1.5"/>
 											</PropertyList>
 										</Effect>
 										<Effect Name="High_Freq_Cut_2" ID="{32F492AD-3F59-4D61-8488-1DADE817C01E}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
@@ -1512,7 +1514,7 @@
 							<ChildrenList>
 								<Effect Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 									<PropertyList>
-										<Property Name="DecayTime" Type="Real32" Value="1.8"/>
+										<Property Name="DecayTime" Type="Real32" Value="0.9"/>
 										<Property Name="Density" Type="Real32" Value="50"/>
 										<Property Name="ERLevel" Type="Real32" Value="-18"/>
 										<Property Name="ERPattern" Type="int32" Value="29"/>
@@ -1527,7 +1529,7 @@
 										<Property Name="PreDelay" Type="Real32" Value="132"/>
 										<Property Name="Quality" Type="int32" Value="12"/>
 										<Property Name="ReverbLevel" Type="Real32" Value="-35"/>
-										<Property Name="RoomSize" Type="Real32" Value="73"/>
+										<Property Name="RoomSize" Type="Real32" Value="66"/>
 										<Property Name="StereoWidth" Type="Real32" Value="28"/>
 									</PropertyList>
 								</Effect>

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 925cc480e5185c9429c35b4a24ff9967, type: 3}
+  m_Name: F39E8FD6-8D67-457D-95DA-5CCA7CDAD4EA
+  m_EditorClassIdentifier: 
+  objectName: OneShoot_flight
+  id: 1035483025
+  guid: F39E8FD6-8D67-457D-95DA-5CCA7CDAD4EA

@@ -20,9 +20,13 @@
 						<ObjectRef Name="Music_Explore" ID="{CE311DB7-66E5-41D8-AC3D-73D920908CD7}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="player_ranged_attack_attack1_stationary" ID="{EACB2A84-51DA-4317-B7DF-6C4679A6C7B8}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="enemy_range1_running_concrete" ID="{13066CDB-600F-4326-81F7-03736C36428C}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="player_healing" ID="{F7B03E08-2918-4341-8F53-0FC1A7420CB6}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Large_Vent" ID="{549E2A00-7848-436B-B723-E3C34DC8CFB7}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="player_reload" ID="{6F279848-C908-446F-ACFA-68F2845474D3}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="player_death" ID="{49E5B849-80F1-4490-89E1-3AB43858C70C}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="OneShoot_flight" ID="{F39E8FD6-8D67-457D-95DA-5CCA7CDAD4EA}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="enemy_range1_shooting" ID="{1986F6B6-E2D5-4593-85A4-0AD89ACEA9C9}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="OneShoot2" ID="{A66BDB94-B6D6-4751-AFCC-63DFA1BB8FBB}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="player_ranged_attack_attack1_stationary" ID="{32D0B363-4F1E-4859-99EE-88DF497EDAA9}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Ambient_part1" ID="{46D3C424-FA27-486B-848F-904B351E5D7D}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="OneShoot_1" ID="{CAE08D1C-B71A-487F-AF8B-AC60DC6569AF}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
@@ -44,6 +48,7 @@
 						<ObjectRef Name="Ambient_part3" ID="{4A56442E-0614-4F72-A072-C5E33EA95A6C}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="player_damaged" ID="{E9A20EBD-0BD4-4F83-A43D-118DBA11F670}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="player_dash" ID="{0A4A0739-0979-4FC2-9E3E-F7DC272E3F01}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ambient_sewers" ID="{F53EC21E-107F-4FF2-9070-8507B9854BCA}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="player_death" ID="{67B873CA-19DC-4FFC-AE24-28E2E4E8037A}" WorkUnitID="{41A8B08D-F3BA-47A0-93FB-74F6F3327059}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

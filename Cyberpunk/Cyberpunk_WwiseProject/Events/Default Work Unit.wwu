@@ -237,6 +237,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="player_healing" ID="{F7B03E08-2918-4341-8F53-0FC1A7420CB6}">
+							<ChildrenList>
+								<Action Name="" ID="{472F1675-DE4E-41BD-82CB-DBECDC86B306}" ShortID="481861244">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="player_healing" ID="{95A7FA34-495E-4557-9054-EA8DA8A28C01}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Ambient" ID="{EF6D186F-9090-49F4-A285-BFFA85D4547B}" ShortID="711826568">
@@ -257,7 +268,7 @@
 								<Action Name="" ID="{974BA2AF-1690-4D50-A400-1BAEB09964D4}" ShortID="341615862">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="moving_platform" ID="{B20AEAC1-D0E1-4DCE-BE11-D28E4DEF09C3}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+											<ObjectRef Name="moving_platform" ID="{10F5FF2D-23CA-42B7-8C31-92B997AF2D00}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -302,6 +313,50 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="OneShoot" ID="{6E9A0AAA-02B9-4CC3-95A5-CCD3C3A79AE2}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="OneShoot2" ID="{A66BDB94-B6D6-4751-AFCC-63DFA1BB8FBB}">
+							<ChildrenList>
+								<Action Name="" ID="{3810DC8E-1AA7-4261-8272-7C91B8DA37C3}" ShortID="745698361">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="OneShoot2" ID="{FD47C64E-88CC-48E5-A377-B9EC673A0535}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="OneShoot_flight" ID="{F39E8FD6-8D67-457D-95DA-5CCA7CDAD4EA}">
+							<ChildrenList>
+								<Action Name="" ID="{B14F802F-13D0-4B1E-8E5E-C4AB0D1FF784}" ShortID="407186148">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="OneShoot_flight" ID="{FD93B035-B031-461D-BACB-0A1782BC8C1D}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ambient_sewers" ID="{F53EC21E-107F-4FF2-9070-8507B9854BCA}">
+							<ChildrenList>
+								<Action Name="" ID="{394E2D74-1B6B-4E50-A73B-7D2BDA9787F2}" ShortID="443207374">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ambient_sewers" ID="{213EB9D7-FAAB-4BA5-92C3-558C51DD6131}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Large_Vent" ID="{549E2A00-7848-436B-B723-E3C34DC8CFB7}">
+							<ChildrenList>
+								<Action Name="" ID="{5983F008-416F-468C-B8B9-F341F1F3A71E}" ShortID="227841878">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Large_Vent" ID="{6A948B70-13E2-40C7-B981-77EDC3AB551A}" WorkUnitID="{895C8D15-52D0-4C0C-B0C9-B1763102EEA1}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

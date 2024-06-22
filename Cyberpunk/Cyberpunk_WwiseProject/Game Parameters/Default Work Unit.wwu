@@ -22,6 +22,7 @@
 						</GameParameter>
 					</ChildrenList>
 				</Folder>
+				<GameParameter Name="New_Game_Parameter" ID="{4C3D3EEF-4E78-47A1-BB0C-B4394AF96FED}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

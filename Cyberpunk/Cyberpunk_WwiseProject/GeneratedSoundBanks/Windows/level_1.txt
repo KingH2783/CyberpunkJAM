@@ -2,9 +2,12 @@ Event	ID	Name			Wwise Object Path	Notes
 	15273518	Music_Explore			\Default Work Unit\Music_Explore	
 	165391104	player_ranged_attack_attack1_stationary			\Default Work Unit\Player\player_ranged_attack_attack1_stationary	
 	201284434	enemy_range1_land			\Default Work Unit\Enemies\enemy_range1_land	
+	421156887	ambient_sewers			\Default Work Unit\Ambient\ambient_sewers	
 	477019125	enemy_range1_death			\Default Work Unit\Enemies\enemy_range1_death	
 	640208366	player_raised_gun_running			\Default Work Unit\Player\player_raised_gun_running	
 	703211547	moving_platform			\Default Work Unit\Ambient\moving_platform	
+	1035483025	OneShoot_flight			\Default Work Unit\Ambient\OneShoot_flight	
+	1126662821	player_healing			\Default Work Unit\Player\player_healing	
 	1182267252	OneShoot_1			\Default Work Unit\Ambient\OneShoot_1	
 	1305133589	player_jump			\Default Work Unit\Player\player_jump	
 	1386564838	player_damaged			\Default Work Unit\Player\player_damaged	
@@ -15,11 +18,13 @@ Event	ID	Name			Wwise Object Path	Notes
 	2037740798	enemy_range1_damaged			\Default Work Unit\Enemies\enemy_range1_damaged	
 	2051061508	stop_test			\Default Work Unit\Testing\stop_test	
 	2120122469	enemy_melee_pipe			\Default Work Unit\Enemies\enemy_melee_pipe	
+	2136804010	OneShoot2			\Default Work Unit\Ambient\OneShoot2	
 	2288279038	enemy_range1_shooting			\Default Work Unit\Enemies\enemy_range1_shooting	
 	2385628198	footsteps			\Default Work Unit\Testing\footsteps	
 	2394582229	player_dash			\Default Work Unit\Player\player_dash	
 	2506934606	player_melee_attack			\Default Work Unit\Player\player_melee_attack	
 	2727318990	test_2			\Default Work Unit\Testing\test_2	
+	2744296867	Play_Large_Vent			\Default Work Unit\Ambient\Play_Large_Vent	
 	2851466780	plasma_gun_shoot			\Default Work Unit\Testing\plasma_gun_shoot	
 	3083087645	player_death			\Default Work Unit\Player\player_death	
 	3629196698	player_land			\Default Work Unit\Player\player_land	
@@ -27,13 +32,21 @@ Event	ID	Name			Wwise Object Path	Notes
 	4157003948	enemy_range1_running_concrete			\Default Work Unit\Enemies\enemy_range1_running_concrete	
 
 Effect plug-ins	ID	Name	Type				Notes
+	389907033	Harmonizer (Custom)	Wwise Harmonizer			
 	544150877	Guitar Distortion (Custom)	Wwise Guitar Distortion			
+	1520064353	Hall_Medium_Bright	Wwise RoomVerb			
 	1588715066	Echoes_Linear	Wwise Delay			
 	1764884337	New_Harmonizer	Wwise Harmonizer			
+	1866712635	High_Freq_Cut_1	Wwise Parametric EQ			
 	2513915904	Hall_Large	Wwise RoomVerb			
+	2755291684	Pumping_and_Breathing_1	Wwise Compressor			
+	3900114836	Metal_Hangar	Wwise RoomVerb			
+	4286906788	Gentle_Program_Compressor_Minus_20dB_RMS	Wwise Compressor			
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	270207565	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\OneShoot_flight\New Silence\Silence	
 	646402301	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\OneShoot\New Silence\Silence	
+	861855706	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\OneShoot2\New Silence\Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	47134815	enemy_range1_running_concrete-005	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\enemy_range1_running_concrete-005_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enemies\Enemies\enemy_range1_running_concrete\enemy_range1_running_concrete-005		3865
@@ -52,24 +65,31 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	194556305	BO01 CC01D S - 01-59 - Full 08	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\BO01 CC01D S - 01-59 - Full 08_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\footsteps stone\right\right foot\BO01 CC01D S - 01-59 - Full 08		3688
 	225358134	BO01 CC01D S - 01-59 - Full 01	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\BO01 CC01D S - 01-59 - Full 01_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\footsteps stone\left\left foot\BO01 CC01D S - 01-59 - Full 01		3093
 	225770525	BO01 CC01D S - 01-59 - Full 02	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\BO01 CC01D S - 01-59 - Full 02_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\footsteps stone\left\left foot\BO01 CC01D S - 01-59 - Full 02		3231
+	240152565	AEROJet_Boeing 777 Flyby Distant Front 01_B00M_ONE-1	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\AEROJet_Boeing 777 Flyby Distant Front 01_B00M_ONE-1_3AF140E1.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\OneShoot2\AEROJet_Boeing 777 Flyby Distant Front 01_B00M_ONE-1		286973
 	252988365	enemy_range1_death	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\enemy_range1_death_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enemies\Enemies\enemy_range1_death\enemy_range1_death\enemy_range1_death		10650
 	271994802	enemy_range1_damaged_top-001	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\enemy_range1_damaged_top-001_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enemies\Enemies\enemy_range1_damaged\top\enemy_range1_damaged_top-001		4800
-	282121038	AEROHeli_Uh60 Exterior Flyby Sequence Medium 03_B00M_ONE	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\AEROHeli_Uh60 Exterior Flyby Sequence Medium 03_B00M_ONE_FFD525FD.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\OneShoot\AEROHeli_Uh60 Exterior Flyby Sequence Medium 03_B00M_ONE		322182
+	282121038	AEROHeli_Uh60 Exterior Flyby Sequence Medium 03_B00M_ONE	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\AEROHeli_Uh60 Exterior Flyby Sequence Medium 03_B00M_ONE_D5F81543.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\OneShoot_flight\AEROHeli_Uh60 Exterior Flyby Sequence Medium 03_B00M_ONE		322182
 	293679096	enemy_range1_damaged_voice-003	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\enemy_range1_damaged_voice-003_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enemies\Enemies\enemy_range1_damaged\voice\enemy_range1_damaged_voice-003		4227
 	300021101	WHSH_Plastic Pipe Fast Whoosh Low Single 03_B00M_ONE	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\WHSH_Plastic Pipe Fast Whoosh Low Single 03_B00M_ONE_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enemies\Enemies\enemy_melee_pipe\enemy_melee_pipe\WHSH_Plastic Pipe Fast Whoosh Low Single 03_B00M_ONE		4231
 	305598020	BO01 CC01D S - 01-59 - Full 10	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\BO01 CC01D S - 01-59 - Full 10_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\footsteps stone\right\right foot\BO01 CC01D S - 01-59 - Full 10		3383
 	307125817	enemy_range1_damaged_top-002	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\enemy_range1_damaged_top-002_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enemies\Enemies\enemy_range1_damaged\top\enemy_range1_damaged_top-002		6971
+	332248138	AIRBrst_Big Sparkling Water Open Fizz 01_B00M_ONE_M	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\AIRBrst_Big Sparkling Water Open Fizz 01_B00M_ONE.M_C7ECB796.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\Player\player_healing\AIRBrst_Big Sparkling Water Open Fizz 01_B00M_ONE_M		7555
 	362054651	CRWDConv_Talk Upset Loud Long 02_B00M_ONE	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\CRWDConv_Talk Upset Loud Long 02_B00M_ONE_B1F2C113.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\Tavern\CRWDConv_Talk Upset Loud Long 02_B00M_ONE		272186
 	385996269	enemy_range1_land-003	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\enemy_range1_land-003_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enemies\Enemies\enemy_range1_land\enemy_range1_land-003		4234
 	407088440	enemy_range1_shoot	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\enemy_range1_shoot_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enemies\Enemies\enemy_range1_shooting\enemy_range1_shooting\enemy_range1_shoot		16258
+	430841492	69-AIRPLANE, JET = PASSENGER JET_ EXT_ LANDING	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\69-AIRPLANE, JET = PASSENGER JET_ EXT_ LANDING_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\OneShoot_flight\69-AIRPLANE, JET = PASSENGER JET_ EXT_ LANDING		398351
+	430938481	GUNTech_Sci Fi Load Shoot Small Gun 01_B00M_ONE_M	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\GUNTech_Sci Fi Load Shoot Small Gun 01_B00M_ONE.M_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\Player\player_healing\GUNTech_Sci Fi Load Shoot Small Gun 01_B00M_ONE_M		6937
 	434801347	enemy_range1_damaged_voice-001	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\enemy_range1_damaged_voice-001_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enemies\Enemies\enemy_range1_damaged\voice\enemy_range1_damaged_voice-001		5641
 	442939329	enemy_range1_damaged_bottom-003	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\enemy_range1_damaged_bottom-003_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enemies\Enemies\enemy_range1_damaged\bottom\enemy_range1_damaged_bottom-003		4479
 	443161691	enemy_range1_damaged_voice-002	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\enemy_range1_damaged_voice-002_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enemies\Enemies\enemy_range1_damaged\voice\enemy_range1_damaged_voice-002		6690
+	476062996	SF-DS Energy Laser Small 02	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\SF-DS Energy Laser Small 02_D60E9CCC.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\Player\player_healing\SF-DS Energy Laser Small 02		15425
 	506290196	BO01 CC01D S - 01-59 - Full 06	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\BO01 CC01D S - 01-59 - Full 06_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\footsteps stone\right\right foot\BO01 CC01D S - 01-59 - Full 06		2780
+	515621616	MAGSpel_MOVEMENT-Healing Weaving Crystal_B00M_MAWCK	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\MAGSpel_MOVEMENT-Healing Weaving Crystal_B00M_MAWCK_FA344AF7.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\Player\player_healing\MAGSpel_MOVEMENT-Healing Weaving Crystal_B00M_MAWCK		15819
 	516272040	player_damaged-002	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\player_damaged-002_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\Player\player_damaged\player_damaged\player_damaged-002		9272
 	519532207	enemy_range1_running_concrete-003	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\enemy_range1_running_concrete-003_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enemies\Enemies\enemy_range1_running_concrete\enemy_range1_running_concrete-003		4413
 	526293625	player_melee_attack-001	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\player_melee_attack-001_E2892081.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\Player\player_melee_attack\player_melee_attack\player_melee_attack-001		13161
 	557073457	CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-2	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-2_E4E600B9.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\footsteps stone\right\clothes rustle\CLOTHMvmt_Nylon Leather Hard Long 02_B00M_ONE-2		10974
+	565271257	3DS01 0081 Urban Trans Subway Rumble 2_0	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\3DS01 0081 Urban Trans Subway Rumble 2.0_B1F2C113.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\ambient_sewers\3DS01 0081 Urban Trans Subway Rumble 2_0		940649
 	570802453	explore_music3	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\explore_music3_B1F2C113.wem		\Interactive Music Hierarchy\Default Work Unit\New Music Playlist Container\explore_music3\explore_music3		1286435
 	571157116	enemy_range1_running_concrete-006	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\enemy_range1_running_concrete-006_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\Player\player_raised_gun_running\player_raised_gun_running\enemy_range1_running_concrete-006		3928
 	577182055	enemy_range1_damaged_bottom-001	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\enemy_range1_damaged_bottom-001_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enemies\Enemies\enemy_range1_damaged\bottom\enemy_range1_damaged_bottom-001		5860
@@ -83,26 +103,30 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	676103956	enemy_range1_damaged_bottom-002	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\enemy_range1_damaged_bottom-002_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enemies\Enemies\enemy_range1_damaged\bottom\enemy_range1_damaged_bottom-002		5571
 	677044938	enemy_range1_damaged_top-003	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\enemy_range1_damaged_top-003_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enemies\Enemies\enemy_range1_damaged\top\enemy_range1_damaged_top-003		8162
 	690797175	player_melee_attack-003	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\player_melee_attack-003_4D8701AC.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\Player\player_melee_attack\player_melee_attack\player_melee_attack-003		13912
+	698921509	3DS01 0094 Urban Industrial Vents Spacious 2_0	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\3DS01 0094 Urban Industrial Vents Spacious 2.0_B1F2C113.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\Large_Vent\3DS01 0094 Urban Industrial Vents Spacious 2_0		417619
 	720768654	WHSH_Plastic Pipe Fast Whoosh Low Single 03_B00M_ONE-1	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\WHSH_Plastic Pipe Fast Whoosh Low Single 03_B00M_ONE-1_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enemies\Enemies\enemy_melee_pipe\enemy_melee_pipe\WHSH_Plastic Pipe Fast Whoosh Low Single 03_B00M_ONE-1		4197
 	728598351	player_melee_attack-002	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\player_melee_attack-002_09F19437.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\Player\player_melee_attack\player_melee_attack\player_melee_attack-002		13640
 	736436096	enemy_range1_running_concrete-002	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\enemy_range1_running_concrete-002_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enemies\Enemies\enemy_range1_running_concrete\enemy_range1_running_concrete-002		2751
 	752233326	player_reload	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\player_reload_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\Player\player_reload\player_reload\player_reload		12883
 	764620604	BO01 CC01D S - 01-59 - Full 04	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\BO01 CC01D S - 01-59 - Full 04_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\footsteps stone\left\left foot\BO01 CC01D S - 01-59 - Full 04		2779
 	765875123	enemy_range1_running_concrete-001	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\enemy_range1_running_concrete-001_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\Player\player_raised_gun_running\player_raised_gun_running\enemy_range1_running_concrete-001		2934
-	768264602	42-FIRE TRUCK = EXTERIOR OF STATION_ DISTANT START, TWO TRUCKS PASS BY WITH SIRENS	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\42-FIRE TRUCK = EXTERIOR OF STATION_ DISTANT START, TWO TRUCKS PASS BY WITH SIRENS_FC50DD0B.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\OneShoot\42-FIRE TRUCK = EXTERIOR OF STATION_ DISTANT START, TWO TRUCKS PASS BY WITH SIRENS		493673
+	768264602	42-FIRE TRUCK = EXTERIOR OF STATION_ DISTANT START, TWO TRUCKS PASS BY WITH SIRENS	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\42-FIRE TRUCK = EXTERIOR OF STATION_ DISTANT START, TWO TRUCKS PASS BY WITH SIRENS_79CD18E2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\OneShoot\42-FIRE TRUCK = EXTERIOR OF STATION_ DISTANT START, TWO TRUCKS PASS BY WITH SIRENS		493673
 	768903784	ambient_propaganda	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\ambient_propaganda_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\OneShoot\ambient_propaganda		1210180
 	776597434	enemy_range1_land-001	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\enemy_range1_land-001_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Enemies\Enemies\enemy_range1_land\enemy_range1_land-001		4554
+	790433935	3DS02 Cave Stalactite Quiet Dripping 02 2_0-1	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\3DS02 Cave Stalactite Quiet Dripping 02 2.0-1_B1F2C113.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\ambient_sewers\3DS02 Cave Stalactite Quiet Dripping 02 2_0-1		394711
 	810106399	explore_music4	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\explore_music4_B1F2C113.wem		\Interactive Music Hierarchy\Default Work Unit\New Music Playlist Container\explore_music4\explore_music4		2730495
 	813316356	player_damaged-001	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\player_damaged-001_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\Player\player_damaged\player_damaged\player_damaged-001		9600
 	815303066	player_ranged_attack_attack1_stationary	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\player_ranged_attack_attack1_stationary_A712D18A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\Player\player_ranged_attack_attack1_stationary\player_ranged_attack_attack1_stationary\player_ranged_attack_attack1_stationary		9937
 	841143589	player_death	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\player_death_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\Player\player_death\player_death\player_death		36854
-	910340784	moving_platform	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\moving_platform_B1F2C113.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\moving_platform		168470
+	870860077	TRNElec_Locomotive Drive By Distant Long 01_B00M_ONE	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\TRNElec_Locomotive Drive By Distant Long 01_B00M_ONE_19ABD2F0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\OneShoot2\TRNElec_Locomotive Drive By Distant Long 01_B00M_ONE		239531
+	910340784	moving_platform	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\moving_platform_B1F2C113.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\moving_platform\moving_platform		168470
 	916299761	enemy_range1_running_concrete-008	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\enemy_range1_running_concrete-008_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\Player\player_raised_gun_running\player_raised_gun_running\enemy_range1_running_concrete-008		4134
 	932931645	BO01 CC01D S - 01-59 - Full 05	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\BO01 CC01D S - 01-59 - Full 05_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\footsteps stone\left\left foot\BO01 CC01D S - 01-59 - Full 05		3025
 	940601158	player_melee_attack-004	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\player_melee_attack-004_48FBDC92.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\Player\player_melee_attack\player_melee_attack\player_melee_attack-004		13248
 	945438747	explore	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\explore_B1F2C113.wem		\Interactive Music Hierarchy\Default Work Unit\New Music Playlist Container\New Music Segment\explore		3308806
 	952037636	GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE-1	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE-1_DD1E010B.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\plasma gun\GUNTech_Sci Fi Plasma Gun Fire Digital 01_B00M_ONE-1		19261
 	952537116	CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1_01	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1_BD69701A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\footsteps stone\left\clothes rustle\CLOTHMvmt_Nylon Leather Hard Long 01_B00M_ONE-1_01		6952
+	959716239	WATRDran_Drain Water Through Sewer Pipe Long_B00M_ONE	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\WATRDran_Drain Water Through Sewer Pipe Long_B00M_ONE_B1F2C113.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\ambient_sewers\WATRDran_Drain Water Through Sewer Pipe Long_B00M_ONE		279632
 	970049384	enemy_range1_land-002	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\enemy_range1_land-002_834C5F35.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\Player\player_land\player_land\enemy_range1_land-002		4863
 	1025695962	ambient_part1	D:\Unity Sessions\CyberpunkJAM\Cyberpunk\Cyberpunk_WwiseProject\.cache\Windows\SFX\ambient_part1_B1F2C113.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambient\Ambient_part1\ambient_part1		538174
 
