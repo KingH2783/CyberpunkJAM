@@ -36,4 +36,31 @@ namespace HL
         Up,
         Down
     }
+
+    public enum CutscenesEnum
+    {
+        None,
+        FindingTheOpenDoor,
+        CheckingPC,
+        GuardOpensDoor,
+        AlarmGoesOff,
+        RunningWithAarm,
+        HopeOutOfWindow,
+        HopeFallsDown,
+        MikeEnters,
+        MikeCarriesHope,
+        HopeOnMedicalChair,
+        HopeEyesClosed,
+        HopeEyesOpen,
+        MikeGivesGlasses,
+        Malfunction,
+        MJSavingHope,
+        MJShootingBack,
+        MJandHopeRunning,
+        BossChoking,
+        MJEntering,
+        HopeOnGround,
+        MJHoldingHopesHand,
+        Ending
+    }
 }

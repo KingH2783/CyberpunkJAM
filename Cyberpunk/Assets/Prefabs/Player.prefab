@@ -617,6 +617,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
+  enemy_melee_pipe:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   player_ranged_attack_attack1_stationary:
     idInternal: 0
     valueGuidInternal: 

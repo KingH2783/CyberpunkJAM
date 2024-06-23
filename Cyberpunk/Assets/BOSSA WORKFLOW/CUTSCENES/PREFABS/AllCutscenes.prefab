@@ -190,7 +190,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5551304695688828949
 RectTransform:
   m_ObjectHideFlags: 0
@@ -686,74 +686,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1 &1201956612419113181
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7407210675293749504}
-  - component: {fileID: 6105735321998419231}
-  - component: {fileID: 4297386841703686501}
-  m_Layer: 0
-  m_Name: EventSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7407210675293749504
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1201956612419113181}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -960, y: -540, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5186746038508969809}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6105735321998419231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1201956612419113181}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
---- !u!114 &4297386841703686501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1201956612419113181}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
 --- !u!1 &1244242919344003751
 GameObject:
   m_ObjectHideFlags: 0
@@ -1046,8 +978,8 @@ MonoBehaviour:
   m_text: 'I found the door open. Behind it was the only room the agents hadn''t
     shown to me when I first
 
-    came here to work for Seiza. I approached the
-    open door and didn''t want to believe my eyes - the
+    came here to work for Seiza. I approached the open
+    door and didn''t want to believe my eyes - the
 
     prototype of a war-prosthesis
     I had currently been working on laid there on the table!'
@@ -4546,6 +4478,7 @@ GameObject:
   - component: {fileID: 6832981915744181520}
   - component: {fileID: 1967247166099018672}
   - component: {fileID: 3147861204552522350}
+  - component: {fileID: 5906488333659309136}
   m_Layer: 5
   m_Name: AllCutscenes
   m_TagString: Untagged
@@ -4565,7 +4498,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7407210675293749504}
   - {fileID: 7107063739645095272}
   - {fileID: 685322570233912522}
   - {fileID: 4054148025141439971}
@@ -4618,11 +4550,11 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
+  m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_TargetDisplay: 0
 --- !u!114 &1967247166099018672
 MonoBehaviour:
@@ -4664,6 +4596,42 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &5906488333659309136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7125874553760583349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3442e4fcaf9fac47a777d4d643138d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FindingTheOpenDoor: {fileID: 1397906095056176662}
+  FindingTheOpenDoorText1: {fileID: 8262093638894463085}
+  FindingTheOpenDoorText2: {fileID: 706001214680769518}
+  CheckingPC: {fileID: 176858727118984496}
+  GuardOpensDoor: {fileID: 4311219479190989268}
+  AlarmGoesOff: {fileID: 8441482396660471545}
+  RunningWithArm: {fileID: 8186866203595449517}
+  HopeOutOfWindow: {fileID: 5275195630280717957}
+  HopeFallsDown: {fileID: 8785265513783400214}
+  MikeEnters: {fileID: 8377578017901963724}
+  MikeCarriesHope: {fileID: 5000559868022750195}
+  HopeOnMedicalChair: {fileID: 6186044451651340082}
+  HopeEyesClosed: {fileID: 4694668695147917653}
+  HopeEyesOpen: {fileID: 8290916515739976655}
+  MikeGivesGlasses: {fileID: 3400228070953582879}
+  Malfunction: {fileID: 1347416517626440726}
+  MJSavingHope: {fileID: 3992173467025946404}
+  MJShootingBack: {fileID: 785256001768936312}
+  MJandHopeRunning: {fileID: 6868126576959765545}
+  BossChoking: {fileID: 8227735801226151782}
+  MJEntering: {fileID: 6358909207983428061}
+  HopeOnGround: {fileID: 2308599728097839020}
+  MJHoldingHopesHand: {fileID: 7680603114653164789}
+  Ending: {fileID: 1147289109060855562}
 --- !u!1 &7303646703649609953
 GameObject:
   m_ObjectHideFlags: 0
