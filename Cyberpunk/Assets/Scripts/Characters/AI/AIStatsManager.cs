@@ -54,13 +54,14 @@ namespace HL
         {
             base.HandleDeath();
             if (ai.aiType == AIType.Boss)
-                StartCoroutine(BossHealthBarOff());
+                StartCoroutine(BossDeath());
         }
 
-        private IEnumerator BossHealthBarOff()
+        private IEnumerator BossDeath()
         {
             yield return new WaitForSeconds(5);
             PlayerUIManager.Instance.bossHealthBar.TurnOffBossHealthBar();
+            Cutscenes.Instance.EnableCutscene(CutscenesEnum.BossChoking);
         }
     }
 }
