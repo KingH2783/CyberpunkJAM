@@ -11,7 +11,9 @@ namespace HL
         [SerializeField] private AK.Wwise.RTPC masterVolumeRTPC;
         [SerializeField] private AK.Wwise.RTPC musicVolumeRTPC;
         [SerializeField] private AK.Wwise.RTPC soundFXVolumeRTPC;
-        [Range(0.001f, 1)] public float startAllSlidersAtThisVolume;
+        [Range(0.001f, 1)] public float startMasterAtThisVolume;
+        [Range(0.001f, 1)] public float startMusicAtThisVolume;
+        [Range(0.001f, 1)] public float startSoundFXAtThisVolume;
 
         private void Awake()
         {
@@ -25,9 +27,9 @@ namespace HL
         {
             DontDestroyOnLoad(gameObject);
 
-            SetMasterVolume(startAllSlidersAtThisVolume);
-            SetMusicVolume(startAllSlidersAtThisVolume);
-            SetSoundFXVolume(startAllSlidersAtThisVolume);
+            SetMasterVolume(startMasterAtThisVolume);
+            SetMusicVolume(startMusicAtThisVolume);
+            SetSoundFXVolume(startSoundFXAtThisVolume);
         }
 
         public void SetMasterVolume(float sliderValue)

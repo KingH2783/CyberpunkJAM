@@ -56,4 +56,6 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: ba9e62c17023c804a81d2301f018fcfb, type: 2}
-  startAllSlidersAtThisVolume: 0.2
+  startMasterAtThisVolume: 0.8
+  startMusicAtThisVolume: 1
+  startSoundFXAtThisVolume: 1

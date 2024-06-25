@@ -19,9 +19,9 @@ namespace HL
 
         private void Start()
         {
-            masterVolumeSlider.value = WorldAudioManager.Instance.startAllSlidersAtThisVolume;
-            musicVolumeSlider.value = WorldAudioManager.Instance.startAllSlidersAtThisVolume;
-            soundFXVolumeSlider.value = WorldAudioManager.Instance.startAllSlidersAtThisVolume;
+            masterVolumeSlider.value = WorldAudioManager.Instance.startMasterAtThisVolume;
+            musicVolumeSlider.value = WorldAudioManager.Instance.startMusicAtThisVolume;
+            soundFXVolumeSlider.value = WorldAudioManager.Instance.startSoundFXAtThisVolume;
         }
 
         // Called from button
